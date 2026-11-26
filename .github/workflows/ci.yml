@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+env:
+  # sk-sites commit the design system is packed from. Bump on purpose.
+  SK_SITES_REF: 6f8932a1d40f7b695f890ba72e43d9fd901e4b46
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      # The design system is not on npm yet: pack it from sk-sites.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          repository: b4mad-technologies/sk-sites
+          ref: ${{ env.SK_SITES_REF }}
+          path: .sk-sites
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .node-version
+          package-manager-cache: false
+      - name: Install pnpm
+        run: |
+          npm install --global pnpm@11.13.1
+          echo "PNPM_STORE=$(pnpm store path --silent)" >> "$GITHUB_ENV"
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ${{ env.PNPM_STORE }}
+          key: pnpm-store-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml', '.sk-sites/pnpm-lock.yaml') }}
+          restore-keys: pnpm-store-${{ runner.os }}-
+      - name: Pack the design system
+        run: scripts/pack-design-system .sk-sites
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm test
+      - name: Build
+        run: pnpm build
+        env:
+          # Placeholder build-time settings (see apps/*/app.toml).
+          VITE_SPELLKAVE_LOGIN_ORIGIN: https://login.example.test
+          VITE_SPELLKAVE_GATEWAY_URL: https://gateway.example.test
+          VITE_SPELLKAVE_WORLD_URL: https://world.example.test
