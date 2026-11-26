@@ -37,7 +37,7 @@ function heroAt(col: number, row: number, moveToken = true): PlayView {
 describe("the session grid on the floor", () => {
 	it("reads a cell from a node id", () => {
 		expect(cellOf("session_grid_3/c_2_1")).toEqual({ prefix: GRID, col: 2, row: 1 });
-		expect(cellOf("elven_mini/inn/cellar")).toBeNull();
+		expect(cellOf("kavemouth/inn/cellar")).toBeNull();
 		expect(cellOf(undefined)).toBeNull();
 	});
 

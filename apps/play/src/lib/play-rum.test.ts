@@ -94,7 +94,7 @@ describe("RUM privacy boundary", () => {
 		const event = {
 			type: "view",
 			view: {
-				url: "https://play.spellkave.com/?world=elven-mini-1&token=secret",
+				url: "https://play.spellkave.com/?world=kavemouth-1&token=secret",
 				referrer: "https://spellkave.com/?email=person@example.com#worlds",
 			},
 		};
@@ -106,11 +106,11 @@ describe("RUM privacy boundary", () => {
 	});
 
 	it("projects an act without words, observation, ids, or error messages", () => {
-		const action = playRumAction(ACT_ENTRY, "elven-mini-1");
+		const action = playRumAction(ACT_ENTRY, "kavemouth-1");
 		expect(action).toEqual({
 			name: "play_act",
 			context: {
-				spellkave_world_slug: "elven-mini-1",
+				spellkave_world_slug: "kavemouth-1",
 				spellkave_tool_name: "spellkave_manipulate",
 				spellkave_outcome: "happened",
 				spellkave_duration_ms: 120,
@@ -131,8 +131,8 @@ describe("RUM privacy boundary", () => {
 			level: "stage",
 			trigger: "tap",
 		};
-		expect(playRumAction(entry, "elven-mini-1")?.context).toMatchObject({
-			spellkave_world_slug: "elven-mini-1",
+		expect(playRumAction(entry, "kavemouth-1")?.context).toMatchObject({
+			spellkave_world_slug: "kavemouth-1",
 			spellkave_tool_name: "play_layout",
 			spellkave_outcome: "observed",
 			spellkave_duration_ms: 0,
@@ -148,7 +148,7 @@ describe("createPlayRumProducer", () => {
 		const producer = createPlayRumProducer(
 			{
 				...CONFIG,
-				local: { ...CONFIG, environment: "local-play-it", worldSlug: "elven-mini-local-play-it" },
+				local: { ...CONFIG, environment: "local-play-it", worldSlug: "kavemouth-local-play-it" },
 			},
 			sdk,
 			webcrypto.subtle as unknown as SubtleCrypto,
@@ -162,18 +162,18 @@ describe("createPlayRumProducer", () => {
 		expect(sdk.init.mock.calls[0]?.[0].proxy({ parameters: "public=token" })).toBe(
 			"/__rum?public=token",
 		);
-		await producer.setContext("subject", "elven-mini");
+		await producer.setContext("subject", "kavemouth");
 		producer.observe?.({ phase: "intent", interaction: 1, intent: "move" });
 		const first = sdk.addAction.mock.calls.at(-1)?.[1];
 		expect(first).toMatchObject({
 			spellkave_sequence: 2,
-			spellkave_world_slug: "elven-mini-local-play-it",
+			spellkave_world_slug: "kavemouth-local-play-it",
 		});
 		producer.clearContext();
 		const count = sdk.addAction.mock.calls.length;
 		producer.observe?.({ phase: "rendered", interaction: 1 });
 		expect(sdk.addAction.mock.calls.length).toBe(count);
-		await producer.setContext("other-subject", "elven-mini");
+		await producer.setContext("other-subject", "kavemouth");
 		const second = sdk.addAction.mock.calls.at(-1)?.[1];
 		expect(second?.spellkave_run).not.toBe(first?.spellkave_run);
 		expect(second?.spellkave_sequence).toBe(1);
@@ -182,7 +182,7 @@ describe("createPlayRumProducer", () => {
 		const sdk = fakeSdk();
 		const producer = createPlayRumProducer({ ...CONFIG, enabled: false }, sdk);
 		producer.initialize();
-		await producer.setContext("raw-subject", "elven-mini-1");
+		await producer.setContext("raw-subject", "kavemouth-1");
 		producer.record(ACT_ENTRY);
 		expect(sdk.init).not.toHaveBeenCalled();
 		expect(sdk.addAction).not.toHaveBeenCalled();
@@ -213,12 +213,12 @@ describe("createPlayRumProducer", () => {
 			webcrypto.subtle as unknown as SubtleCrypto,
 		);
 		producer.initialize();
-		await producer.setContext("raw-workos-subject", "elven-mini-1");
+		await producer.setContext("raw-workos-subject", "kavemouth-1");
 
 		expect(sdk.setUser).toHaveBeenCalledWith({ id: expect.stringMatching(/^[0-9a-f]{16}$/) });
 		expect(sdk.setGlobalContextProperty).toHaveBeenCalledWith(
 			"spellkave_world_slug",
-			"elven-mini-1",
+			"kavemouth-1",
 		);
 		expect(sdk.setTrackingConsent).toHaveBeenCalledWith("granted");
 		expect(JSON.stringify(sdk.setUser.mock.calls)).not.toContain("raw-workos-subject");
@@ -234,12 +234,12 @@ describe("createPlayRumProducer", () => {
 		producer.initialize();
 		producer.record(ACT_ENTRY);
 		expect(sdk.addAction).not.toHaveBeenCalled();
-		await producer.setContext("raw-workos-subject", "elven-mini-1");
+		await producer.setContext("raw-workos-subject", "kavemouth-1");
 		producer.record(ACT_ENTRY);
 		expect(sdk.addAction).toHaveBeenCalledWith(
 			"play_act",
 			expect.objectContaining({
-				spellkave_world_slug: "elven-mini-1",
+				spellkave_world_slug: "kavemouth-1",
 				spellkave_tool_name: "spellkave_manipulate",
 				spellkave_outcome: "happened",
 				spellkave_duration_ms: 120,
@@ -257,11 +257,11 @@ describe("createPlayRumProducer", () => {
 			webcrypto.subtle as unknown as SubtleCrypto,
 		);
 		producer.initialize();
-		await producer.setContext("same-subject", "elven-mini-3");
+		await producer.setContext("same-subject", "kavemouth-3");
 		const first = sdk.addAction.mock.calls.at(-1)?.[1];
 		const consentCalls = sdk.setTrackingConsent.mock.calls.length;
 		const clearCalls = sdk.clearUser.mock.calls.length;
-		await producer.setContext("same-subject", "elven-mini-3");
+		await producer.setContext("same-subject", "kavemouth-3");
 		expect(sdk.setTrackingConsent.mock.calls.length).toBe(consentCalls);
 		expect(sdk.clearUser.mock.calls.length).toBe(clearCalls);
 		expect(sdk.addAction.mock.calls.at(-1)).toEqual([
@@ -288,12 +288,12 @@ describe("createPlayRumProducer", () => {
 			webcrypto.subtle as unknown as SubtleCrypto,
 		);
 		producer.initialize();
-		await producer.setContext("subject-a", "elven-mini-3");
+		await producer.setContext("subject-a", "kavemouth-3");
 		const first = sdk.addAction.mock.calls.at(-1)?.[1];
 		if (change === "logout") producer.clearContext();
 		await producer.setContext(
 			change === "subject" ? "subject-b" : "subject-a",
-			change === "world" ? "elven-mini-4" : "elven-mini-3",
+			change === "world" ? "kavemouth-4" : "kavemouth-3",
 		);
 		const next = sdk.addAction.mock.calls.at(-1)?.[1];
 		expect(next?.spellkave_run).not.toBe(first?.spellkave_run);
@@ -309,7 +309,7 @@ describe("createPlayRumProducer", () => {
 		);
 		producer.initialize();
 		expect(producer.diagnostics()).toEqual({ sampled: false });
-		await producer.setContext("raw-workos-subject", "elven-mini-1");
+		await producer.setContext("raw-workos-subject", "kavemouth-1");
 		const run = sdk.addAction.mock.calls.at(-1)?.[1]?.spellkave_run;
 		expect(producer.diagnostics()).toEqual({ runId: run, sampled: true });
 		sdk.getInternalContext.mockReturnValue(undefined);
@@ -326,7 +326,7 @@ describe("createPlayRumProducer", () => {
 			webcrypto.subtle as unknown as SubtleCrypto,
 		);
 		producer.initialize();
-		await producer.setContext("raw-workos-subject", "elven-mini-1");
+		await producer.setContext("raw-workos-subject", "kavemouth-1");
 		producer.clearContext();
 		expect(sdk.setTrackingConsent).toHaveBeenLastCalledWith("not-granted");
 		expect(sdk.clearUser).toHaveBeenCalled();
@@ -346,7 +346,7 @@ describe("createPlayRumProducer", () => {
 		} as unknown as SubtleCrypto;
 		const producer = createPlayRumProducer(CONFIG, sdk, subtle);
 		producer.initialize();
-		const context = producer.setContext("raw-workos-subject", "elven-mini-1");
+		const context = producer.setContext("raw-workos-subject", "kavemouth-1");
 		producer.clearContext();
 		finishDigest?.(new Uint8Array(32).buffer);
 		await context;

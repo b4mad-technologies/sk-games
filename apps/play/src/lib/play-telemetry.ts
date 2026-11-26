@@ -90,7 +90,7 @@ const JWT_PATTERN = /\bey[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{1
 // `world_slug`, which is exempted below: it is derived server-side from a
 // branch name (`vite.config.ts`'s `readRunEvents`, never player/session
 // input) and routinely crosses 32 characters on a long branch name
-// (`elven-mini-local-feat-play-telemetry` is 36 — confirmed live,
+// (`kavemouth-local-feat-play-telemetry` is 36 — confirmed live,
 // sk-jay0.6.39: an early version of this file redacted the join key itself
 // away, "[redacted]", turning every row silently unqueryable by slug).
 const OPAQUE_TOKEN_PATTERN = /\b[A-Za-z0-9_-]{32,}\b/g;

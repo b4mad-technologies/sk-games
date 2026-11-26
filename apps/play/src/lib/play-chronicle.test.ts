@@ -358,7 +358,7 @@ describe("event sentences never show an entity id or a template id", () => {
 			sentence({
 				kind: "trace_addressed",
 				trace_id: "50",
-				trace_kind: "elven_mini/adventure/trace/companion_command",
+				trace_kind: "kavemouth/adventure/trace/companion_command",
 				payload: { addressee: 5 },
 				inscribed_by: "9",
 				inscribed_by_name: "Aldwin",
@@ -1038,8 +1038,8 @@ describe("chronicleFactsFromEvents (sk-jay0.1.8.13 task 2)", () => {
 				id: "event-11",
 				tick: 71,
 				kind: "trace_addressed",
-				summary: "Aldwin signals Hesper (elven_mini/adventure/trace/companion_command).",
-				traceKind: "elven_mini/adventure/trace/companion_command",
+				summary: "Aldwin signals Hesper (kavemouth/adventure/trace/companion_command).",
+				traceKind: "kavemouth/adventure/trace/companion_command",
 			},
 		]);
 		expect(fact).toMatchObject({ important: false, chip: "speech" });

@@ -37,33 +37,33 @@ describe("play asset worker", () => {
 		// so response.ok was true and response.json() threw a DOMException that
 		// reached a player as "The way into this world is closed".
 		const seats = accountApiRequest(
-			new Request("https://play.spellkave.com/api/v1/worlds/elven-mini-1/seats", {
+			new Request("https://play.spellkave.com/api/v1/worlds/kavemouth-1/seats", {
 				headers: { authorization: "Bearer test-token" },
 			}),
 			"https://api.spellkave.com",
 		);
-		expect(seats?.url).toBe("https://api.spellkave.com/v1/worlds/elven-mini-1/seats");
+		expect(seats?.url).toBe("https://api.spellkave.com/v1/worlds/kavemouth-1/seats");
 		expect(seats?.headers.get("authorization")).toBe("Bearer test-token");
 
 		const claim = accountApiRequest(
-			new Request("https://play.spellkave.com/api/v1/worlds/elven-mini-1/seats/7/claim", {
+			new Request("https://play.spellkave.com/api/v1/worlds/kavemouth-1/seats/7/claim", {
 				method: "POST",
 				headers: { authorization: "Bearer test-token" },
 			}),
 			"https://api.spellkave.com",
 		);
 		expect(claim?.method).toBe("POST");
-		expect(claim?.url).toBe("https://api.spellkave.com/v1/worlds/elven-mini-1/seats/7/claim");
+		expect(claim?.url).toBe("https://api.spellkave.com/v1/worlds/kavemouth-1/seats/7/claim");
 
 		const release = accountApiRequest(
-			new Request("https://play.spellkave.com/api/v1/worlds/elven-mini-1/seats/release", {
+			new Request("https://play.spellkave.com/api/v1/worlds/kavemouth-1/seats/release", {
 				method: "POST",
 				headers: { authorization: "Bearer test-token" },
 			}),
 			"https://api.spellkave.com",
 		);
 		expect(release?.method).toBe("POST");
-		expect(release?.url).toBe("https://api.spellkave.com/v1/worlds/elven-mini-1/seats/release");
+		expect(release?.url).toBe("https://api.spellkave.com/v1/worlds/kavemouth-1/seats/release");
 	});
 
 	it("refuses methods and paths outside the allowlist", () => {

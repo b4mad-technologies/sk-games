@@ -1,7 +1,7 @@
 {
-	"node_id": "elven-mini/inn/common-room",
+	"node_id": "kavemouth/inn/common-room",
 	"node_description": "Long trestle tables share the room with a low fire.",
-	"graph_description": "The Mountain View Inn.",
+	"graph_description": "The Lamp and Ladle.",
 	"pose_elevation": 0,
 	"counts": { "actor": 1, "entity": 1, "exit": 2, "trace": 1 },
 	"scene_resolved": true,
@@ -14,7 +14,7 @@
 			"kind": "exit",
 			"id": "12",
 			"label": "west",
-			"to": "elven-mini/inn/bar"
+			"to": "kavemouth/inn/bar"
 		},
 		{
 			"handle": "s:exit:2",
@@ -22,7 +22,7 @@
 			"kind": "exit",
 			"id": "13",
 			"label": "southeast",
-			"to": "elven-mini/inn/stairs"
+			"to": "kavemouth/inn/stairs"
 		},
 		{
 			"handle": "s:actor:7",

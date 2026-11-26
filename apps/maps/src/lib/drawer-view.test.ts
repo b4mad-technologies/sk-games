@@ -4,13 +4,13 @@ import { describe, expect, it } from "vitest";
 import { type DrawerFrame, type DrawerLinks, drawerRowView } from "./drawer-view";
 
 const links: DrawerLinks = {
-	person: (id) => `/w/elven-mini/person/${id}`,
-	thing: (id) => `/w/elven-mini/thing/${id}`,
-	place: (id) => `/w/elven-mini/place/${id}`,
+	person: (id) => `/w/kavemouth/person/${id}`,
+	thing: (id) => `/w/kavemouth/thing/${id}`,
+	place: (id) => `/w/kavemouth/place/${id}`,
 };
 
-const loft = "elven_mini/inn/loft";
-const limbo = "elven_mini/creation_limbo/station";
+const loft = "kavemouth/inn/loft";
+const limbo = "kavemouth/creation_limbo/station";
 
 const torvald: WatchActor = {
 	art: null,
@@ -105,11 +105,11 @@ describe("drawerRowView — person", () => {
 
 	it("prefers the authored manifest ref when the caller knows it", () => {
 		const authored = drawerRowView(
-			{ kind: "person", actor: torvald, manifestRef: "elven_mini/npc/torvald" },
+			{ kind: "person", actor: torvald, manifestRef: "kavemouth/npc/torvald" },
 			frame,
 			links,
 		);
-		expect(authored.ref).toBe("elven_mini/npc/torvald");
+		expect(authored.ref).toBe("kavemouth/npc/torvald");
 	});
 
 	it("renders faction, conditions and readable states, and drops DM bookkeeping", () => {
@@ -127,10 +127,10 @@ describe("drawerRowView — person", () => {
 		const dm: WatchActor = {
 			...aldwin,
 			states: [
-				{ state_id: "elven_mini/quest/Q4/rewarded", display_name: "", value: "0" },
-				{ state_id: "elven_mini/quest/flag/q9_tomb_opened", display_name: "", value: "0" },
-				{ state_id: "elven_mini/dialog/aldwin/cursor", display_name: "", value: "3" },
-				{ state_id: "elven_mini/companion/rogue/agreement", display_name: "", value: "0" },
+				{ state_id: "kavemouth/quest/Q4/rewarded", display_name: "", value: "0" },
+				{ state_id: "kavemouth/quest/flag/q9_tomb_opened", display_name: "", value: "0" },
+				{ state_id: "kavemouth/dialog/aldwin/cursor", display_name: "", value: "3" },
+				{ state_id: "kavemouth/companion/rogue/agreement", display_name: "", value: "0" },
 				{ state_id: "srd/hp", display_name: "srd/hp", value: "9" },
 			],
 		};
@@ -141,7 +141,7 @@ describe("drawerRowView — person", () => {
 	it("lists the carried kit as linked references with stacks collapsed", () => {
 		const carrying = group(row, "Carrying");
 		expect(carrying?.entries.map((entry) => entry.title)).toEqual(["Javelin ×2", "Chain Mail"]);
-		expect(carrying?.entries[0]?.href).toBe("/w/elven-mini/thing/159");
+		expect(carrying?.entries[0]?.href).toBe("/w/kavemouth/thing/159");
 		expect(carrying?.entries[1]?.summary).toBe("Equipped · chest");
 	});
 
@@ -149,7 +149,7 @@ describe("drawerRowView — person", () => {
 		expect(group(row, "Place")?.entries[0]).toEqual({
 			ref: `place:${loft}`,
 			title: "Inn · Loft",
-			href: `/w/elven-mini/place/${loft}`,
+			href: `/w/kavemouth/place/${loft}`,
 			summary: undefined,
 		});
 		expect(group(row, "Also here")?.entries.map((entry) => entry.title)).toEqual(["Mira"]);
@@ -190,9 +190,9 @@ describe("drawerRowView — thing", () => {
 		expect(group(row, "Held by")?.entries[0]).toEqual({
 			ref: "entity:1",
 			title: "Torvald Ironmark",
-			href: "/w/elven-mini/person/1",
+			href: "/w/kavemouth/person/1",
 		});
-		expect(group(row, "Place")?.entries[0]?.href).toBe(`/w/elven-mini/place/${loft}`);
+		expect(group(row, "Place")?.entries[0]?.href).toBe(`/w/kavemouth/place/${loft}`);
 	});
 
 	it("omits the holder group for a thing on the ground", () => {

@@ -130,7 +130,7 @@ describe("diagnostic boundaries", () => {
 		VITE_SPELLKAVE_RUM_CLIENT_TOKEN: "public",
 		VITE_SPELLKAVE_RUM_VERSION: "revision",
 		OTEL_RESOURCE_ATTRIBUTES: "deployment.environment=local-play-it",
-		SPELLKAVE_WORLD_SLUG: "elven-mini-local-play-it",
+		SPELLKAVE_WORLD_SLUG: "kavemouth-local-play-it",
 	};
 	it("requires opt-in and a staged dev profile, never production or tests", () => {
 		expect(readLocalRumConfig(env, "development", true)?.environment).toBe("local-play-it");

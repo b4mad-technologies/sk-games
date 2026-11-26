@@ -13,8 +13,8 @@ afterEach(() => {
 	cleanup();
 });
 
-const loft = "elven_mini/inn/loft";
-const limbo = "elven_mini/creation_limbo/station";
+const loft = "kavemouth/inn/loft";
+const limbo = "kavemouth/creation_limbo/station";
 
 const mira = {
 	entityId: "2",
@@ -85,7 +85,7 @@ const chainMail = {
 };
 
 const watchArgs: MineWatchArgs = {
-	slug: "elven-mini",
+	slug: "kavemouth",
 	places: [],
 	mineEntityIds: [],
 	overlay: true,
@@ -118,7 +118,7 @@ function renderTable(selectedEntityId = "1"): void {
 	render(MapsTable, {
 		props: {
 			gatewayOrigin: "http://gateway.local",
-			slug: "elven-mini",
+			slug: "kavemouth",
 			token: "t",
 			// The stub reports these as the nodes the map can draw.
 			minePlaces: [{ entityId: "1", placeNodeId: loft }],
@@ -208,15 +208,15 @@ describe("MapsTable drawer body renders as a catalogue entry (sk-jay0.4.4.7)", (
 		const holder = within(referenceGroup("Held by")).getByRole("link", {
 			name: "Torvald Ironmark",
 		});
-		expect(holder.getAttribute("href")).toContain("/w/elven-mini/person/1");
+		expect(holder.getAttribute("href")).toContain("/w/kavemouth/person/1");
 	});
 
 	it("routes a carried link through the Maps locator, not the docs catalogue", async () => {
 		await openDrawer();
 		const link = within(referenceGroup("Carrying")).getByRole("link", { name: "Chain Mail" });
-		expect(link.getAttribute("href")).toContain("/w/elven-mini/thing/156");
+		expect(link.getAttribute("href")).toContain("/w/kavemouth/thing/156");
 		await fireEvent.click(link);
-		expect(window.location.pathname).toBe("/w/elven-mini/thing/156");
+		expect(window.location.pathname).toBe("/w/kavemouth/thing/156");
 	});
 
 	it("explains an off-map place instead of linking it", async () => {

@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
  * Local-only tiles + Overpass gateway for maps app screenshots / live proof.
- * Serves the checked-in elven-mini OSM rows through the same handlers as
+ * Serves the checked-in kavemouth OSM rows through the same handlers as
  * packages/spellkave-mcp — accepts any non-empty Bearer (NOT for production).
  *
  *   pnpm exec tsx apps/maps/scripts/local-demo-gateway.mjs
- *   → http://127.0.0.1:18080/w/elven-mini/style.json
+ *   → http://127.0.0.1:18080/w/kavemouth/style.json
  * Set MAPS_DEMO_GATEWAY_HOST to a specific Tailscale address for remote review.
  */
 import { existsSync, mkdirSync, symlinkSync } from "node:fs";
@@ -37,11 +37,11 @@ const here = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(here, "../../..");
 const port = Number(process.env.MAPS_DEMO_GATEWAY_PORT ?? 18080);
 const host = process.env.MAPS_DEMO_GATEWAY_HOST?.trim() || "127.0.0.1";
-const slug = "elven-mini";
+const slug = "kavemouth";
 
 const rowsPath = join(
 	repoRoot,
-	"packages/spellkave-mcp/src/__tests__/fixtures/elven-mini-rows.json",
+	"packages/spellkave-mcp/src/__tests__/fixtures/kavemouth-rows.json",
 );
 const rows = JSON.parse(await readFile(rowsPath, "utf8"));
 const tilesCache = buildWorldTilesCache(slug, rows, {
@@ -58,15 +58,15 @@ const osmCache = createStaticWorldOsmCache({
 
 const store = new TilesModelStore();
 store.set(tilesCache);
-// Alias common catalog sample slugs onto the elven-mini fixture for local UI.
-for (const alias of ["demo1", "demo2", "elven-mini-1"]) {
+// Alias common catalog sample slugs onto the kavemouth fixture for local UI.
+for (const alias of ["demo1", "demo2", "kavemouth-1"]) {
 	store.set({ ...tilesCache, slug: alias });
 }
 
-const bakedArt = join(repoRoot, "packages/spellkave-adventure-elven-mini/assets");
+const bakedArt = join(repoRoot, "packages/spellkave-adventure-kavemouth/assets");
 const worldAssetsRoot = join(repoRoot, ".local/maps-demo-world-assets");
 mkdirSync(worldAssetsRoot, { recursive: true });
-for (const name of [slug, "demo1", "demo2", "elven-mini-1"]) {
+for (const name of [slug, "demo1", "demo2", "kavemouth-1"]) {
 	const link = join(worldAssetsRoot, name);
 	if (!existsSync(link)) symlinkSync(bakedArt, link);
 }
@@ -77,7 +77,7 @@ const tilesOpts = {
 	worldAssetsRoot,
 	fontsRoot: defaultFontsRoot(),
 	mapsDemoPath: defaultMapsDemoPath(),
-	knownSlugs: new Set([slug, "demo1", "demo2", "elven-mini-1"]),
+	knownSlugs: new Set([slug, "demo1", "demo2", "kavemouth-1"]),
 };
 
 function bearerOk(req) {

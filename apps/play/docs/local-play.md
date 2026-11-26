@@ -10,18 +10,18 @@ staged, use the DEV-only local path instead:
 
 ```bash
 just spacetime-start
-just play-stage elven-mini
+just play-stage kavemouth
 # The NPC cast runs in the Rust NPC host; no standalone local recipe starts it yet (sk-jay0.1.55.60.41).
-just play-dev-local elven-mini
+just play-dev-local kavemouth
 ```
 
 For local maps and subject art, install the adventure OCI assets into an overlay
-`<root>/elven-mini/<asset-module>/...`, then run the read-only gateway separately:
+`<root>/kavemouth/<asset-module>/...`, then run the read-only gateway separately:
 
 ```bash
-just play-gateway-local elven-mini /absolute/path/to/installed-world-assets
+just play-gateway-local kavemouth /absolute/path/to/installed-world-assets
 # Use the origin printed by the gateway (node port + 20000 by default):
-VITE_SPELLKAVE_GATEWAY_URL=http://127.0.0.1:29450 just play-rum-local elven-mini
+VITE_SPELLKAVE_GATEWAY_URL=http://127.0.0.1:29450 just play-rum-local kavemouth
 ```
 
 `play-rum-local` relays diagnostic RUM only when `SPELLKAVE_RUM_DIAGNOSTIC_UPSTREAM`

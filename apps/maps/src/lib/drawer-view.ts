@@ -53,7 +53,7 @@ export interface DrawerLinks {
 
 /** State ids that are DM / adventure bookkeeping, not world facts a reader
  * wants: the DM seat's own `dm/` states, quest flags and reward ledgers
- * (`elven_mini/quest/Q4/rewarded`), dialog cursors and companion agreements.
+ * (`kavemouth/quest/Q4/rewarded`), dialog cursors and companion agreements.
  * Same families the rail card already hides (watch-view includeInspectState);
  * Aldwin alone carries 20+ quest rows that would bury his real facts. */
 function isOperatorState(stateId: string): boolean {

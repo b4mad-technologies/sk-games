@@ -7,8 +7,8 @@ const RAW = JSON.stringify({
 	db: "spellkave-dev",
 	actorId: "1",
 	token: "a.b.c",
-	slug: "elven-mini",
-	displayName: "Elven Mini",
+	slug: "kavemouth",
+	displayName: "Kavemouth",
 });
 
 describe("parseDevLocalConfig", () => {
@@ -18,8 +18,8 @@ describe("parseDevLocalConfig", () => {
 			db: "spellkave-dev",
 			actorId: "1",
 			token: "a.b.c",
-			slug: "elven-mini",
-			displayName: "Elven Mini",
+			slug: "kavemouth",
+			displayName: "Kavemouth",
 		});
 	});
 
@@ -29,9 +29,9 @@ describe("parseDevLocalConfig", () => {
 			db: "spellkave-dev",
 			actorId: "1",
 			token: "a.b.c",
-			slug: "elven-mini",
+			slug: "kavemouth",
 		});
-		expect(parseDevLocalConfig(raw)?.displayName).toBe("elven-mini");
+		expect(parseDevLocalConfig(raw)?.displayName).toBe("kavemouth");
 	});
 
 	// A production build defines the literal `null`; a build with no profile
@@ -87,13 +87,13 @@ describe("devLocalProps", () => {
 
 		const account = await props.accountLoader();
 		expect(account.worlds).toHaveLength(1);
-		expect(account.worlds[0]?.slug).toBe("elven-mini");
+		expect(account.worlds[0]?.slug).toBe("kavemouth");
 		// world.play is what App requires to treat the world as enterable.
 		expect(account.worlds[0]?.capabilities).toContain("world.play");
-		expect(account.seat).toEqual({ slug: "elven-mini", actor_id: "1", role: "player" });
+		expect(account.seat).toEqual({ slug: "kavemouth", actor_id: "1", role: "player" });
 
 		const catalog = await props.catalogLoader();
-		expect(catalog).toEqual([{ slug: "elven-mini", name: "Elven Mini", db: "spellkave-dev" }]);
+		expect(catalog).toEqual([{ slug: "kavemouth", name: "Kavemouth", db: "spellkave-dev" }]);
 	});
 
 	it("reports the staged seat as already mine so no board is shown", async () => {

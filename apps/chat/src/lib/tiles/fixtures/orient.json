@@ -7,7 +7,7 @@
 		"selfSummary": {
 			"actor_id": "hero-1",
 			"entity_name": "Regdar",
-			"current_node_id": "elven-mini/inn/loft",
+			"current_node_id": "kavemouth/inn/loft",
 			"state_count": 2,
 			"appearance": "",
 			"backstory": "",
@@ -34,7 +34,7 @@
 					"handle": "s:exit:1",
 					"rev": "r1",
 					"label": "north",
-					"to": "elven-mini/inn/stairs",
+					"to": "kavemouth/inn/stairs",
 					"traversalGates": []
 				}
 			],

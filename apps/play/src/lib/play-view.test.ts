@@ -482,7 +482,7 @@ it("keeps quest zero/text and only supplied positive condition metadata", () => 
 });
 
 it("keeps one hero condition per id when the body holds several instances", () => {
-	// Prod elven-mini-1 (sk-jay0.1.1.16): the creation candidate carries
+	// Prod kavemouth-1 (sk-jay0.1.1.16): the creation candidate carries
 	// `dm/creation/drafting` from its definition AND from Aldwin. Two rows with
 	// one id crashed the YOU tile's keyed `{#each}` and froze Play at "Entering".
 	// The fixture now uses a neutral id: a `dm/` workflow condition is no longer
@@ -716,7 +716,7 @@ it("joins condition prose only onto summary-selected conditions and reports read
 });
 
 // Shapes below are copied from live PLAYER tool answers against the staged
-// Elven Mini world (2026-09-02), trimmed to the fields the page reads.
+// Kavemouth world (2026-09-02), trimmed to the fields the page reads.
 
 const selfSummary = {
 	details: {
@@ -725,7 +725,7 @@ const selfSummary = {
 			entity_name: "Creation Candidate",
 			appearance: "",
 			backstory: "",
-			current_node_id: "elven_mini/creation_limbo/station",
+			current_node_id: "kavemouth/creation_limbo/station",
 			// `self_summary`'s own compact re-surfacing of `readSelfIdentity`
 			// (packages/spellkave-tool-player/src/tools.ts's `selfSummaryToolDef`,
 			// "identity: boundedCollection(...)"): tag + catalog prefix, no
@@ -754,7 +754,7 @@ const selfSummary = {
 
 const scene = {
 	details: {
-		node_id: "elven_mini/creation_limbo/station",
+		node_id: "kavemouth/creation_limbo/station",
 		node_display_name: "Creation Limbo",
 		node_description: "",
 		graph_description: "A place outside the adventure.",
@@ -788,7 +788,7 @@ const scene = {
 				label: "northeast",
 				to: "inn/common_room",
 				to_name: "Common Room",
-				traversal_gates: [{ template_id: "elven_mini/affordance/dm_threshold", mode_id: "" }],
+				traversal_gates: [{ template_id: "kavemouth/affordance/dm_threshold", mode_id: "" }],
 			},
 		],
 	},
@@ -802,7 +802,7 @@ describe("play view mappers", () => {
 		expect(hero.level).toBe(1);
 		expect(hero.ac).toBeUndefined();
 		expect(hero.vitals.map((vital) => vital.label)).toEqual(["Hit Points", "Character Level"]);
-		expect(hero.placeId).toBe("elven_mini/creation_limbo/station");
+		expect(hero.placeId).toBe("kavemouth/creation_limbo/station");
 		// Species/class/background are parsed from the compact identity glance's
 		// own dotted tags — `readSelfIdentity`'s doc comment invites exactly
 		// this ("rendering a phrase like 'Human Fighter (Soldier)' ... stays
@@ -839,7 +839,7 @@ describe("play view mappers", () => {
 				label: "northeast",
 				to: "inn/common_room",
 				toName: "Common Room",
-				gates: ["elven_mini/affordance/dm_threshold"],
+				gates: ["kavemouth/affordance/dm_threshold"],
 			},
 		]);
 		expect(occupants.map((entry) => entry.name)).toEqual([

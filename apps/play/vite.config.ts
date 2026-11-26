@@ -80,7 +80,7 @@ function readDevLocal(mode: string): string | null {
 		return null;
 	}
 
-	// The profile is named after its adventure (elven-mini-candidate.toml), and
+	// The profile is named after its adventure (kavemouth-candidate.toml), and
 	// play-stage keeps the credential under .local/player-credentials/<slug>/,
 	// so the slug is the credential directory rather than a fifth env var.
 	const slug = env.SPELLKAVE_DEV_SLUG?.trim() || basename(dirname(tokenAbs));

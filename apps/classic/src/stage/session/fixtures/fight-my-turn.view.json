@@ -1599,60 +1599,60 @@
 			"slot": 9
 		},
 		{
-			"actionId": "elven_mini/action/wake-at-inn",
-			"id": "factored:elven_mini/action/wake-at-inn:target:168:entity:168",
+			"actionId": "kavemouth/action/wake-at-inn",
+			"id": "factored:kavemouth/action/wake-at-inn:target:168:entity:168",
 			"label": "Give up and wake at the inn — You (Borin)",
 			"name": "Give up and wake at the inn",
 			"verb": "manipulate",
-			"descriptor": "elven_mini/action/wake-at-inn",
+			"descriptor": "kavemouth/action/wake-at-inn",
 			"targetName": "You (Borin)",
 			"targetRef": "entity:168",
 			"acceptsUtterance": false,
 			"provider": "actor"
 		},
 		{
-			"actionId": "elven_mini/quest/burn-the-camp",
-			"id": "factored:elven_mini/quest/burn-the-camp:target:168:entity:168",
+			"actionId": "kavemouth/quest/burn-the-camp",
+			"id": "factored:kavemouth/quest/burn-the-camp:target:168:entity:168",
 			"label": "Set the camp alight — You (Borin)",
 			"name": "Set the camp alight",
 			"verb": "manipulate",
-			"descriptor": "elven_mini/quest/burn-the-camp",
+			"descriptor": "kavemouth/quest/burn-the-camp",
 			"targetName": "You (Borin)",
 			"targetRef": "entity:168",
 			"acceptsUtterance": false,
 			"provider": "actor"
 		},
 		{
-			"actionId": "elven_mini/quest/relight-the-altar",
-			"id": "factored:elven_mini/quest/relight-the-altar:target:168:entity:168",
+			"actionId": "kavemouth/quest/relight-the-altar",
+			"id": "factored:kavemouth/quest/relight-the-altar:target:168:entity:168",
 			"label": "Relight the altar — You (Borin)",
 			"name": "Relight the altar",
 			"verb": "manipulate",
-			"descriptor": "elven_mini/quest/relight-the-altar",
+			"descriptor": "kavemouth/quest/relight-the-altar",
 			"targetName": "You (Borin)",
 			"targetRef": "entity:168",
 			"acceptsUtterance": false,
 			"provider": "actor"
 		},
 		{
-			"actionId": "elven_mini/respawn/wake-at-inn",
-			"id": "factored:elven_mini/respawn/wake-at-inn:target:168:entity:168",
+			"actionId": "kavemouth/respawn/wake-at-inn",
+			"id": "factored:kavemouth/respawn/wake-at-inn:target:168:entity:168",
 			"label": "Give up and wake at the inn — You (Borin)",
 			"name": "Give up and wake at the inn",
 			"verb": "manipulate",
-			"descriptor": "elven_mini/respawn/wake-at-inn",
+			"descriptor": "kavemouth/respawn/wake-at-inn",
 			"targetName": "You (Borin)",
 			"targetRef": "entity:168",
 			"acceptsUtterance": false,
 			"provider": "actor"
 		},
 		{
-			"actionId": "elven_mini/respawn/wake-at-inn-penniless",
-			"id": "factored:elven_mini/respawn/wake-at-inn-penniless:target:168:entity:168",
+			"actionId": "kavemouth/respawn/wake-at-inn-penniless",
+			"id": "factored:kavemouth/respawn/wake-at-inn-penniless:target:168:entity:168",
 			"label": "Give up and wake at the inn (no coin) — You (Borin)",
 			"name": "Give up and wake at the inn (no coin)",
 			"verb": "manipulate",
-			"descriptor": "elven_mini/respawn/wake-at-inn-penniless",
+			"descriptor": "kavemouth/respawn/wake-at-inn-penniless",
 			"targetName": "You (Borin)",
 			"targetRef": "entity:168",
 			"acceptsUtterance": false,
@@ -3950,14 +3950,14 @@
 				"selfEligible": false
 			},
 			{
-				"actionId": "elven_mini/action/wake-at-inn",
+				"actionId": "kavemouth/action/wake-at-inn",
 				"displayName": "Give up and wake at the inn",
 				"groups": [],
-				"templateIds": ["elven_mini/action/wake-at-inn/affordance"],
+				"templateIds": ["kavemouth/action/wake-at-inn/affordance"],
 				"tags": [],
 				"nicheRequirements": [
 					{
-						"niche_id": "elven_mini/niche/wake-at-inn",
+						"niche_id": "kavemouth/niche/wake-at-inn",
 						"requires_spatial_attachment": false,
 						"admits_targets_without_membership": true
 					}
@@ -3966,14 +3966,14 @@
 				"selfEligible": true
 			},
 			{
-				"actionId": "elven_mini/quest/accept-maelis-surrender",
+				"actionId": "kavemouth/quest/accept-maelis-surrender",
 				"displayName": "Call on Sister Maelis to yield",
 				"groups": [],
-				"templateIds": ["elven_mini/quest/accept-maelis-surrender/affordance"],
+				"templateIds": ["kavemouth/quest/accept-maelis-surrender/affordance"],
 				"tags": [],
 				"nicheRequirements": [
 					{
-						"niche_id": "elven_mini/niche/accept-maelis-surrender",
+						"niche_id": "kavemouth/niche/accept-maelis-surrender",
 						"requires_spatial_attachment": true,
 						"admits_targets_without_membership": false
 					}
@@ -3982,14 +3982,14 @@
 				"selfEligible": false
 			},
 			{
-				"actionId": "elven_mini/quest/burn-the-camp",
+				"actionId": "kavemouth/quest/burn-the-camp",
 				"displayName": "Set the camp alight",
 				"groups": [],
-				"templateIds": ["elven_mini/quest/burn-the-camp/affordance"],
+				"templateIds": ["kavemouth/quest/burn-the-camp/affordance"],
 				"tags": [],
 				"nicheRequirements": [
 					{
-						"niche_id": "elven_mini/niche/burn-the-camp",
+						"niche_id": "kavemouth/niche/burn-the-camp",
 						"requires_spatial_attachment": true,
 						"admits_targets_without_membership": false
 					}
@@ -3998,14 +3998,14 @@
 				"selfEligible": true
 			},
 			{
-				"actionId": "elven_mini/quest/deliver-moonpetal",
+				"actionId": "kavemouth/quest/deliver-moonpetal",
 				"displayName": "Hand the moonpetal to Old Tamsin",
 				"groups": [],
-				"templateIds": ["elven_mini/quest/deliver-moonpetal/affordance"],
+				"templateIds": ["kavemouth/quest/deliver-moonpetal/affordance"],
 				"tags": [],
 				"nicheRequirements": [
 					{
-						"niche_id": "elven_mini/niche/tamsins-basket",
+						"niche_id": "kavemouth/niche/tamsins-basket",
 						"requires_spatial_attachment": true,
 						"admits_targets_without_membership": false
 					}
@@ -4014,14 +4014,14 @@
 				"selfEligible": false
 			},
 			{
-				"actionId": "elven_mini/quest/open-tomb",
+				"actionId": "kavemouth/quest/open-tomb",
 				"displayName": "Open the deep tomb with the Ironfold key",
 				"groups": [],
-				"templateIds": ["elven_mini/quest/open-tomb/affordance"],
+				"templateIds": ["kavemouth/quest/open-tomb/affordance"],
 				"tags": [],
 				"nicheRequirements": [
 					{
-						"niche_id": "elven_mini/niche/ironfold-seal",
+						"niche_id": "kavemouth/niche/ironfold-seal",
 						"requires_spatial_attachment": true,
 						"admits_targets_without_membership": false
 					}
@@ -4030,14 +4030,14 @@
 				"selfEligible": false
 			},
 			{
-				"actionId": "elven_mini/quest/relight-the-altar",
+				"actionId": "kavemouth/quest/relight-the-altar",
 				"displayName": "Relight the altar",
 				"groups": [],
-				"templateIds": ["elven_mini/quest/relight-the-altar/affordance"],
+				"templateIds": ["kavemouth/quest/relight-the-altar/affordance"],
 				"tags": [],
 				"nicheRequirements": [
 					{
-						"niche_id": "elven_mini/niche/relight-the-altar",
+						"niche_id": "kavemouth/niche/relight-the-altar",
 						"requires_spatial_attachment": true,
 						"admits_targets_without_membership": false
 					}
@@ -4046,14 +4046,14 @@
 				"selfEligible": true
 			},
 			{
-				"actionId": "elven_mini/quest/strike-truce-with-grubnash",
+				"actionId": "kavemouth/quest/strike-truce-with-grubnash",
 				"displayName": "Strike a truce with Grubnash",
 				"groups": [],
-				"templateIds": ["elven_mini/quest/strike-truce-with-grubnash/affordance"],
+				"templateIds": ["kavemouth/quest/strike-truce-with-grubnash/affordance"],
 				"tags": [],
 				"nicheRequirements": [
 					{
-						"niche_id": "elven_mini/niche/strike-truce-with-grubnash",
+						"niche_id": "kavemouth/niche/strike-truce-with-grubnash",
 						"requires_spatial_attachment": true,
 						"admits_targets_without_membership": false
 					}
@@ -4062,14 +4062,14 @@
 				"selfEligible": false
 			},
 			{
-				"actionId": "elven_mini/respawn/wake-at-inn",
+				"actionId": "kavemouth/respawn/wake-at-inn",
 				"displayName": "Give up and wake at the inn",
 				"groups": [],
-				"templateIds": ["elven_mini/respawn/wake-at-inn/affordance"],
+				"templateIds": ["kavemouth/respawn/wake-at-inn/affordance"],
 				"tags": [],
 				"nicheRequirements": [
 					{
-						"niche_id": "elven_mini/niche/wake-at-inn",
+						"niche_id": "kavemouth/niche/wake-at-inn",
 						"requires_spatial_attachment": false,
 						"admits_targets_without_membership": true
 					}
@@ -4078,14 +4078,14 @@
 				"selfEligible": true
 			},
 			{
-				"actionId": "elven_mini/respawn/wake-at-inn-penniless",
+				"actionId": "kavemouth/respawn/wake-at-inn-penniless",
 				"displayName": "Give up and wake at the inn (no coin)",
 				"groups": [],
-				"templateIds": ["elven_mini/respawn/wake-at-inn-penniless/affordance"],
+				"templateIds": ["kavemouth/respawn/wake-at-inn-penniless/affordance"],
 				"tags": [],
 				"nicheRequirements": [
 					{
-						"niche_id": "elven_mini/niche/wake-at-inn",
+						"niche_id": "kavemouth/niche/wake-at-inn",
 						"requires_spatial_attachment": false,
 						"admits_targets_without_membership": true
 					}
@@ -5091,7 +5091,7 @@
 					"core/grounded",
 					"core/social_communication",
 					"dm/niche/trainee-present",
-					"elven_mini/adventure/candidate",
+					"kavemouth/adventure/candidate",
 					"srd.advancement.fighter.1",
 					"srd.background.soldier",
 					"srd.class.fighter",
@@ -5351,7 +5351,7 @@
 			},
 			{
 				"label": "Definition",
-				"value": "elven_mini/adventure/session/crypt-fight"
+				"value": "kavemouth/adventure/session/crypt-fight"
 			},
 			{
 				"label": "Turn rule",
@@ -5371,7 +5371,7 @@
 			},
 			{
 				"label": "Originating action",
-				"value": "elven_mini/dm/call-initiative"
+				"value": "kavemouth/dm/call-initiative"
 			},
 			{
 				"label": "Current participant is you",
@@ -5379,7 +5379,7 @@
 			},
 			{
 				"label": "Originating target",
-				"value": "place_node:elven_mini/inn/cellar"
+				"value": "place_node:kavemouth/inn/cellar"
 			},
 			{
 				"label": "Observed world tick",
@@ -5591,7 +5591,7 @@
 			"traceKind": "srd/attack-miss"
 		}
 	],
-	"mapSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"917\" height=\"760\" viewBox=\"0 0 917 760\" role=\"img\" aria-label=\"elven_mini/inn — elevation_band z=-3±0.5\">\n<style>\nsvg{font-family:Inter,system-ui,Arial,sans-serif}\n.h3-cell{fill:#c9d8cf;fill-opacity:.32;stroke:#536758;stroke-width:1.4;stroke-opacity:.9}\n.h3-cell--root{fill:#9bb8a8;fill-opacity:.45}\n.h3-cell--settlement{fill:#d4b896;fill-opacity:.5}\n.h3-cell--wilderness{fill:#b7c9b0;fill-opacity:.38}\n.h3-cell--default{fill:#c9d8cf;fill-opacity:.28}\n.place-portal{fill:#8b4513;stroke:#fff;stroke-width:2}\n.portal-tag{fill:#6b3a12;font-size:9px;font-weight:600;text-anchor:middle}\n.label-portal{font-weight:700}\n.route{stroke:#b97012;stroke-width:3;stroke-linecap:round;opacity:.9}\n.route-stairs{stroke:#6b4f9a;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:7 5;opacity:.95}\n.place{fill:#148284;stroke:#fff;stroke-width:2.2}\n.place-extent{fill:#148284;fill-opacity:.18;stroke:#0f5f61;stroke-width:1.5}\n.grid-cell{fill:#148284;fill-opacity:.06;stroke:#0f5f61;stroke-opacity:.55;stroke-width:1}\n.actor{fill:#245ebe;stroke:#fff;stroke-width:2}\n.label{fill:#1d2428;font-size:12px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}\n.actor-label{fill:#fff;font-size:9px;font-weight:800;text-anchor:middle}\n.chrome-label{fill:#3a454b;font-size:11px;font-weight:600;text-anchor:start}\n.scale-bar{stroke:#3a454b;stroke-width:2;stroke-linecap:square}\n.scale-bar-label{fill:#3a454b;font-size:11px;font-weight:700;text-anchor:middle}\n.floor-box{fill:#e7efed;stroke:#7a9690;stroke-width:1.5;opacity:.95}\n.floor-label{fill:#1d3a36;font-size:13px;font-weight:800;text-anchor:start}\n.stairs-label{fill:#6b4f9a;font-size:11px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:3px}\n.title-main{fill:#14201e;font-size:15px;font-weight:800;text-anchor:start}\n.title-sub{fill:#4a5a56;font-size:12px;font-weight:600;text-anchor:start}\n.title-rule{stroke:#c5d0cc;stroke-width:1}\n</style>\n<rect width=\"100%\" height=\"100%\" fill=\"#f4f7f6\" />\n<g class=\"title-bar\">\n<text class=\"title-main\" x=\"16\" y=\"22\">Inn</text>\n<text class=\"title-sub\" x=\"16\" y=\"38\">Floor slice z=-3 · indoor</text>\n<line class=\"title-rule\" x1=\"12\" y1=\"34\" x2=\"905\" y2=\"34\" />\n</g>\n\n\n\n\n<g data-node-id=\"elven_mini/inn/cellar\"><ellipse cx=\"458.50\" cy=\"378\" rx=\"400.40\" ry=\"286\" class=\"place-extent\" /><circle cx=\"458.50\" cy=\"378\" r=\"7\" class=\"place\" /><text x=\"458.50\" y=\"398\" class=\"label\">Cellar <tspan class=\"label-floor\">(z=-3)</tspan></text></g>\n<g data-node-id=\"session_grid_3/c_0_0\"><rect x=\"172.50\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /><circle cx=\"201.10\" cy=\"635.40\" r=\"9\" class=\"actor\" /><text x=\"201.10\" y=\"638.90\" class=\"actor-label\">1</text></g>\n<g data-node-id=\"session_grid_3/c_0_1\"><rect x=\"172.50\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_2\"><rect x=\"172.50\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_3\"><rect x=\"172.50\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_4\"><rect x=\"172.50\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_5\"><rect x=\"172.50\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_6\"><rect x=\"172.50\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_7\"><rect x=\"172.50\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_8\"><rect x=\"172.50\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_9\"><rect x=\"172.50\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_0\"><rect x=\"229.70\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /><circle cx=\"258.30\" cy=\"635.40\" r=\"9\" class=\"actor\" /><text x=\"258.30\" y=\"638.90\" class=\"actor-label\">1</text></g>\n<g data-node-id=\"session_grid_3/c_1_1\"><rect x=\"229.70\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /><circle cx=\"258.30\" cy=\"578.20\" r=\"9\" class=\"actor\" /><text x=\"258.30\" y=\"581.70\" class=\"actor-label\">1</text></g>\n<g data-node-id=\"session_grid_3/c_1_2\"><rect x=\"229.70\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_3\"><rect x=\"229.70\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_4\"><rect x=\"229.70\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_5\"><rect x=\"229.70\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_6\"><rect x=\"229.70\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_7\"><rect x=\"229.70\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_8\"><rect x=\"229.70\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_9\"><rect x=\"229.70\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_0\"><rect x=\"286.90\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_1\"><rect x=\"286.90\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_2\"><rect x=\"286.90\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_3\"><rect x=\"286.90\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_4\"><rect x=\"286.90\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_5\"><rect x=\"286.90\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_6\"><rect x=\"286.90\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_7\"><rect x=\"286.90\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_8\"><rect x=\"286.90\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_9\"><rect x=\"286.90\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_0\"><rect x=\"344.10\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_1\"><rect x=\"344.10\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_2\"><rect x=\"344.10\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_3\"><rect x=\"344.10\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_4\"><rect x=\"344.10\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_5\"><rect x=\"344.10\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_6\"><rect x=\"344.10\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_7\"><rect x=\"344.10\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_8\"><rect x=\"344.10\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_9\"><rect x=\"344.10\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_0\"><rect x=\"401.30\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_1\"><rect x=\"401.30\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_2\"><rect x=\"401.30\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_3\"><rect x=\"401.30\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_4\"><rect x=\"401.30\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_5\"><rect x=\"401.30\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_6\"><rect x=\"401.30\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_7\"><rect x=\"401.30\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_8\"><rect x=\"401.30\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_9\"><rect x=\"401.30\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_0\"><rect x=\"458.50\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_1\"><rect x=\"458.50\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_2\"><rect x=\"458.50\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_3\"><rect x=\"458.50\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_4\"><rect x=\"458.50\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_5\"><rect x=\"458.50\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_6\"><rect x=\"458.50\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_7\"><rect x=\"458.50\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_8\"><rect x=\"458.50\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_9\"><rect x=\"458.50\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_0\"><rect x=\"515.70\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_1\"><rect x=\"515.70\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_2\"><rect x=\"515.70\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_3\"><rect x=\"515.70\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_4\"><rect x=\"515.70\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_5\"><rect x=\"515.70\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_6\"><rect x=\"515.70\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_7\"><rect x=\"515.70\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_8\"><rect x=\"515.70\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_9\"><rect x=\"515.70\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_0\"><rect x=\"572.90\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_1\"><rect x=\"572.90\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_2\"><rect x=\"572.90\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_3\"><rect x=\"572.90\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_4\"><rect x=\"572.90\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_5\"><rect x=\"572.90\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_6\"><rect x=\"572.90\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_7\"><rect x=\"572.90\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_8\"><rect x=\"572.90\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_9\"><rect x=\"572.90\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_0\"><rect x=\"630.10\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_1\"><rect x=\"630.10\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_2\"><rect x=\"630.10\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_3\"><rect x=\"630.10\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_4\"><rect x=\"630.10\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_5\"><rect x=\"630.10\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_6\"><rect x=\"630.10\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_7\"><rect x=\"630.10\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_8\"><rect x=\"630.10\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_9\"><rect x=\"630.10\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_0\"><rect x=\"687.30\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_1\"><rect x=\"687.30\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_2\"><rect x=\"687.30\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_3\"><rect x=\"687.30\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_4\"><rect x=\"687.30\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_5\"><rect x=\"687.30\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_6\"><rect x=\"687.30\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_7\"><rect x=\"687.30\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_8\"><rect x=\"687.30\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_9\"><rect x=\"687.30\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g class=\"map-chrome\" data-chrome=\"legend\" transform=\"translate(0 720)\">\n<line x1=\"12\" y1=\"0.5\" x2=\"905\" y2=\"0.5\" stroke=\"#c5d0cc\" stroke-width=\"1\" />\n<g class=\"symbol-legend\" transform=\"translate(12 0)\">\n<circle cx=\"6\" cy=\"14\" r=\"6\" class=\"place\" />\n<text class=\"chrome-label\" x=\"18\" y=\"18\">place</text>\n<line class=\"route\" x1=\"62\" y1=\"14\" x2=\"86\" y2=\"14\" />\n<text class=\"chrome-label\" x=\"92\" y=\"18\">route</text>\n<circle cx=\"148\" cy=\"14\" r=\"9\" class=\"actor\" />\n<text class=\"actor-label\" x=\"148\" y=\"17.5\">n</text>\n<text class=\"chrome-label\" x=\"164\" y=\"18\">occupants</text>\n</g></g>\n</svg>\n",
+	"mapSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"917\" height=\"760\" viewBox=\"0 0 917 760\" role=\"img\" aria-label=\"kavemouth/inn — elevation_band z=-3±0.5\">\n<style>\nsvg{font-family:Inter,system-ui,Arial,sans-serif}\n.h3-cell{fill:#c9d8cf;fill-opacity:.32;stroke:#536758;stroke-width:1.4;stroke-opacity:.9}\n.h3-cell--root{fill:#9bb8a8;fill-opacity:.45}\n.h3-cell--settlement{fill:#d4b896;fill-opacity:.5}\n.h3-cell--wilderness{fill:#b7c9b0;fill-opacity:.38}\n.h3-cell--default{fill:#c9d8cf;fill-opacity:.28}\n.place-portal{fill:#8b4513;stroke:#fff;stroke-width:2}\n.portal-tag{fill:#6b3a12;font-size:9px;font-weight:600;text-anchor:middle}\n.label-portal{font-weight:700}\n.route{stroke:#b97012;stroke-width:3;stroke-linecap:round;opacity:.9}\n.route-stairs{stroke:#6b4f9a;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:7 5;opacity:.95}\n.place{fill:#148284;stroke:#fff;stroke-width:2.2}\n.place-extent{fill:#148284;fill-opacity:.18;stroke:#0f5f61;stroke-width:1.5}\n.grid-cell{fill:#148284;fill-opacity:.06;stroke:#0f5f61;stroke-opacity:.55;stroke-width:1}\n.actor{fill:#245ebe;stroke:#fff;stroke-width:2}\n.label{fill:#1d2428;font-size:12px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}\n.actor-label{fill:#fff;font-size:9px;font-weight:800;text-anchor:middle}\n.chrome-label{fill:#3a454b;font-size:11px;font-weight:600;text-anchor:start}\n.scale-bar{stroke:#3a454b;stroke-width:2;stroke-linecap:square}\n.scale-bar-label{fill:#3a454b;font-size:11px;font-weight:700;text-anchor:middle}\n.floor-box{fill:#e7efed;stroke:#7a9690;stroke-width:1.5;opacity:.95}\n.floor-label{fill:#1d3a36;font-size:13px;font-weight:800;text-anchor:start}\n.stairs-label{fill:#6b4f9a;font-size:11px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:3px}\n.title-main{fill:#14201e;font-size:15px;font-weight:800;text-anchor:start}\n.title-sub{fill:#4a5a56;font-size:12px;font-weight:600;text-anchor:start}\n.title-rule{stroke:#c5d0cc;stroke-width:1}\n</style>\n<rect width=\"100%\" height=\"100%\" fill=\"#f4f7f6\" />\n<g class=\"title-bar\">\n<text class=\"title-main\" x=\"16\" y=\"22\">Inn</text>\n<text class=\"title-sub\" x=\"16\" y=\"38\">Floor slice z=-3 · indoor</text>\n<line class=\"title-rule\" x1=\"12\" y1=\"34\" x2=\"905\" y2=\"34\" />\n</g>\n\n\n\n\n<g data-node-id=\"kavemouth/inn/cellar\"><ellipse cx=\"458.50\" cy=\"378\" rx=\"400.40\" ry=\"286\" class=\"place-extent\" /><circle cx=\"458.50\" cy=\"378\" r=\"7\" class=\"place\" /><text x=\"458.50\" y=\"398\" class=\"label\">Cellar <tspan class=\"label-floor\">(z=-3)</tspan></text></g>\n<g data-node-id=\"session_grid_3/c_0_0\"><rect x=\"172.50\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /><circle cx=\"201.10\" cy=\"635.40\" r=\"9\" class=\"actor\" /><text x=\"201.10\" y=\"638.90\" class=\"actor-label\">1</text></g>\n<g data-node-id=\"session_grid_3/c_0_1\"><rect x=\"172.50\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_2\"><rect x=\"172.50\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_3\"><rect x=\"172.50\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_4\"><rect x=\"172.50\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_5\"><rect x=\"172.50\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_6\"><rect x=\"172.50\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_7\"><rect x=\"172.50\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_8\"><rect x=\"172.50\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_9\"><rect x=\"172.50\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_0\"><rect x=\"229.70\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /><circle cx=\"258.30\" cy=\"635.40\" r=\"9\" class=\"actor\" /><text x=\"258.30\" y=\"638.90\" class=\"actor-label\">1</text></g>\n<g data-node-id=\"session_grid_3/c_1_1\"><rect x=\"229.70\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /><circle cx=\"258.30\" cy=\"578.20\" r=\"9\" class=\"actor\" /><text x=\"258.30\" y=\"581.70\" class=\"actor-label\">1</text></g>\n<g data-node-id=\"session_grid_3/c_1_2\"><rect x=\"229.70\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_3\"><rect x=\"229.70\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_4\"><rect x=\"229.70\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_5\"><rect x=\"229.70\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_6\"><rect x=\"229.70\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_7\"><rect x=\"229.70\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_8\"><rect x=\"229.70\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_9\"><rect x=\"229.70\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_0\"><rect x=\"286.90\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_1\"><rect x=\"286.90\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_2\"><rect x=\"286.90\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_3\"><rect x=\"286.90\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_4\"><rect x=\"286.90\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_5\"><rect x=\"286.90\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_6\"><rect x=\"286.90\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_7\"><rect x=\"286.90\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_8\"><rect x=\"286.90\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_9\"><rect x=\"286.90\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_0\"><rect x=\"344.10\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_1\"><rect x=\"344.10\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_2\"><rect x=\"344.10\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_3\"><rect x=\"344.10\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_4\"><rect x=\"344.10\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_5\"><rect x=\"344.10\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_6\"><rect x=\"344.10\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_7\"><rect x=\"344.10\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_8\"><rect x=\"344.10\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_9\"><rect x=\"344.10\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_0\"><rect x=\"401.30\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_1\"><rect x=\"401.30\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_2\"><rect x=\"401.30\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_3\"><rect x=\"401.30\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_4\"><rect x=\"401.30\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_5\"><rect x=\"401.30\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_6\"><rect x=\"401.30\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_7\"><rect x=\"401.30\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_8\"><rect x=\"401.30\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_9\"><rect x=\"401.30\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_0\"><rect x=\"458.50\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_1\"><rect x=\"458.50\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_2\"><rect x=\"458.50\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_3\"><rect x=\"458.50\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_4\"><rect x=\"458.50\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_5\"><rect x=\"458.50\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_6\"><rect x=\"458.50\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_7\"><rect x=\"458.50\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_8\"><rect x=\"458.50\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_9\"><rect x=\"458.50\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_0\"><rect x=\"515.70\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_1\"><rect x=\"515.70\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_2\"><rect x=\"515.70\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_3\"><rect x=\"515.70\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_4\"><rect x=\"515.70\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_5\"><rect x=\"515.70\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_6\"><rect x=\"515.70\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_7\"><rect x=\"515.70\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_8\"><rect x=\"515.70\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_9\"><rect x=\"515.70\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_0\"><rect x=\"572.90\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_1\"><rect x=\"572.90\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_2\"><rect x=\"572.90\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_3\"><rect x=\"572.90\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_4\"><rect x=\"572.90\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_5\"><rect x=\"572.90\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_6\"><rect x=\"572.90\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_7\"><rect x=\"572.90\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_8\"><rect x=\"572.90\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_9\"><rect x=\"572.90\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_0\"><rect x=\"630.10\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_1\"><rect x=\"630.10\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_2\"><rect x=\"630.10\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_3\"><rect x=\"630.10\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_4\"><rect x=\"630.10\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_5\"><rect x=\"630.10\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_6\"><rect x=\"630.10\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_7\"><rect x=\"630.10\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_8\"><rect x=\"630.10\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_9\"><rect x=\"630.10\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_0\"><rect x=\"687.30\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_1\"><rect x=\"687.30\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_2\"><rect x=\"687.30\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_3\"><rect x=\"687.30\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_4\"><rect x=\"687.30\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_5\"><rect x=\"687.30\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_6\"><rect x=\"687.30\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_7\"><rect x=\"687.30\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_8\"><rect x=\"687.30\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_9\"><rect x=\"687.30\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g class=\"map-chrome\" data-chrome=\"legend\" transform=\"translate(0 720)\">\n<line x1=\"12\" y1=\"0.5\" x2=\"905\" y2=\"0.5\" stroke=\"#c5d0cc\" stroke-width=\"1\" />\n<g class=\"symbol-legend\" transform=\"translate(12 0)\">\n<circle cx=\"6\" cy=\"14\" r=\"6\" class=\"place\" />\n<text class=\"chrome-label\" x=\"18\" y=\"18\">place</text>\n<line class=\"route\" x1=\"62\" y1=\"14\" x2=\"86\" y2=\"14\" />\n<text class=\"chrome-label\" x=\"92\" y=\"18\">route</text>\n<circle cx=\"148\" cy=\"14\" r=\"9\" class=\"actor\" />\n<text class=\"actor-label\" x=\"148\" y=\"17.5\">n</text>\n<text class=\"chrome-label\" x=\"164\" y=\"18\">occupants</text>\n</g></g>\n</svg>\n",
 	"mapState": "ready",
 	"economy": [],
 	"economyBudget": {

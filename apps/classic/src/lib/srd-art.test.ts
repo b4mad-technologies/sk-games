@@ -10,7 +10,7 @@ describe("srdArtKey", () => {
 	});
 
 	it("has nothing for a definition outside the SRD set or without a sprite", () => {
-		expect(srdArtKey("elven_mini/item/ledger")).toBeNull();
+		expect(srdArtKey("kavemouth/item/ledger")).toBeNull();
 		expect(srdArtKey("srd/weapon/no-such-blade")).toBeNull();
 		expect(srdArtKey(undefined)).toBeNull();
 	});

@@ -103,7 +103,7 @@ pnpm --filter @spellkave/classic run dev      # http://127.0.0.1:5173/
 
 `just play-host` wipes this worktree's world; see
 [`docs/development.md`](../../docs/development.md#hand-play-with-the-cast-just-play-host).
-`just play-stage elven-mini` alone also works, but then nobody answers: the DM
+`just play-stage kavemouth` alone also works, but then nobody answers: the DM
 and the cast need the host.
 
 Step-by-step play, the playtest record and the known issues:

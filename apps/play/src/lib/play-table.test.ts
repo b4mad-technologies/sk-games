@@ -272,7 +272,7 @@ describe("the table's derivations", () => {
 			verb: "communicate",
 			descriptor: "srd/speak-aloud",
 			targetName: "",
-			targetRef: "place_node:elven_mini/inn/hearth",
+			targetRef: "place_node:kavemouth/inn/hearth",
 			acceptsUtterance: true,
 		};
 		const room2: PlayAction = {
@@ -281,7 +281,7 @@ describe("the table's derivations", () => {
 			verb: "communicate",
 			descriptor: "srd/speak-aloud",
 			targetName: "",
-			targetRef: "place_node:elven_mini/inn/loft",
+			targetRef: "place_node:kavemouth/inn/loft",
 			acceptsUtterance: true,
 		};
 		const talkToCaddoc: PlayAction = {

@@ -128,7 +128,7 @@ export function occupantsFromWatch(actors: readonly WatchActor[]): Occupant[] {
 	}));
 }
 
-/** `elven_mini/inn/common_room` → `Inn · Common room`. */
+/** `kavemouth/inn/common_room` → `Inn · Common room`. */
 export function humanizePlaceNode(nodeId: string): string {
 	const parts = nodeId.split("/").filter((part) => part !== "");
 	if (parts.length === 0) return nodeId;

@@ -162,14 +162,14 @@ mount(App, {
 			worlds: [
 				{
 					slug: "demo1",
-					display_name: "Elven Mini",
+					display_name: "Kavemouth",
 					role: "member" as const,
 					capabilities: ["world.observe", "world.play"],
 				},
 			],
 			seat: { slug: "demo1", actor_id: "7", role: "primary" },
 		}),
-		catalogLoader: async () => [{ slug: "demo1", name: "Elven Mini", db: "spellkave-demo1" }],
+		catalogLoader: async () => [{ slug: "demo1", name: "Kavemouth", db: "spellkave-demo1" }],
 		worldOpener: async (args: OpenPlaySessionArgs) => {
 			args.onView(view);
 			return fakeHandle(
