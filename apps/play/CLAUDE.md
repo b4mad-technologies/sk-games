@@ -310,7 +310,7 @@ to reach for `snapshotDb`.
   `.github/workflows/play.yml`'s hosted Build step sets it from the repo
   variable `SPELLKAVE_GATEWAY_URL`, defaulting to `https://mcp.spellkave.com`
   (sk-jay0.7.45; same pattern `maps.yml` already used) — the gateway's
-  `allowedOriginHostnames` (`infra/phobos-player-mcp/workloads.ts`) already
+  `allowedOriginHostnames` (the gateway's deployment configuration, private) already
   lists `play.spellkave.com`, so no infra change was needed to accept it.
 
 ## On-demand references
