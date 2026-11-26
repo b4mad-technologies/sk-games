@@ -22,11 +22,11 @@ allowBuilds:
 overrides:
   # Design system from sk-sites. Not on npm yet: these point at tarballs
   # packed by scripts/pack-design-system. Remove once published.
-  '@spellkave/ui': file:.tarballs/spellkave-ui-0.0.0.tgz
-  '@spellkave/ui-widgets': file:.tarballs/spellkave-ui-widgets-0.0.0.tgz
-  '@spellkave/authkit': file:.tarballs/spellkave-authkit-0.0.0.tgz
-  '@spellkave/map-canvas': file:.tarballs/spellkave-map-canvas-0.0.0.tgz
-  '@spellkave/run-events-view': file:.tarballs/spellkave-run-events-view-0.0.0.tgz
+  '@spellkave/ui': file:.tarballs/spellkave-ui.tgz
+  '@spellkave/ui-widgets': file:.tarballs/spellkave-ui-widgets.tgz
+  '@spellkave/authkit': file:.tarballs/spellkave-authkit.tgz
+  '@spellkave/map-canvas': file:.tarballs/spellkave-map-canvas.tgz
+  '@spellkave/run-events-view': file:.tarballs/spellkave-run-events-view.tgz
   # One typebox instance, as in the monorepo.
   typebox: 1.1.38
   # Security floors carried over from the Spellkave monorepo.

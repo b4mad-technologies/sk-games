@@ -16,8 +16,11 @@ git clone -q "$src" "$work/sk-sites"
 echo "sk-sites $(git -C "$work/sk-sites" rev-parse HEAD)"
 (cd "$work/sk-sites" && pnpm install --frozen-lockfile >/dev/null)
 
-mkdir -p "$root/.tarballs"
+# Stable names (no version), so the overrides in pnpm-workspace.yaml do not
+# change when sk-sites bumps its version. The lockfile pins their integrity.
+mkdir -p "$root/.tarballs" "$work/out"
 for p in ui ui-widgets authkit map-canvas run-events-view; do
-	(cd "$work/sk-sites/packages/spellkave-$p" && pnpm pack --pack-destination "$root/.tarballs" >/dev/null)
+	(cd "$work/sk-sites/packages/spellkave-$p" && pnpm pack --pack-destination "$work/out/$p" >/dev/null)
+	mv "$work/out/$p"/*.tgz "$root/.tarballs/spellkave-$p.tgz"
 done
 ls "$root/.tarballs"

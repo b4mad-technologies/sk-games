@@ -5,11 +5,11 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  '@spellkave/ui': file:.tarballs/spellkave-ui-0.0.0.tgz
-  '@spellkave/ui-widgets': file:.tarballs/spellkave-ui-widgets-0.0.0.tgz
-  '@spellkave/authkit': file:.tarballs/spellkave-authkit-0.0.0.tgz
-  '@spellkave/map-canvas': file:.tarballs/spellkave-map-canvas-0.0.0.tgz
-  '@spellkave/run-events-view': file:.tarballs/spellkave-run-events-view-0.0.0.tgz
+  '@spellkave/ui': file:.tarballs/spellkave-ui.tgz
+  '@spellkave/ui-widgets': file:.tarballs/spellkave-ui-widgets.tgz
+  '@spellkave/authkit': file:.tarballs/spellkave-authkit.tgz
+  '@spellkave/map-canvas': file:.tarballs/spellkave-map-canvas.tgz
+  '@spellkave/run-events-view': file:.tarballs/spellkave-run-events-view.tgz
   typebox: 1.1.38
   nanoid: 3.3.18
   source-map-js: 1.2.2
@@ -50,17 +50,17 @@ importers:
         specifier: 1.32.0
         version: 1.32.0
       '@spellkave/authkit':
-        specifier: file:../../.tarballs/spellkave-authkit-0.0.0.tgz
-        version: file:.tarballs/spellkave-authkit-0.0.0.tgz(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-authkit.tgz
+        version: file:.tarballs/spellkave-authkit.tgz(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
       '@spellkave/tool-contracts':
         specifier: 0.1.2
         version: 0.1.2
       '@spellkave/ui':
-        specifier: file:../../.tarballs/spellkave-ui-0.0.0.tgz
-        version: file:.tarballs/spellkave-ui-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-ui.tgz
+        version: file:.tarballs/spellkave-ui.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       '@spellkave/ui-widgets':
-        specifier: file:../../.tarballs/spellkave-ui-widgets-0.0.0.tgz
-        version: file:.tarballs/spellkave-ui-widgets-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-ui-widgets.tgz
+        version: file:.tarballs/spellkave-ui-widgets.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       svelte:
         specifier: ^5.46.4
         version: 5.59.1
@@ -108,17 +108,17 @@ importers:
         specifier: ^5.3.0
         version: 5.3.0
       '@spellkave/map-canvas':
-        specifier: file:../../.tarballs/spellkave-map-canvas-0.0.0.tgz
-        version: file:.tarballs/spellkave-map-canvas-0.0.0.tgz(maplibre-gl@6.4.1)(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-map-canvas.tgz
+        version: file:.tarballs/spellkave-map-canvas.tgz(maplibre-gl@6.4.1)(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       '@spellkave/sdk':
         specifier: 0.1.2
         version: 0.1.2(svelte@5.59.1)
       '@spellkave/ui':
-        specifier: file:../../.tarballs/spellkave-ui-0.0.0.tgz
-        version: file:.tarballs/spellkave-ui-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-ui.tgz
+        version: file:.tarballs/spellkave-ui.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       '@spellkave/ui-widgets':
-        specifier: file:../../.tarballs/spellkave-ui-widgets-0.0.0.tgz
-        version: file:.tarballs/spellkave-ui-widgets-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-ui-widgets.tgz
+        version: file:.tarballs/spellkave-ui-widgets.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       bits-ui:
         specifier: 2.18.1
         version: 2.18.1(@internationalized/date@3.12.4)(svelte@5.59.1)
@@ -163,20 +163,20 @@ importers:
   apps/maps:
     dependencies:
       '@spellkave/authkit':
-        specifier: file:../../.tarballs/spellkave-authkit-0.0.0.tgz
-        version: file:.tarballs/spellkave-authkit-0.0.0.tgz(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-authkit.tgz
+        version: file:.tarballs/spellkave-authkit.tgz(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
       '@spellkave/map-canvas':
-        specifier: file:../../.tarballs/spellkave-map-canvas-0.0.0.tgz
-        version: file:.tarballs/spellkave-map-canvas-0.0.0.tgz(maplibre-gl@6.4.1)(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-map-canvas.tgz
+        version: file:.tarballs/spellkave-map-canvas.tgz(maplibre-gl@6.4.1)(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       '@spellkave/sdk':
         specifier: 0.1.2
         version: 0.1.2(svelte@5.59.1)
       '@spellkave/ui':
-        specifier: file:../../.tarballs/spellkave-ui-0.0.0.tgz
-        version: file:.tarballs/spellkave-ui-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-ui.tgz
+        version: file:.tarballs/spellkave-ui.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       '@spellkave/ui-widgets':
-        specifier: file:../../.tarballs/spellkave-ui-widgets-0.0.0.tgz
-        version: file:.tarballs/spellkave-ui-widgets-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-ui-widgets.tgz
+        version: file:.tarballs/spellkave-ui-widgets.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       maplibre-gl:
         specifier: 6.4.1
         version: 6.4.1
@@ -230,11 +230,11 @@ importers:
         specifier: 0.1.2
         version: 0.1.2
       '@spellkave/authkit':
-        specifier: file:../../.tarballs/spellkave-authkit-0.0.0.tgz
-        version: file:.tarballs/spellkave-authkit-0.0.0.tgz(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-authkit.tgz
+        version: file:.tarballs/spellkave-authkit.tgz(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
       '@spellkave/map-canvas':
-        specifier: file:../../.tarballs/spellkave-map-canvas-0.0.0.tgz
-        version: file:.tarballs/spellkave-map-canvas-0.0.0.tgz(maplibre-gl@6.4.1)(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-map-canvas.tgz
+        version: file:.tarballs/spellkave-map-canvas.tgz(maplibre-gl@6.4.1)(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       '@spellkave/sdk':
         specifier: 0.1.2
         version: 0.1.2(svelte@5.59.1)
@@ -254,11 +254,11 @@ importers:
         specifier: 0.1.2
         version: 0.1.2
       '@spellkave/ui':
-        specifier: file:../../.tarballs/spellkave-ui-0.0.0.tgz
-        version: file:.tarballs/spellkave-ui-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-ui.tgz
+        version: file:.tarballs/spellkave-ui.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       '@spellkave/ui-widgets':
-        specifier: file:../../.tarballs/spellkave-ui-widgets-0.0.0.tgz
-        version: file:.tarballs/spellkave-ui-widgets-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        specifier: file:../../.tarballs/spellkave-ui-widgets.tgz
+        version: file:.tarballs/spellkave-ui-widgets.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       '@spellkave/world-map':
         specifier: 0.1.2
         version: 0.1.2(svelte@5.59.1)
@@ -1419,9 +1419,9 @@ packages:
   '@spellkave/agent-observability@0.1.2':
     resolution: {integrity: sha512-IdnUL2fl8Ue/dOkX4vcURn9mwGEBwsWjq1OZpBNSImuN6j2euho4atUOxgAdFtYTdoySLCKrtXdHTLsc8jIaJw==}
 
-  '@spellkave/authkit@file:.tarballs/spellkave-authkit-0.0.0.tgz':
-    resolution: {integrity: sha512-aUNqzJblrD6iH5JOeSabn9RVtZcs07K8R9TSJq/W+EURLsUsilenSOsP8hM4OwWCpl06btwzHqcyvJas+PMpmg==, tarball: file:.tarballs/spellkave-authkit-0.0.0.tgz}
-    version: 0.0.0
+  '@spellkave/authkit@file:.tarballs/spellkave-authkit.tgz':
+    resolution: {integrity: sha512-Bqw1uUpO66kuBsXYEyiDFf2crYOT10cA5kphn6Te6NkYdDb0/sH5uJa1a5Gb7DTOsGoDqp/CimoJyN38ZEpGoA==, tarball: file:.tarballs/spellkave-authkit.tgz}
+    version: 0.1.0
     peerDependencies:
       vite: ~8.2.4
     peerDependenciesMeta:
@@ -1434,9 +1434,9 @@ packages:
   '@spellkave/bindings@2.1.0':
     resolution: {integrity: sha512-Iug2bTlaq3lyLHmmA8wG1Ups1aykb8mamx5tLMdx+N98rCkrCLz80ddwqf7RdI5BFtQISpYy70SO7EnfyNiO0A==}
 
-  '@spellkave/map-canvas@file:.tarballs/spellkave-map-canvas-0.0.0.tgz':
-    resolution: {integrity: sha512-A1tj3PEZ5mnNom7YxbJ5eAuEpsQdXyH8UUa2fjSwEVoiJ2fUAab+076Pryxh+ngcdY7RJo8WMRBWxB4q3/J8ow==, tarball: file:.tarballs/spellkave-map-canvas-0.0.0.tgz}
-    version: 0.0.0
+  '@spellkave/map-canvas@file:.tarballs/spellkave-map-canvas.tgz':
+    resolution: {integrity: sha512-JI87yZIfFzWa4yxs+4E3kcyjTtP/8249oNyl9OBpwil1Nzj+EApFwiGHYkPaQRapmqKil3pcpLEyzmxC3olt4g==, tarball: file:.tarballs/spellkave-map-canvas.tgz}
+    version: 0.1.0
     peerDependencies:
       maplibre-gl: ^6.4.1
       svelte: ^5.0.0
@@ -1464,20 +1464,26 @@ packages:
   '@spellkave/tool-runtime@0.1.2':
     resolution: {integrity: sha512-ZDPcTL1NtE6S+LeOEVXoKcSu+PZ1D2s7eJu6rtutx00+N+z/FtflJxT/O/vJo3dGSe+zf7AF8sEl6cbpDYPxBQ==}
 
-  '@spellkave/ui-widgets@file:.tarballs/spellkave-ui-widgets-0.0.0.tgz':
-    resolution: {integrity: sha512-tMTSZicSa2Bh3kP0eo2CGg62CvHwgscg5KMdrd2URAs0FcI+wnH6hBpAfboyI2aMFuAwxpOl7SGbqwap1mI9+A==, tarball: file:.tarballs/spellkave-ui-widgets-0.0.0.tgz}
-    version: 0.0.0
+  '@spellkave/ui-widgets@file:.tarballs/spellkave-ui-widgets.tgz':
+    resolution: {integrity: sha512-YyXG7EidYo9o0Siet2HXqk+zH8sMKPzxexeokZhKlNjj7TRyCB7rej6cWOEO2xjiWOJVKxnuPrbuRagLp/TzMQ==, tarball: file:.tarballs/spellkave-ui-widgets.tgz}
+    version: 0.1.0
     peerDependencies:
       svelte: ^5.0.0
       tailwindcss: ^4.0.0
 
-  '@spellkave/ui@file:.tarballs/spellkave-ui-0.0.0.tgz':
-    resolution: {integrity: sha512-jm/zGW/GjIkUEGHJaoWGYPmmUJBukBy8XoN4lnjFJ/TD9rt2lyEVT5TiXBz7CIyGB5mdONB73QVMCpKdWQvjug==, tarball: file:.tarballs/spellkave-ui-0.0.0.tgz}
-    version: 0.0.0
+  '@spellkave/ui@file:.tarballs/spellkave-ui.tgz':
+    resolution: {integrity: sha512-a7RGvMKDvyY1NEfUEfVQsrjpX1wzfpXBi5F2OHqt/+XkT1mC+lxOQco3u9G1XgVQD6m3p9lBAjgWzxC+3Jpu5g==, tarball: file:.tarballs/spellkave-ui.tgz}
+    version: 0.1.0
     peerDependencies:
       svelte: ^5.0.0
       tailwindcss: ^4.0.0
       vite: '>=6'
+      vitest: ^3.2.6
+    peerDependenciesMeta:
+      vite:
+        optional: true
+      vitest:
+        optional: true
 
   '@spellkave/validate-wasm@0.1.0':
     resolution: {integrity: sha512-CA2PwrGxIAwdzk7KAx67D8mvT9MgjoBf8KPWqrGy9JoErm/x8zAU7Wwoz/8guh5P/RDaJvAlHg5b4NO8dZQT4Q==}
@@ -4503,7 +4509,7 @@ snapshots:
 
   '@spellkave/agent-observability@0.1.2': {}
 
-  '@spellkave/authkit@file:.tarballs/spellkave-authkit-0.0.0.tgz(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))':
+  '@spellkave/authkit@file:.tarballs/spellkave-authkit.tgz(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))':
     optionalDependencies:
       vite: 8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)
 
@@ -4521,10 +4527,10 @@ snapshots:
       - undici
       - vue
 
-  '@spellkave/map-canvas@file:.tarballs/spellkave-map-canvas-0.0.0.tgz(maplibre-gl@6.4.1)(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))':
+  '@spellkave/map-canvas@file:.tarballs/spellkave-map-canvas.tgz(maplibre-gl@6.4.1)(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))':
     dependencies:
-      '@spellkave/ui': file:.tarballs/spellkave-ui-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
-      '@spellkave/ui-widgets': file:.tarballs/spellkave-ui-widgets-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+      '@spellkave/ui': file:.tarballs/spellkave-ui.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
+      '@spellkave/ui-widgets': file:.tarballs/spellkave-ui-widgets.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       maplibre-gl: 6.4.1
       pmtiles: 4.5.0
       svelte: 5.59.1
@@ -4532,6 +4538,7 @@ snapshots:
       - '@sveltejs/kit'
       - tailwindcss
       - vite
+      - vitest
 
   '@spellkave/sdk@0.1.2(svelte@5.59.1)':
     dependencies:
@@ -4638,16 +4645,17 @@ snapshots:
       '@spellkave/world-events': 0.1.2
       typebox: 1.1.38
 
-  '@spellkave/ui-widgets@file:.tarballs/spellkave-ui-widgets-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))':
+  '@spellkave/ui-widgets@file:.tarballs/spellkave-ui-widgets.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))':
     dependencies:
-      '@spellkave/ui': file:.tarballs/spellkave-ui-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+      '@spellkave/ui': file:.tarballs/spellkave-ui.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))
       svelte: 5.59.1
       tailwindcss: 4.3.5
     transitivePeerDependencies:
       - '@sveltejs/kit'
       - vite
+      - vitest
 
-  '@spellkave/ui@file:.tarballs/spellkave-ui-0.0.0.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))':
+  '@spellkave/ui@file:.tarballs/spellkave-ui.tgz(svelte@5.59.1)(tailwindcss@4.3.5)(vite@8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(vitest@3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15))':
     dependencies:
       '@floating-ui/dom': 1.8.0
       '@fontsource-variable/alegreya': 5.3.0
@@ -4665,7 +4673,9 @@ snapshots:
       tailwind-variants: 3.3.1(tailwind-merge@3.7.1)(tailwindcss@4.3.5)
       tailwindcss: 4.3.5
       tw-animate-css: 1.4.0
+    optionalDependencies:
       vite: 8.2.6(@types/node@24.19.4)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)
+      vitest: 3.2.7(@types/node@24.19.4)(jiti@2.7.0)(jsdom@26.1.0)(lightningcss@1.33.0)(tsx@4.23.15)
     transitivePeerDependencies:
       - '@sveltejs/kit'
 

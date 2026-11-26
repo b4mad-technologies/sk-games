@@ -17,10 +17,10 @@
 		"@earendil-works/pi-ai": "1.5.2",
 		"@mlc-ai/web-llm": "0.2.84",
 		"@modelcontextprotocol/sdk": "1.32.0",
-		"@spellkave/authkit": "0.0.0",
-		"@spellkave/ui-widgets": "0.0.0",
+		"@spellkave/authkit": "0.1.0",
+		"@spellkave/ui-widgets": "0.1.0",
 		"@spellkave/tool-contracts": "0.1.2",
-		"@spellkave/ui": "0.0.0",
+		"@spellkave/ui": "0.1.0",
 		"svelte": "^5.46.4",
 		"typebox": "1.1.38"
 	},

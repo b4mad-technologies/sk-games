@@ -19,7 +19,7 @@ pnpm --filter @spellkave/<app> run test  # one app
 
 Rules:
 
-- The design system (`@spellkave/ui`, `ui-widgets`, `authkit`, `map-canvas`, `run-events-view`) comes from sk-sites. CI packs it from the commit pinned in `ci.yml` (`SK_SITES_REF`); bump that on purpose.
+- The design system (`@spellkave/ui`, `ui-widgets`, `authkit`, `map-canvas`, `run-events-view`) comes from sk-sites. CI packs it from the commit pinned in `ci.yml` (`SK_SITES_REF`). The lockfile pins the tarball integrity: to bump, pack the new commit, run `pnpm install`, and commit the lockfile with the new `SK_SITES_REF`.
 - Run scripts through pnpm (`pnpm run`, `pnpm exec`): it adds the tsx loader the design system's `./vite` entries need.
 - Do not skip tests. The only skip is in `apps/classic/src/lib/srd-art.test.ts` (SRD sprites not bundled here yet).
 - This repo is public: no internal host names, local paths, private links or tokens.

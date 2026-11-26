@@ -14,11 +14,11 @@
 		"typecheck": "svelte-check --tsconfig ./tsconfig.json"
 	},
 	"dependencies": {
-		"@spellkave/authkit": "0.0.0",
-		"@spellkave/map-canvas": "0.0.0",
-		"@spellkave/ui-widgets": "0.0.0",
+		"@spellkave/authkit": "0.1.0",
+		"@spellkave/map-canvas": "0.1.0",
+		"@spellkave/ui-widgets": "0.1.0",
 		"@spellkave/sdk": "0.1.2",
-		"@spellkave/ui": "0.0.0",
+		"@spellkave/ui": "0.1.0",
 		"maplibre-gl": "6.4.1",
 		"svelte": "^5.46.4"
 	},

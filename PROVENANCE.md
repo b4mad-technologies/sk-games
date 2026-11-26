@@ -32,9 +32,11 @@ need `VITE_SPELLKAVE_LOGIN_ORIGIN` (chat, maps, play) and take
 `run-events-view` live in sk-sites and are not on npm yet. Until they are,
 `scripts/pack-design-system [path-to-sk-sites]` packs them with `pnpm pack`
 from a temporary clone of sk-sites into `.tarballs/` (ignored), and
-`pnpm-workspace.yaml` overrides map them there. The apps declare them at
-version `0.0.0`, as packed. After publishing, set real versions and drop
-the overrides and the script.
+`pnpm-workspace.yaml` overrides map them there. The tarball names carry no
+version; `pnpm-lock.yaml` pins their integrity, so a frozen install fails
+if the packed sk-sites commit differs from the one locked (CI packs
+`SK_SITES_REF` in `.github/workflows/ci.yml`). The apps declare the packed
+version, `0.1.0`. After publishing, drop the overrides and the script.
 
 What the npm boundary showed:
 
