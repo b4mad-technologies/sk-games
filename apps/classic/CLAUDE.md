@@ -19,12 +19,12 @@ clickable world. Epic `sk-jay0.1.76`. It is a second client next to
 ## What the owner decided (2026-11-14)
 
 The full rule set, with what is built, is
-[`ledger/designs/classic-interaction-rules.md`](../../ledger/designs/classic-interaction-rules.md).
-Read it before any interaction work here. In short:
+`ledger/designs/classic-interaction-rules.md` in the private Spellkave monorepo.
+Read it before any interaction work here, if you have access. In short:
 
 - **Clicks act.** The player clicks a token, a cell or a way out and picks from
   a menu. This is the opposite of Play's axiom A1
-  ([`ledger/designs/play-interaction-axioms.md`](../../ledger/designs/play-interaction-axioms.md)),
+  (`ledger/designs/play-interaction-axioms.md`, private monorepo),
   which stays binding for `apps/play` and does not apply here.
 - **Offer, then let the world answer.** The app may offer an action the world
   then refuses. ADR-0141 stays: no eligibility read; the client pairs "my
@@ -38,7 +38,7 @@ Read it before any interaction work here. In short:
   it (`crates/spellkave-npc-host/src/guide.rs`, `dm/engine/creation_dialog.rs`)
   and sends, with every question, where the dialogue stands
   (`presentation.guide`; contract in
-  [`ledger/designs/guided-dialogue-tree.md`](../../ledger/designs/guided-dialogue-tree.md)).
+  `ledger/designs/guided-dialogue-tree.md`, private monorepo).
   The wizard is another view on that dialogue. The old shell's wizard
   (`src/creation/`) does not read the outline and still keeps its own answer
   list; the stage shell shows the DM's outline and keeps no answer list
@@ -86,7 +86,7 @@ Read it before any interaction work here. In short:
   learn whether the last attempt was refused (the handle returns only the
   sentence). Do not add a further deep import; extend the extraction instead.
 - Colours, type and controls come from `@spellkave/ui` tokens and primitives
-  ([`DESIGN.md`](../../DESIGN.md)). Targets are at least 44 px. **Owner
+  ([`DESIGN.md`](https://github.com/b4mad-technologies/sk-sites/blob/main/DESIGN.md) in sk-sites). Targets are at least 44 px. **Owner
   exception (2026-11-15):** `src/stage/**` has its own design layer and uses
   no `@spellkave/ui`, `@spellkave/ui-widgets` or Play component
   ([`DESIGN.md`](DESIGN.md)).
@@ -102,7 +102,7 @@ pnpm --filter @spellkave/classic run dev      # http://127.0.0.1:5173/
 ```
 
 `just play-host` wipes this worktree's world; see
-[`docs/development.md`](../../docs/development.md#hand-play-with-the-cast-just-play-host).
+`docs/development.md` in the private monorepo.
 `just play-stage elven-mini` alone also works, but then nobody answers: the DM
 and the cast need the host.
 

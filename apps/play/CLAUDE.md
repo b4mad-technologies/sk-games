@@ -6,7 +6,7 @@ world reads and actions go through the PLAYER tools, never generated bindings,
 hand-written subscription SQL, or raw table reads.
 
 **Before any interaction or layout work, read
-[`ledger/designs/play-interaction-axioms.md`](../../ledger/designs/play-interaction-axioms.md).**
+`ledger/designs/play-interaction-axioms.md` (private monorepo).**
 Its eight axioms are binding: maps and names select, a way-out click fills the
 composer, the dock acts, the stream
 tells, info cards explain; the app never changes the layout on its own; digits

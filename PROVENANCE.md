@@ -74,5 +74,7 @@ Scripts run through pnpm (`pnpm run`, `pnpm exec`) get the tsx loader;
   `.agents/skills/sk-playtest/scripts/browser-click.sh` and
   `provision-tile-browser.sh` calls `scripts/ci/runners/toolchain/browser-deps.sh`
   (monorepo only).
-- About 20 Markdown links in app docs point at monorepo files (`ledger/`,
-  `.agents/skills/`, `specifications/adr/`, `infra/cloudflare/`).
+- App docs name monorepo files (`ledger/`, `.agents/skills/`,
+  `specifications/adr/`, `infra/cloudflare/`) as plain text, marked
+  "private monorepo"; they are not links. `scripts/check-links.mjs` fails CI
+  on a dead relative link.
