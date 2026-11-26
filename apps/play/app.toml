@@ -1,0 +1,42 @@
+# Publication inventory; hostnames remain owned by Pulumi.
+schema_version = 1
+id = "play"
+kind = "first-party"
+status = "active"
+worker = "spellkave-play"
+hosts = ["play.spellkave.com"]
+needs = ["api", "mcp", "r2", "rum", "world"]
+auth_callback = "/auth/callback"
+
+auth_logout = ""
+
+[build]
+package = "@spellkave/play"
+runner = "nx"
+tasks = ["ci-app-check", "ci-app-tile-clip"]
+
+[build.env_vars]
+VITE_SPELLKAVE_PUBLIC_SITE_URL = "SPELLKAVE_PUBLIC_SITE_URL"
+VITE_SPELLKAVE_RUM_APPLICATION_ID = "VITE_SPELLKAVE_RUM_APPLICATION_ID"
+VITE_SPELLKAVE_RUM_CLIENT_TOKEN = "VITE_SPELLKAVE_RUM_CLIENT_TOKEN"
+VITE_SPELLKAVE_RUM_SESSION_SAMPLE_RATE = "SPELLKAVE_RUM_SESSION_SAMPLE_RATE"
+VITE_WORKOS_CLIENT_ID = "VITE_WORKOS_CLIENT_ID"
+VITE_WORKOS_ISSUER = "VITE_WORKOS_ISSUER"
+VITE_SPELLKAVE_LOGIN_ORIGIN = "VITE_SPELLKAVE_LOGIN_ORIGIN"
+SPELLKAVE_GATEWAY_URL_VAR = "SPELLKAVE_GATEWAY_URL"
+
+[build.env_literals]
+VITE_SPELLKAVE_WORLD_URL = "https://world.spellkave.com"
+# SDK connect-time shape check: warn for one release, then strict (sk-jay0.7.389.3).
+VITE_SPELLKAVE_SHAPE_CHECK = "warn"
+
+[[smoke]]
+path = "/"
+status = 200
+
+# Observe before enforcing: per-app browser qualification is a separate rollout.
+[csp]
+mode = "report-only"
+connect = ["'self'", "https://login.spellkave.com", "https://api.workos.com", "https://faithful-century-17.authkit.app", "https://api.spellkave.com", "https://mcp.spellkave.com", "https://pub-ea8569d32ce14599a073902fa19300fb.r2.dev", "https://telemetry.spellkave.com", "wss://world.spellkave.com"]
+images = ["'self'", "data:", "blob:"]
+fonts = ["'self'"]

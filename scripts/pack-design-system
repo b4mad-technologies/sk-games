@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Pack the design system packages from an sk-sites checkout into .tarballs/.
+# Stopgap until sk-sites publishes them to npm; then drop the overrides in
+# pnpm-workspace.yaml and this script.
+#
+# Usage: scripts/pack-design-system [path-to-sk-sites]   (default ../sk-sites)
+# The sk-sites checkout is cloned to a temp dir first and left unchanged.
+set -euo pipefail
+
+root="$(cd "$(dirname "$0")/.." && pwd)"
+src="$(cd "${1:-$root/../sk-sites}" && pwd)"
+work="$(mktemp -d)"
+trap 'rm -rf "$work"' EXIT
+
+git clone -q "$src" "$work/sk-sites"
+echo "sk-sites $(git -C "$work/sk-sites" rev-parse HEAD)"
+(cd "$work/sk-sites" && pnpm install --frozen-lockfile >/dev/null)
+
+mkdir -p "$root/.tarballs"
+for p in ui ui-widgets authkit map-canvas run-events-view; do
+	(cd "$work/sk-sites/packages/spellkave-$p" && pnpm pack --pack-destination "$root/.tarballs" >/dev/null)
+done
+ls "$root/.tarballs"

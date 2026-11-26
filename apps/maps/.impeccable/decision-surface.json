@@ -1,0 +1,93 @@
+{
+	"title": "Maps canvas composition",
+	"question": "The world is Living Grammar. Lock the composition for maps.spellkave.com: map as canvas, grant-gated layers, no Play mosaic.",
+	"options": [
+		{
+			"id": "assigned",
+			"label": "Picker first",
+			"kicker": "THE ROLL",
+			"lineage": "Windy weather picker, then layers",
+			"thesis": "The map stays quiet until you pick a place; the picker card is the whole chrome.",
+			"palette": ["#0d1830", "#efe6cf", "#d3a342", "#6e8b67"],
+			"materials": [
+				"midnight jacquard map plate",
+				"square loom-card picker",
+				"woven-gold focus ring"
+			],
+			"viewport": "Full-bleed map. A loom-card at the lower third names the picked place, my seat, and floor. Grant-gated layer chips sit under that card. Observer inspect opens from one gold commit on the card. Seat seal top-right.",
+			"risk": "A player who only wants to pan the world is forced through a picker before layers feel present.",
+			"raised": [
+				{
+					"from": "mesophotic-deep-dive",
+					"raise": "Floor rides the picker as a depth readout, not a separate widget."
+				},
+				{
+					"from": "creator-hardware-bench",
+					"raise": "One gold commit on the picker opens inspect; nothing else on the card is an action."
+				}
+			],
+			"wireframe": {
+				"cols": 12,
+				"rows": 10,
+				"regions": [
+					{ "label": "map", "x": 0, "y": 0, "w": 12, "h": 10 },
+					{ "label": "picker card", "x": 3, "y": 6, "w": 6, "h": 3, "accent": true },
+					{ "label": "layer chips", "x": 3, "y": 9, "w": 6, "h": 1 },
+					{ "label": "seat seal", "x": 11, "y": 0, "w": 1, "h": 1 }
+				]
+			},
+			"comp": ".impeccable/mocks/decision/assigned.webp"
+		},
+		{
+			"id": "structure-strip",
+			"label": "Forecast strip",
+			"lineage": "Windy overlay strip",
+			"thesis": "The map is the world; a thin edge strip is the only layer UI, like Windy’s What.",
+			"palette": ["#0d1830", "#efe6cf", "#d3a342", "#6e8b67"],
+			"materials": ["full-bleed map plate", "edge chip strip", "bottom timeline when radar is on"],
+			"viewport": "Full-bleed map. Left strip lists only grant-allowed layers; occupancy on for observers, radar off. Floor is the strip’s level control. Click a place or pin to open a right drawer. Radar, if turned on, takes a bottom timeline. Seat seal top-right.",
+			"risk": "Closest to the confirmed brief, so it can feel like we skipped choosing.",
+			"wireframe": {
+				"cols": 12,
+				"rows": 10,
+				"regions": [
+					{ "label": "map", "x": 2, "y": 0, "w": 10, "h": 10 },
+					{ "label": "layer strip", "x": 0, "y": 1, "w": 2, "h": 8, "accent": true },
+					{ "label": "floor", "x": 0, "y": 0, "w": 2, "h": 1 },
+					{ "label": "seat seal", "x": 11, "y": 0, "w": 1, "h": 1 }
+				]
+			},
+			"comp": ".impeccable/mocks/decision/structure-strip.webp"
+		},
+		{
+			"id": "structure-rings",
+			"label": "Concentric watch",
+			"lineage": "Detector rings around the seat",
+			"thesis": "Your seat is the center; each grant is a ring you can light: place, occupancy, radar.",
+			"palette": ["#0d1830", "#efe6cf", "#d3a342", "#6e8b67"],
+			"materials": ["map plate", "concentric grant rings", "isolate-one-track inspect"],
+			"viewport": "Full-bleed map centered on my seat. Inner ring is place and seat. Observer outer ring is occupancy pins. Radar is a time ring, off at first paint. Selecting a pin isolates it and dims the rest into an inspect drawer. Seat seal top-right.",
+			"risk": "Rings fight the cartography; a world without a seat has no center.",
+			"wireframe": {
+				"cols": 12,
+				"rows": 10,
+				"regions": [
+					{ "label": "map", "x": 0, "y": 0, "w": 12, "h": 10 },
+					{ "label": "grant rings", "x": 3, "y": 2, "w": 6, "h": 6, "accent": true },
+					{ "label": "ring legend", "x": 0, "y": 8, "w": 4, "h": 2 },
+					{ "label": "seat seal", "x": 11, "y": 0, "w": 1, "h": 1 }
+				]
+			},
+			"comp": ".impeccable/mocks/decision/structure-rings.webp"
+		}
+	],
+	"reroll": {
+		"registers": ["safer", "bolder"]
+	},
+	"buildPath": {
+		"value": "code",
+		"toggle": false
+	},
+	"canon": false,
+	"steer": true
+}

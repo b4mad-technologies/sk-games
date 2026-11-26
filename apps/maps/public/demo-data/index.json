@@ -1,0 +1,21 @@
+{
+	"v": "spellkave-public-site/v1",
+	"generated_at": "2026-08-22T00:00:00.000Z",
+	"sample": true,
+	"mcp": {
+		"url": "https://mcp.spellkave.com/mcp",
+		"scope": "openid profile email offline_access"
+	},
+	"worlds": [
+		{
+			"slug": "elven-mini",
+			"name": "Elven mini",
+			"adventure": "elven-mini",
+			"db": "spellkave-elven-mini",
+			"position": 1,
+			"transcript_url": "worlds/elven-mini/agent-run-events.jsonl",
+			"transcript_lines": 0,
+			"transcript_updated_at": null
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"name": "@spellkave/chat",
+	"version": "0.0.0",
+	"private": true,
+	"description": "chat.spellkave.com — in-browser chat player with WorkOS login.",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --host 127.0.0.1 --port 5184",
+		"build": "vite build",
+		"preview": "vite preview --host 127.0.0.1 --port 5184",
+		"deploy": "pnpm run typecheck && pnpm run build && wrangler deploy",
+		"test": "vitest run",
+		"typecheck": "svelte-check --tsconfig ./tsconfig.json"
+	},
+	"dependencies": {
+		"@earendil-works/pi-agent-core": "1.5.2",
+		"@earendil-works/pi-ai": "1.5.2",
+		"@mlc-ai/web-llm": "0.2.84",
+		"@modelcontextprotocol/sdk": "1.32.0",
+		"@spellkave/authkit": "0.0.0",
+		"@spellkave/ui-widgets": "0.0.0",
+		"@spellkave/tool-contracts": "0.1.2",
+		"@spellkave/ui": "0.0.0",
+		"svelte": "^5.46.4",
+		"typebox": "1.1.38"
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^7.1.2",
+		"@tailwindcss/vite": "^4.3.2",
+		"@testing-library/svelte": "^5.4.2",
+		"@types/node": "^24.12.4",
+		"jsdom": "^26.1.0",
+		"svelte-check": "^4.7.1",
+		"tailwindcss": "^4.3.2",
+		"typescript": "~5.9.3",
+		"vite": "~8.2.4",
+		"vitest": "^3.2.6",
+		"wrangler": "^4.73.0"
+	}
+}

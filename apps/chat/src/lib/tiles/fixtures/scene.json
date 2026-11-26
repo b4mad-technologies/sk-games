@@ -1,0 +1,49 @@
+{
+	"node_id": "elven-mini/inn/common-room",
+	"node_description": "Long trestle tables share the room with a low fire.",
+	"graph_description": "The Mountain View Inn.",
+	"pose_elevation": 0,
+	"counts": { "actor": 1, "entity": 1, "exit": 2, "trace": 1 },
+	"scene_resolved": true,
+	"rev": "rev-scene-1",
+	"listing": "complete",
+	"items": [
+		{
+			"handle": "s:exit:1",
+			"rev": "r1",
+			"kind": "exit",
+			"id": "12",
+			"label": "west",
+			"to": "elven-mini/inn/bar"
+		},
+		{
+			"handle": "s:exit:2",
+			"rev": "r2",
+			"kind": "exit",
+			"id": "13",
+			"label": "southeast",
+			"to": "elven-mini/inn/stairs"
+		},
+		{
+			"handle": "s:actor:7",
+			"rev": "r3",
+			"kind": "actor",
+			"id": "mira",
+			"label": "Innkeeper Mira"
+		},
+		{
+			"handle": "s:entity:4",
+			"rev": "r4",
+			"kind": "entity",
+			"id": "hearth",
+			"label": "Hearth"
+		},
+		{
+			"handle": "s:trace:9",
+			"rev": "r5",
+			"kind": "trace",
+			"id": "9",
+			"label": "footsteps"
+		}
+	]
+}

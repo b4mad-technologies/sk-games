@@ -1,0 +1,4191 @@
+{
+	"hero": {
+		"actorId": "168",
+		"name": "Borin",
+		"vitals": [
+			{
+				"id": "srd/hp",
+				"label": "Hit Points",
+				"value": "11"
+			},
+			{
+				"id": "srd/ac",
+				"label": "Armor Class",
+				"value": "12"
+			},
+			{
+				"id": "srd/level",
+				"label": "Character Level",
+				"value": "1"
+			}
+		],
+		"quest": [],
+		"conditionDetails": [],
+		"abilities": [
+			{
+				"id": "srd/str",
+				"label": "STR",
+				"score": 15,
+				"modifier": 2,
+				"description": "Measures your physical power for lifting, pushing, carrying, and forcing movement. You use it for attacks and tasks that rely on raw muscle."
+			},
+			{
+				"id": "srd/dex",
+				"label": "DEX",
+				"score": 14,
+				"modifier": 2,
+				"description": "Measures your agility, reflexes, and balance. You use it for quick movement, precise actions, and avoiding danger."
+			},
+			{
+				"id": "srd/con",
+				"label": "CON",
+				"score": 13,
+				"modifier": 1,
+				"description": "Measures your health and stamina. It helps determine your durability and how well you resist effects that strain your body."
+			},
+			{
+				"id": "srd/int",
+				"label": "INT",
+				"score": 8,
+				"modifier": -1,
+				"description": "Measures your reasoning, memory, and ability to understand complex information. You use it when recalling knowledge, investigating clues, or casting certain spells."
+			},
+			{
+				"id": "srd/wis",
+				"label": "WIS",
+				"score": 10,
+				"modifier": 0,
+				"description": "Your measure of awareness, intuition, and mental resilience. You use it to notice threats, read situations, and resist effects that challenge your mind."
+			},
+			{
+				"id": "srd/cha",
+				"label": "CHA",
+				"score": 12,
+				"modifier": 1,
+				"description": "Measures your force of personality, confidence, and charm. You use it when your presence, influence, or performance matters."
+			}
+		],
+		"skills": [
+			{
+				"id": "srd/skill/athletics",
+				"label": "Athletics"
+			},
+			{
+				"id": "srd/skill/intimidation",
+				"label": "Intimidation"
+			},
+			{
+				"id": "srd/skill/perception",
+				"label": "Perception"
+			}
+		],
+		"masteries": [],
+		"conditions": [],
+		"appearance": "",
+		"backstory": "",
+		"placeId": "elven_mini/inn/common_room",
+		"descriptionReads": {
+			"values": "ready",
+			"identity": "ready",
+			"conditions": "ready"
+		},
+		"suppliedFields": {
+			"vitals": 6,
+			"quest": 0,
+			"conditions": 0
+		},
+		"species": "Dwarf",
+		"className": "Fighter",
+		"background": "Soldier",
+		"identityDetails": [
+			{
+				"id": "srd.background.soldier",
+				"label": "Soldier",
+				"description": "You are trained for battle, gaining proficiency in Athletics and Intimidation. You also gain the Savage Attacker origin feat."
+			},
+			{
+				"id": "srd.class.fighter",
+				"label": "Fighter",
+				"description": "A martial class trained for combat. You rely on Strength or Dexterity for your fighting techniques and have a sturdy Hit Point die."
+			},
+			{
+				"id": "srd.species.dwarf",
+				"label": "Dwarf",
+				"description": "A sturdy, Medium folk with a walking speed of 30 feet. You choose this species for its dwarven traits."
+			}
+		],
+		"hp": 11,
+		"ac": 12,
+		"level": 1,
+		"proficiency": 2,
+		"proficiencyDescription": "A bonus from your total character level. You add it to checks, attacks, saves, and other rolls when you are proficient.",
+		"xp": 0
+	},
+	"place": {
+		"id": "elven_mini/inn/common_room",
+		"name": "Common Room",
+		"description": "Long trestle tables share the room with a low fire, the smell of woodsmoke and last night's stew going cold on the hearth. A pilgrim's map nailed by the door marks the Sun-and-Moon shrine: out along the Forest Road, then the Pilgrim Path.",
+		"exits": [
+			{
+				"handle": "s:exit:275",
+				"rev": "x8324b",
+				"label": "southwest",
+				"to": "creation_limbo/station",
+				"toNodeId": "elven_mini/creation_limbo/station",
+				"toName": "Creation Limbo",
+				"gates": ["elven_mini/affordance/dm_threshold"]
+			},
+			{
+				"handle": "s:exit:46",
+				"rev": "br0zc5",
+				"label": "northwest",
+				"to": "inn/foyer",
+				"toNodeId": "elven_mini/inn/foyer",
+				"toName": "Foyer",
+				"gates": []
+			},
+			{
+				"handle": "s:exit:47",
+				"rev": "1c353n",
+				"label": "east",
+				"to": "inn/bar",
+				"toNodeId": "elven_mini/inn/bar",
+				"toName": "Bar",
+				"gates": []
+			},
+			{
+				"handle": "s:exit:49",
+				"rev": "1uhiim7",
+				"label": "southeast",
+				"to": "inn/stairs",
+				"toNodeId": "elven_mini/inn/stairs",
+				"toName": "Stairs",
+				"gates": []
+			}
+		],
+		"elevation": 0
+	},
+	"occupants": [
+		{
+			"art": {
+				"path": "elven-mini-art/characters/brother-caddoc.webp",
+				"hash": "7b73ce460fe998aa53555be19ce8c9f3b04f07d685974ee423d5c78e4720bb63",
+				"license": "LicenseRef-Spellkave-Proprietary"
+			},
+			"id": "12",
+			"handle": "s:actor:12",
+			"rev": "1bglzzd",
+			"kind": "person",
+			"sceneKind": "actor",
+			"name": "Brother Caddoc",
+			"conditions": [],
+			"note": "Here with you",
+			"defId": "srd/creature/priest-acolyte"
+		},
+		{
+			"art": {
+				"path": "elven-mini-art/characters/aldwin-ledger-keeper.webp",
+				"hash": "831f8c3fe93598d926b8e39ff91dd63119d624b9d2869dfe927cf7428400e0d8",
+				"license": "LicenseRef-Spellkave-Proprietary"
+			},
+			"id": "6",
+			"handle": "s:actor:6",
+			"rev": "xf4cbr",
+			"kind": "person",
+			"sceneKind": "actor",
+			"name": "Aldwin, keeper of the hearth-ledger",
+			"conditions": [],
+			"note": "Here with you",
+			"defId": "srd/creature/commoner"
+		},
+		{
+			"id": "142",
+			"handle": "s:entity:142",
+			"rev": "1qeejjb",
+			"kind": "thing",
+			"sceneKind": "entity",
+			"name": "Hearth",
+			"conditions": [],
+			"note": "Something here"
+		}
+	],
+	"actions": [
+		{
+			"actionId": "dm/ask-about-advancement",
+			"id": "factored:dm/ask-about-advancement:target:168:entity:6",
+			"label": "Ask Aldwin About Advancement — Aldwin, keeper of the hearth-ledger",
+			"name": "Ask Aldwin About Advancement",
+			"verb": "communicate",
+			"descriptor": "dm/ask-about-advancement",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:entity:12",
+			"label": "Answer 1 — Brother Caddoc",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:entity:142",
+			"label": "Answer 1 — Hearth",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:entity:168",
+			"label": "Answer 1 — You (Borin)",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:entity:6",
+			"label": "Answer 1 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 1 — Common Room",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:entity:12",
+			"label": "Answer 10 — Brother Caddoc",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:entity:142",
+			"label": "Answer 10 — Hearth",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:entity:168",
+			"label": "Answer 10 — You (Borin)",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:entity:6",
+			"label": "Answer 10 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 10 — Common Room",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:entity:12",
+			"label": "Answer 11 — Brother Caddoc",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:entity:142",
+			"label": "Answer 11 — Hearth",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:entity:168",
+			"label": "Answer 11 — You (Borin)",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:entity:6",
+			"label": "Answer 11 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 11 — Common Room",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:entity:12",
+			"label": "Answer 12 — Brother Caddoc",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:entity:142",
+			"label": "Answer 12 — Hearth",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:entity:168",
+			"label": "Answer 12 — You (Borin)",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:entity:6",
+			"label": "Answer 12 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 12 — Common Room",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:entity:12",
+			"label": "Answer 13 — Brother Caddoc",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:entity:142",
+			"label": "Answer 13 — Hearth",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:entity:168",
+			"label": "Answer 13 — You (Borin)",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:entity:6",
+			"label": "Answer 13 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 13 — Common Room",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:entity:12",
+			"label": "Answer 14 — Brother Caddoc",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:entity:142",
+			"label": "Answer 14 — Hearth",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:entity:168",
+			"label": "Answer 14 — You (Borin)",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:entity:6",
+			"label": "Answer 14 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 14 — Common Room",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:entity:12",
+			"label": "Answer 15 — Brother Caddoc",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:entity:142",
+			"label": "Answer 15 — Hearth",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:entity:168",
+			"label": "Answer 15 — You (Borin)",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:entity:6",
+			"label": "Answer 15 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 15 — Common Room",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:entity:12",
+			"label": "Answer 16 — Brother Caddoc",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:entity:142",
+			"label": "Answer 16 — Hearth",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:entity:168",
+			"label": "Answer 16 — You (Borin)",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:entity:6",
+			"label": "Answer 16 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 16 — Common Room",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:entity:12",
+			"label": "Answer 2 — Brother Caddoc",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:entity:142",
+			"label": "Answer 2 — Hearth",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:entity:168",
+			"label": "Answer 2 — You (Borin)",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:entity:6",
+			"label": "Answer 2 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 2 — Common Room",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:entity:12",
+			"label": "Answer 3 — Brother Caddoc",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:entity:142",
+			"label": "Answer 3 — Hearth",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:entity:168",
+			"label": "Answer 3 — You (Borin)",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:entity:6",
+			"label": "Answer 3 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 3 — Common Room",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:entity:12",
+			"label": "Answer 4 — Brother Caddoc",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:entity:142",
+			"label": "Answer 4 — Hearth",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:entity:168",
+			"label": "Answer 4 — You (Borin)",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:entity:6",
+			"label": "Answer 4 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 4 — Common Room",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:entity:12",
+			"label": "Answer 5 — Brother Caddoc",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:entity:142",
+			"label": "Answer 5 — Hearth",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:entity:168",
+			"label": "Answer 5 — You (Borin)",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:entity:6",
+			"label": "Answer 5 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 5 — Common Room",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:entity:12",
+			"label": "Answer 6 — Brother Caddoc",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:entity:142",
+			"label": "Answer 6 — Hearth",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:entity:168",
+			"label": "Answer 6 — You (Borin)",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:entity:6",
+			"label": "Answer 6 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 6 — Common Room",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:entity:12",
+			"label": "Answer 7 — Brother Caddoc",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:entity:142",
+			"label": "Answer 7 — Hearth",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:entity:168",
+			"label": "Answer 7 — You (Borin)",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:entity:6",
+			"label": "Answer 7 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 7 — Common Room",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:entity:12",
+			"label": "Answer 8 — Brother Caddoc",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:entity:142",
+			"label": "Answer 8 — Hearth",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:entity:168",
+			"label": "Answer 8 — You (Borin)",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:entity:6",
+			"label": "Answer 8 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 8 — Common Room",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:entity:12",
+			"label": "Answer 9 — Brother Caddoc",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:entity:142",
+			"label": "Answer 9 — Hearth",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:entity:168",
+			"label": "Answer 9 — You (Borin)",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:entity:6",
+			"label": "Answer 9 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Answer 9 — Common Room",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "elven_mini/action/wake-at-inn",
+			"id": "factored:elven_mini/action/wake-at-inn:target:168:entity:168",
+			"label": "Give up and wake at the inn — You (Borin)",
+			"name": "Give up and wake at the inn",
+			"verb": "manipulate",
+			"descriptor": "elven_mini/action/wake-at-inn",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "elven_mini/quest/burn-the-camp",
+			"id": "factored:elven_mini/quest/burn-the-camp:target:168:entity:168",
+			"label": "Set the camp alight — You (Borin)",
+			"name": "Set the camp alight",
+			"verb": "manipulate",
+			"descriptor": "elven_mini/quest/burn-the-camp",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "elven_mini/quest/relight-the-altar",
+			"id": "factored:elven_mini/quest/relight-the-altar:target:168:entity:168",
+			"label": "Relight the altar — You (Borin)",
+			"name": "Relight the altar",
+			"verb": "manipulate",
+			"descriptor": "elven_mini/quest/relight-the-altar",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "elven_mini/respawn/wake-at-inn",
+			"id": "factored:elven_mini/respawn/wake-at-inn:target:168:entity:168",
+			"label": "Give up and wake at the inn — You (Borin)",
+			"name": "Give up and wake at the inn",
+			"verb": "manipulate",
+			"descriptor": "elven_mini/respawn/wake-at-inn",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "elven_mini/respawn/wake-at-inn-penniless",
+			"id": "factored:elven_mini/respawn/wake-at-inn-penniless:target:168:entity:168",
+			"label": "Give up and wake at the inn (no coin) — You (Borin)",
+			"name": "Give up and wake at the inn (no coin)",
+			"verb": "manipulate",
+			"descriptor": "elven_mini/respawn/wake-at-inn-penniless",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/advancement/level-up",
+			"id": "factored:srd/advancement/level-up:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Level Up — Common Room",
+			"name": "Level Up",
+			"verb": "manipulate",
+			"descriptor": "srd/advancement/level-up",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/attack/melee",
+			"id": "factored:srd/attack/melee:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Melee Attack — Common Room",
+			"name": "Melee Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-graze",
+			"id": "factored:srd/attack/melee-graze:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Melee Attack (Graze) — Common Room",
+			"name": "Melee Attack (Graze)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-graze",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-sap",
+			"id": "factored:srd/attack/melee-sap:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Melee Attack (Sap) — Common Room",
+			"name": "Melee Attack (Sap)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-sap",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-slow",
+			"id": "factored:srd/attack/melee-slow:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Melee Attack (Slow) — Common Room",
+			"name": "Melee Attack (Slow)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-slow",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-topple",
+			"id": "factored:srd/attack/melee-topple:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Melee Attack (Topple) — Common Room",
+			"name": "Melee Attack (Topple)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-topple",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-vex",
+			"id": "factored:srd/attack/melee-vex:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Melee Attack (Vex) — Common Room",
+			"name": "Melee Attack (Vex)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-vex",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee/swing",
+			"id": "factored:srd/attack/melee/swing:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Swing (no target) — Common Room",
+			"name": "Swing (no target)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee/swing",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/opportunity-attack",
+			"id": "factored:srd/attack/opportunity-attack:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Opportunity Attack — Common Room",
+			"name": "Opportunity Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/opportunity-attack",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/ranged",
+			"id": "factored:srd/attack/ranged:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Ranged Attack — Common Room",
+			"name": "Ranged Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/ranged",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/sneak-attack",
+			"id": "factored:srd/attack/sneak-attack:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Sneak Attack — Common Room",
+			"name": "Sneak Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/sneak-attack",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/unarmed-strike/damage",
+			"id": "factored:srd/attack/unarmed-strike/damage:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Unarmed Strike: Damage — Common Room",
+			"name": "Unarmed Strike: Damage",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/unarmed-strike/damage",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/check/acrobatics",
+			"id": "factored:srd/check/acrobatics:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Acrobatics — Common Room",
+			"name": "Check: Acrobatics",
+			"verb": "manipulate",
+			"descriptor": "srd/check/acrobatics",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/animal-handling",
+			"id": "factored:srd/check/animal-handling:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Animal Handling — Common Room",
+			"name": "Check: Animal Handling",
+			"verb": "manipulate",
+			"descriptor": "srd/check/animal-handling",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/arcana",
+			"id": "factored:srd/check/arcana:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Arcana — Common Room",
+			"name": "Check: Arcana",
+			"verb": "manipulate",
+			"descriptor": "srd/check/arcana",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/athletics",
+			"id": "factored:srd/check/athletics:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Athletics — Common Room",
+			"name": "Check: Athletics",
+			"verb": "manipulate",
+			"descriptor": "srd/check/athletics",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/cha",
+			"id": "factored:srd/check/cha:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Charisma (raw ability) — Common Room",
+			"name": "Check: Charisma (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/cha",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/con",
+			"id": "factored:srd/check/con:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Constitution (raw ability) — Common Room",
+			"name": "Check: Constitution (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/con",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/deception",
+			"id": "factored:srd/check/deception:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Deception — Common Room",
+			"name": "Check: Deception",
+			"verb": "manipulate",
+			"descriptor": "srd/check/deception",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/dex",
+			"id": "factored:srd/check/dex:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Dexterity (raw ability) — Common Room",
+			"name": "Check: Dexterity (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/dex",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/history",
+			"id": "factored:srd/check/history:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: History — Common Room",
+			"name": "Check: History",
+			"verb": "manipulate",
+			"descriptor": "srd/check/history",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/insight",
+			"id": "factored:srd/check/insight:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Insight — Common Room",
+			"name": "Check: Insight",
+			"verb": "manipulate",
+			"descriptor": "srd/check/insight",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/int",
+			"id": "factored:srd/check/int:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Intelligence (raw ability) — Common Room",
+			"name": "Check: Intelligence (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/int",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/intimidation",
+			"id": "factored:srd/check/intimidation:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Intimidation — Common Room",
+			"name": "Check: Intimidation",
+			"verb": "manipulate",
+			"descriptor": "srd/check/intimidation",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/investigation",
+			"id": "factored:srd/check/investigation:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Investigation — Common Room",
+			"name": "Check: Investigation",
+			"verb": "manipulate",
+			"descriptor": "srd/check/investigation",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/medicine",
+			"id": "factored:srd/check/medicine:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Medicine — Common Room",
+			"name": "Check: Medicine",
+			"verb": "manipulate",
+			"descriptor": "srd/check/medicine",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/nature",
+			"id": "factored:srd/check/nature:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Nature — Common Room",
+			"name": "Check: Nature",
+			"verb": "manipulate",
+			"descriptor": "srd/check/nature",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/perception",
+			"id": "factored:srd/check/perception:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Perception — Common Room",
+			"name": "Check: Perception",
+			"verb": "manipulate",
+			"descriptor": "srd/check/perception",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/performance",
+			"id": "factored:srd/check/performance:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Performance — Common Room",
+			"name": "Check: Performance",
+			"verb": "manipulate",
+			"descriptor": "srd/check/performance",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/persuasion",
+			"id": "factored:srd/check/persuasion:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Persuasion — Common Room",
+			"name": "Check: Persuasion",
+			"verb": "manipulate",
+			"descriptor": "srd/check/persuasion",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/religion",
+			"id": "factored:srd/check/religion:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Religion — Common Room",
+			"name": "Check: Religion",
+			"verb": "manipulate",
+			"descriptor": "srd/check/religion",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/sleight-of-hand",
+			"id": "factored:srd/check/sleight-of-hand:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Sleight Of Hand — Common Room",
+			"name": "Check: Sleight Of Hand",
+			"verb": "manipulate",
+			"descriptor": "srd/check/sleight-of-hand",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/stealth",
+			"id": "factored:srd/check/stealth:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Stealth — Common Room",
+			"name": "Check: Stealth",
+			"verb": "manipulate",
+			"descriptor": "srd/check/stealth",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/str",
+			"id": "factored:srd/check/str:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Strength (raw ability) — Common Room",
+			"name": "Check: Strength (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/str",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/survival",
+			"id": "factored:srd/check/survival:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Survival — Common Room",
+			"name": "Check: Survival",
+			"verb": "manipulate",
+			"descriptor": "srd/check/survival",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/wis",
+			"id": "factored:srd/check/wis:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Check: Wisdom (raw ability) — Common Room",
+			"name": "Check: Wisdom (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/wis",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/claim-victory",
+			"id": "factored:srd/claim-victory:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Claim Victory — Common Room",
+			"name": "Claim Victory",
+			"verb": "manipulate",
+			"descriptor": "srd/claim-victory",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/consume",
+			"id": "factored:srd/consume:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Use a Consumable — Common Room",
+			"name": "Use a Consumable",
+			"verb": "manipulate",
+			"descriptor": "srd/consume",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/dash",
+			"id": "factored:srd/dash:target:168:entity:168",
+			"label": "Dash — You (Borin)",
+			"name": "Dash",
+			"verb": "manipulate",
+			"descriptor": "srd/dash",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/dodge",
+			"id": "factored:srd/dodge:target:168:entity:168",
+			"label": "Dodge — You (Borin)",
+			"name": "Dodge",
+			"verb": "manipulate",
+			"descriptor": "srd/dodge",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/fighter/second-wind",
+			"id": "factored:srd/fighter/second-wind:target:168:entity:168",
+			"label": "Use Second Wind — You (Borin)",
+			"name": "Use Second Wind",
+			"verb": "manipulate",
+			"descriptor": "srd/fighter/second-wind",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/help",
+			"id": "factored:srd/help:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Help — Common Room",
+			"name": "Help",
+			"verb": "manipulate",
+			"descriptor": "srd/help",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/heroic_inspiration/reroll",
+			"id": "factored:srd/heroic_inspiration/reroll:target:168:entity:168",
+			"label": "Heroic Inspiration Reroll — You (Borin)",
+			"name": "Heroic Inspiration Reroll",
+			"verb": "manipulate",
+			"descriptor": "srd/heroic_inspiration/reroll",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/item/acid/throw",
+			"id": "factored:srd/item/acid/throw:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Throw Acid — Common Room",
+			"name": "Throw Acid",
+			"verb": "manipulate",
+			"descriptor": "srd/item/acid/throw",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/item/alchemists-fire/throw",
+			"id": "factored:srd/item/alchemists-fire/throw:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Throw Alchemist's Fire — Common Room",
+			"name": "Throw Alchemist's Fire",
+			"verb": "manipulate",
+			"descriptor": "srd/item/alchemists-fire/throw",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/item/ball-bearings/spill",
+			"id": "factored:srd/item/ball-bearings/spill:target:168:entity:168",
+			"label": "Spill Ball Bearings — You (Borin)",
+			"name": "Spill Ball Bearings",
+			"verb": "manipulate",
+			"descriptor": "srd/item/ball-bearings/spill",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/item/caltrops/spread",
+			"id": "factored:srd/item/caltrops/spread:target:168:entity:168",
+			"label": "Spread Caltrops — You (Borin)",
+			"name": "Spread Caltrops",
+			"verb": "manipulate",
+			"descriptor": "srd/item/caltrops/spread",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/item/holy-water/throw",
+			"id": "factored:srd/item/holy-water/throw:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Throw Holy Water — Common Room",
+			"name": "Throw Holy Water",
+			"verb": "manipulate",
+			"descriptor": "srd/item/holy-water/throw",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/movement/drop-prone",
+			"id": "factored:srd/movement/drop-prone:target:168:entity:168",
+			"label": "Drop Prone — You (Borin)",
+			"name": "Drop Prone",
+			"verb": "manipulate",
+			"descriptor": "srd/movement/drop-prone",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/movement/stand-up",
+			"id": "factored:srd/movement/stand-up:target:168:entity:168",
+			"label": "Stand Up — You (Borin)",
+			"name": "Stand Up",
+			"verb": "manipulate",
+			"descriptor": "srd/movement/stand-up",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/pickup",
+			"id": "factored:srd/pickup:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Pick Up — Common Room",
+			"name": "Pick Up",
+			"verb": "manipulate",
+			"descriptor": "srd/pickup",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/rest/long/complete",
+			"id": "factored:srd/rest/long/complete:target:168:entity:168",
+			"label": "Complete a Long Rest — You (Borin)",
+			"name": "Complete a Long Rest",
+			"verb": "manipulate",
+			"descriptor": "srd/rest/long/complete",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/rest/short/complete",
+			"id": "factored:srd/rest/short/complete:target:168:entity:168",
+			"label": "Complete a Short Rest — You (Borin)",
+			"name": "Complete a Short Rest",
+			"verb": "manipulate",
+			"descriptor": "srd/rest/short/complete",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/speak-aloud",
+			"id": "factored:srd/speak-aloud:target:168:entity:12",
+			"label": "Speak Aloud — Brother Caddoc",
+			"name": "Speak Aloud",
+			"verb": "communicate",
+			"descriptor": "srd/speak-aloud",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-aloud",
+			"id": "factored:srd/speak-aloud:target:168:entity:142",
+			"label": "Speak Aloud — Hearth",
+			"name": "Speak Aloud",
+			"verb": "communicate",
+			"descriptor": "srd/speak-aloud",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-aloud",
+			"id": "factored:srd/speak-aloud:target:168:entity:168",
+			"label": "Speak Aloud — You (Borin)",
+			"name": "Speak Aloud",
+			"verb": "communicate",
+			"descriptor": "srd/speak-aloud",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-aloud",
+			"id": "factored:srd/speak-aloud:target:168:entity:6",
+			"label": "Speak Aloud — Aldwin, keeper of the hearth-ledger",
+			"name": "Speak Aloud",
+			"verb": "communicate",
+			"descriptor": "srd/speak-aloud",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-aloud",
+			"id": "factored:srd/speak-aloud:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Speak Aloud — Common Room",
+			"name": "Speak Aloud",
+			"verb": "communicate",
+			"descriptor": "srd/speak-aloud",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/speak-to",
+			"id": "factored:srd/speak-to:target:168:entity:12",
+			"label": "Speak To — Brother Caddoc",
+			"name": "Speak To",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to",
+			"id": "factored:srd/speak-to:target:168:entity:142",
+			"label": "Speak To — Hearth",
+			"name": "Speak To",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to",
+			"id": "factored:srd/speak-to:target:168:entity:168",
+			"label": "Speak To — You (Borin)",
+			"name": "Speak To",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to",
+			"id": "factored:srd/speak-to:target:168:entity:6",
+			"label": "Speak To — Aldwin, keeper of the hearth-ledger",
+			"name": "Speak To",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to",
+			"id": "factored:srd/speak-to:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Speak To — Common Room",
+			"name": "Speak To",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/speak-to-room",
+			"id": "factored:srd/speak-to-room:target:168:entity:12",
+			"label": "Speak Aloud to Room — Brother Caddoc",
+			"name": "Speak Aloud to Room",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to-room",
+			"targetName": "Brother Caddoc",
+			"targetRef": "entity:12",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to-room",
+			"id": "factored:srd/speak-to-room:target:168:entity:142",
+			"label": "Speak Aloud to Room — Hearth",
+			"name": "Speak Aloud to Room",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to-room",
+			"targetName": "Hearth",
+			"targetRef": "entity:142",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to-room",
+			"id": "factored:srd/speak-to-room:target:168:entity:168",
+			"label": "Speak Aloud to Room — You (Borin)",
+			"name": "Speak Aloud to Room",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to-room",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to-room",
+			"id": "factored:srd/speak-to-room:target:168:entity:6",
+			"label": "Speak Aloud to Room — Aldwin, keeper of the hearth-ledger",
+			"name": "Speak Aloud to Room",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to-room",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to-room",
+			"id": "factored:srd/speak-to-room:target:168:place_node:elven_mini/inn/common_room",
+			"label": "Speak Aloud to Room — Common Room",
+			"name": "Speak Aloud to Room",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to-room",
+			"targetName": "Common Room",
+			"targetRef": "place_node:elven_mini/inn/common_room",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"id": "sense:look:Local",
+			"label": "Look Around",
+			"verb": "sensing",
+			"descriptor": "look",
+			"targetName": "here",
+			"targetRef": "world",
+			"acceptsUtterance": false,
+			"senseVisibility": "Local",
+			"provider": "place"
+		}
+	],
+	"actionCount": 961,
+	"manipulationContext": {
+		"status": "ready",
+		"schemaVersion": 1,
+		"revision": 55,
+		"actions": [
+			{
+				"actionId": "dm/ask-about-advancement",
+				"displayName": "Ask Aldwin About Advancement",
+				"groups": [],
+				"templateIds": ["dm/ask-about-advancement/affordance"],
+				"communicationSpeechActId": "dm/ask-about-advancement",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/aldwin",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/1",
+				"displayName": "Answer 1",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/1/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/1",
+				"responseSlot": 1,
+				"tags": ["ui.response-slot=1"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/10",
+				"displayName": "Answer 10",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/10/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/10",
+				"responseSlot": 10,
+				"tags": ["ui.response-slot=10"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/11",
+				"displayName": "Answer 11",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/11/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/11",
+				"responseSlot": 11,
+				"tags": ["ui.response-slot=11"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/12",
+				"displayName": "Answer 12",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/12/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/12",
+				"responseSlot": 12,
+				"tags": ["ui.response-slot=12"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/13",
+				"displayName": "Answer 13",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/13/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/13",
+				"responseSlot": 13,
+				"tags": ["ui.response-slot=13"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/14",
+				"displayName": "Answer 14",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/14/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/14",
+				"responseSlot": 14,
+				"tags": ["ui.response-slot=14"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/15",
+				"displayName": "Answer 15",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/15/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/15",
+				"responseSlot": 15,
+				"tags": ["ui.response-slot=15"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/16",
+				"displayName": "Answer 16",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/16/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/16",
+				"responseSlot": 16,
+				"tags": ["ui.response-slot=16"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/2",
+				"displayName": "Answer 2",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/2/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/2",
+				"responseSlot": 2,
+				"tags": ["ui.response-slot=2"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/3",
+				"displayName": "Answer 3",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/3/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/3",
+				"responseSlot": 3,
+				"tags": ["ui.response-slot=3"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/4",
+				"displayName": "Answer 4",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/4/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/4",
+				"responseSlot": 4,
+				"tags": ["ui.response-slot=4"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/5",
+				"displayName": "Answer 5",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/5/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/5",
+				"responseSlot": 5,
+				"tags": ["ui.response-slot=5"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/6",
+				"displayName": "Answer 6",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/6/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/6",
+				"responseSlot": 6,
+				"tags": ["ui.response-slot=6"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/7",
+				"displayName": "Answer 7",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/7/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/7",
+				"responseSlot": 7,
+				"tags": ["ui.response-slot=7"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/8",
+				"displayName": "Answer 8",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/8/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/8",
+				"responseSlot": 8,
+				"tags": ["ui.response-slot=8"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/9",
+				"displayName": "Answer 9",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/9/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/9",
+				"responseSlot": 9,
+				"tags": ["ui.response-slot=9"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "elven_mini/action/wake-at-inn",
+				"displayName": "Give up and wake at the inn",
+				"groups": [],
+				"templateIds": ["elven_mini/action/wake-at-inn/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/wake-at-inn",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "elven_mini/quest/accept-maelis-surrender",
+				"displayName": "Call on Sister Maelis to yield",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/accept-maelis-surrender/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/accept-maelis-surrender",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "elven_mini/quest/burn-the-camp",
+				"displayName": "Set the camp alight",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/burn-the-camp/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/burn-the-camp",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "elven_mini/quest/deliver-moonpetal",
+				"displayName": "Hand the moonpetal to Old Tamsin",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/deliver-moonpetal/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/tamsins-basket",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "elven_mini/quest/open-tomb",
+				"displayName": "Open the deep tomb with the Ironfold key",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/open-tomb/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/ironfold-seal",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "elven_mini/quest/relight-the-altar",
+				"displayName": "Relight the altar",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/relight-the-altar/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/relight-the-altar",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "elven_mini/quest/strike-truce-with-grubnash",
+				"displayName": "Strike a truce with Grubnash",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/strike-truce-with-grubnash/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/strike-truce-with-grubnash",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "elven_mini/respawn/wake-at-inn",
+				"displayName": "Give up and wake at the inn",
+				"groups": [],
+				"templateIds": ["elven_mini/respawn/wake-at-inn/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/wake-at-inn",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "elven_mini/respawn/wake-at-inn-penniless",
+				"displayName": "Give up and wake at the inn (no coin)",
+				"groups": [],
+				"templateIds": ["elven_mini/respawn/wake-at-inn-penniless/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/wake-at-inn",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/advancement/level-up",
+				"displayName": "Level Up",
+				"groups": [],
+				"templateIds": ["srd/advancement/level-up/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.advancement_trainer",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee",
+				"displayName": "Melee Attack",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee-graze",
+				"displayName": "Melee Attack (Graze)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee-graze/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/attack",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee-sap",
+				"displayName": "Melee Attack (Sap)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee-sap/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/attack",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee-slow",
+				"displayName": "Melee Attack (Slow)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee-slow/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/attack",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee-topple",
+				"displayName": "Melee Attack (Topple)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee-topple/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/attack",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee-vex",
+				"displayName": "Melee Attack (Vex)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee-vex/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/attack",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee/swing",
+				"displayName": "Swing (no target)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee/swing/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/opportunity-attack",
+				"displayName": "Opportunity Attack",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/opportunity-attack/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/ranged",
+				"displayName": "Ranged Attack",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/ranged/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/sneak-attack",
+				"displayName": "Sneak Attack",
+				"groups": ["combat"],
+				"templateIds": [
+					"srd/attack/sneak-attack/affordance",
+					"srd/attack/sneak-attack/affordance-ranged"
+				],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/unarmed-strike/damage",
+				"displayName": "Unarmed Strike: Damage",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/unarmed-strike/damage/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/acrobatics",
+				"displayName": "Check: Acrobatics",
+				"groups": [],
+				"templateIds": ["srd/check/acrobatics/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/animal-handling",
+				"displayName": "Check: Animal Handling",
+				"groups": [],
+				"templateIds": ["srd/check/animal-handling/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/arcana",
+				"displayName": "Check: Arcana",
+				"groups": [],
+				"templateIds": ["srd/check/arcana/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/athletics",
+				"displayName": "Check: Athletics",
+				"groups": [],
+				"templateIds": ["srd/check/athletics/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/cha",
+				"displayName": "Check: Charisma (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/cha/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/con",
+				"displayName": "Check: Constitution (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/con/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/deception",
+				"displayName": "Check: Deception",
+				"groups": [],
+				"templateIds": ["srd/check/deception/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/dex",
+				"displayName": "Check: Dexterity (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/dex/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/history",
+				"displayName": "Check: History",
+				"groups": [],
+				"templateIds": ["srd/check/history/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/insight",
+				"displayName": "Check: Insight",
+				"groups": [],
+				"templateIds": ["srd/check/insight/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/int",
+				"displayName": "Check: Intelligence (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/int/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/intimidation",
+				"displayName": "Check: Intimidation",
+				"groups": [],
+				"templateIds": ["srd/check/intimidation/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/investigation",
+				"displayName": "Check: Investigation",
+				"groups": [],
+				"templateIds": ["srd/check/investigation/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/medicine",
+				"displayName": "Check: Medicine",
+				"groups": [],
+				"templateIds": ["srd/check/medicine/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/nature",
+				"displayName": "Check: Nature",
+				"groups": [],
+				"templateIds": ["srd/check/nature/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/perception",
+				"displayName": "Check: Perception",
+				"groups": [],
+				"templateIds": ["srd/check/perception/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/performance",
+				"displayName": "Check: Performance",
+				"groups": [],
+				"templateIds": ["srd/check/performance/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/persuasion",
+				"displayName": "Check: Persuasion",
+				"groups": [],
+				"templateIds": ["srd/check/persuasion/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/religion",
+				"displayName": "Check: Religion",
+				"groups": [],
+				"templateIds": ["srd/check/religion/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/sleight-of-hand",
+				"displayName": "Check: Sleight Of Hand",
+				"groups": [],
+				"templateIds": ["srd/check/sleight-of-hand/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/stealth",
+				"displayName": "Check: Stealth",
+				"groups": [],
+				"templateIds": ["srd/check/stealth/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/str",
+				"displayName": "Check: Strength (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/str/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/survival",
+				"displayName": "Check: Survival",
+				"groups": [],
+				"templateIds": ["srd/check/survival/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/wis",
+				"displayName": "Check: Wisdom (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/wis/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/claim-victory",
+				"displayName": "Claim Victory",
+				"groups": [],
+				"templateIds": ["srd/claim-victory/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/consume",
+				"displayName": "Use a Consumable",
+				"groups": [],
+				"templateIds": [
+					"srd/item/potion-of-giant-strength/consume/affordance",
+					"srd/item/potion-of-healing-greater/consume/affordance",
+					"srd/item/potion-of-healing-superior/consume/affordance",
+					"srd/item/potion-of-healing-supreme/consume/affordance",
+					"srd/item/potion-of-healing/consume/affordance",
+					"srd/magic_item/potion-of-climbing/consume/affordance",
+					"srd/magic_item/potion-of-heroism/consume/affordance",
+					"srd/magic_item/potion-of-resistance/consume/affordance",
+					"srd/magic_item/potion-of-speed/consume/affordance",
+					"srd/magic_item/potion-of-water-breathing/consume/affordance"
+				],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/consumable",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/dash",
+				"displayName": "Dash",
+				"groups": [],
+				"templateIds": ["srd/dash/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/dash",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/dodge",
+				"displayName": "Dodge",
+				"groups": [],
+				"templateIds": ["srd/dodge/affordance"],
+				"defaults": {
+					"target": {
+						"targetRef": "entity:168",
+						"kind": "actor"
+					},
+					"provenance": {
+						"namespace": "ui.affordance_defaults",
+						"templateId": "srd/dodge/affordance",
+						"attachmentId": "[\"affordance_template\",\"srd/dodge/affordance\",\"ui.affordance_defaults\",\"srd\"]",
+						"contentKey": "[\"affordance_template\",\"srd/dodge/affordance\",\"ui.affordance_defaults\",\"srd\"]:0:{\"version\":1,\"target\":{\"kind\":\"actor\"}}"
+					}
+				},
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/dodge",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/fighter/second-wind",
+				"displayName": "Use Second Wind",
+				"groups": [],
+				"templateIds": ["srd/fighter/second-wind/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/class-feature/fighter/second-wind",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/help",
+				"displayName": "Help",
+				"groups": [],
+				"templateIds": ["srd/help/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/heroic_inspiration/reroll",
+				"displayName": "Heroic Inspiration Reroll",
+				"groups": [],
+				"templateIds": ["srd/heroic_inspiration/reroll/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/heroic_inspiration/reroll",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/item/acid/throw",
+				"displayName": "Throw Acid",
+				"groups": ["combat"],
+				"templateIds": ["srd/item/acid/throw/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/item/alchemists-fire/throw",
+				"displayName": "Throw Alchemist's Fire",
+				"groups": ["combat"],
+				"templateIds": ["srd/item/alchemists-fire/throw/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/item/ball-bearings/spill",
+				"displayName": "Spill Ball Bearings",
+				"groups": [],
+				"templateIds": ["srd/item/ball-bearings/spill/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/utilize",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/item/caltrops/spread",
+				"displayName": "Spread Caltrops",
+				"groups": [],
+				"templateIds": ["srd/item/caltrops/spread/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/utilize",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/item/holy-water/throw",
+				"displayName": "Throw Holy Water",
+				"groups": ["combat"],
+				"templateIds": ["srd/item/holy-water/throw/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/movement/drop-prone",
+				"displayName": "Drop Prone",
+				"groups": [],
+				"templateIds": ["srd/movement/drop-prone/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/drop-prone",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/movement/stand-up",
+				"displayName": "Stand Up",
+				"groups": [],
+				"templateIds": ["srd/movement/stand-up/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/stand-up",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/pickup",
+				"displayName": "Pick Up",
+				"groups": [],
+				"templateIds": ["srd/pickup/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/item",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/rest/long/complete",
+				"displayName": "Complete a Long Rest",
+				"groups": [],
+				"templateIds": ["srd/rest/long/complete/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/long-rest",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/rest/short/complete",
+				"displayName": "Complete a Short Rest",
+				"groups": [],
+				"templateIds": ["srd/rest/short/complete/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/short-rest",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/speak-aloud",
+				"displayName": "Speak Aloud",
+				"groups": [],
+				"templateIds": ["srd/speak-aloud/affordance"],
+				"communicationSpeechActId": "srd/speak-aloud",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/communicate/speak",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/speak-to",
+				"displayName": "Speak To",
+				"groups": [],
+				"templateIds": ["srd/speak-to/affordance"],
+				"cue": {
+					"rank": 4,
+					"hint": "Speak directly to a visible person."
+				},
+				"communicationSpeechActId": "srd/speak-to",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/communicable",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/speak-to-room",
+				"displayName": "Speak Aloud to Room",
+				"groups": [],
+				"templateIds": ["srd/speak-to-room/affordance"],
+				"communicationSpeechActId": "srd/speak-to-room",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/communicable",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			}
+		],
+		"targets": [
+			{
+				"targetFactId": "target:168:entity:12",
+				"targetRef": "entity:12",
+				"targetName": "Brother Caddoc",
+				"nicheIds": [
+					"core/creature",
+					"core/grounded",
+					"core/social_communication",
+					"dm/niche/dialog",
+					"dm/niche/trainee-present",
+					"srd.alignment.neutral",
+					"srd.communication.vocal",
+					"srd.cr.1-4",
+					"srd.creature",
+					"srd.creature_type.humanoid",
+					"srd.creature.role.caster-boss",
+					"srd.dm_npc.talker",
+					"srd.language.common",
+					"srd.monster",
+					"srd.size.small",
+					"srd/creature/priest-acolyte",
+					"srd/niche/communicable"
+				],
+				"tags": [
+					"srd.alignment.neutral",
+					"srd.communication.vocal",
+					"srd.cr.1-4",
+					"srd.creature",
+					"srd.creature_type.humanoid",
+					"srd.creature.role.caster-boss",
+					"srd.dm_npc.talker",
+					"srd.language.common",
+					"srd.monster",
+					"srd.size.small"
+				]
+			},
+			{
+				"targetFactId": "target:168:entity:142",
+				"targetRef": "entity:142",
+				"targetName": "Hearth",
+				"nicheIds": [
+					"core/grounded",
+					"core/social_communication",
+					"elven_mini/adventure/furniture/hearth"
+				],
+				"tags": []
+			},
+			{
+				"targetFactId": "target:168:entity:168",
+				"targetRef": "entity:168",
+				"targetName": "You (Borin)",
+				"nicheIds": [
+					"core/creature",
+					"core/grounded",
+					"core/social_communication",
+					"dm/niche/trainee-present",
+					"elven_mini/adventure/candidate",
+					"srd.advancement.fighter.1",
+					"srd.background.soldier",
+					"srd.class.fighter",
+					"srd.communication.vocal",
+					"srd.creature",
+					"srd.faction.party",
+					"srd.feature.srd.skill.athletics",
+					"srd.feature.srd.skill.intimidation",
+					"srd.feature.srd.skill.perception",
+					"srd.party.heroes",
+					"srd.player_character",
+					"srd.species.dwarf",
+					"srd/niche/communicable"
+				],
+				"tags": [
+					"srd.advancement.fighter.1",
+					"srd.background.soldier",
+					"srd.class.fighter",
+					"srd.communication.vocal",
+					"srd.creature",
+					"srd.faction.party",
+					"srd.feature.srd.skill.athletics",
+					"srd.feature.srd.skill.intimidation",
+					"srd.feature.srd.skill.perception",
+					"srd.party.heroes",
+					"srd.player_character",
+					"srd.species.dwarf"
+				]
+			},
+			{
+				"targetFactId": "target:168:entity:6",
+				"targetRef": "entity:6",
+				"targetName": "Aldwin, keeper of the hearth-ledger",
+				"nicheIds": [
+					"core/creature",
+					"core/grounded",
+					"core/social_communication",
+					"dm/niche/aldwin",
+					"dm/niche/creation-station",
+					"dm/niche/dialog",
+					"dm/niche/trainee-present",
+					"srd.advancement_trainer",
+					"srd.alignment.neutral",
+					"srd.communication.vocal",
+					"srd.cr.0",
+					"srd.creature",
+					"srd.creature_type.humanoid",
+					"srd.creature.role.skirmisher",
+					"srd.dm_npc.aldwin",
+					"srd.dm_npc.creation",
+					"srd.dm_npc.talker",
+					"srd.language.common",
+					"srd.monster",
+					"srd.size.small",
+					"srd/creature/commoner",
+					"srd/niche/communicable"
+				],
+				"tags": [
+					"srd.advancement_trainer",
+					"srd.alignment.neutral",
+					"srd.communication.vocal",
+					"srd.cr.0",
+					"srd.creature",
+					"srd.creature_type.humanoid",
+					"srd.creature.role.skirmisher",
+					"srd.dm_npc.aldwin",
+					"srd.dm_npc.creation",
+					"srd.dm_npc.talker",
+					"srd.language.common",
+					"srd.monster",
+					"srd.size.small"
+				]
+			},
+			{
+				"targetFactId": "target:168:place_node:elven_mini/inn/common_room",
+				"targetRef": "place_node:elven_mini/inn/common_room",
+				"targetName": "Common Room",
+				"nicheIds": [],
+				"tags": []
+			}
+		],
+		"participants": [
+			{
+				"contextId": "mpc:361",
+				"actionId": "srd/attack/melee",
+				"bindingCount": 1,
+				"bindings": [
+					{
+						"roleId": "srd/instrument",
+						"entityId": "170"
+					}
+				]
+			},
+			{
+				"contextId": "mpc:362",
+				"actionId": "srd/attack/melee/swing",
+				"bindingCount": 1,
+				"bindings": [
+					{
+						"roleId": "srd/instrument",
+						"entityId": "170"
+					}
+				]
+			},
+			{
+				"contextId": "mpc:363",
+				"actionId": "srd/attack/opportunity-attack",
+				"bindingCount": 1,
+				"bindings": [
+					{
+						"roleId": "srd/instrument",
+						"entityId": "170"
+					}
+				]
+			},
+			{
+				"contextId": "mpc:364",
+				"actionId": "srd/attack/ranged",
+				"bindingCount": 1,
+				"bindings": [
+					{
+						"roleId": "srd/instrument",
+						"entityId": "170"
+					}
+				]
+			}
+		],
+		"prompts": [
+			{
+				"occurrenceId": "14",
+				"promptDefId": "elven_mini/prompt/quest/q1",
+				"contractVersion": 1,
+				"sourceRef": "entity:6",
+				"responseActionIds": ["dm/dialog/choice/1", "dm/dialog/choice/2"],
+				"openedAtTick": 59,
+				"consumed": false,
+				"presentation": {
+					"question": "Aldwin taps the ledger. The cellar is overrun with rats — a giant one, and a swarm in the casks. Clear them and the inn keeps a room for you.",
+					"labels": {
+						"dm/dialog/choice/1": "The cellar is overrun — I'll clear it.",
+						"dm/dialog/choice/2": "Not today."
+					}
+				}
+			}
+		]
+	},
+	"senseContext": {
+		"status": "ready",
+		"queries": [
+			{
+				"queryKind": "look",
+				"visibility": "Local",
+				"displayName": "Look Around",
+				"outcomeTemplateId": "srd/sense/look/outcome"
+			}
+		]
+	},
+	"session": {
+		"inSession": false,
+		"myTurn": false,
+		"lifecycle": null,
+		"currentActor": null,
+		"currentActorName": null,
+		"roster": []
+	},
+	"operations": {
+		"state": "ready",
+		"selected": {
+			"id": "1",
+			"label": "Activity",
+			"phase": "completed",
+			"description": null,
+			"terminal": true,
+			"worldTimed": true,
+			"turnRule": "Sequential",
+			"observedWorldTick": "70",
+			"progress": 100,
+			"fields": [
+				{
+					"label": "Phase",
+					"value": "completed"
+				},
+				{
+					"label": "Session",
+					"value": "1"
+				},
+				{
+					"label": "Definition",
+					"value": "srd/long_running_move"
+				},
+				{
+					"label": "Turn rule",
+					"value": "Sequential"
+				},
+				{
+					"label": "Round duration (milliseconds)",
+					"value": "6000"
+				},
+				{
+					"label": "Opened by",
+					"value": "Borin"
+				},
+				{
+					"label": "Current participant",
+					"value": "Borin"
+				},
+				{
+					"label": "Originating action",
+					"value": "Unknown"
+				},
+				{
+					"label": "Current participant is you",
+					"value": "Yes"
+				},
+				{
+					"label": "Originating target",
+					"value": "Unknown"
+				},
+				{
+					"label": "Observed world tick",
+					"value": "70"
+				},
+				{
+					"label": "Last world tick timestamp (Unix microseconds)",
+					"value": "1794767806382091"
+				},
+				{
+					"label": "Opened at world tick",
+					"value": "51"
+				},
+				{
+					"label": "Last advanced at world tick",
+					"value": "55"
+				},
+				{
+					"label": "Duration (world ticks)",
+					"value": "4"
+				},
+				{
+					"label": "Estimated completion world tick",
+					"value": "55"
+				},
+				{
+					"label": "Estimated remaining world ticks",
+					"value": "0"
+				},
+				{
+					"label": "Participant 1",
+					"value": "Borin"
+				}
+			]
+		},
+		"items": [],
+		"total": 0,
+		"nextCursor": null
+	},
+	"turnSession": null,
+	"reaction": null,
+	"pack": [
+		{
+			"id": "i:169",
+			"name": "Chain Mail",
+			"detail": "",
+			"quantity": 1,
+			"equipped": "Chest",
+			"depth": 0,
+			"handle": "i:169",
+			"rev": "8jcov4"
+		},
+		{
+			"id": "i:170",
+			"name": "Greatsword",
+			"detail": "",
+			"quantity": 1,
+			"equipped": "Main Hand",
+			"depth": 0,
+			"handle": "i:170",
+			"rev": "rvmyzm"
+		},
+		{
+			"id": "i:171",
+			"name": "Flail",
+			"detail": "",
+			"quantity": 1,
+			"equipped": null,
+			"depth": 0,
+			"handle": "i:171",
+			"rev": "132ybzy"
+		},
+		{
+			"id": "i:172",
+			"name": "Javelin",
+			"detail": "",
+			"quantity": 1,
+			"equipped": null,
+			"depth": 0,
+			"handle": "i:172",
+			"rev": "xghpj8"
+		},
+		{
+			"id": "i:173",
+			"name": "Javelin",
+			"detail": "",
+			"quantity": 1,
+			"equipped": null,
+			"depth": 0,
+			"handle": "i:173",
+			"rev": "z935k0"
+		},
+		{
+			"id": "i:174",
+			"name": "Javelin",
+			"detail": "",
+			"quantity": 1,
+			"equipped": null,
+			"depth": 0,
+			"handle": "i:174",
+			"rev": "1vyw9no"
+		}
+	],
+	"itemDetail": null,
+	"occupantDetail": null,
+	"placeState": "ready",
+	"speech": [
+		{
+			"id": "speech:43",
+			"tick": 59,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Aldwin taps the ledger. The cellar is overrun with rats — a giant one, and a swarm in the casks. Clear them and the inn keeps a room for you. 1: The cellar is overrun — I'll clear it. 2: Not today.",
+			"mine": false,
+			"addressee": 168
+		}
+	],
+	"events": [],
+	"mapSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"669\" height=\"760\" viewBox=\"0 0 669 760\" role=\"img\" aria-label=\"elven_mini/inn — all_floors_offset floors=[0]\">\n<style>\nsvg{font-family:Inter,system-ui,Arial,sans-serif}\n.h3-cell{fill:#c9d8cf;fill-opacity:.32;stroke:#536758;stroke-width:1.4;stroke-opacity:.9}\n.h3-cell--root{fill:#9bb8a8;fill-opacity:.45}\n.h3-cell--settlement{fill:#d4b896;fill-opacity:.5}\n.h3-cell--wilderness{fill:#b7c9b0;fill-opacity:.38}\n.h3-cell--default{fill:#c9d8cf;fill-opacity:.28}\n.place-portal{fill:#8b4513;stroke:#fff;stroke-width:2}\n.portal-tag{fill:#6b3a12;font-size:9px;font-weight:600;text-anchor:middle}\n.label-portal{font-weight:700}\n.route{stroke:#b97012;stroke-width:3;stroke-linecap:round;opacity:.9}\n.route-stairs{stroke:#6b4f9a;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:7 5;opacity:.95}\n.place{fill:#148284;stroke:#fff;stroke-width:2.2}\n.place-extent{fill:#148284;fill-opacity:.18;stroke:#0f5f61;stroke-width:1.5}\n.grid-cell{fill:#148284;fill-opacity:.06;stroke:#0f5f61;stroke-opacity:.55;stroke-width:1}\n.actor{fill:#245ebe;stroke:#fff;stroke-width:2}\n.label{fill:#1d2428;font-size:12px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}\n.actor-label{fill:#fff;font-size:9px;font-weight:800;text-anchor:middle}\n.chrome-label{fill:#3a454b;font-size:11px;font-weight:600;text-anchor:start}\n.scale-bar{stroke:#3a454b;stroke-width:2;stroke-linecap:square}\n.scale-bar-label{fill:#3a454b;font-size:11px;font-weight:700;text-anchor:middle}\n.floor-box{fill:#e7efed;stroke:#7a9690;stroke-width:1.5;opacity:.95}\n.floor-label{fill:#1d3a36;font-size:13px;font-weight:800;text-anchor:start}\n.stairs-label{fill:#6b4f9a;font-size:11px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:3px}\n.title-main{fill:#14201e;font-size:15px;font-weight:800;text-anchor:start}\n.title-sub{fill:#4a5a56;font-size:12px;font-weight:600;text-anchor:start}\n.title-rule{stroke:#c5d0cc;stroke-width:1}\n</style>\n<rect width=\"100%\" height=\"100%\" fill=\"#f4f7f6\" />\n<g class=\"title-bar\">\n<text class=\"title-main\" x=\"16\" y=\"22\">Inn</text>\n<text class=\"title-sub\" x=\"16\" y=\"38\">All floors (stacked panels) · indoor</text>\n<line class=\"title-rule\" x1=\"12\" y1=\"34\" x2=\"657\" y2=\"34\" />\n</g>\n<g class=\"floor-panel\" data-elevation=\"0\"><rect x=\"90.15\" y=\"92\" width=\"499.81\" height=\"566.45\" rx=\"10\" ry=\"10\" class=\"floor-box\" /><text x=\"102.15\" y=\"110\" class=\"floor-label\">Ground floor (z=0)</text></g>\n\n\n<line data-from=\"elven_mini/inn/stairs\" data-to=\"elven_mini/inn/common_room\" x1=\"451.13\" y1=\"564.04\" x2=\"340.06\" y2=\"397.44\" class=\"route\" />\n<line data-from=\"elven_mini/inn/stairs\" data-to=\"elven_mini/inn/foyer\" x1=\"451.13\" y1=\"564.04\" x2=\"173.45\" y2=\"230.84\" class=\"route\" />\n<line data-from=\"elven_mini/inn/common_room\" data-to=\"elven_mini/inn/foyer\" x1=\"340.06\" y1=\"397.44\" x2=\"173.45\" y2=\"230.84\" class=\"route\" />\n<line data-from=\"elven_mini/inn/common_room\" data-to=\"elven_mini/inn/bar\" x1=\"340.06\" y1=\"397.44\" x2=\"506.66\" y2=\"341.91\" class=\"route\" />\n<g data-node-id=\"elven_mini/inn/stairs\"><ellipse cx=\"451.13\" cy=\"564.04\" rx=\"83.30\" ry=\"99.96\" class=\"place-extent\" /><circle cx=\"451.13\" cy=\"564.04\" r=\"7\" class=\"place\" /><text x=\"451.13\" y=\"584.04\" class=\"label\">Stairs</text></g>\n<g data-node-id=\"elven_mini/inn/common_room\"><ellipse cx=\"340.06\" cy=\"397.44\" rx=\"177.72\" ry=\"133.30\" class=\"place-extent\" /><circle cx=\"340.06\" cy=\"397.44\" r=\"7\" class=\"place\" /><text x=\"340.06\" y=\"417.44\" class=\"label\">Common Room</text></g>\n<g data-node-id=\"elven_mini/inn/foyer\"><ellipse cx=\"173.45\" cy=\"230.84\" rx=\"122.18\" ry=\"133.30\" class=\"place-extent\" /><circle cx=\"173.45\" cy=\"230.84\" r=\"7\" class=\"place\" /><text x=\"173.45\" y=\"250.84\" class=\"label\">Foyer</text></g>\n<g data-node-id=\"elven_mini/inn/bar\"><ellipse cx=\"506.66\" cy=\"341.91\" rx=\"111.07\" ry=\"77.76\" class=\"place-extent\" /><circle cx=\"506.66\" cy=\"341.91\" r=\"7\" class=\"place\" /><text x=\"506.66\" y=\"361.91\" class=\"label\">Bar</text></g>\n<g class=\"map-chrome\" data-chrome=\"legend\" transform=\"translate(0 720)\">\n<line x1=\"12\" y1=\"0.5\" x2=\"657\" y2=\"0.5\" stroke=\"#c5d0cc\" stroke-width=\"1\" />\n<g class=\"symbol-legend\" transform=\"translate(12 0)\">\n<circle cx=\"6\" cy=\"14\" r=\"6\" class=\"place\" />\n<text class=\"chrome-label\" x=\"18\" y=\"18\">place</text>\n<line class=\"route\" x1=\"62\" y1=\"14\" x2=\"86\" y2=\"14\" />\n<text class=\"chrome-label\" x=\"92\" y=\"18\">route</text>\n<circle cx=\"148\" cy=\"14\" r=\"9\" class=\"actor\" />\n<text class=\"actor-label\" x=\"148\" y=\"17.5\">n</text>\n<text class=\"chrome-label\" x=\"164\" y=\"18\">occupants</text>\n<line class=\"route-stairs\" x1=\"248\" y1=\"14\" x2=\"278\" y2=\"14\" />\n<text class=\"chrome-label\" x=\"284\" y=\"18\">stairs / floor link</text>\n</g></g>\n</svg>\n",
+	"mapState": "ready",
+	"economy": [],
+	"economyBudget": {
+		"channels": [
+			{
+				"channelId": "core/action_class/movement",
+				"label": "Move",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "core/action_class/primary",
+				"label": "Action",
+				"poolMs": 1000,
+				"remainingMs": 1000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/bonus",
+				"label": "Bonus",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/movement",
+				"label": "Move",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/object_interaction",
+				"label": "Object",
+				"poolMs": 500,
+				"remainingMs": 500,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/primary",
+				"label": "Action",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/reaction",
+				"label": "Reaction",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": true
+			}
+		],
+		"unavailable": false
+	},
+	"sessionTokens": []
+}

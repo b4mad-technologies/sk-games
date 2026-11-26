@@ -1,0 +1,32 @@
+Required Notice: Copyright (c) 2026 B4mad Technologies
+
+Original code in this repository is licensed under the PolyForm Shield
+License 1.0.0 (LICENSE). First-party art is licensed under CC BY 4.0
+(ART.md). Third-party material keeps its own terms:
+
+- apps/chat/src/lib/llm/messages.ts: message conversion adapted from
+  @earendil-works/pi-ai 0.80.9 (dist/api/openai-completions.js) under the
+  MIT License, Copyright (c) 2025 Mario Zechner. See
+  apps/chat/src/lib/llm/LICENSE-pi-ai.txt.
+- Dependencies are installed from npm under their own licences and are not
+  vendored here.
+
+Images
+
+This repository holds no first-party images today. The design system
+packages it installs carry their own art and licence notes (sk-sites
+ART.md). SRD sprites that the classic app bundles come from sk-content
+under that repository's licences.
+
+Some images were generated with PixelLab. PixelLab's terms restrict using its outputs to train other models; that restriction may apply to you.
+
+SRD material
+
+The play and classic apps copy small SRD 5.2 tables (experience
+thresholds by level, weapon mastery properties) and use SRD names.
+
+     This work includes material from the System Reference Document 5.2.1
+     ("SRD 5.2.1") by Wizards of the Coast LLC, available at
+     https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the
+     Creative Commons Attribution 4.0 International License, available at
+     https://creativecommons.org/licenses/by/4.0/legalcode.

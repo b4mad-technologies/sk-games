@@ -1,0 +1,957 @@
+@import "@spellkave/ui/styles.css";
+@source "./**/*.{svelte,ts}";
+/* Source-consumed play widgets own responsive layout and detail utilities. */
+@source "../node_modules/@spellkave/ui-widgets/src/**/*.{svelte,ts}";
+/* MapTile.svelte mounts @spellkave/map-canvas's MapCanvas.svelte, whose own
+ * utility classes (inset-y-3, w-80, the arbitrary-value max-w, …) live
+ * outside this app's tree and are otherwise invisible to Tailwind's content
+ * scan — same fix apps/ui-lab already carries for this package. */
+@source "../node_modules/@spellkave/map-canvas/src/**/*.{svelte,ts}";
+
+/* --- The app shell: the world owns the screen, no page scroll ------------ */
+/* No masthead any more (sk-jay0.1.8.3): `.play-shell` is themed by
+ * `@spellkave/ui/styles.css`; here it becomes the fixed viewport root the
+ * surface brief asks for. `.threshold` (PlayGate's auth/choose-hero screens)
+ * keeps its own internal scroller so a long hero board never grows the page;
+ * the mosaic gets the rest via `PlayTable`'s tile bodies. */
+
+.play-shell {
+	display: flex;
+	flex-direction: column;
+	height: 100dvh;
+	min-height: 100dvh;
+	overflow: hidden;
+	caret-color: var(--ring);
+	scrollbar-width: thin;
+	scrollbar-color: var(--primary) var(--background);
+}
+
+.play-shell > .threshold {
+	flex: 1;
+	min-height: 0;
+	overflow-y: auto;
+}
+
+.play-shell > .membership-note {
+	flex: 0 0 auto;
+}
+
+/* --- Choosing a hero (sk-jay0.5.1.5.1) ------------------------------------ */
+
+.world-switch {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	justify-content: center;
+	margin: 0 0 1.75rem;
+}
+
+.world-chip {
+	padding: 0.4rem 0.9rem;
+	border: 1px solid color-mix(in srgb, var(--muted) 45%, transparent);
+	border-radius: 9999px;
+	background: transparent;
+	color: var(--muted);
+	font: inherit;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.world-chip[aria-current="true"] {
+	border-color: currentcolor;
+	color: inherit;
+}
+
+.world-chip:disabled {
+	cursor: default;
+	opacity: 0.55;
+}
+
+.hero-choices {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	width: min(100%, 26rem);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.hero-taken {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 1rem;
+	margin: 0;
+	padding: 0.65rem 1rem;
+	border: 1px dashed color-mix(in srgb, var(--muted) 40%, transparent);
+	border-radius: var(--radius);
+	color: var(--muted);
+}
+
+.hero-taken span {
+	font-size: 0.75rem;
+	text-transform: lowercase;
+}
+
+.claim-status {
+	margin: 1.25rem 0 0;
+	color: var(--muted);
+}
+
+.membership-note {
+	width: min(100%, 40rem);
+	margin: 0 auto 1rem;
+	padding: 0.6rem 1rem;
+	border-radius: var(--radius);
+	background: color-mix(in srgb, var(--muted) 12%, transparent);
+	color: var(--muted);
+	font-size: 1rem;
+	text-align: center;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* --- The zoomed table: six fixed tiles that grow in place ----------------- */
+/* Mechanics ported from `ledger/designs/play-zoomed-table/prototype.html`:
+ * `size()` per tile (mosaic.ts `tileSize`), `fr()` mapping a size share to a
+ * grid fraction, three levels (strip/card/stage) at the 0.25/0.7 thresholds,
+ * grid-track transitions instead of a FLIP library. Tokens come from
+ * `@spellkave/ui`'s theme (`--background`, `--card`, `--primary`, `--border`,
+ * `--ring`, `--paper*`), not the prototype's Living-Grammar-only names, so
+ * every theme (not only Living Grammar) gets a correctly themed mosaic. */
+
+:root {
+	--mosaic-gap: 0.5rem;
+	--mosaic-icon-col: 3.25rem;
+	--mosaic-strip: 2.5rem;
+	--mosaic-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+	--mosaic-dur: 240ms;
+	/* PlayDock (mounted once by PlayTable, the app's one bottom action
+	 * surface): a default before its own `ResizeObserver` measures the
+	 * actual rendered dock and overrides this on `documentElement` — kept
+	 * here, not on `.mosaic`, so that override actually takes effect. */
+	--play-dock-height: 76px;
+}
+
+.mosaic {
+	display: grid;
+	height: 100%;
+	min-height: 0;
+	padding: var(--mosaic-gap);
+	gap: var(--mosaic-gap);
+	grid-template-rows: minmax(0, 1fr);
+	/* Reserved so the fixed dock never covers the mosaic's last tile row. */
+	padding-bottom: calc(var(--mosaic-gap) + var(--play-dock-height));
+}
+
+.mosaic--desktop {
+	grid-auto-flow: column;
+	transition: grid-template-columns var(--mosaic-dur) var(--mosaic-ease);
+}
+
+.mosaic--mobile {
+	grid-template-columns: minmax(0, 1fr);
+	transition: grid-template-rows var(--mosaic-dur) var(--mosaic-ease);
+}
+
+.mosaic-col {
+	display: grid;
+	position: relative;
+	gap: var(--mosaic-gap);
+	min-width: 0;
+	min-height: 0;
+	align-content: start;
+	transition: grid-template-rows var(--mosaic-dur) var(--mosaic-ease);
+}
+
+/* While a pointer drag or pinch is in flight the tracks follow the pointer
+ * every frame instead of easing toward it; releasing re-enables the
+ * transition so the snap to the nearest level is what actually animates. */
+.mosaic.dragging,
+.mosaic.dragging .mosaic-col {
+	transition: none;
+}
+
+.mosaic-tile {
+	position: relative;
+	min-width: 0;
+	min-height: 0;
+}
+
+.mosaic-tile > .tile {
+	width: 100%;
+	height: 100%;
+}
+
+/* The resize affordance belongs to the shared space between two panes, not
+ * to either pane's border. The hit target spans the normal mosaic gap while
+ * its one-pixel rule only becomes prominent on hover or while dragging. */
+.mosaic-splitter {
+	position: absolute;
+	z-index: 2;
+	touch-action: none;
+}
+
+.mosaic-splitter::after {
+	position: absolute;
+	content: "";
+	background: color-mix(in srgb, var(--border) 52%, transparent);
+	transition: background-color 140ms ease-out, box-shadow 140ms ease-out;
+}
+
+.mosaic-splitter:hover::after,
+.mosaic.dragging .mosaic-splitter::after {
+	background: var(--primary);
+	box-shadow: 0 0 0 1px color-mix(in srgb, var(--primary) 25%, transparent);
+}
+
+/* A pair of collapsed strips has no flexible space to redistribute. Keep its
+ * divider as orientation, but do not advertise a resize interaction. */
+.mosaic-splitter--inactive {
+	pointer-events: none;
+}
+
+.mosaic-splitter--row {
+	left: 0;
+	right: 0;
+	bottom: calc(var(--mosaic-gap) * -1);
+	height: var(--mosaic-gap);
+	cursor: row-resize;
+}
+
+.mosaic-splitter--row::after {
+	top: calc(50% - 0.5px);
+	left: 0.5rem;
+	right: 0.5rem;
+	height: 1px;
+}
+
+.mosaic-splitter--column {
+	top: 0;
+	right: calc(var(--mosaic-gap) * -1);
+	bottom: 0;
+	width: var(--mosaic-gap);
+	cursor: col-resize;
+}
+
+.mosaic-splitter--column::after {
+	top: 0.5rem;
+	bottom: 0.5rem;
+	left: calc(50% - 0.5px);
+	width: 1px;
+}
+
+.mosaic-splitter--corner {
+	--mosaic-corner-hit: 1.5rem;
+	right: calc((var(--mosaic-gap) + var(--mosaic-corner-hit)) / -2);
+	bottom: calc((var(--mosaic-gap) + var(--mosaic-corner-hit)) / -2);
+	width: var(--mosaic-corner-hit);
+	height: var(--mosaic-corner-hit);
+	cursor: nwse-resize;
+}
+
+.mosaic-splitter--corner-left {
+	left: calc((var(--mosaic-gap) + var(--mosaic-corner-hit)) / -2);
+	right: auto;
+	cursor: nesw-resize;
+}
+
+.mosaic-splitter--corner::after {
+	top: 50%;
+	left: 50%;
+	width: 0.375rem;
+	height: 0.375rem;
+	border-radius: var(--radius);
+	transform: translate(-50%, -50%);
+}
+
+.tile {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	min-height: 0;
+	border: 1px solid color-mix(in srgb, var(--border) 75%, transparent);
+	border-top: 3px double color-mix(in srgb, var(--primary) 55%, transparent);
+	border-radius: var(--radius);
+	background: var(--card);
+	color: var(--card-foreground);
+	overflow: hidden;
+	transition:
+		border-color var(--mosaic-dur) var(--mosaic-ease),
+		box-shadow var(--mosaic-dur) var(--mosaic-ease);
+}
+
+.tile[data-zoom="stage"] {
+	border-color: var(--border);
+	border-top-color: var(--primary);
+	box-shadow: 0 0.55rem 1.1rem color-mix(in srgb, var(--background) 72%, transparent);
+}
+
+.tile[data-zoom="strip"] {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-color: color-mix(in srgb, var(--border) 45%, transparent);
+	background: transparent;
+}
+
+.tile-head {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex: 0 0 auto;
+	min-height: calc(var(--mosaic-strip) - 2px);
+	padding: 0 0.375rem 0 0.625rem;
+	border-bottom: 1px solid color-mix(in srgb, var(--border) 30%, transparent);
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	/* The top 8px of the head doubles as the row-resize grab band
+	 * (PlayTable.svelte `EDGE_BAND`); default touch scroll/pinch-zoom would
+	 * otherwise fight a one-finger drag that starts there. */
+	touch-action: none;
+}
+
+.tile[data-zoom="strip"] .tile-head {
+	border-bottom: 0;
+}
+
+.tile-icon {
+	width: 1rem;
+	height: 1rem;
+	flex: 0 0 auto;
+	color: var(--muted-foreground);
+}
+
+.tile[data-zoom="stage"] .tile-head .tile-icon:first-child {
+	color: var(--primary);
+}
+
+.tile-label {
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--muted-foreground);
+}
+
+.tile-badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 1rem;
+	height: 1rem;
+	padding: 0 0.3rem;
+	border-radius: 9999px;
+	background: var(--primary);
+	color: var(--primary-foreground);
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.tile-spacer {
+	flex: 1;
+}
+
+.tile-mode {
+	color: var(--primary);
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.tile-zoom {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.75rem;
+	height: 1.75rem;
+	flex: 0 0 auto;
+	padding: 0;
+	border: 0;
+	border-radius: var(--radius);
+	background: transparent;
+	color: var(--muted-foreground);
+	cursor: pointer;
+	transition: background-color 140ms ease-out, color 140ms ease-out;
+}
+
+.tile-zoom:hover {
+	color: var(--foreground);
+	background-color: color-mix(in srgb, var(--muted-surface) 70%, transparent);
+}
+
+.tile-zoom:focus-visible {
+	outline: 2px solid var(--ring);
+	outline-offset: 2px;
+}
+
+.tile-body {
+	min-height: 0;
+	flex: 1;
+	padding: 0.625rem;
+	overflow: hidden;
+}
+
+.tile[data-zoom="stage"] .tile-body {
+	overflow: hidden auto;
+	padding: 0.75rem 0.875rem 0.875rem;
+}
+
+/* Pack owns independent list/detail scroll regions inside the available tile. */
+.tile[data-tile="pack"][data-zoom="stage"] .tile-body {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+/* Place keeps Here/detail scrolling inside the tile so Ways out stay visible. */
+.tile[data-tile="place"][data-zoom="stage"] .tile-body {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+/* Place at card level (sk-jay0.1.8.102): the tile body is a column, so the
+ * action feedback line above the card ("Working…", a refusal) and the card
+ * share the tile's height. Without it the card stays a full body tall next to
+ * that line and its last row, "N ways out", is clipped below the tile edge. */
+.tile[data-tile="place"][data-zoom="card"] .tile-body {
+	display: flex;
+	flex-direction: column;
+}
+
+.tile[data-zoom="strip"] .tile-body {
+	display: none;
+}
+
+/* A column whose tallest tile is still under the strip threshold becomes an
+ * icon rail: square tiles, head-only, centred glyph. */
+.mosaic-col[data-narrow] {
+	align-content: start;
+}
+
+.mosaic-col[data-narrow]:not([data-row-active]) .tile {
+	aspect-ratio: 1;
+}
+
+.mosaic-col[data-narrow] .tile-head {
+	justify-content: center;
+	padding: 0;
+	height: 100%;
+}
+
+.mosaic-col[data-narrow] .tile-icon {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.mosaic-col[data-narrow] .tile-label,
+.mosaic-col[data-narrow] .tile-mode,
+.mosaic-col[data-narrow] .tile-spacer {
+	display: none;
+}
+
+/* The rail glyph is still the tile's visual affordance, but its existing
+ * labelled zoom button must remain a real control: a header click alone is
+ * neither keyboard-reachable nor announced to a screen reader. Cover the
+ * compact glyph tile with that same button instead of adding a second rail
+ * renderer or changing the mosaic's fight posture. */
+.mosaic-col[data-narrow] .tile-zoom {
+	position: absolute;
+	inset: 0;
+	width: auto;
+	height: auto;
+}
+
+/* `.tile-icon` sets its own foreground colour, so making the overlay button
+ * transparent does not hide its grow/shrink SVG. Keep the button's full
+ * keyboard and pointer target but suppress that duplicate visual glyph; the
+ * header's category glyph is the rail's one visible icon. */
+.mosaic-col[data-narrow] .tile-zoom .tile-icon {
+	opacity: 0;
+}
+
+.mosaic-col[data-narrow] .tile-badge {
+	position: absolute;
+	top: 0.25rem;
+	right: 0.25rem;
+}
+
+/* Phone: a single stack, the strips acting as the tab bar. */
+@media (max-width: 63.99rem) {
+	.mosaic--desktop {
+		display: none;
+	}
+}
+
+@media (min-width: 64rem) {
+	.mosaic--mobile {
+		display: none;
+	}
+}
+
+/* The table tile's card level: a compact paper line plus one say field —
+ * "today's summary", not the full stage composition. */
+.tile-card-paper {
+	padding: 0.625rem 0.75rem;
+	border-radius: var(--radius);
+	background: var(--paper);
+	color: var(--paper-ink);
+	border: 1px solid color-mix(in srgb, var(--paper-ink) 30%, transparent);
+}
+
+.tile-card-line {
+	margin: 0;
+	font-family: var(--font-display);
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+.tile-card-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.375rem;
+	margin-top: 0.375rem;
+}
+
+/* The dock's own selection chip (row 1): world content (a hero, NPC or place
+ * name) with no length limit, so its own name span must cap and truncate
+ * rather than push the row's neighbours out of the dock — never
+ * `flex: 0 0 auto` at its full intrinsic width. */
+.play-dock__chip {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	flex: 0 1 auto;
+	min-width: 0;
+	max-width: 12rem;
+	padding: 0 0.6rem;
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	color: var(--primary);
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+.play-dock__chip-name {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	min-width: 0;
+}
+
+/* An InfoLink is a button, not merely the name span. It must become the
+ * shrinkable flex item too; otherwise its inline formatting box preserves the
+ * full intrinsic name and the ellipsis on the nested span never engages. */
+.play-dock__chip > .info-link {
+	display: block;
+	flex: 1 1 auto;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* Stage Table scenes share one spatial grammar: context and history above,
+ * then a fixed action dock. Talk owns its transcript scrollport; Explore owns
+ * an equivalent event stream. Compact card and fight modes stay unchanged. */
+.tile[data-tile="table"][data-zoom="stage"] .tile-body {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.table-scene {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	min-height: 0;
+}
+
+/* The gap under the filter bar is a margin on this host, never padding on
+ * the scrollport inside it (sk-jay0.1.8.110): a scrollport clips at its
+ * padding box, so scrolled rows would stay visible in a padding band right
+ * under the bar. Same gap as `.table-card-stream`. */
+.table-explore-shell {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	min-height: 0;
+	margin-top: 0.375rem;
+}
+
+/* The stable "PLACE / STAGE CONTEXT" line (Table design note): place name
+ * left, who else is here right. Card level only (sk-jay0.1.8.63.5 moved the
+ * stage level's own version into the Explore stream's newest section
+ * header instead — a fixed line above a stream that already opens on the
+ * current place's own header would only repeat it) — the card's own
+ * `tile-card-paper` line has no stream of its own to stick a header to. */
+.table-context {
+	display: flex;
+	flex: 0 0 auto;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.25rem 1rem;
+	margin-bottom: 0.5rem;
+	font-family: var(--font-display);
+}
+
+.table-context__place {
+	font-weight: 600;
+}
+
+/* Scrolling, the end padding that keeps the scrollbar off the bubbles, and
+ * the bottom inset come from `.sk-stream-scroll` (`@spellkave/ui`), which
+ * both stream containers carry. It has no top padding; the gap above a
+ * stream is its host's margin. Only the sizing lives here. */
+.table-explore-stream {
+	min-height: 0;
+	flex: 1 1 auto;
+}
+
+/* The fight Table at card level (sk-jay0.1.8.63.13): the same stream every
+ * scene shares. The tile body becomes a column so the stream takes all the
+ * height the activity line, the turn bar and the selection row leave over —
+ * a fixed 6rem cap left most of the tile empty while the history had one
+ * visible line. */
+.tile[data-tile="table"][data-zoom="card"] .tile-body:has(> .table-card-stream) {
+	display: flex;
+	flex-direction: column;
+}
+
+.table-card-stream {
+	flex: 1 1 0;
+	min-height: 3rem;
+	margin-top: 0.375rem;
+}
+
+.tile-card-muted {
+	margin: 0.375rem 0 0;
+	color: var(--muted-foreground);
+	font-size: 0.75rem;
+}
+
+.play-map-link {
+	margin: 0.5rem 0 0;
+	text-align: right;
+	font-size: 0.75rem;
+}
+
+.play-map-link a {
+	color: var(--primary);
+}
+
+/* The map tile's stage level: `.map-tile-canvas` (the `@spellkave/map-canvas`
+ * mount) plus `.map-tile-footer` (the "whole world" note and the escape-hatch
+ * link, one row), sharing `.tile-body`'s height as a flex column so the
+ * footer stays a visible sibling instead of trailing content the canvas's
+ * own height pushes below `.tile-body`'s fold. */
+.map-tile-stage {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 0;
+}
+
+.map-tile-controls {
+	flex: 0 0 auto;
+	max-height: 35%;
+	overflow: auto;
+}
+
+/* MapLibre fills this container (`absolute inset-0`, its own ResizeObserver)
+ * so the container itself needs a definite, positioned box — `flex: 1` inside
+ * `.map-tile-stage` supplies that, leaving room below for the footer. */
+.map-tile-canvas {
+	position: relative;
+	flex: 1;
+	min-height: 14rem;
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	overflow: hidden;
+	background: var(--background);
+}
+
+.map-tile-skeleton {
+	position: absolute;
+	inset: 0;
+	background-image: linear-gradient(
+		100deg,
+		color-mix(in srgb, var(--muted-surface) 55%, transparent) 30%,
+		color-mix(in srgb, var(--muted-surface) 90%, transparent) 50%,
+		color-mix(in srgb, var(--muted-surface) 55%, transparent) 70%
+	);
+	background-size: 200% 100%;
+	animation: map-tile-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes map-tile-shimmer {
+	from {
+		background-position: 200% 0;
+	}
+	to {
+		background-position: -200% 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.map-tile-skeleton {
+		animation: none;
+	}
+}
+
+/* One row: the whole-world note (shrinks/wraps first) and the escape-hatch
+ * link (never wraps its own text), never the note followed by a trailing
+ * link line that a short tile can clip. */
+.map-tile-footer {
+	display: flex;
+	flex: 0 0 auto;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.25rem 0.75rem;
+	margin-top: 0.5rem;
+}
+
+.play-map-whole-world {
+	flex: 1 1 auto;
+	min-width: 12rem;
+	margin: 0;
+	color: var(--muted-foreground);
+	font-size: 0.75rem;
+}
+
+.map-tile-open-link {
+	flex: 0 0 auto;
+	color: var(--primary);
+	font-size: 0.75rem;
+	white-space: nowrap;
+}
+
+.play-action-status {
+	flex: 0 0 auto;
+	max-height: 30%;
+	overflow: auto;
+	min-height: 1.5rem;
+	margin: 0.5rem 0.875rem 0;
+	color: var(--foreground);
+}
+
+.play-explore-activity {
+	margin-top: 1rem;
+}
+
+.play-explore-activity ol {
+	margin: 0.5rem 0 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: 0.5rem;
+}
+
+.play-explore-activity__line {
+	border-left: 2px solid var(--border);
+	padding-left: 0.75rem;
+}
+
+/* Frames sit in grid tracks: never let a long authored label widen a track.
+ * Buttons wrap their text instead of forcing the column open. The `sm`
+ * button variant (28px visual, 44px hit target) is the mosaic's density —
+ * no forced min-height fights it any more. The wrap rule itself
+ * (`min-width`, `overflow-wrap`, and the button's own `height`/
+ * `white-space`/`text-align`) now lives in `PlayFrame.svelte`'s own
+ * `:global([data-slot^="play-"] …)` block, not here: a `.mosaic`-scoped
+ * rule in this file only ever reached apps/play's own shell, so
+ * apps/ui-lab's demo gallery (same widgets, no `.mosaic` ancestor)
+ * rendered long labels unwrapped and overflowing (sk-jay0.1.8.16
+ * follow-up). Every widget-tree consumer gets the rule the same way now,
+ * since the widget package is source-consumed and each app's own build
+ * compiles that `<style>` block itself. Nothing mosaic-specific remains
+ * to keep here. */
+
+/* --- The seat seal: account, theme, sign out, spellkave.com --------------- */
+/* No reserved band above the mosaic: PlayDock places the seal itself, at the
+ * right end of its status row. This fixed top-right spot is only for the
+ * PlayGate screens, which have no dock to sit in. */
+
+.seat-seal-gate {
+	position: fixed;
+	top: calc(0.75rem + env(safe-area-inset-top));
+	right: 0.75rem;
+	z-index: 20;
+}
+
+/* sk-jay0.1.1.14: the live world_time tick, extending the seal's own cluster
+ * (never an overlay) — one flex row wherever the seal itself renders
+ * (PlayDock's status row, or `.seat-seal-gate` on PlayGate), so it inherits
+ * that container's own placement/z-index for free. */
+.seat-seal-cluster {
+	display: flex;
+	align-items: center;
+	gap: 0.375rem;
+}
+
+/* The DockMenu trigger's own round look — a "Button variant=woven-icon
+ * size=seal" cannot be used directly (it renders a <button>, and the trigger
+ * it would sit in already is one), so this reproduces the same round,
+ * initial-centred glyph as a plain style. */
+.seat-seal {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 9999px;
+	border: 1px solid var(--border);
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--font-display);
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+
+.seat-menu__who {
+	padding: 0.375rem 0.5rem 0.5rem;
+	border-bottom: 1px solid color-mix(in srgb, var(--border) 45%, transparent);
+	margin-bottom: 0.25rem;
+}
+
+.seat-menu__who p {
+	margin: 0;
+}
+
+.seat-menu__name {
+	font-family: var(--font-display);
+	font-size: 1rem;
+}
+
+.seat-menu__world {
+	color: var(--muted-foreground);
+	font-size: 0.75rem;
+}
+
+.seat-menu__theme {
+	padding: 0.375rem 0.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.mosaic--desktop,
+	.mosaic-col,
+	.mosaic--mobile,
+	.tile {
+		transition: none !important;
+	}
+
+}
+
+/* --- PlayDock: the one bottom orientation + action surface, mounted once
+ * by PlayTable regardless of which tile is on stage — the only composer and
+ * the only next-step surface in the app. `height: 100%` everywhere else
+ * assumes `--play-dock-height` reserved above in `.mosaic`. --- */
+
+.play-dock {
+	position: fixed;
+	inset-inline: 0;
+	bottom: 0;
+	z-index: 30;
+	display: flex;
+	flex-direction: column;
+	gap: 0.375rem;
+	padding: 0.5rem 0.75rem;
+	background: var(--card);
+	border-top: 1px solid var(--border);
+}
+
+.play-dock__row1 {
+	display: flex;
+	align-items: stretch;
+	gap: 0.375rem;
+}
+
+/* Compact resource strip beside the composer. On a narrow screen it takes
+ * its own line under the input rather than squeezing it. */
+.play-dock__pips {
+	align-self: center;
+}
+
+@media (max-width: 40rem) {
+	.play-dock__row1 {
+		flex-wrap: wrap;
+	}
+
+	.play-dock__pips {
+		order: 9;
+		flex-basis: 100%;
+	}
+}
+
+.play-dock__row1 input {
+	flex: 1;
+	min-width: 6rem;
+}
+
+/* A world-authored action form shares the dock's one submission path. The
+ * schema chooses fields; this layout deliberately knows no action ids. */
+.play-dock__inputs {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	gap: 0.375rem;
+	min-width: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.play-dock__input-field {
+	display: grid;
+	gap: 0.125rem;
+	flex: 1 1 8rem;
+	min-width: 0;
+	font: var(--font-label);
+	color: var(--muted-foreground);
+}
+
+.play-dock__input-field textarea {
+	width: 100%;
+	min-width: 0;
+	resize: vertical;
+	color: var(--foreground);
+	background: var(--background);
+	border: 1px solid var(--border);
+}
+
+/* Row 2: the hotbar (`DockHotbar`, `@spellkave/ui`) — its own rows already
+ * wrap internally, this only stacks the resource strip and every row it
+ * hands back. */
+.play-dock__row2 {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.play-dock__row3 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.375rem 1rem;
+}

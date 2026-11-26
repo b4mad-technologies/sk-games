@@ -1,0 +1,52 @@
+@import "@spellkave/ui/styles.css";
+@source "./**/*.{svelte,ts}";
+@source "../node_modules/@spellkave/ui-widgets/src/**/*.{svelte,ts}";
+@source "../node_modules/@spellkave/ui/src/**/*.{svelte,ts}";
+
+html,
+body,
+#app {
+	height: 100%;
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+	margin: 0;
+}
+
+/* Shared mock-up surfaces. Colours come from the theme tokens only. */
+.cm-panel {
+	background: var(--card);
+	color: var(--card-foreground);
+	border: 1px solid var(--border);
+	border-radius: var(--radius-md);
+}
+
+.cm-pick {
+	background: var(--card);
+	color: var(--card-foreground);
+	border: 1px solid var(--border);
+	border-radius: var(--radius-md);
+	cursor: pointer;
+	text-align: left;
+}
+
+.cm-pick:hover,
+.cm-pick:focus-visible {
+	border-color: var(--ring);
+	outline: none;
+}
+
+.cm-pick[aria-pressed="true"] {
+	border-color: var(--primary);
+	box-shadow: 0 0 0 2px var(--primary);
+}
+
+.cm-muted {
+	color: var(--muted-foreground);
+}
+
+.cm-pixel {
+	image-rendering: pixelated;
+}

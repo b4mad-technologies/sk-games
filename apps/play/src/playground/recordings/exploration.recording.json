@@ -1,0 +1,807 @@
+{
+	"kind": "spellkave.recording",
+	"version": 2,
+	"id": "playground_legacy_exploration",
+	"surface": "spellkave.play",
+	"capturedAt": 1768000000000,
+	"provenance": {
+		"source": "legacy",
+		"title": "Former Playground exploration example"
+	},
+	"frames": [
+		{
+			"id": "frame_3g6cg31s6rij7",
+			"sequence": 1,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Renn the Roadwarden",
+						"species": "Human",
+						"className": "Fighter",
+						"background": "Soldier",
+						"level": 1,
+						"hp": 11,
+						"ac": 16,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [
+							{
+								"id": "srd/hp",
+								"label": "Hit Points",
+								"value": "11"
+							},
+							{
+								"id": "srd/ac",
+								"label": "Armor Class",
+								"value": "16"
+							},
+							{
+								"id": "srd/level",
+								"label": "Character Level",
+								"value": "1"
+							}
+						],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 16,
+								"modifier": 3
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 12,
+								"modifier": 1
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 11,
+								"modifier": 0
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 9,
+								"modifier": -1
+							}
+						],
+						"skills": [
+							{
+								"id": "srd/skill/athletics",
+								"label": "Athletics"
+							},
+							{
+								"id": "srd/skill/perception",
+								"label": "Perception"
+							}
+						],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "Human fighter, a soldier's bearing",
+						"backstory": "A roadwarden out of the Ashwold garrison, six years on the King's highways.",
+						"placeId": "inn/common_room"
+					},
+					"place": {
+						"id": "inn/common_room",
+						"name": "Common Room",
+						"description": "Long trestle tables share the room with a low fire, the smell of woodsmoke and last night's stew going cold on the hearth.",
+						"exits": [
+							{
+								"handle": "s:exit:1",
+								"rev": "r1",
+								"label": "southeast",
+								"to": "inn/stairs",
+								"toName": "Stairs",
+								"gates": []
+							},
+							{
+								"handle": "s:exit:2",
+								"rev": "r2",
+								"label": "north",
+								"to": "inn/bar",
+								"toName": "Bar",
+								"gates": []
+							},
+							{
+								"handle": "s:exit:3",
+								"rev": "r3",
+								"label": "west",
+								"to": "inn/foyer",
+								"toName": "Foyer",
+								"gates": ["elven_mini/affordance/dm_threshold"]
+							}
+						]
+					},
+					"occupants": [
+						{
+							"id": "4",
+							"handle": "s:actor:4",
+							"rev": "a4",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Aldwin, keeper of the hearth-ledger",
+							"conditions": [],
+							"note": "Here with you"
+						},
+						{
+							"id": "9",
+							"handle": "s:actor:9",
+							"rev": "a9",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Brother Caddoc",
+							"conditions": [],
+							"note": "Here with you"
+						},
+						{
+							"id": "31",
+							"handle": "s:entity:31",
+							"rev": "e31",
+							"kind": "thing",
+							"sceneKind": "entity",
+							"name": "Hearth",
+							"conditions": [],
+							"note": "Something here"
+						}
+					],
+					"actions": [
+						{
+							"id": "h:talk",
+							"label": "Speak To — Aldwin, keeper of the hearth-ledger",
+							"verb": "communicate",
+							"descriptor": "srd/speak-to",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": true
+						},
+						{
+							"id": "h:ask",
+							"label": "Ask Aldwin About Advancement",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/ask-advancement",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:arcana",
+							"label": "Check: Arcana",
+							"verb": "manipulate",
+							"descriptor": "srd/check/arcana",
+							"targetName": "",
+							"targetRef": "entity:7",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:look",
+							"label": "Look around",
+							"verb": "sensing",
+							"descriptor": "srd/sense/look",
+							"targetName": "",
+							"targetRef": "entity:7",
+							"acceptsUtterance": false
+						}
+					],
+					"actionCount": 4,
+					"session": {
+						"inSession": false,
+						"myTurn": false,
+						"lifecycle": null,
+						"currentActor": null,
+						"currentActorName": null,
+						"roster": []
+					},
+					"reaction": null,
+					"pack": [
+						{
+							"id": "12",
+							"name": "Longsword",
+							"detail": "Weapon",
+							"quantity": 1,
+							"equipped": "main hand",
+							"handle": "i:12",
+							"rev": "p12"
+						},
+						{
+							"id": "13",
+							"name": "Rations",
+							"detail": "Provisions",
+							"quantity": 3,
+							"equipped": null,
+							"handle": "i:13",
+							"rev": "p13"
+						},
+						{
+							"id": "14",
+							"name": "Torch",
+							"detail": "Light",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:14",
+							"rev": "p14"
+						}
+					],
+					"itemDetail": {
+						"id": "12",
+						"kind": "Weapon",
+						"slot": "Main Hand",
+						"facts": [
+							{
+								"id": "srd/damage",
+								"label": "Damage",
+								"value": "1d8"
+							},
+							{
+								"id": "srd/weight_g",
+								"label": "Weight",
+								"value": "1,360 g"
+							}
+						],
+						"verbs": [
+							{
+								"id": "h:unequip-longsword",
+								"label": "Unequip",
+								"verb": "manipulate",
+								"descriptor": "srd/unequip",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							},
+							{
+								"id": "h:drop-longsword",
+								"label": "Drop",
+								"verb": "manipulate",
+								"descriptor": "srd/drop",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							}
+						]
+					},
+					"speech": [
+						{
+							"id": "speech:1",
+							"tick": 40,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Morning. The cellar has been loud since before dawn — rats, by the sound of it.",
+							"mine": false
+						}
+					],
+					"events": [
+						{
+							"id": "event-1",
+							"tick": 42,
+							"kind": "passage_opened",
+							"summary": "The eastern road opened."
+						},
+						{
+							"id": "event-2",
+							"tick": 39,
+							"kind": "promise_made",
+							"summary": "Mira promised to return before dusk."
+						}
+					],
+					"mapSvg": null,
+					"economy": null
+				},
+				"presentation": null
+			}
+		},
+		{
+			"id": "frame_3gfsy01uz0x7c",
+			"sequence": 2,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Renn the Roadwarden",
+						"species": "Human",
+						"className": "Fighter",
+						"background": "Soldier",
+						"level": 1,
+						"hp": 11,
+						"ac": 16,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [
+							{
+								"id": "srd/hp",
+								"label": "Hit Points",
+								"value": "11"
+							},
+							{
+								"id": "srd/ac",
+								"label": "Armor Class",
+								"value": "16"
+							},
+							{
+								"id": "srd/level",
+								"label": "Character Level",
+								"value": "1"
+							}
+						],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 16,
+								"modifier": 3
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 12,
+								"modifier": 1
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 11,
+								"modifier": 0
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 9,
+								"modifier": -1
+							}
+						],
+						"skills": [
+							{
+								"id": "srd/skill/athletics",
+								"label": "Athletics"
+							},
+							{
+								"id": "srd/skill/perception",
+								"label": "Perception"
+							}
+						],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "Human fighter, a soldier's bearing",
+						"backstory": "A roadwarden out of the Ashwold garrison, six years on the King's highways.",
+						"placeId": "inn/common_room"
+					},
+					"place": {
+						"id": "inn/common_room",
+						"name": "Common Room",
+						"description": "Long trestle tables share the room with a low fire, the smell of woodsmoke and last night's stew going cold on the hearth.",
+						"exits": [
+							{
+								"handle": "s:exit:1",
+								"rev": "r1",
+								"label": "southeast",
+								"to": "inn/stairs",
+								"toName": "Stairs",
+								"gates": []
+							},
+							{
+								"handle": "s:exit:2",
+								"rev": "r2",
+								"label": "north",
+								"to": "inn/bar",
+								"toName": "Bar",
+								"gates": []
+							},
+							{
+								"handle": "s:exit:3",
+								"rev": "r3",
+								"label": "west",
+								"to": "inn/foyer",
+								"toName": "Foyer",
+								"gates": ["elven_mini/affordance/dm_threshold"]
+							}
+						]
+					},
+					"occupants": [
+						{
+							"id": "4",
+							"handle": "s:actor:4",
+							"rev": "a4",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Aldwin, keeper of the hearth-ledger",
+							"conditions": [],
+							"note": "Here with you"
+						},
+						{
+							"id": "9",
+							"handle": "s:actor:9",
+							"rev": "a9",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Brother Caddoc",
+							"conditions": [],
+							"note": "Here with you"
+						},
+						{
+							"id": "31",
+							"handle": "s:entity:31",
+							"rev": "e31",
+							"kind": "thing",
+							"sceneKind": "entity",
+							"name": "Hearth",
+							"conditions": [],
+							"note": "Something here"
+						}
+					],
+					"actions": [
+						{
+							"id": "h:talk",
+							"label": "Speak To — Aldwin, keeper of the hearth-ledger",
+							"verb": "communicate",
+							"descriptor": "srd/speak-to",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": true
+						},
+						{
+							"id": "h:ask",
+							"label": "Ask Aldwin About Advancement",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/ask-advancement",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:arcana",
+							"label": "Check: Arcana",
+							"verb": "manipulate",
+							"descriptor": "srd/check/arcana",
+							"targetName": "",
+							"targetRef": "entity:7",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:look",
+							"label": "Look around",
+							"verb": "sensing",
+							"descriptor": "srd/sense/look",
+							"targetName": "",
+							"targetRef": "entity:7",
+							"acceptsUtterance": false
+						}
+					],
+					"actionCount": 4,
+					"session": {
+						"inSession": false,
+						"myTurn": false,
+						"lifecycle": null,
+						"currentActor": null,
+						"currentActorName": null,
+						"roster": []
+					},
+					"reaction": null,
+					"pack": [
+						{
+							"id": "12",
+							"name": "Longsword",
+							"detail": "Weapon",
+							"quantity": 1,
+							"equipped": "main hand",
+							"handle": "i:12",
+							"rev": "p12"
+						},
+						{
+							"id": "13",
+							"name": "Rations",
+							"detail": "Provisions",
+							"quantity": 3,
+							"equipped": null,
+							"handle": "i:13",
+							"rev": "p13"
+						},
+						{
+							"id": "14",
+							"name": "Torch",
+							"detail": "Light",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:14",
+							"rev": "p14"
+						}
+					],
+					"itemDetail": {
+						"id": "12",
+						"kind": "Weapon",
+						"slot": "Main Hand",
+						"facts": [
+							{
+								"id": "srd/damage",
+								"label": "Damage",
+								"value": "1d8"
+							},
+							{
+								"id": "srd/weight_g",
+								"label": "Weight",
+								"value": "1,360 g"
+							}
+						],
+						"verbs": [
+							{
+								"id": "h:unequip-longsword",
+								"label": "Unequip",
+								"verb": "manipulate",
+								"descriptor": "srd/unequip",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							},
+							{
+								"id": "h:drop-longsword",
+								"label": "Drop",
+								"verb": "manipulate",
+								"descriptor": "srd/drop",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							}
+						]
+					},
+					"speech": [
+						{
+							"id": "speech:1",
+							"tick": 40,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Morning. The cellar has been loud since before dawn — rats, by the sound of it.",
+							"mine": false
+						}
+					],
+					"events": [
+						{
+							"id": "event-1",
+							"tick": 42,
+							"kind": "passage_opened",
+							"summary": "The eastern road opened."
+						},
+						{
+							"id": "event-2",
+							"tick": 39,
+							"kind": "promise_made",
+							"summary": "Mira promised to return before dusk."
+						}
+					],
+					"mapSvg": null,
+					"economy": null
+				},
+				"presentation": null
+			}
+		},
+		{
+			"id": "frame_uun4g81ggt9fq",
+			"sequence": 3,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Renn the Roadwarden",
+						"species": "Human",
+						"className": "Fighter",
+						"background": "Soldier",
+						"level": 1,
+						"hp": 11,
+						"ac": 16,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [
+							{
+								"id": "srd/hp",
+								"label": "Hit Points",
+								"value": "11"
+							},
+							{
+								"id": "srd/ac",
+								"label": "Armor Class",
+								"value": "16"
+							},
+							{
+								"id": "srd/level",
+								"label": "Character Level",
+								"value": "1"
+							}
+						],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 16,
+								"modifier": 3
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 12,
+								"modifier": 1
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 11,
+								"modifier": 0
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 9,
+								"modifier": -1
+							}
+						],
+						"skills": [
+							{
+								"id": "srd/skill/athletics",
+								"label": "Athletics"
+							},
+							{
+								"id": "srd/skill/perception",
+								"label": "Perception"
+							}
+						],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "Human fighter, a soldier's bearing",
+						"backstory": "A roadwarden out of the Ashwold garrison, six years on the King's highways.",
+						"placeId": "inn/stairs"
+					},
+					"place": {
+						"id": "inn/stairs",
+						"name": "Stairs",
+						"description": "You have reached Stairs. Take the return exit to continue exploring this preview.",
+						"exits": [
+							{
+								"handle": "preview:return:100",
+								"rev": "preview",
+								"label": "back",
+								"to": "inn/common_room",
+								"toName": "Common Room",
+								"gates": []
+							}
+						]
+					},
+					"occupants": [],
+					"actions": [],
+					"actionCount": 0,
+					"session": {
+						"inSession": false,
+						"myTurn": false,
+						"lifecycle": null,
+						"currentActor": null,
+						"currentActorName": null,
+						"roster": []
+					},
+					"reaction": null,
+					"pack": [
+						{
+							"id": "12",
+							"name": "Longsword",
+							"detail": "Weapon",
+							"quantity": 1,
+							"equipped": "main hand",
+							"handle": "i:12",
+							"rev": "p12"
+						},
+						{
+							"id": "13",
+							"name": "Rations",
+							"detail": "Provisions",
+							"quantity": 3,
+							"equipped": null,
+							"handle": "i:13",
+							"rev": "p13"
+						},
+						{
+							"id": "14",
+							"name": "Torch",
+							"detail": "Light",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:14",
+							"rev": "p14"
+						}
+					],
+					"itemDetail": {
+						"id": "12",
+						"kind": "Weapon",
+						"slot": "Main Hand",
+						"facts": [
+							{
+								"id": "srd/damage",
+								"label": "Damage",
+								"value": "1d8"
+							},
+							{
+								"id": "srd/weight_g",
+								"label": "Weight",
+								"value": "1,360 g"
+							}
+						],
+						"verbs": [
+							{
+								"id": "h:unequip-longsword",
+								"label": "Unequip",
+								"verb": "manipulate",
+								"descriptor": "srd/unequip",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							},
+							{
+								"id": "h:drop-longsword",
+								"label": "Drop",
+								"verb": "manipulate",
+								"descriptor": "srd/drop",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							}
+						]
+					},
+					"speech": [],
+					"events": [
+						{
+							"id": "event-1",
+							"tick": 42,
+							"kind": "passage_opened",
+							"summary": "The eastern road opened."
+						},
+						{
+							"id": "event-2",
+							"tick": 39,
+							"kind": "promise_made",
+							"summary": "Mira promised to return before dusk."
+						}
+					],
+					"mapSvg": null,
+					"economy": null,
+					"mapState": "empty",
+					"occupantDetail": null
+				},
+				"presentation": null
+			}
+		}
+	]
+}

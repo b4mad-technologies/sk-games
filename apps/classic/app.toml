@@ -1,0 +1,41 @@
+# Planned only: sk-w8zx.145. No publication or hosted admission yet.
+# Publication inventory; hostnames remain owned by Pulumi.
+schema_version = 1
+id = "classic"
+kind = "first-party"
+status = "planned"
+worker = "spellkave-classic"
+hosts = ["classic.play.spellkave.com"]
+needs = ["api", "mcp", "r2", "rum", "world"]
+auth_callback = "/auth/callback"
+
+auth_logout = ""
+
+[build]
+package = "@spellkave/classic"
+runner = "scripts"
+tasks = ["typecheck", "test", "build"]
+
+[build.env_vars]
+VITE_SPELLKAVE_PUBLIC_SITE_URL = "SPELLKAVE_PUBLIC_SITE_URL"
+VITE_SPELLKAVE_RUM_APPLICATION_ID = "VITE_SPELLKAVE_RUM_APPLICATION_ID"
+VITE_SPELLKAVE_RUM_CLIENT_TOKEN = "VITE_SPELLKAVE_RUM_CLIENT_TOKEN"
+VITE_SPELLKAVE_RUM_SESSION_SAMPLE_RATE = "SPELLKAVE_RUM_SESSION_SAMPLE_RATE"
+VITE_WORKOS_CLIENT_ID = "VITE_WORKOS_CLIENT_ID"
+VITE_WORKOS_ISSUER = "VITE_WORKOS_ISSUER"
+VITE_SPELLKAVE_LOGIN_ORIGIN = "VITE_SPELLKAVE_LOGIN_ORIGIN"
+VITE_SPELLKAVE_GATEWAY_URL = "SPELLKAVE_GATEWAY_URL"
+
+[build.env_literals]
+VITE_SPELLKAVE_WORLD_URL = "https://world.spellkave.com"
+
+[[smoke]]
+path = "/"
+status = 200
+
+# Observe before enforcing: per-app browser qualification is a separate rollout.
+[csp]
+mode = "report-only"
+connect = ["'self'", "https://login.spellkave.com", "https://api.workos.com", "https://faithful-century-17.authkit.app", "https://api.spellkave.com", "https://mcp.spellkave.com", "https://pub-ea8569d32ce14599a073902fa19300fb.r2.dev", "https://telemetry.spellkave.com", "wss://world.spellkave.com"]
+images = ["'self'", "data:", "blob:"]
+fonts = ["'self'"]

@@ -1,0 +1,39 @@
+# Publication inventory; hostnames remain owned by Pulumi.
+schema_version = 1
+id = "maps"
+kind = "first-party"
+status = "active"
+worker = "spellkave-maps"
+hosts = ["maps.spellkave.com"]
+needs = ["api", "mcp", "r2", "world"]
+auth_callback = "/auth/callback"
+
+auth_logout = ""
+
+[build]
+package = "@spellkave/maps"
+runner = "nx"
+tasks = ["ci-app"]
+
+[build.env_vars]
+SPELLKAVE_GATEWAY_URL_VAR = "SPELLKAVE_GATEWAY_URL"
+VITE_SPELLKAVE_PUBLIC_SITE_URL = "SPELLKAVE_PUBLIC_SITE_URL"
+VITE_SPELLKAVE_PLAY_URL = "SPELLKAVE_PLAY_URL"
+VITE_WORKOS_CLIENT_ID = "VITE_WORKOS_CLIENT_ID"
+VITE_WORKOS_ISSUER = "VITE_WORKOS_ISSUER"
+VITE_SPELLKAVE_LOGIN_ORIGIN = "VITE_SPELLKAVE_LOGIN_ORIGIN"
+
+[build.env_literals]
+# SDK connect-time shape check: warn for one release, then strict (sk-jay0.7.389.3).
+VITE_SPELLKAVE_SHAPE_CHECK = "warn"
+
+[[smoke]]
+path = "/"
+status = 200
+
+# Observe before enforcing: per-app browser qualification is a separate rollout.
+[csp]
+mode = "report-only"
+connect = ["'self'", "https://login.spellkave.com", "https://api.workos.com", "https://faithful-century-17.authkit.app", "https://api.spellkave.com", "https://mcp.spellkave.com", "https://pub-ea8569d32ce14599a073902fa19300fb.r2.dev", "wss://world.spellkave.com"]
+images = ["'self'", "data:", "blob:"]
+fonts = ["'self'"]

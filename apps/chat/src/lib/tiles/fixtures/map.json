@@ -1,0 +1,10 @@
+{
+	"graph": "elven-mini/inn",
+	"has_layout": true,
+	"places": 5,
+	"routes": 6,
+	"known_nodes": 5,
+	"unreachable": [],
+	"inventory": "Spatial graph (5 places, 6 routes).",
+	"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 40 20\"><rect width=\"40\" height=\"20\" fill=\"none\" stroke=\"currentColor\"/><text x=\"4\" y=\"14\" font-size=\"8\">inn</text></svg>"
+}

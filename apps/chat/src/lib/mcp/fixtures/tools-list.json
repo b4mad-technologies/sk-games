@@ -1,0 +1,53 @@
+{
+	"jsonrpc": "2.0",
+	"id": 1,
+	"result": {
+		"tools": [
+			{
+				"name": "spellkave_orient",
+				"description": "Rebuild your situation from the world in one call.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {
+						"cursor": { "type": "string" },
+						"limit": { "type": "number", "minimum": 1, "maximum": 25 }
+					}
+				}
+			},
+			{
+				"name": "spellkave_scene",
+				"description": "Orient on the connected actor's authorized current scene.",
+				"inputSchema": { "type": "object", "properties": {} }
+			},
+			{
+				"name": "spellkave_end_turn",
+				"description": "End the in-world turn.",
+				"inputSchema": { "type": "object", "properties": {} }
+			},
+			{
+				"name": "spellkave_feedback",
+				"description": "Gateway-local feedback tool, not in the default curated allowlist.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {
+						"kind": { "type": "string" },
+						"note": { "type": "string" }
+					},
+					"required": ["kind"]
+				}
+			},
+			{
+				"name": "demo_unknown_tool",
+				"description": "Not in @spellkave/tool-contracts; conversion fallback.",
+				"inputSchema": {
+					"type": "object",
+					"properties": {
+						"q": { "type": "string", "description": "query" },
+						"n": { "type": "integer", "minimum": 1 }
+					},
+					"required": ["q"]
+				}
+			}
+		]
+	}
+}

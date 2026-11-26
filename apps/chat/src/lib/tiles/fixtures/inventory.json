@@ -1,0 +1,34 @@
+{
+	"rev": "rev-inv-1",
+	"root_entity_id": "hero-1",
+	"count": 2,
+	"total_quantity": 4,
+	"traversal_truncated": false,
+	"listing": "complete",
+	"items": [
+		{
+			"handle": "i:1",
+			"rev": "ir1",
+			"name": "Longsword",
+			"kind": "item",
+			"quantity": 1,
+			"equipped_slot": "main_hand"
+		},
+		{
+			"handle": "i:2",
+			"rev": "ir2",
+			"name": "Field kit",
+			"kind": "item",
+			"quantity": 1,
+			"contents": [
+				{
+					"handle": "i:3",
+					"rev": "ir3",
+					"name": "Torch",
+					"kind": "item",
+					"quantity": 3
+				}
+			]
+		}
+	]
+}

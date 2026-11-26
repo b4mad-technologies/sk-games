@@ -1,0 +1,3 @@
+@import "@spellkave/ui/styles.css";
+@source "./**/*.{svelte,ts}";
+@source "../node_modules/@spellkave/ui-widgets/src/**/*.{svelte,ts}";

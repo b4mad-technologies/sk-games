@@ -1,0 +1,72 @@
+{
+	"actorId": "hero-1",
+	"view": {
+		"kind": "turn",
+		"actorId": "hero-1",
+		"session": { "inSession": false, "myTurn": false, "currentActor": null },
+		"selfSummary": {
+			"actor_id": "hero-1",
+			"entity_name": "Regdar",
+			"current_node_id": "elven-mini/inn/loft",
+			"state_count": 2,
+			"appearance": "",
+			"backstory": "",
+			"conditions": {
+				"count": 0,
+				"listing": "complete",
+				"items": []
+			},
+			"vitals": {
+				"count": 2,
+				"listing": "complete",
+				"items": [
+					{ "state_id": "srd/hp", "display_name": "Hit Points", "value": "12" },
+					{ "state_id": "srd/ac", "display_name": "Armor Class", "value": "16" }
+				]
+			},
+			"quest": { "count": 0, "listing": "complete", "items": [] }
+		},
+		"scene": {
+			"rev": "rev-orient-scene",
+			"nodeDescription": "Rafters slope low over a scatter of straw pallets.",
+			"exits": [
+				{
+					"handle": "s:exit:1",
+					"rev": "r1",
+					"label": "north",
+					"to": "elven-mini/inn/stairs",
+					"traversalGates": []
+				}
+			],
+			"items": [
+				{
+					"handle": "s:entity:8",
+					"rev": "r8",
+					"kind": "entity",
+					"id": "pallet",
+					"label": "Straw pallet"
+				}
+			]
+		},
+		"affordances": { "rev": "aff-1", "items": [] },
+		"events": []
+	},
+	"inventory": {
+		"rev": "rev-inv-orient",
+		"root_entity_id": "hero-1",
+		"count": 1,
+		"total_quantity": 1,
+		"traversal_truncated": false,
+		"listing": "complete",
+		"items": [
+			{
+				"handle": "i:9",
+				"rev": "ir9",
+				"name": "Clothes",
+				"kind": "item",
+				"quantity": 1
+			}
+		]
+	},
+	"traces": { "listing": "complete", "items": [] }
+}

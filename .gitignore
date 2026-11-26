@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.svelte-kit/
+.wrangler/
+.vite/
+coverage/
+*.tsbuildinfo
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Design system tarballs packed from sk-sites (scripts/pack-design-system).
+.tarballs/

@@ -1,0 +1,38 @@
+packages:
+  - apps/*
+
+engineStrict: true
+autoInstallPeers: false
+
+# Interim: @spellkave/ui/vite and @spellkave/authkit/vite ship TypeScript
+# source, and Node does not strip types under node_modules, so vite.config.ts
+# cannot load them natively. tsx compiles them. Drop this once sk-sites ships
+# those entries as JavaScript.
+nodeOptions: "${NODE_OPTIONS:- } --import=tsx"
+
+allowBuilds:
+  # genai/protobufjs (via the chat agent runtime) postinstalls are not needed.
+  '@google/genai': false
+  esbuild: true
+  protobufjs: false
+  # wrangler needs the workerd binary for `wrangler dev`.
+  workerd: true
+  sharp: false
+
+overrides:
+  # Design system from sk-sites. Not on npm yet: these point at tarballs
+  # packed by scripts/pack-design-system. Remove once published.
+  '@spellkave/ui': file:.tarballs/spellkave-ui-0.0.0.tgz
+  '@spellkave/ui-widgets': file:.tarballs/spellkave-ui-widgets-0.0.0.tgz
+  '@spellkave/authkit': file:.tarballs/spellkave-authkit-0.0.0.tgz
+  '@spellkave/map-canvas': file:.tarballs/spellkave-map-canvas-0.0.0.tgz
+  '@spellkave/run-events-view': file:.tarballs/spellkave-run-events-view-0.0.0.tgz
+  # One typebox instance, as in the monorepo.
+  typebox: 1.1.38
+  # Security floors carried over from the Spellkave monorepo.
+  nanoid: 3.3.18
+  source-map-js: 1.2.2
+  'svelte>devalue': 5.9.3
+  'vitest>tinypool': 2.1.2
+  'miniflare>undici': 7.30.1
+  'dompurify@<=3.4.16': 3.4.17

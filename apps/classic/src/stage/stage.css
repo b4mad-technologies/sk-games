@@ -1,0 +1,1876 @@
+/* The classic app's own design layer. Nothing here comes from @spellkave/ui
+ * (owner exception, see apps/classic/DESIGN.md). One dark look: the room is
+ * dark so the scene glows. Every class carries the `st-` prefix. */
+
+:root {
+	--st-ink: #0b0c11;
+	--st-night: #14161f;
+	--st-slate: #23263a;
+	--st-rule: #3a3f5c;
+	--st-paper: #efe6d2;
+	--st-paper-deep: #d9cdb0;
+	--st-dim: #a59f8f;
+	--st-ember: #f2a23a;
+	--st-ember-deep: #b8611a;
+	--st-moss: #86b86b;
+	--st-blood: #e0604f;
+	--st-frost: #a9c1e0;
+	--st-font: "Newsreader Variable", Georgia, "Times New Roman", serif;
+	--st-target: 2.75rem;
+	color-scheme: dark;
+}
+
+html,
+body,
+#app {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background: var(--st-ink);
+	color: var(--st-paper);
+	font-family: var(--st-font);
+	font-size: 1rem;
+	line-height: 1.35;
+	overflow: hidden;
+}
+
+.st-app *,
+.st-float * {
+	box-sizing: border-box;
+}
+
+.st-app button,
+.st-float button,
+.st-app input,
+.st-float input {
+	font: inherit;
+	color: inherit;
+}
+
+.st-app :focus-visible,
+.st-float :focus-visible {
+	outline: 2px solid var(--st-ember);
+	outline-offset: 2px;
+}
+
+/* --- Shell: one line on top, the scene, one line at the foot --------------- */
+
+.st-app {
+	display: grid;
+	grid-template-rows: var(--st-target) minmax(0, 1fr) calc(var(--st-target) + 0.5rem);
+	height: 100dvh;
+}
+
+.st-top,
+.st-foot {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0 0.75rem;
+	min-width: 0;
+	background: var(--st-night);
+}
+
+.st-top {
+	border-bottom: 1px solid var(--st-slate);
+}
+
+.st-foot {
+	border-top: 1px solid var(--st-slate);
+}
+
+.st-place {
+	display: flex;
+	align-items: baseline;
+	gap: 0.6rem;
+	min-width: 0;
+	flex: 1;
+}
+
+.st-place strong {
+	font-variant-caps: small-caps;
+	letter-spacing: 0.06em;
+	font-size: 1.15rem;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.st-place {
+	position: relative;
+}
+
+.st-place .st-placeabout {
+	min-width: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--st-dim);
+	font: inherit;
+	font-style: italic;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: help;
+}
+
+.st-placecard {
+	position: absolute;
+	left: 0;
+	top: calc(100% + 0.6rem);
+	z-index: 800;
+	max-width: min(46rem, 100%);
+	margin: 0;
+	padding: 0.6rem 0.8rem;
+	border: 1px solid var(--st-rule);
+	border-radius: 0.3rem;
+	background: var(--st-night);
+	color: var(--st-paper);
+	font-style: italic;
+	line-height: 1.4;
+	box-shadow: 0 0.5rem 1.5rem #000a;
+	pointer-events: none;
+}
+
+.st-spacer {
+	flex: 1;
+}
+
+/* A quiet control: words, no frame until it is touched. */
+.st-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	min-height: var(--st-target);
+	min-width: var(--st-target);
+	padding: 0 0.7rem;
+	border: 0;
+	border-radius: 0.3rem;
+	background: none;
+	font-variant-caps: small-caps;
+	letter-spacing: 0.06em;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.st-btn:hover:not(:disabled),
+.st-btn[aria-pressed="true"] {
+	color: var(--st-ember);
+	background: var(--st-slate);
+}
+
+.st-btn:disabled {
+	color: var(--st-rule);
+	cursor: default;
+}
+
+.st-btn--solid {
+	background: var(--st-ember);
+	color: var(--st-ink);
+	font-weight: 600;
+}
+
+.st-btn--solid:hover:not(:disabled) {
+	background: var(--st-paper);
+	color: var(--st-ink);
+}
+
+.st-btn--solid:disabled {
+	background: var(--st-slate);
+	color: var(--st-dim);
+}
+
+.st-count {
+	font-variant-numeric: tabular-nums;
+	color: var(--st-dim);
+}
+
+/* Steps of a guided talk, on the top line. */
+.st-outline {
+	display: flex;
+	flex: 1;
+	gap: 0.15rem;
+	min-width: 0;
+	/* A long draft scrolls sideways; the open step is kept in view. */
+	overflow-x: auto;
+	scrollbar-width: none;
+}
+
+.st-outline li {
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	flex: none;
+	list-style: none;
+	max-width: 13rem;
+	padding: 0.1rem 0.55rem;
+	border-bottom: 2px solid var(--st-rule);
+	color: var(--st-dim);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 0.9rem;
+}
+
+/* Beside an outline the place keeps its name whole and the outline takes the room. */
+.st-top:has(.st-outline) .st-place {
+	flex: none;
+}
+
+.st-top:has(.st-outline) .st-spacer {
+	display: none;
+}
+
+.st-outline li[data-done] {
+	border-color: var(--st-moss);
+	color: var(--st-paper);
+}
+
+.st-outline li[aria-current="step"] {
+	border-color: var(--st-ember);
+	color: var(--st-ember);
+}
+
+.st-outline li > span:not(.st-count) {
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.st-outline img {
+	width: 1.6rem;
+	height: 1.6rem;
+	image-rendering: pixelated;
+	object-fit: contain;
+}
+
+.st-outline small {
+	display: inline-block;
+	font-variant-caps: small-caps;
+	letter-spacing: 0.05em;
+	margin-right: 0.3rem;
+}
+
+/* Turn order of a fight, on the top line. */
+.st-roster {
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.st-roster li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	height: 2.1rem;
+	padding: 0 0.5rem 0 0.2rem;
+	border-radius: 1.05rem;
+	border: 1px solid var(--st-rule);
+	color: var(--st-dim);
+	font-size: 0.9rem;
+	white-space: nowrap;
+}
+
+.st-roster li[aria-current="true"] {
+	border-color: var(--st-ember);
+	color: var(--st-paper);
+	box-shadow: 0 0 0.6rem color-mix(in srgb, var(--st-ember) 50%, transparent);
+}
+
+.st-roster li[data-down] {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.st-roster img {
+	width: 1.7rem;
+	height: 1.7rem;
+	object-fit: cover;
+	object-position: top;
+	image-rendering: pixelated;
+	border-radius: 50%;
+	background: var(--st-slate);
+}
+
+/* --- The sentence line ---------------------------------------------------- */
+
+.st-sentence {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 1.15rem;
+}
+
+.st-sentence p {
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.st-sentence p[data-tone="intent"] {
+	color: var(--st-ember);
+}
+
+.st-sentence p[data-tone="idle"] {
+	color: var(--st-dim);
+	font-style: italic;
+}
+
+.st-sentence p[data-long] {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	white-space: normal;
+	font-size: 0.95rem;
+	line-height: 1.25;
+}
+
+.st-sentence p[data-tone="busy"] {
+	color: var(--st-paper);
+	font-style: italic;
+	animation: st-breathe 1.2s ease-in-out infinite;
+}
+
+.st-say {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	min-width: 0;
+}
+
+.st-say label {
+	color: var(--st-ember);
+	white-space: nowrap;
+}
+
+.st-input {
+	flex: 1;
+	min-width: 0;
+	min-height: 2.25rem;
+	padding: 0 0.6rem;
+	border: 0;
+	border-bottom: 2px solid var(--st-rule);
+	background: var(--st-ink);
+	font-size: 1.1rem;
+}
+
+.st-input:focus {
+	outline: none;
+	border-color: var(--st-ember);
+}
+
+.st-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	white-space: nowrap;
+	font-size: 0.95rem;
+	color: var(--st-dim);
+}
+
+.st-chip b {
+	color: var(--st-paper);
+	font-variant-numeric: tabular-nums;
+}
+
+.st-pips {
+	display: inline-flex;
+	gap: 2px;
+}
+
+.st-pips i {
+	width: 0.45rem;
+	height: 0.8rem;
+	border-radius: 1px;
+	background: var(--st-rule);
+}
+
+.st-pips i[data-left] {
+	background: var(--st-ember);
+}
+
+.st-herochip {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	min-height: var(--st-target);
+	padding: 0 0.6rem 0 0.2rem;
+	border: 0;
+	border-radius: 0.3rem;
+	background: none;
+	cursor: pointer;
+	text-align: left;
+}
+
+.st-herochip:hover {
+	background: var(--st-slate);
+}
+
+.st-herochip img,
+.st-herochip .st-noface {
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 50%;
+	background: var(--st-slate);
+	object-fit: cover;
+	object-position: top;
+	image-rendering: pixelated;
+}
+
+.st-herochip span {
+	display: grid;
+	gap: 0.15rem;
+	font-size: 0.9rem;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+.st-hpbar {
+	display: block;
+	width: 6rem;
+	height: 0.4rem;
+	border-radius: 0.2rem;
+	background: var(--st-slate);
+	overflow: hidden;
+}
+
+.st-hpbar i {
+	display: block;
+	height: 100%;
+	background: var(--st-moss);
+	transition: width 0.4s;
+}
+
+.st-hpbar i[data-low] {
+	background: var(--st-blood);
+}
+
+/* --- The scene ------------------------------------------------------------ */
+
+.st-scene {
+	position: relative;
+	container-type: size;
+	min-height: 0;
+	overflow: hidden;
+	background: radial-gradient(ellipse at 50% 60%, #1a1c28 0%, var(--st-ink) 70%);
+}
+
+.st-pan {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.st-stage {
+	--u: calc(100cqw / 480);
+	position: relative;
+	width: min(100cqw, calc(100cqh * 16 / 9));
+	aspect-ratio: 16 / 9;
+	container-type: inline-size;
+	overflow: hidden;
+	box-shadow: 0 0 4rem #000;
+}
+
+/* The camera: leans up when somebody talks, so the panel covers no faces. */
+.st-camera {
+	position: absolute;
+	inset: 0;
+	transition: transform 0.45s ease;
+}
+
+.st-scene[data-talk] .st-camera {
+	transform: translateY(-30%);
+}
+
+.st-backdrop {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	image-rendering: pixelated;
+}
+
+/* No picture from the world: the app draws a plain wall and floor. */
+.st-plain {
+	position: absolute;
+	inset: 0;
+	background:
+		repeating-linear-gradient(90deg, transparent 0 calc(47 * var(--u)), #0003 0 calc(48 * var(--u))) 0 100% / 100% 44.5% no-repeat,
+		linear-gradient(#2b2d3d, #1e2030 55.5%, #3b372f 55.5%, #2a2620);
+}
+
+/* The hero's lantern: light near the middle, dark at the rim. */
+.st-light {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background: radial-gradient(ellipse at 40% 70%, transparent 35%, #05060acc 100%);
+}
+
+.st-thing {
+	position: absolute;
+	display: grid;
+	justify-items: center;
+	padding: 0;
+	border: 0;
+	background: none;
+	cursor: pointer;
+	transform: translate(-50%, -100%);
+	transition:
+		left 0.12s linear,
+		top 0.12s linear;
+	min-width: 44px;
+	min-height: 44px;
+	align-content: end;
+}
+
+.st-thing:focus-visible {
+	outline: none;
+}
+
+/*
+ * A sprite is a square with the figure in its middle third. The whole square
+ * took the clicks, so somebody standing half behind another could not be
+ * clicked (seen live 2026-11-16: a companion beside the keeper). Only the
+ * middle of the square is the figure.
+ */
+.st-thing:not([data-artless]) {
+	pointer-events: none;
+}
+.st-hit {
+	position: absolute;
+	inset: 12% 26% 0;
+	pointer-events: auto;
+}
+.st-thing .st-asks {
+	pointer-events: auto;
+}
+.st-sprite {
+	display: block;
+	width: calc(84 * var(--u));
+	height: calc(84 * var(--u));
+	image-rendering: pixelated;
+	filter: drop-shadow(0 calc(2 * var(--u)) calc(1 * var(--u)) #0009);
+	transition: filter 0.15s;
+}
+
+.st-thing[data-kind="creature"] .st-sprite {
+	width: calc(66 * var(--u));
+	height: calc(66 * var(--u));
+}
+
+/* In a fight everybody stands on a cell: smaller, so nobody hides a neighbour. */
+.st-scene[data-fight] .st-sprite {
+	width: calc(62 * var(--u));
+	height: calc(62 * var(--u));
+}
+
+.st-scene[data-fight] .st-thing[data-kind="creature"] .st-sprite {
+	width: calc(46 * var(--u));
+	height: calc(46 * var(--u));
+}
+
+/* What can be acted on answers the pointer with light. */
+.st-thing:hover .st-sprite,
+.st-thing:focus-visible .st-sprite,
+.st-thing[data-state="open"] .st-sprite,
+.st-scene[data-perceive] .st-thing:not([data-kind="self"]) .st-sprite {
+	filter: drop-shadow(0 0 calc(1 * var(--u)) var(--st-ember)) drop-shadow(0 0 calc(5 * var(--u)) var(--st-ember));
+}
+
+.st-thing[data-dead] {
+	pointer-events: none;
+}
+
+.st-thing[data-dead] .st-sprite {
+	filter: grayscale(1) brightness(0.5);
+	transform: rotate(90deg) translateX(30%);
+}
+
+/* Down but alive: it lies, keeps its colour, and can be clicked. */
+/* Passed over by the turn order: it stands there, but takes no turn any more. */
+.st-thing[data-out] .st-sprite,
+.st-thing[data-out] .st-glyph {
+	filter: grayscale(1) brightness(0.55);
+}
+.st-thing[data-down] .st-sprite {
+	filter: brightness(0.75);
+	transform: rotate(90deg) translateX(30%);
+}
+
+.st-thing[data-down] .st-name {
+	opacity: 1;
+}
+
+/* Open, the tags carry the thing's name; the label under it would only lie
+ * across them and across a way beside it. */
+.st-scene .st-thing[data-state="open"] .st-name {
+	opacity: 0;
+}
+
+.st-name small {
+	display: block;
+	color: var(--st-frost);
+	font-style: italic;
+	font-size: 0.85em;
+	text-align: center;
+}
+
+.st-asks--down {
+	background: var(--st-blood);
+	color: var(--st-paper);
+}
+
+/* A thing the world sent no picture for: a plain marker stone with its
+ * initial. The app does not pretend to know what it looks like; the name
+ * under it stays on. */
+.st-glyph {
+	display: grid;
+	place-items: center;
+	width: calc(26 * var(--u));
+	height: calc(30 * var(--u));
+	border-radius: calc(13 * var(--u)) calc(13 * var(--u)) calc(2 * var(--u)) calc(2 * var(--u));
+	background: linear-gradient(#6d7088, #3c3f55);
+	border: calc(1 * var(--u)) solid #1b1d2b;
+	color: var(--st-paper);
+	font-size: calc(15 * var(--u));
+	font-weight: 600;
+	line-height: 1;
+	box-shadow: 0 calc(2 * var(--u)) calc(2 * var(--u)) #0009;
+}
+
+.st-thing[data-artless][data-kind="thing"] .st-name {
+	opacity: 1;
+}
+
+.st-glyph--body {
+	width: calc(30 * var(--u));
+	height: calc(64 * var(--u));
+	border: 0;
+	border-radius: calc(17 * var(--u)) calc(17 * var(--u)) calc(4 * var(--u)) calc(4 * var(--u));
+	background: linear-gradient(#dfe5ffcc, #8f9bd655);
+	box-shadow: 0 0 calc(8 * var(--u)) #dfe5ff88;
+}
+
+.st-thing:hover .st-glyph,
+.st-thing:focus-visible .st-glyph,
+.st-thing[data-state="open"] .st-glyph,
+.st-scene[data-perceive] .st-thing:not([data-kind="self"]) .st-glyph {
+	box-shadow:
+		0 0 0 calc(1 * var(--u)) var(--st-ember),
+		0 0 calc(6 * var(--u)) var(--st-ember);
+}
+
+.st-name {
+	position: absolute;
+	top: 100%;
+	margin-top: calc(1 * var(--u));
+	padding: 0 calc(3 * var(--u));
+	border-radius: calc(2 * var(--u));
+	background: #0b0c11cc;
+	font-size: max(12px, calc(7 * var(--u)));
+	white-space: nowrap;
+	opacity: 0;
+	transition: opacity 0.15s;
+	pointer-events: none;
+}
+
+/* In a fight every figure says who it is: there is no time to point at each. */
+.st-scene[data-fight] .st-name,
+.st-thing:hover .st-name,
+.st-thing:focus-visible .st-name,
+.st-scene[data-perceive] .st-name {
+	opacity: 1;
+}
+
+.st-asks {
+	position: absolute;
+	bottom: 100%;
+	display: grid;
+	place-items: center;
+	width: calc(14 * var(--u));
+	height: calc(14 * var(--u));
+	border-radius: 50%;
+	background: var(--st-ember);
+	color: var(--st-ink);
+	font-weight: 700;
+	font-size: calc(10 * var(--u));
+	animation: st-bob 1.1s ease-in-out infinite;
+}
+
+/* A way out: a small lit sign where its direction says. */
+.st-way {
+	position: absolute;
+	transform: translate(-50%, -100%);
+	display: inline-flex;
+	align-items: center;
+	gap: calc(3 * var(--u));
+	min-height: 44px;
+	padding: 0 calc(6 * var(--u));
+	border: 1px solid var(--st-ember-deep);
+	border-radius: calc(3 * var(--u));
+	background: #0b0c11d9;
+	color: var(--st-paper);
+	font-size: max(13px, calc(8 * var(--u)));
+	font-variant-caps: small-caps;
+	letter-spacing: 0.05em;
+	white-space: nowrap;
+	cursor: pointer;
+	z-index: 300;
+}
+
+/* A way at the side hangs on the stage's edge and grows inwards. */
+.st-way[data-side="right"] {
+	transform: translate(calc(-100% + 24 * var(--u)), -100%);
+}
+
+.st-way[data-side="left"] {
+	transform: translate(calc(-24 * var(--u)), -100%);
+}
+
+.st-way b {
+	color: var(--st-ember);
+	font-size: 1.2em;
+}
+
+.st-way small {
+	color: var(--st-frost);
+	font-style: italic;
+	font-variant-caps: normal;
+}
+
+.st-way:hover,
+.st-way:focus-visible,
+.st-scene[data-perceive] .st-way {
+	border-color: var(--st-ember);
+	box-shadow: 0 0 calc(6 * var(--u)) var(--st-ember);
+}
+
+.st-way[data-refused] {
+	border-color: var(--st-frost);
+}
+
+/* The fight grid: free cells are ground the hero can ask to step on. */
+.st-cell {
+	position: absolute;
+	padding: 0;
+	border: 1px solid #efe6d226;
+	background: none;
+	cursor: pointer;
+}
+
+.st-cell:hover:not(:disabled),
+.st-cell:focus-visible {
+	background: color-mix(in srgb, var(--st-ember) 30%, transparent);
+	border-color: var(--st-ember);
+	outline: none;
+}
+
+.st-cell:disabled {
+	cursor: default;
+}
+
+.st-bubble {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: max-content;
+	max-width: calc(170 * var(--u));
+	margin-bottom: calc(4 * var(--u));
+	padding: calc(3 * var(--u)) calc(6 * var(--u));
+	border-radius: calc(4 * var(--u));
+	background: var(--st-paper);
+	color: var(--st-ink);
+	font-size: max(13px, calc(8 * var(--u)));
+	line-height: 1.25;
+	text-align: left;
+	pointer-events: none;
+	z-index: 500;
+	animation: st-rise 0.2s ease-out;
+}
+
+/* A long speech is cut after four lines, so it stays inside the scene; the
+ * whole of it is on the foot line and in the story. */
+.st-bubble > span {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	line-clamp: 4;
+	overflow: hidden;
+}
+
+/* While a talk panel is open the scene is short: two lines. */
+.st-scene[data-talk] .st-bubble > span {
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+}
+
+.st-bubble[data-kind="refusal"] {
+	background: var(--st-frost);
+	font-style: italic;
+}
+
+.st-bubble[data-kind="mine"] {
+	background: var(--st-ember);
+}
+
+.st-flash {
+	position: absolute;
+	bottom: 70%;
+	left: 50%;
+	font-weight: 700;
+	font-size: max(16px, calc(12 * var(--u)));
+	text-shadow:
+		0 0 3px #000,
+		0 0 3px #000;
+	pointer-events: none;
+	z-index: 600;
+	animation: st-float 1.4s ease-out forwards;
+}
+
+.st-flash[data-tone="harm"] {
+	color: var(--st-blood);
+}
+
+.st-flash[data-tone="good"] {
+	color: var(--st-moss);
+}
+
+/* What the world just said, written over the scene. */
+.st-caption {
+	position: absolute;
+	top: 0.9rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: max-content;
+	max-width: min(80%, calc(100% - 6rem));
+	margin: 0;
+	padding: 0.2rem 0.9rem;
+	border-radius: 0.3rem;
+	background: #0b0c11b3;
+	font-size: clamp(0.95rem, 1.9cqw, 1.6rem);
+	font-style: italic;
+	text-align: center;
+	text-wrap: balance;
+	z-index: 700;
+	pointer-events: none;
+	animation: st-rise 0.25s ease-out;
+}
+
+.st-caption[data-kind="roll"],
+.st-caption[data-kind="result"] {
+	font-style: normal;
+}
+
+.st-caption[data-kind="refusal"] {
+	color: var(--st-frost);
+}
+
+/* --- Talk: the lower part of the stage ------------------------------------ */
+
+.st-talk {
+	position: absolute;
+	inset: auto 0 0 0;
+	max-height: 46%;
+	display: grid;
+	grid-template-rows: auto minmax(0, 1fr) auto;
+	gap: 0.5rem;
+	padding: 0.75rem 1rem;
+	background: linear-gradient(#0b0c1100, #0b0c11f2 1.5rem);
+	padding-top: 1.75rem;
+	z-index: 800;
+	animation: st-rise 0.3s ease-out;
+}
+
+.st-scene[data-talk="guided"] .st-talk {
+	height: 46%;
+}
+
+/* Starting a guided talk over: quiet until asked, loud before it acts. */
+.st-restart {
+	margin-left: auto;
+	color: var(--st-dim);
+}
+
+.st-restart[data-sure] {
+	background: var(--st-blood);
+	color: var(--st-ink);
+	font-weight: 600;
+}
+
+/* What was said just before the open question. */
+.st-talk-before {
+	margin: 0 0 0.35rem;
+	color: var(--st-dim);
+	font-style: italic;
+}
+
+.st-talk header {
+	display: flex;
+	align-items: baseline;
+	gap: 0.75rem;
+}
+
+.st-talk h2 {
+	flex: 1;
+	margin: 0;
+	font-size: clamp(1.05rem, 2.6cqw, 1.5rem);
+	font-weight: 500;
+	font-style: italic;
+}
+
+.st-talk h2 small {
+	font-style: normal;
+	font-variant-caps: small-caps;
+	letter-spacing: 0.06em;
+	color: var(--st-ember);
+	margin-right: 0.5rem;
+	font-size: 0.8em;
+}
+
+.st-answers {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: start;
+	gap: 0.4rem;
+	margin: 0;
+	padding: 0;
+	overflow-y: auto;
+	min-height: 0;
+}
+
+.st-answers li {
+	list-style: none;
+}
+
+.st-answers[data-shape="lines"] {
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.st-answer {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	min-height: var(--st-target);
+	padding: 0.2rem 0.9rem;
+	border: 1px solid var(--st-rule);
+	border-radius: 0.3rem;
+	background: #14161fe6;
+	text-align: left;
+	font-size: 1.05rem;
+	cursor: pointer;
+}
+
+.st-answers[data-shape="lines"] .st-answer {
+	width: 100%;
+	border-color: transparent;
+	border-left: 3px solid var(--st-rule);
+	border-radius: 0;
+}
+
+.st-answer:hover:not(:disabled),
+.st-answer:focus-visible {
+	border-color: var(--st-ember);
+	color: var(--st-ember);
+}
+
+.st-answer:disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.st-answer img {
+	width: 3.2rem;
+	height: 3.2rem;
+	image-rendering: pixelated;
+	object-fit: contain;
+}
+
+.st-answer span {
+	display: grid;
+}
+
+.st-answer small {
+	color: var(--st-dim);
+	font-size: 0.82rem;
+}
+
+/* A handful of answers that say what they are: tall cards side by side,
+   picture on top, the text on the card. The link stands under its card. */
+.st-answers[data-shape="tall"] {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(0, 26rem);
+	grid-template-rows: minmax(0, 1fr);
+	gap: 0.75rem;
+	overflow: hidden;
+}
+
+.st-answers[data-shape="tall"] li {
+	display: grid;
+	grid-template-rows: minmax(0, 1fr) auto;
+	gap: 0.3rem;
+	min-height: 0;
+}
+
+.st-answers[data-shape="tall"] .st-answer {
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+	gap: 0.5rem;
+	min-height: 0;
+	padding: 0.8rem 1rem;
+	overflow: hidden;
+	font-size: 1.25rem;
+}
+
+.st-answers[data-shape="tall"] .st-answer img {
+	align-self: center;
+	width: clamp(3.2rem, 10cqh, 6rem);
+	height: clamp(3.2rem, 10cqh, 6rem);
+	flex: none;
+}
+
+.st-answers[data-shape="tall"] .st-answer span {
+	flex: 1;
+	align-content: start;
+	gap: 0.4rem;
+	min-height: 0;
+	overflow: hidden;
+	/* A text longer than its card fades out; the link has the rest. */
+	mask-image: linear-gradient(#000 calc(100% - 1.5rem), #0000);
+}
+
+.st-answers[data-shape="tall"] .st-answer small {
+	color: var(--st-paper-deep);
+	font-size: 0.95rem;
+	line-height: 1.45;
+}
+
+.st-answers[data-shape="tall"] .st-answer:hover:not(:disabled) small,
+.st-answers[data-shape="tall"] .st-answer:focus-visible small {
+	color: var(--st-paper);
+}
+
+.st-answers[data-shape="tall"] a {
+	justify-self: start;
+	padding: 0 1rem;
+	color: var(--st-ember);
+	font-size: 0.9rem;
+}
+
+/* Numbers set by clicks (ability scores): one row per number. */
+.st-numbers {
+	margin: 0;
+	padding: 0.4rem 0.8rem 0.6rem;
+	border: 1px solid var(--st-rule);
+	border-radius: 0.3rem;
+	min-width: 0;
+}
+
+.st-numbers legend {
+	padding: 0 0.4rem;
+	color: var(--st-ember);
+	font-variant-caps: small-caps;
+	letter-spacing: 0.05em;
+}
+
+.st-numbers ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.3rem 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+.st-numbers li {
+	display: flex;
+	align-items: center;
+	gap: 0.2rem;
+	list-style: none;
+}
+
+.st-numbers li span {
+	min-width: 6.5rem;
+}
+
+.st-numbers output {
+	min-width: 2ch;
+	text-align: center;
+	font-size: 1.3rem;
+	font-variant-numeric: tabular-nums;
+}
+
+.st-numbers .st-btn {
+	justify-content: center;
+	border: 1px solid var(--st-rule);
+	font-size: 1.3rem;
+}
+
+.st-numbers p {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 0.5rem 0 0;
+	color: var(--st-dim);
+}
+
+.st-numbers [data-over] {
+	color: var(--st-blood);
+}
+
+.st-about {
+	margin: 0;
+	min-height: 1.4em;
+	color: var(--st-dim);
+	font-size: 0.95rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* What the pointed-at answer is, in the talk panel: read in full, not cut
+   to one line. Three lines are kept free so the cards do not jump. */
+.st-talk:has(> .st-about--help) {
+	grid-template-rows: auto fit-content(62%) minmax(0, 1fr);
+}
+
+.st-about--help {
+	align-self: start;
+	max-width: 80ch;
+	min-height: 4.5em;
+	color: var(--st-paper);
+	line-height: 1.5;
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	line-clamp: 4;
+}
+
+.st-about b {
+	color: var(--st-paper);
+	font-weight: 500;
+}
+
+.st-about a {
+	color: var(--st-ember);
+}
+
+/* --- Floating pieces (portalled out of the app) ---------------------------- */
+
+/* Offers hang on the thing as paper tags. */
+.st-tags {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	min-width: 9rem;
+	max-width: 17rem;
+	/* A long fold scrolls inside the room the scene leaves, clear of the top
+	   and the foot line. */
+	max-height: var(--bits-popover-content-available-height, 80vh);
+	z-index: 1000;
+	font-family: var(--st-font);
+	animation: st-rise 0.15s ease-out;
+}
+
+.st-taglist {
+	display: grid;
+	gap: 0.3rem;
+	min-height: 0;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--st-ember) transparent;
+}
+
+.st-tags header {
+	padding: 0 0.2rem 0.1rem;
+	color: var(--st-paper);
+	text-shadow: 0 0 4px #000, 0 0 4px #000;
+}
+
+.st-tags header strong {
+	font-variant-caps: small-caps;
+	letter-spacing: 0.06em;
+}
+
+.st-tags header p {
+	margin: 0;
+	font-size: 0.85rem;
+	font-style: italic;
+}
+
+.st-tag {
+	display: grid;
+	min-height: var(--st-target);
+	align-content: center;
+	padding: 0.25rem 0.9rem 0.25rem 1.3rem;
+	border: 0;
+	background: var(--st-paper);
+	color: var(--st-ink) !important;
+	clip-path: polygon(0.7rem 0, 100% 0, 100% 100%, 0.7rem 100%, 0 50%);
+	font-size: 1.05rem;
+	text-align: left;
+	cursor: pointer;
+	box-shadow: 0 2px 6px #000;
+}
+
+.st-tag:hover,
+.st-tag:focus-visible {
+	background: var(--st-ember);
+	outline: none;
+}
+
+.st-tag[data-refused] {
+	background: var(--st-frost);
+}
+
+.st-tag small {
+	font-size: 0.8rem;
+	font-style: italic;
+	line-height: 1.2;
+}
+
+.st-tag--more {
+	background: var(--st-slate);
+	color: var(--st-paper) !important;
+	min-height: 2rem;
+	font-size: 0.9rem;
+	font-variant-caps: small-caps;
+}
+
+.st-gaprow {
+	position: absolute;
+	top: 0.4rem;
+	left: 0.4rem;
+	display: flex;
+	gap: 0.25rem;
+	z-index: 750;
+}
+
+.st-gap {
+	display: inline-grid;
+	place-items: center;
+	width: 1.6rem;
+	height: 1.6rem;
+	padding: 0;
+	border: 1px dashed var(--st-ember);
+	border-radius: 50%;
+	background: #0b0c11cc;
+	color: var(--st-ember) !important;
+	font-size: 1rem;
+	line-height: 1;
+	cursor: help;
+	vertical-align: middle;
+}
+
+.st-gap:hover,
+.st-gap[data-state="open"] {
+	background: var(--st-ember);
+	color: var(--st-ink) !important;
+}
+
+.st-gapnote {
+	display: grid;
+	gap: 0.3rem;
+	max-width: 22rem;
+	padding: 0.6rem 0.8rem;
+	border: 1px dashed var(--st-ember);
+	border-radius: 0.3rem;
+	background: var(--st-night);
+	color: var(--st-paper);
+	font-family: var(--st-font);
+	font-size: 0.95rem;
+	z-index: 1300;
+	box-shadow: 0 0.5rem 2rem #000;
+}
+
+.st-gapnote small {
+	font-variant-caps: small-caps;
+	letter-spacing: 0.05em;
+	color: var(--st-ember);
+}
+
+.st-gapnote code {
+	color: var(--st-dim);
+	font-size: 0.8rem;
+}
+
+.st-veil {
+	position: fixed;
+	inset: 0;
+	background: #05060a99;
+	z-index: 1100;
+}
+
+.st-panel {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: min(46rem, calc(100vw - 1.5rem));
+	max-height: min(38rem, calc(100dvh - 7rem));
+	display: grid;
+	grid-template-rows: auto minmax(0, 1fr);
+	border: 1px solid var(--st-rule);
+	border-radius: 0.4rem;
+	background: var(--st-night);
+	color: var(--st-paper);
+	font-family: var(--st-font);
+	box-shadow: 0 1rem 4rem #000;
+	z-index: 1200;
+}
+
+.st-panel > header {
+	display: flex;
+	align-items: center;
+	padding: 0 0.4rem 0 1rem;
+	border-bottom: 1px solid var(--st-slate);
+}
+
+.st-panel > header > :first-child {
+	flex: 1;
+}
+
+.st-panel h2 {
+	flex: 1;
+	margin: 0;
+	font-size: 1.15rem;
+	font-weight: 600;
+	font-variant-caps: small-caps;
+	letter-spacing: 0.06em;
+}
+
+.st-panel-body {
+	padding: 1rem;
+	overflow-y: auto;
+}
+
+.st-story {
+	display: grid;
+	gap: 0.35rem;
+	margin: 0;
+	padding: 0;
+}
+
+.st-story li {
+	list-style: none;
+}
+
+.st-story li[data-kind="story"] {
+	font-style: italic;
+}
+
+.st-story li[data-kind="refusal"] {
+	color: var(--st-frost);
+	font-style: italic;
+}
+
+.st-story li[data-kind="roll"],
+.st-story li[data-kind="result"] {
+	color: var(--st-dim);
+}
+
+.st-story li[data-kind="mine"] b {
+	color: var(--st-ember);
+}
+
+.st-slots {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(5.5rem, 1fr));
+	gap: 0.5rem;
+	margin: 0 0 1rem;
+	padding: 0;
+}
+
+.st-slots li {
+	list-style: none;
+}
+
+.st-slot {
+	display: grid;
+	justify-items: center;
+	gap: 0.2rem;
+	width: 100%;
+	min-height: 6.2rem;
+	padding: 0.4rem;
+	border: 1px solid var(--st-slate);
+	border-radius: 0.3rem;
+	background: var(--st-ink);
+	font-size: 0.85rem;
+	line-height: 1.15;
+	cursor: pointer;
+}
+
+.st-slot > span {
+	display: grid;
+	justify-items: center;
+}
+
+.st-slot small {
+	color: var(--st-moss);
+	font-variant-caps: small-caps;
+	letter-spacing: 0.04em;
+}
+
+/* A thing that lies inside another one (a ration in the backpack). */
+.st-slot[data-inside] {
+	border-style: dashed;
+	background: transparent;
+}
+
+.st-slot:hover,
+.st-slot[aria-pressed="true"] {
+	border-color: var(--st-ember);
+}
+
+.st-slot img,
+.st-slot .st-noart {
+	width: 3.5rem;
+	height: 3.5rem;
+	image-rendering: pixelated;
+}
+
+.st-noart {
+	display: grid;
+	place-items: center;
+	border: 1px dashed var(--st-rule);
+	border-radius: 0.3rem;
+	color: var(--st-dim);
+	font-size: 1.4rem;
+}
+
+.st-pack {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 21rem;
+	gap: 1.25rem;
+	align-items: start;
+}
+
+.st-pack .st-slots {
+	margin: 0;
+}
+
+.st-detail {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: start;
+	gap: 0.5rem;
+	position: sticky;
+	top: 0;
+	margin: 0;
+	padding-left: 1.25rem;
+	border-left: 1px solid var(--st-slate);
+	min-height: 12rem;
+}
+
+.st-detail > strong,
+.st-detail > p {
+	flex-basis: 100%;
+}
+
+.st-worn {
+	margin: 0;
+	color: var(--st-moss);
+	font-variant-caps: small-caps;
+	letter-spacing: 0.04em;
+}
+
+.st-detail strong {
+	margin-right: 0.5rem;
+}
+
+.st-sheet {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1rem 1.5rem;
+	align-items: start;
+}
+
+.st-sheet > img,
+.st-sheet > .st-glyph--body {
+	width: 9rem;
+	height: 9rem;
+	image-rendering: pixelated;
+}
+
+.st-identity {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 0.2rem 0.8rem;
+	margin: 0.6rem 0 0;
+	font-size: 0.85rem;
+}
+
+.st-sofar {
+	grid-template-columns: max-content minmax(0, 1fr) max-content minmax(0, 1fr);
+	margin: 0.9rem 0 0;
+	font-size: 1rem;
+}
+
+/* The world writes some step names small ("fighting style"). */
+.st-sofar dt::first-letter,
+.st-outline small::first-letter {
+	text-transform: uppercase;
+}
+
+.st-identity dt {
+	font-variant-caps: small-caps;
+	letter-spacing: 0.05em;
+	color: var(--st-ember);
+}
+
+.st-identity dd {
+	margin: 0;
+}
+.st-saidhead {
+	margin: 0.9rem 0 0;
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+.st-said {
+	margin-top: 0.3rem;
+	max-height: 11rem;
+	overflow-y: auto;
+}
+.st-said dd span {
+	display: block;
+	font-style: italic;
+	color: var(--st-dim, inherit);
+}
+
+.st-sheet h3 {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.st-sheet p {
+	margin: 0.1rem 0 0.75rem;
+	color: var(--st-dim);
+	font-style: italic;
+}
+
+.st-stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	margin: 0 0 0.75rem;
+	padding: 0;
+}
+
+.st-stats li {
+	list-style: none;
+	display: grid;
+	justify-items: center;
+	min-width: 3.6rem;
+	padding: 0.3rem 0.5rem;
+	border: 1px solid var(--st-slate);
+	border-radius: 0.3rem;
+	background: var(--st-ink);
+}
+
+.st-stats small {
+	font-variant-caps: small-caps;
+	letter-spacing: 0.05em;
+	color: var(--st-dim);
+	font-size: 0.8rem;
+}
+
+.st-stats b {
+	font-size: 1.25rem;
+	font-variant-numeric: tabular-nums;
+}
+
+.st-panel[data-wide] {
+	width: min(64rem, calc(100vw - 1.5rem));
+	max-height: calc(100dvh - 3rem);
+}
+
+.st-sheets {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.st-sheets [role="tab"] {
+	border-bottom: 2px solid transparent;
+	border-radius: 0;
+	font-variant-caps: small-caps;
+	letter-spacing: 0.06em;
+}
+
+.st-sheets [role="tab"][aria-selected="true"] {
+	border-bottom-color: var(--st-ember);
+	color: var(--st-ember);
+}
+
+.st-youarehere,
+.st-mapkey {
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.6rem;
+	margin: 0 0.3rem;
+	border: 1px solid var(--st-paper);
+	border-radius: 50%;
+	background: var(--st-night);
+}
+
+.st-youarehere,
+.st-mapkey[data-key="here"] {
+	border-color: var(--st-ember);
+	background: var(--st-ember);
+}
+
+.st-mapkey[data-key="seen"] {
+	border-style: dashed;
+	border-color: var(--st-dim);
+}
+
+.st-maplegend {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.2rem 1rem;
+}
+
+.st-tag--more[aria-expanded="true"] {
+	color: var(--st-ember) !important;
+}
+
+/* An open fold under the pointer keeps a label that can be read. */
+.st-tag--more:hover,
+.st-tag--more:focus-visible {
+	color: var(--st-ink) !important;
+}
+
+/* What the pointed-at action is: beside the list, so no tag moves under
+   the pointer when it appears. */
+.st-tagabout {
+	position: absolute;
+	top: 0;
+	left: calc(100% + 0.4rem);
+	width: 16rem;
+	margin: 0;
+	padding: 0.4rem 0.6rem;
+	border: 1px solid var(--st-ember);
+	border-radius: 0.2rem;
+	background: var(--st-ink);
+	color: var(--st-paper);
+	font-size: 0.85rem;
+	line-height: 1.3;
+	box-shadow: 0 2px 6px #000;
+}
+
+.st-tags[data-side="left"] .st-tagabout {
+	right: calc(100% + 0.4rem);
+	left: auto;
+}
+
+.st-map {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 200 / 120;
+	background:
+		radial-gradient(ellipse at 50% 50%, #1a1c28 0%, transparent 75%),
+		var(--st-ink);
+	border-radius: 0.3rem;
+}
+
+.st-map svg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.st-map line {
+	stroke: var(--st-paper-deep);
+	stroke-width: 0.6;
+	opacity: 0.55;
+}
+
+.st-map line[data-unknown] {
+	stroke: var(--st-rule);
+	stroke-dasharray: 2 2;
+	opacity: 1;
+}
+
+.st-mapspot {
+	position: absolute;
+	display: grid;
+	justify-items: center;
+	gap: 0.15rem;
+	/* The place's own tag sits on the spot; a door hangs below it. */
+	transform: translate(-50%, calc(var(--st-target) / -2));
+}
+
+.st-mapnode {
+	min-height: var(--st-target);
+	padding: 0 0.8rem;
+	border: 1px solid var(--st-paper-deep);
+	border-radius: 1.4rem;
+	background: var(--st-night);
+	font-variant-caps: small-caps;
+	letter-spacing: 0.05em;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.st-mapnode:hover:not(:disabled) {
+	border-color: var(--st-ember);
+	color: var(--st-ember);
+}
+
+.st-mapnode[aria-current="location"] {
+	border-color: var(--st-ember);
+	background: var(--st-ember);
+	color: var(--st-ink);
+	cursor: default;
+}
+
+.st-mapnode[data-unknown] {
+	border-style: dashed;
+	border-color: var(--st-rule);
+	color: var(--st-dim);
+}
+
+/* Seen, but no known way leads there from here. */
+.st-mapnode[data-cut] {
+	border-style: dotted;
+	opacity: 0.55;
+	cursor: help;
+}
+
+.st-mapdoor {
+	padding: 0 0.5rem;
+	border: 0;
+	border-radius: 0.6rem;
+	background: var(--st-slate);
+	color: var(--st-frost) !important;
+	font-size: 0.8rem;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.st-mapdoor:hover {
+	color: var(--st-ember) !important;
+}
+
+.st-more {
+	flex: 1 0 100%;
+	color: var(--st-dim);
+}
+
+.st-more summary {
+	min-height: 2rem;
+	cursor: pointer;
+	font-variant-caps: small-caps;
+	letter-spacing: 0.05em;
+}
+
+.st-more .st-btn {
+	min-height: 2rem;
+	margin: 0.15rem 0.15rem 0 0;
+	border: 1px solid var(--st-slate);
+	font-size: 0.9rem;
+}
+
+.st-gaps {
+	display: grid;
+	gap: 0.75rem;
+	margin: 0 0 1rem;
+	padding: 0;
+}
+
+.st-gaps li {
+	list-style: none;
+	padding-left: 0.75rem;
+	border-left: 3px dashed var(--st-ember-deep);
+}
+
+.st-gaps small {
+	font-variant-caps: small-caps;
+	letter-spacing: 0.05em;
+	color: var(--st-ember);
+}
+
+.st-gaps code {
+	color: var(--st-dim);
+	font-size: 0.8rem;
+}
+
+@keyframes st-rise {
+	from {
+		opacity: 0;
+		translate: 0 0.4rem;
+	}
+}
+
+@keyframes st-bob {
+	50% {
+		translate: 0 -15%;
+	}
+}
+
+@keyframes st-breathe {
+	50% {
+		opacity: 0.55;
+	}
+}
+
+@keyframes st-float {
+	to {
+		translate: 0 -2.5rem;
+		opacity: 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.st-app *,
+	.st-float * {
+		animation-duration: 0.01s !important;
+		transition-duration: 0.01s !important;
+	}
+}
+
+/* Desktop only (owner decision, 2026-11-15): there is no phone layout. A
+ * window too narrow for the three lines says so instead of breaking. */
+@media (max-width: 760px) {
+	.st-app::after {
+		content: "The stage is made for a desktop window. Widen this one to play.";
+		position: fixed;
+		inset: 0;
+		z-index: 2000;
+		display: grid;
+		place-items: center;
+		padding: 2rem;
+		background: var(--st-ink);
+		color: var(--st-paper);
+		font-size: 1.2rem;
+		text-align: center;
+	}
+}
+
+/* A thing's description in the pack is read whole. */
+.st-about--whole {
+	flex-basis: 100%;
+	overflow: visible;
+	white-space: normal;
+	text-overflow: clip;
+}

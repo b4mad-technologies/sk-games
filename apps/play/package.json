@@ -1,0 +1,51 @@
+{
+	"name": "@spellkave/play",
+	"version": "0.0.0",
+	"private": true,
+	"description": "play.spellkave.com — authenticated player and DM start surface.",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --host 127.0.0.1",
+		"build": "vite build",
+		"preview": "vite preview --host 127.0.0.1",
+		"deploy": "pnpm run typecheck && pnpm run build && wrangler deploy",
+		"test": "vitest run",
+		"typecheck": "NODE_OPTIONS=\"$NODE_OPTIONS --max-old-space-size=4096\" svelte-check --tsconfig ./tsconfig.json",
+		"check:no-scroll": "bash scripts/no-scroll.sh",
+		"check:tile-clip": "bash scripts/tile-clip.sh"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "1.32.0",
+		"@openobserve/browser-rum-slim": "0.4.1",
+		"@spellkave/agent-observability": "0.1.2",
+		"@spellkave/authkit": "0.0.0",
+		"@spellkave/map-canvas": "0.0.0",
+		"@spellkave/sdk": "0.1.2",
+		"@spellkave/session": "0.1.2",
+		"@spellkave/tool-authoring": "0.1.2",
+		"@spellkave/tool-contracts": "0.1.2",
+		"@spellkave/tool-player": "0.1.2",
+		"@spellkave/tool-runtime": "0.1.2",
+		"@spellkave/ui": "0.0.0",
+		"@spellkave/ui-widgets": "0.0.0",
+		"@spellkave/world-map": "0.1.2",
+		"fzf": "0.5.2",
+		"maplibre-gl": "6.4.1",
+		"svelte": "^5.46.4",
+		"typebox": "1.1.38"
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^7.1.2",
+		"@tailwindcss/vite": "^4.3.2",
+		"@testing-library/svelte": "^5.4.2",
+		"@types/node": "^24.12.4",
+		"jsdom": "^26.1.0",
+		"smol-toml": "^1.9.1",
+		"svelte-check": "^4.7.1",
+		"tailwindcss": "^4.3.2",
+		"typescript": "~5.9.3",
+		"vite": "~8.2.4",
+		"vitest": "^3.2.6",
+		"wrangler": "^4.73.0"
+	}
+}

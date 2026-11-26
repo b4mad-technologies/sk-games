@@ -1,0 +1,5685 @@
+{
+	"hero": {
+		"actorId": "168",
+		"name": "Borin",
+		"vitals": [
+			{
+				"id": "srd/hp",
+				"label": "Hit Points",
+				"value": "4"
+			},
+			{
+				"id": "srd/ac",
+				"label": "Armor Class",
+				"value": "12"
+			},
+			{
+				"id": "srd/level",
+				"label": "Character Level",
+				"value": "1"
+			}
+		],
+		"quest": [],
+		"conditionDetails": [],
+		"abilities": [
+			{
+				"id": "srd/str",
+				"label": "STR",
+				"score": 15,
+				"modifier": 2,
+				"description": "Measures your physical power for lifting, pushing, carrying, and forcing movement. You use it for attacks and tasks that rely on raw muscle."
+			},
+			{
+				"id": "srd/dex",
+				"label": "DEX",
+				"score": 14,
+				"modifier": 2,
+				"description": "Measures your agility, reflexes, and balance. You use it for quick movement, precise actions, and avoiding danger."
+			},
+			{
+				"id": "srd/con",
+				"label": "CON",
+				"score": 13,
+				"modifier": 1,
+				"description": "Measures your health and stamina. It helps determine your durability and how well you resist effects that strain your body."
+			},
+			{
+				"id": "srd/int",
+				"label": "INT",
+				"score": 8,
+				"modifier": -1,
+				"description": "Measures your reasoning, memory, and ability to understand complex information. You use it when recalling knowledge, investigating clues, or casting certain spells."
+			},
+			{
+				"id": "srd/wis",
+				"label": "WIS",
+				"score": 10,
+				"modifier": 0,
+				"description": "Your measure of awareness, intuition, and mental resilience. You use it to notice threats, read situations, and resist effects that challenge your mind."
+			},
+			{
+				"id": "srd/cha",
+				"label": "CHA",
+				"score": 12,
+				"modifier": 1,
+				"description": "Measures your force of personality, confidence, and charm. You use it when your presence, influence, or performance matters."
+			}
+		],
+		"skills": [
+			{
+				"id": "srd/skill/athletics",
+				"label": "Athletics"
+			},
+			{
+				"id": "srd/skill/intimidation",
+				"label": "Intimidation"
+			},
+			{
+				"id": "srd/skill/perception",
+				"label": "Perception"
+			}
+		],
+		"masteries": [],
+		"conditions": [],
+		"appearance": "",
+		"backstory": "",
+		"placeId": "session_grid_3/c_0_0",
+		"descriptionReads": {
+			"values": "ready",
+			"identity": "ready",
+			"conditions": "ready"
+		},
+		"suppliedFields": {
+			"vitals": 6,
+			"quest": 0,
+			"conditions": 0
+		},
+		"species": "Dwarf",
+		"className": "Fighter",
+		"background": "Soldier",
+		"identityDetails": [
+			{
+				"id": "srd.background.soldier",
+				"label": "Soldier",
+				"description": "You are trained for battle, gaining proficiency in Athletics and Intimidation. You also gain the Savage Attacker origin feat."
+			},
+			{
+				"id": "srd.class.fighter",
+				"label": "Fighter",
+				"description": "A martial class trained for combat. You rely on Strength or Dexterity for your fighting techniques and have a sturdy Hit Point die."
+			},
+			{
+				"id": "srd.species.dwarf",
+				"label": "Dwarf",
+				"description": "A sturdy, Medium folk with a walking speed of 30 feet. You choose this species for its dwarven traits."
+			}
+		],
+		"hp": 4,
+		"ac": 12,
+		"level": 1,
+		"proficiency": 2,
+		"proficiencyDescription": "A bonus from your total character level. You add it to checks, attacks, saves, and other rolls when you are proficient.",
+		"xp": 0
+	},
+	"place": {
+		"id": "session_grid_3/c_0_0",
+		"name": "Cell 0,0",
+		"description": "",
+		"exits": [
+			{
+				"handle": "s:exit:277",
+				"rev": "18vqr0d",
+				"label": "east",
+				"to": "c_1_0",
+				"toNodeId": "session_grid_3/c_1_0",
+				"toName": "Cell 1,0",
+				"gates": ["srd/affordance/grid-step"]
+			},
+			{
+				"handle": "s:exit:278",
+				"rev": "12f1cub",
+				"label": "north",
+				"to": "c_0_1",
+				"toNodeId": "session_grid_3/c_0_1",
+				"toName": "Cell 0,1",
+				"gates": ["srd/affordance/grid-step"]
+			},
+			{
+				"handle": "s:exit:279",
+				"rev": "fek92z",
+				"label": "northeast",
+				"to": "c_1_1",
+				"toNodeId": "session_grid_3/c_1_1",
+				"toName": "Cell 1,1",
+				"gates": ["srd/affordance/grid-step"]
+			}
+		],
+		"elevation": 0
+	},
+	"occupants": [],
+	"actions": [
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:entity:137",
+			"label": "Answer 1 — Someone here",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:entity:139",
+			"label": "Answer 1 — Someone here",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:entity:168",
+			"label": "Answer 1 — You (Borin)",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 1 — Cell 0,0",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 1 — Cell 1,0",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 1 — Cell 1,1",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:entity:137",
+			"label": "Answer 10 — Someone here",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:entity:139",
+			"label": "Answer 10 — Someone here",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:entity:168",
+			"label": "Answer 10 — You (Borin)",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 10 — Cell 0,0",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 10 — Cell 1,0",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 10 — Cell 1,1",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:entity:137",
+			"label": "Answer 11 — Someone here",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:entity:139",
+			"label": "Answer 11 — Someone here",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:entity:168",
+			"label": "Answer 11 — You (Borin)",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 11 — Cell 0,0",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 11 — Cell 1,0",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 11 — Cell 1,1",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:entity:137",
+			"label": "Answer 12 — Someone here",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:entity:139",
+			"label": "Answer 12 — Someone here",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:entity:168",
+			"label": "Answer 12 — You (Borin)",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 12 — Cell 0,0",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 12 — Cell 1,0",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 12 — Cell 1,1",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:entity:137",
+			"label": "Answer 13 — Someone here",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:entity:139",
+			"label": "Answer 13 — Someone here",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:entity:168",
+			"label": "Answer 13 — You (Borin)",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 13 — Cell 0,0",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 13 — Cell 1,0",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 13 — Cell 1,1",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:entity:137",
+			"label": "Answer 14 — Someone here",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:entity:139",
+			"label": "Answer 14 — Someone here",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:entity:168",
+			"label": "Answer 14 — You (Borin)",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 14 — Cell 0,0",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 14 — Cell 1,0",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 14 — Cell 1,1",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:entity:137",
+			"label": "Answer 15 — Someone here",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:entity:139",
+			"label": "Answer 15 — Someone here",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:entity:168",
+			"label": "Answer 15 — You (Borin)",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 15 — Cell 0,0",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 15 — Cell 1,0",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 15 — Cell 1,1",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:entity:137",
+			"label": "Answer 16 — Someone here",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:entity:139",
+			"label": "Answer 16 — Someone here",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:entity:168",
+			"label": "Answer 16 — You (Borin)",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 16 — Cell 0,0",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 16 — Cell 1,0",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 16 — Cell 1,1",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:entity:137",
+			"label": "Answer 2 — Someone here",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:entity:139",
+			"label": "Answer 2 — Someone here",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:entity:168",
+			"label": "Answer 2 — You (Borin)",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 2 — Cell 0,0",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 2 — Cell 1,0",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 2 — Cell 1,1",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:entity:137",
+			"label": "Answer 3 — Someone here",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:entity:139",
+			"label": "Answer 3 — Someone here",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:entity:168",
+			"label": "Answer 3 — You (Borin)",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 3 — Cell 0,0",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 3 — Cell 1,0",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 3 — Cell 1,1",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:entity:137",
+			"label": "Answer 4 — Someone here",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:entity:139",
+			"label": "Answer 4 — Someone here",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:entity:168",
+			"label": "Answer 4 — You (Borin)",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 4 — Cell 0,0",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 4 — Cell 1,0",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 4 — Cell 1,1",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:entity:137",
+			"label": "Answer 5 — Someone here",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:entity:139",
+			"label": "Answer 5 — Someone here",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:entity:168",
+			"label": "Answer 5 — You (Borin)",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 5 — Cell 0,0",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 5 — Cell 1,0",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 5 — Cell 1,1",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:entity:137",
+			"label": "Answer 6 — Someone here",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:entity:139",
+			"label": "Answer 6 — Someone here",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:entity:168",
+			"label": "Answer 6 — You (Borin)",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 6 — Cell 0,0",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 6 — Cell 1,0",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 6 — Cell 1,1",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:entity:137",
+			"label": "Answer 7 — Someone here",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:entity:139",
+			"label": "Answer 7 — Someone here",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:entity:168",
+			"label": "Answer 7 — You (Borin)",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 7 — Cell 0,0",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 7 — Cell 1,0",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 7 — Cell 1,1",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:entity:137",
+			"label": "Answer 8 — Someone here",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:entity:139",
+			"label": "Answer 8 — Someone here",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:entity:168",
+			"label": "Answer 8 — You (Borin)",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 8 — Cell 0,0",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 8 — Cell 1,0",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 8 — Cell 1,1",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:entity:137",
+			"label": "Answer 9 — Someone here",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:entity:139",
+			"label": "Answer 9 — Someone here",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:entity:168",
+			"label": "Answer 9 — You (Borin)",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Answer 9 — Cell 0,0",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Answer 9 — Cell 1,0",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Answer 9 — Cell 1,1",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "elven_mini/action/wake-at-inn",
+			"id": "factored:elven_mini/action/wake-at-inn:target:168:entity:168",
+			"label": "Give up and wake at the inn — You (Borin)",
+			"name": "Give up and wake at the inn",
+			"verb": "manipulate",
+			"descriptor": "elven_mini/action/wake-at-inn",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "elven_mini/quest/burn-the-camp",
+			"id": "factored:elven_mini/quest/burn-the-camp:target:168:entity:168",
+			"label": "Set the camp alight — You (Borin)",
+			"name": "Set the camp alight",
+			"verb": "manipulate",
+			"descriptor": "elven_mini/quest/burn-the-camp",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "elven_mini/quest/relight-the-altar",
+			"id": "factored:elven_mini/quest/relight-the-altar:target:168:entity:168",
+			"label": "Relight the altar — You (Borin)",
+			"name": "Relight the altar",
+			"verb": "manipulate",
+			"descriptor": "elven_mini/quest/relight-the-altar",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "elven_mini/respawn/wake-at-inn",
+			"id": "factored:elven_mini/respawn/wake-at-inn:target:168:entity:168",
+			"label": "Give up and wake at the inn — You (Borin)",
+			"name": "Give up and wake at the inn",
+			"verb": "manipulate",
+			"descriptor": "elven_mini/respawn/wake-at-inn",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "elven_mini/respawn/wake-at-inn-penniless",
+			"id": "factored:elven_mini/respawn/wake-at-inn-penniless:target:168:entity:168",
+			"label": "Give up and wake at the inn (no coin) — You (Borin)",
+			"name": "Give up and wake at the inn (no coin)",
+			"verb": "manipulate",
+			"descriptor": "elven_mini/respawn/wake-at-inn-penniless",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/advancement/level-up",
+			"id": "factored:srd/advancement/level-up:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Level Up — Cell 0,0",
+			"name": "Level Up",
+			"verb": "manipulate",
+			"descriptor": "srd/advancement/level-up",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/advancement/level-up",
+			"id": "factored:srd/advancement/level-up:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Level Up — Cell 1,0",
+			"name": "Level Up",
+			"verb": "manipulate",
+			"descriptor": "srd/advancement/level-up",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/advancement/level-up",
+			"id": "factored:srd/advancement/level-up:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Level Up — Cell 1,1",
+			"name": "Level Up",
+			"verb": "manipulate",
+			"descriptor": "srd/advancement/level-up",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/attack/melee",
+			"id": "factored:srd/attack/melee:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Melee Attack — Cell 0,0",
+			"name": "Melee Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee",
+			"id": "factored:srd/attack/melee:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Melee Attack — Cell 1,0",
+			"name": "Melee Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee",
+			"id": "factored:srd/attack/melee:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Melee Attack — Cell 1,1",
+			"name": "Melee Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-graze",
+			"id": "factored:srd/attack/melee-graze:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Melee Attack (Graze) — Cell 0,0",
+			"name": "Melee Attack (Graze)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-graze",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-graze",
+			"id": "factored:srd/attack/melee-graze:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Melee Attack (Graze) — Cell 1,0",
+			"name": "Melee Attack (Graze)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-graze",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-graze",
+			"id": "factored:srd/attack/melee-graze:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Melee Attack (Graze) — Cell 1,1",
+			"name": "Melee Attack (Graze)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-graze",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-sap",
+			"id": "factored:srd/attack/melee-sap:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Melee Attack (Sap) — Cell 0,0",
+			"name": "Melee Attack (Sap)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-sap",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-sap",
+			"id": "factored:srd/attack/melee-sap:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Melee Attack (Sap) — Cell 1,0",
+			"name": "Melee Attack (Sap)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-sap",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-sap",
+			"id": "factored:srd/attack/melee-sap:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Melee Attack (Sap) — Cell 1,1",
+			"name": "Melee Attack (Sap)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-sap",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-slow",
+			"id": "factored:srd/attack/melee-slow:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Melee Attack (Slow) — Cell 0,0",
+			"name": "Melee Attack (Slow)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-slow",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-slow",
+			"id": "factored:srd/attack/melee-slow:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Melee Attack (Slow) — Cell 1,0",
+			"name": "Melee Attack (Slow)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-slow",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-slow",
+			"id": "factored:srd/attack/melee-slow:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Melee Attack (Slow) — Cell 1,1",
+			"name": "Melee Attack (Slow)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-slow",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-topple",
+			"id": "factored:srd/attack/melee-topple:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Melee Attack (Topple) — Cell 0,0",
+			"name": "Melee Attack (Topple)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-topple",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-topple",
+			"id": "factored:srd/attack/melee-topple:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Melee Attack (Topple) — Cell 1,0",
+			"name": "Melee Attack (Topple)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-topple",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-topple",
+			"id": "factored:srd/attack/melee-topple:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Melee Attack (Topple) — Cell 1,1",
+			"name": "Melee Attack (Topple)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-topple",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-vex",
+			"id": "factored:srd/attack/melee-vex:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Melee Attack (Vex) — Cell 0,0",
+			"name": "Melee Attack (Vex)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-vex",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-vex",
+			"id": "factored:srd/attack/melee-vex:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Melee Attack (Vex) — Cell 1,0",
+			"name": "Melee Attack (Vex)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-vex",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee-vex",
+			"id": "factored:srd/attack/melee-vex:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Melee Attack (Vex) — Cell 1,1",
+			"name": "Melee Attack (Vex)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee-vex",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee/swing",
+			"id": "factored:srd/attack/melee/swing:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Swing (no target) — Cell 0,0",
+			"name": "Swing (no target)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee/swing",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee/swing",
+			"id": "factored:srd/attack/melee/swing:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Swing (no target) — Cell 1,0",
+			"name": "Swing (no target)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee/swing",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/melee/swing",
+			"id": "factored:srd/attack/melee/swing:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Swing (no target) — Cell 1,1",
+			"name": "Swing (no target)",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/melee/swing",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/opportunity-attack",
+			"id": "factored:srd/attack/opportunity-attack:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Opportunity Attack — Cell 0,0",
+			"name": "Opportunity Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/opportunity-attack",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/opportunity-attack",
+			"id": "factored:srd/attack/opportunity-attack:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Opportunity Attack — Cell 1,0",
+			"name": "Opportunity Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/opportunity-attack",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/opportunity-attack",
+			"id": "factored:srd/attack/opportunity-attack:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Opportunity Attack — Cell 1,1",
+			"name": "Opportunity Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/opportunity-attack",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/ranged",
+			"id": "factored:srd/attack/ranged:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Ranged Attack — Cell 0,0",
+			"name": "Ranged Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/ranged",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/ranged",
+			"id": "factored:srd/attack/ranged:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Ranged Attack — Cell 1,0",
+			"name": "Ranged Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/ranged",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/ranged",
+			"id": "factored:srd/attack/ranged:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Ranged Attack — Cell 1,1",
+			"name": "Ranged Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/ranged",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/sneak-attack",
+			"id": "factored:srd/attack/sneak-attack:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Sneak Attack — Cell 0,0",
+			"name": "Sneak Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/sneak-attack",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/sneak-attack",
+			"id": "factored:srd/attack/sneak-attack:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Sneak Attack — Cell 1,0",
+			"name": "Sneak Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/sneak-attack",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/sneak-attack",
+			"id": "factored:srd/attack/sneak-attack:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Sneak Attack — Cell 1,1",
+			"name": "Sneak Attack",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/sneak-attack",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/unarmed-strike/damage",
+			"id": "factored:srd/attack/unarmed-strike/damage:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Unarmed Strike: Damage — Cell 0,0",
+			"name": "Unarmed Strike: Damage",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/unarmed-strike/damage",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/unarmed-strike/damage",
+			"id": "factored:srd/attack/unarmed-strike/damage:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Unarmed Strike: Damage — Cell 1,0",
+			"name": "Unarmed Strike: Damage",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/unarmed-strike/damage",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/attack/unarmed-strike/damage",
+			"id": "factored:srd/attack/unarmed-strike/damage:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Unarmed Strike: Damage — Cell 1,1",
+			"name": "Unarmed Strike: Damage",
+			"verb": "manipulate",
+			"descriptor": "srd/attack/unarmed-strike/damage",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/check/acrobatics",
+			"id": "factored:srd/check/acrobatics:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Acrobatics — Cell 0,0",
+			"name": "Check: Acrobatics",
+			"verb": "manipulate",
+			"descriptor": "srd/check/acrobatics",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/acrobatics",
+			"id": "factored:srd/check/acrobatics:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Acrobatics — Cell 1,0",
+			"name": "Check: Acrobatics",
+			"verb": "manipulate",
+			"descriptor": "srd/check/acrobatics",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/acrobatics",
+			"id": "factored:srd/check/acrobatics:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Acrobatics — Cell 1,1",
+			"name": "Check: Acrobatics",
+			"verb": "manipulate",
+			"descriptor": "srd/check/acrobatics",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/animal-handling",
+			"id": "factored:srd/check/animal-handling:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Animal Handling — Cell 0,0",
+			"name": "Check: Animal Handling",
+			"verb": "manipulate",
+			"descriptor": "srd/check/animal-handling",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/animal-handling",
+			"id": "factored:srd/check/animal-handling:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Animal Handling — Cell 1,0",
+			"name": "Check: Animal Handling",
+			"verb": "manipulate",
+			"descriptor": "srd/check/animal-handling",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/animal-handling",
+			"id": "factored:srd/check/animal-handling:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Animal Handling — Cell 1,1",
+			"name": "Check: Animal Handling",
+			"verb": "manipulate",
+			"descriptor": "srd/check/animal-handling",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/arcana",
+			"id": "factored:srd/check/arcana:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Arcana — Cell 0,0",
+			"name": "Check: Arcana",
+			"verb": "manipulate",
+			"descriptor": "srd/check/arcana",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/arcana",
+			"id": "factored:srd/check/arcana:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Arcana — Cell 1,0",
+			"name": "Check: Arcana",
+			"verb": "manipulate",
+			"descriptor": "srd/check/arcana",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/arcana",
+			"id": "factored:srd/check/arcana:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Arcana — Cell 1,1",
+			"name": "Check: Arcana",
+			"verb": "manipulate",
+			"descriptor": "srd/check/arcana",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/athletics",
+			"id": "factored:srd/check/athletics:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Athletics — Cell 0,0",
+			"name": "Check: Athletics",
+			"verb": "manipulate",
+			"descriptor": "srd/check/athletics",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/athletics",
+			"id": "factored:srd/check/athletics:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Athletics — Cell 1,0",
+			"name": "Check: Athletics",
+			"verb": "manipulate",
+			"descriptor": "srd/check/athletics",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/athletics",
+			"id": "factored:srd/check/athletics:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Athletics — Cell 1,1",
+			"name": "Check: Athletics",
+			"verb": "manipulate",
+			"descriptor": "srd/check/athletics",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/cha",
+			"id": "factored:srd/check/cha:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Charisma (raw ability) — Cell 0,0",
+			"name": "Check: Charisma (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/cha",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/cha",
+			"id": "factored:srd/check/cha:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Charisma (raw ability) — Cell 1,0",
+			"name": "Check: Charisma (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/cha",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/cha",
+			"id": "factored:srd/check/cha:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Charisma (raw ability) — Cell 1,1",
+			"name": "Check: Charisma (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/cha",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/con",
+			"id": "factored:srd/check/con:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Constitution (raw ability) — Cell 0,0",
+			"name": "Check: Constitution (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/con",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/con",
+			"id": "factored:srd/check/con:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Constitution (raw ability) — Cell 1,0",
+			"name": "Check: Constitution (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/con",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/con",
+			"id": "factored:srd/check/con:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Constitution (raw ability) — Cell 1,1",
+			"name": "Check: Constitution (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/con",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/deception",
+			"id": "factored:srd/check/deception:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Deception — Cell 0,0",
+			"name": "Check: Deception",
+			"verb": "manipulate",
+			"descriptor": "srd/check/deception",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/deception",
+			"id": "factored:srd/check/deception:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Deception — Cell 1,0",
+			"name": "Check: Deception",
+			"verb": "manipulate",
+			"descriptor": "srd/check/deception",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/deception",
+			"id": "factored:srd/check/deception:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Deception — Cell 1,1",
+			"name": "Check: Deception",
+			"verb": "manipulate",
+			"descriptor": "srd/check/deception",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/dex",
+			"id": "factored:srd/check/dex:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Dexterity (raw ability) — Cell 0,0",
+			"name": "Check: Dexterity (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/dex",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/dex",
+			"id": "factored:srd/check/dex:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Dexterity (raw ability) — Cell 1,0",
+			"name": "Check: Dexterity (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/dex",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/dex",
+			"id": "factored:srd/check/dex:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Dexterity (raw ability) — Cell 1,1",
+			"name": "Check: Dexterity (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/dex",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/history",
+			"id": "factored:srd/check/history:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: History — Cell 0,0",
+			"name": "Check: History",
+			"verb": "manipulate",
+			"descriptor": "srd/check/history",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/history",
+			"id": "factored:srd/check/history:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: History — Cell 1,0",
+			"name": "Check: History",
+			"verb": "manipulate",
+			"descriptor": "srd/check/history",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/history",
+			"id": "factored:srd/check/history:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: History — Cell 1,1",
+			"name": "Check: History",
+			"verb": "manipulate",
+			"descriptor": "srd/check/history",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/insight",
+			"id": "factored:srd/check/insight:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Insight — Cell 0,0",
+			"name": "Check: Insight",
+			"verb": "manipulate",
+			"descriptor": "srd/check/insight",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/insight",
+			"id": "factored:srd/check/insight:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Insight — Cell 1,0",
+			"name": "Check: Insight",
+			"verb": "manipulate",
+			"descriptor": "srd/check/insight",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/insight",
+			"id": "factored:srd/check/insight:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Insight — Cell 1,1",
+			"name": "Check: Insight",
+			"verb": "manipulate",
+			"descriptor": "srd/check/insight",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/int",
+			"id": "factored:srd/check/int:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Intelligence (raw ability) — Cell 0,0",
+			"name": "Check: Intelligence (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/int",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/int",
+			"id": "factored:srd/check/int:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Intelligence (raw ability) — Cell 1,0",
+			"name": "Check: Intelligence (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/int",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/int",
+			"id": "factored:srd/check/int:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Intelligence (raw ability) — Cell 1,1",
+			"name": "Check: Intelligence (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/int",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/intimidation",
+			"id": "factored:srd/check/intimidation:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Intimidation — Cell 0,0",
+			"name": "Check: Intimidation",
+			"verb": "manipulate",
+			"descriptor": "srd/check/intimidation",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/intimidation",
+			"id": "factored:srd/check/intimidation:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Intimidation — Cell 1,0",
+			"name": "Check: Intimidation",
+			"verb": "manipulate",
+			"descriptor": "srd/check/intimidation",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/intimidation",
+			"id": "factored:srd/check/intimidation:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Intimidation — Cell 1,1",
+			"name": "Check: Intimidation",
+			"verb": "manipulate",
+			"descriptor": "srd/check/intimidation",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/investigation",
+			"id": "factored:srd/check/investigation:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Investigation — Cell 0,0",
+			"name": "Check: Investigation",
+			"verb": "manipulate",
+			"descriptor": "srd/check/investigation",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/investigation",
+			"id": "factored:srd/check/investigation:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Investigation — Cell 1,0",
+			"name": "Check: Investigation",
+			"verb": "manipulate",
+			"descriptor": "srd/check/investigation",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/investigation",
+			"id": "factored:srd/check/investigation:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Investigation — Cell 1,1",
+			"name": "Check: Investigation",
+			"verb": "manipulate",
+			"descriptor": "srd/check/investigation",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/medicine",
+			"id": "factored:srd/check/medicine:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Medicine — Cell 0,0",
+			"name": "Check: Medicine",
+			"verb": "manipulate",
+			"descriptor": "srd/check/medicine",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/medicine",
+			"id": "factored:srd/check/medicine:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Medicine — Cell 1,0",
+			"name": "Check: Medicine",
+			"verb": "manipulate",
+			"descriptor": "srd/check/medicine",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/medicine",
+			"id": "factored:srd/check/medicine:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Medicine — Cell 1,1",
+			"name": "Check: Medicine",
+			"verb": "manipulate",
+			"descriptor": "srd/check/medicine",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/nature",
+			"id": "factored:srd/check/nature:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Nature — Cell 0,0",
+			"name": "Check: Nature",
+			"verb": "manipulate",
+			"descriptor": "srd/check/nature",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/nature",
+			"id": "factored:srd/check/nature:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Nature — Cell 1,0",
+			"name": "Check: Nature",
+			"verb": "manipulate",
+			"descriptor": "srd/check/nature",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/nature",
+			"id": "factored:srd/check/nature:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Nature — Cell 1,1",
+			"name": "Check: Nature",
+			"verb": "manipulate",
+			"descriptor": "srd/check/nature",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/perception",
+			"id": "factored:srd/check/perception:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Perception — Cell 0,0",
+			"name": "Check: Perception",
+			"verb": "manipulate",
+			"descriptor": "srd/check/perception",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/perception",
+			"id": "factored:srd/check/perception:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Perception — Cell 1,0",
+			"name": "Check: Perception",
+			"verb": "manipulate",
+			"descriptor": "srd/check/perception",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/perception",
+			"id": "factored:srd/check/perception:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Perception — Cell 1,1",
+			"name": "Check: Perception",
+			"verb": "manipulate",
+			"descriptor": "srd/check/perception",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/performance",
+			"id": "factored:srd/check/performance:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Performance — Cell 0,0",
+			"name": "Check: Performance",
+			"verb": "manipulate",
+			"descriptor": "srd/check/performance",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/performance",
+			"id": "factored:srd/check/performance:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Performance — Cell 1,0",
+			"name": "Check: Performance",
+			"verb": "manipulate",
+			"descriptor": "srd/check/performance",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/performance",
+			"id": "factored:srd/check/performance:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Performance — Cell 1,1",
+			"name": "Check: Performance",
+			"verb": "manipulate",
+			"descriptor": "srd/check/performance",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/persuasion",
+			"id": "factored:srd/check/persuasion:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Persuasion — Cell 0,0",
+			"name": "Check: Persuasion",
+			"verb": "manipulate",
+			"descriptor": "srd/check/persuasion",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/persuasion",
+			"id": "factored:srd/check/persuasion:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Persuasion — Cell 1,0",
+			"name": "Check: Persuasion",
+			"verb": "manipulate",
+			"descriptor": "srd/check/persuasion",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/persuasion",
+			"id": "factored:srd/check/persuasion:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Persuasion — Cell 1,1",
+			"name": "Check: Persuasion",
+			"verb": "manipulate",
+			"descriptor": "srd/check/persuasion",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/religion",
+			"id": "factored:srd/check/religion:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Religion — Cell 0,0",
+			"name": "Check: Religion",
+			"verb": "manipulate",
+			"descriptor": "srd/check/religion",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/religion",
+			"id": "factored:srd/check/religion:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Religion — Cell 1,0",
+			"name": "Check: Religion",
+			"verb": "manipulate",
+			"descriptor": "srd/check/religion",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/religion",
+			"id": "factored:srd/check/religion:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Religion — Cell 1,1",
+			"name": "Check: Religion",
+			"verb": "manipulate",
+			"descriptor": "srd/check/religion",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/sleight-of-hand",
+			"id": "factored:srd/check/sleight-of-hand:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Sleight Of Hand — Cell 0,0",
+			"name": "Check: Sleight Of Hand",
+			"verb": "manipulate",
+			"descriptor": "srd/check/sleight-of-hand",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/sleight-of-hand",
+			"id": "factored:srd/check/sleight-of-hand:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Sleight Of Hand — Cell 1,0",
+			"name": "Check: Sleight Of Hand",
+			"verb": "manipulate",
+			"descriptor": "srd/check/sleight-of-hand",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/sleight-of-hand",
+			"id": "factored:srd/check/sleight-of-hand:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Sleight Of Hand — Cell 1,1",
+			"name": "Check: Sleight Of Hand",
+			"verb": "manipulate",
+			"descriptor": "srd/check/sleight-of-hand",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/stealth",
+			"id": "factored:srd/check/stealth:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Stealth — Cell 0,0",
+			"name": "Check: Stealth",
+			"verb": "manipulate",
+			"descriptor": "srd/check/stealth",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/stealth",
+			"id": "factored:srd/check/stealth:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Stealth — Cell 1,0",
+			"name": "Check: Stealth",
+			"verb": "manipulate",
+			"descriptor": "srd/check/stealth",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/stealth",
+			"id": "factored:srd/check/stealth:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Stealth — Cell 1,1",
+			"name": "Check: Stealth",
+			"verb": "manipulate",
+			"descriptor": "srd/check/stealth",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/str",
+			"id": "factored:srd/check/str:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Strength (raw ability) — Cell 0,0",
+			"name": "Check: Strength (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/str",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/str",
+			"id": "factored:srd/check/str:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Strength (raw ability) — Cell 1,0",
+			"name": "Check: Strength (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/str",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/str",
+			"id": "factored:srd/check/str:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Strength (raw ability) — Cell 1,1",
+			"name": "Check: Strength (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/str",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/survival",
+			"id": "factored:srd/check/survival:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Survival — Cell 0,0",
+			"name": "Check: Survival",
+			"verb": "manipulate",
+			"descriptor": "srd/check/survival",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/survival",
+			"id": "factored:srd/check/survival:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Survival — Cell 1,0",
+			"name": "Check: Survival",
+			"verb": "manipulate",
+			"descriptor": "srd/check/survival",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/survival",
+			"id": "factored:srd/check/survival:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Survival — Cell 1,1",
+			"name": "Check: Survival",
+			"verb": "manipulate",
+			"descriptor": "srd/check/survival",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/wis",
+			"id": "factored:srd/check/wis:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Check: Wisdom (raw ability) — Cell 0,0",
+			"name": "Check: Wisdom (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/wis",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/wis",
+			"id": "factored:srd/check/wis:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Check: Wisdom (raw ability) — Cell 1,0",
+			"name": "Check: Wisdom (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/wis",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/check/wis",
+			"id": "factored:srd/check/wis:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Check: Wisdom (raw ability) — Cell 1,1",
+			"name": "Check: Wisdom (raw ability)",
+			"verb": "manipulate",
+			"descriptor": "srd/check/wis",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/claim-victory",
+			"id": "factored:srd/claim-victory:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Claim Victory — Cell 0,0",
+			"name": "Claim Victory",
+			"verb": "manipulate",
+			"descriptor": "srd/claim-victory",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/claim-victory",
+			"id": "factored:srd/claim-victory:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Claim Victory — Cell 1,0",
+			"name": "Claim Victory",
+			"verb": "manipulate",
+			"descriptor": "srd/claim-victory",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/claim-victory",
+			"id": "factored:srd/claim-victory:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Claim Victory — Cell 1,1",
+			"name": "Claim Victory",
+			"verb": "manipulate",
+			"descriptor": "srd/claim-victory",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/consume",
+			"id": "factored:srd/consume:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Use a Consumable — Cell 0,0",
+			"name": "Use a Consumable",
+			"verb": "manipulate",
+			"descriptor": "srd/consume",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/consume",
+			"id": "factored:srd/consume:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Use a Consumable — Cell 1,0",
+			"name": "Use a Consumable",
+			"verb": "manipulate",
+			"descriptor": "srd/consume",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/consume",
+			"id": "factored:srd/consume:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Use a Consumable — Cell 1,1",
+			"name": "Use a Consumable",
+			"verb": "manipulate",
+			"descriptor": "srd/consume",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/dash",
+			"id": "factored:srd/dash:target:168:entity:168",
+			"label": "Dash — You (Borin)",
+			"name": "Dash",
+			"verb": "manipulate",
+			"descriptor": "srd/dash",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/dodge",
+			"id": "factored:srd/dodge:target:168:entity:168",
+			"label": "Dodge — You (Borin)",
+			"name": "Dodge",
+			"verb": "manipulate",
+			"descriptor": "srd/dodge",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/fighter/second-wind",
+			"id": "factored:srd/fighter/second-wind:target:168:entity:168",
+			"label": "Use Second Wind — You (Borin)",
+			"name": "Use Second Wind",
+			"verb": "manipulate",
+			"descriptor": "srd/fighter/second-wind",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/help",
+			"id": "factored:srd/help:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Help — Cell 0,0",
+			"name": "Help",
+			"verb": "manipulate",
+			"descriptor": "srd/help",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/help",
+			"id": "factored:srd/help:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Help — Cell 1,0",
+			"name": "Help",
+			"verb": "manipulate",
+			"descriptor": "srd/help",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/help",
+			"id": "factored:srd/help:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Help — Cell 1,1",
+			"name": "Help",
+			"verb": "manipulate",
+			"descriptor": "srd/help",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/heroic_inspiration/reroll",
+			"id": "factored:srd/heroic_inspiration/reroll:target:168:entity:168",
+			"label": "Heroic Inspiration Reroll — You (Borin)",
+			"name": "Heroic Inspiration Reroll",
+			"verb": "manipulate",
+			"descriptor": "srd/heroic_inspiration/reroll",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/item/acid/throw",
+			"id": "factored:srd/item/acid/throw:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Throw Acid — Cell 0,0",
+			"name": "Throw Acid",
+			"verb": "manipulate",
+			"descriptor": "srd/item/acid/throw",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/item/acid/throw",
+			"id": "factored:srd/item/acid/throw:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Throw Acid — Cell 1,0",
+			"name": "Throw Acid",
+			"verb": "manipulate",
+			"descriptor": "srd/item/acid/throw",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/item/acid/throw",
+			"id": "factored:srd/item/acid/throw:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Throw Acid — Cell 1,1",
+			"name": "Throw Acid",
+			"verb": "manipulate",
+			"descriptor": "srd/item/acid/throw",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/item/alchemists-fire/throw",
+			"id": "factored:srd/item/alchemists-fire/throw:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Throw Alchemist's Fire — Cell 0,0",
+			"name": "Throw Alchemist's Fire",
+			"verb": "manipulate",
+			"descriptor": "srd/item/alchemists-fire/throw",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/item/alchemists-fire/throw",
+			"id": "factored:srd/item/alchemists-fire/throw:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Throw Alchemist's Fire — Cell 1,0",
+			"name": "Throw Alchemist's Fire",
+			"verb": "manipulate",
+			"descriptor": "srd/item/alchemists-fire/throw",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/item/alchemists-fire/throw",
+			"id": "factored:srd/item/alchemists-fire/throw:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Throw Alchemist's Fire — Cell 1,1",
+			"name": "Throw Alchemist's Fire",
+			"verb": "manipulate",
+			"descriptor": "srd/item/alchemists-fire/throw",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/item/ball-bearings/spill",
+			"id": "factored:srd/item/ball-bearings/spill:target:168:entity:168",
+			"label": "Spill Ball Bearings — You (Borin)",
+			"name": "Spill Ball Bearings",
+			"verb": "manipulate",
+			"descriptor": "srd/item/ball-bearings/spill",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/item/caltrops/spread",
+			"id": "factored:srd/item/caltrops/spread:target:168:entity:168",
+			"label": "Spread Caltrops — You (Borin)",
+			"name": "Spread Caltrops",
+			"verb": "manipulate",
+			"descriptor": "srd/item/caltrops/spread",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/item/holy-water/throw",
+			"id": "factored:srd/item/holy-water/throw:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Throw Holy Water — Cell 0,0",
+			"name": "Throw Holy Water",
+			"verb": "manipulate",
+			"descriptor": "srd/item/holy-water/throw",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/item/holy-water/throw",
+			"id": "factored:srd/item/holy-water/throw:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Throw Holy Water — Cell 1,0",
+			"name": "Throw Holy Water",
+			"verb": "manipulate",
+			"descriptor": "srd/item/holy-water/throw",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/item/holy-water/throw",
+			"id": "factored:srd/item/holy-water/throw:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Throw Holy Water — Cell 1,1",
+			"name": "Throw Holy Water",
+			"verb": "manipulate",
+			"descriptor": "srd/item/holy-water/throw",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "combat",
+			"groups": ["combat"]
+		},
+		{
+			"actionId": "srd/movement/drop-prone",
+			"id": "factored:srd/movement/drop-prone:target:168:entity:168",
+			"label": "Drop Prone — You (Borin)",
+			"name": "Drop Prone",
+			"verb": "manipulate",
+			"descriptor": "srd/movement/drop-prone",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/movement/stand-up",
+			"id": "factored:srd/movement/stand-up:target:168:entity:168",
+			"label": "Stand Up — You (Borin)",
+			"name": "Stand Up",
+			"verb": "manipulate",
+			"descriptor": "srd/movement/stand-up",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/pickup",
+			"id": "factored:srd/pickup:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Pick Up — Cell 0,0",
+			"name": "Pick Up",
+			"verb": "manipulate",
+			"descriptor": "srd/pickup",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/pickup",
+			"id": "factored:srd/pickup:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Pick Up — Cell 1,0",
+			"name": "Pick Up",
+			"verb": "manipulate",
+			"descriptor": "srd/pickup",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/pickup",
+			"id": "factored:srd/pickup:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Pick Up — Cell 1,1",
+			"name": "Pick Up",
+			"verb": "manipulate",
+			"descriptor": "srd/pickup",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/rest/long/complete",
+			"id": "factored:srd/rest/long/complete:target:168:entity:168",
+			"label": "Complete a Long Rest — You (Borin)",
+			"name": "Complete a Long Rest",
+			"verb": "manipulate",
+			"descriptor": "srd/rest/long/complete",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/rest/short/complete",
+			"id": "factored:srd/rest/short/complete:target:168:entity:168",
+			"label": "Complete a Short Rest — You (Borin)",
+			"name": "Complete a Short Rest",
+			"verb": "manipulate",
+			"descriptor": "srd/rest/short/complete",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "actor"
+		},
+		{
+			"actionId": "srd/speak-aloud",
+			"id": "factored:srd/speak-aloud:target:168:entity:137",
+			"label": "Speak Aloud — Someone here",
+			"name": "Speak Aloud",
+			"verb": "communicate",
+			"descriptor": "srd/speak-aloud",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-aloud",
+			"id": "factored:srd/speak-aloud:target:168:entity:139",
+			"label": "Speak Aloud — Someone here",
+			"name": "Speak Aloud",
+			"verb": "communicate",
+			"descriptor": "srd/speak-aloud",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-aloud",
+			"id": "factored:srd/speak-aloud:target:168:entity:168",
+			"label": "Speak Aloud — You (Borin)",
+			"name": "Speak Aloud",
+			"verb": "communicate",
+			"descriptor": "srd/speak-aloud",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-aloud",
+			"id": "factored:srd/speak-aloud:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Speak Aloud — Cell 0,0",
+			"name": "Speak Aloud",
+			"verb": "communicate",
+			"descriptor": "srd/speak-aloud",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/speak-aloud",
+			"id": "factored:srd/speak-aloud:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Speak Aloud — Cell 1,0",
+			"name": "Speak Aloud",
+			"verb": "communicate",
+			"descriptor": "srd/speak-aloud",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/speak-aloud",
+			"id": "factored:srd/speak-aloud:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Speak Aloud — Cell 1,1",
+			"name": "Speak Aloud",
+			"verb": "communicate",
+			"descriptor": "srd/speak-aloud",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/speak-to",
+			"id": "factored:srd/speak-to:target:168:entity:137",
+			"label": "Speak To — Someone here",
+			"name": "Speak To",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to",
+			"id": "factored:srd/speak-to:target:168:entity:139",
+			"label": "Speak To — Someone here",
+			"name": "Speak To",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to",
+			"id": "factored:srd/speak-to:target:168:entity:168",
+			"label": "Speak To — You (Borin)",
+			"name": "Speak To",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to",
+			"id": "factored:srd/speak-to:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Speak To — Cell 0,0",
+			"name": "Speak To",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/speak-to",
+			"id": "factored:srd/speak-to:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Speak To — Cell 1,0",
+			"name": "Speak To",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/speak-to",
+			"id": "factored:srd/speak-to:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Speak To — Cell 1,1",
+			"name": "Speak To",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/speak-to-room",
+			"id": "factored:srd/speak-to-room:target:168:entity:137",
+			"label": "Speak Aloud to Room — Someone here",
+			"name": "Speak Aloud to Room",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to-room",
+			"targetName": "Someone here",
+			"targetRef": "entity:137",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to-room",
+			"id": "factored:srd/speak-to-room:target:168:entity:139",
+			"label": "Speak Aloud to Room — Someone here",
+			"name": "Speak Aloud to Room",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to-room",
+			"targetName": "Someone here",
+			"targetRef": "entity:139",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to-room",
+			"id": "factored:srd/speak-to-room:target:168:entity:168",
+			"label": "Speak Aloud to Room — You (Borin)",
+			"name": "Speak Aloud to Room",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to-room",
+			"targetName": "You (Borin)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "srd/speak-to-room",
+			"id": "factored:srd/speak-to-room:target:168:place_node:session_grid_3/c_0_0",
+			"label": "Speak Aloud to Room — Cell 0,0",
+			"name": "Speak Aloud to Room",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to-room",
+			"targetName": "Cell 0,0",
+			"targetRef": "place_node:session_grid_3/c_0_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/speak-to-room",
+			"id": "factored:srd/speak-to-room:target:168:place_node:session_grid_3/c_1_0",
+			"label": "Speak Aloud to Room — Cell 1,0",
+			"name": "Speak Aloud to Room",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to-room",
+			"targetName": "Cell 1,0",
+			"targetRef": "place_node:session_grid_3/c_1_0",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"actionId": "srd/speak-to-room",
+			"id": "factored:srd/speak-to-room:target:168:place_node:session_grid_3/c_1_1",
+			"label": "Speak Aloud to Room — Cell 1,1",
+			"name": "Speak Aloud to Room",
+			"verb": "communicate",
+			"descriptor": "srd/speak-to-room",
+			"targetName": "Cell 1,1",
+			"targetRef": "place_node:session_grid_3/c_1_1",
+			"acceptsUtterance": false,
+			"provider": "place"
+		},
+		{
+			"id": "sense:look:Local",
+			"label": "Look Around",
+			"verb": "sensing",
+			"descriptor": "look",
+			"targetName": "here",
+			"targetRef": "world",
+			"acceptsUtterance": false,
+			"senseVisibility": "Local",
+			"provider": "place"
+		}
+	],
+	"actionCount": 1065,
+	"manipulationContext": {
+		"status": "ready",
+		"schemaVersion": 1,
+		"revision": 65,
+		"actions": [
+			{
+				"actionId": "dm/ask-about-advancement",
+				"displayName": "Ask Aldwin About Advancement",
+				"groups": [],
+				"templateIds": ["dm/ask-about-advancement/affordance"],
+				"communicationSpeechActId": "dm/ask-about-advancement",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/aldwin",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/1",
+				"displayName": "Answer 1",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/1/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/1",
+				"responseSlot": 1,
+				"tags": ["ui.response-slot=1"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/10",
+				"displayName": "Answer 10",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/10/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/10",
+				"responseSlot": 10,
+				"tags": ["ui.response-slot=10"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/11",
+				"displayName": "Answer 11",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/11/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/11",
+				"responseSlot": 11,
+				"tags": ["ui.response-slot=11"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/12",
+				"displayName": "Answer 12",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/12/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/12",
+				"responseSlot": 12,
+				"tags": ["ui.response-slot=12"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/13",
+				"displayName": "Answer 13",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/13/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/13",
+				"responseSlot": 13,
+				"tags": ["ui.response-slot=13"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/14",
+				"displayName": "Answer 14",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/14/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/14",
+				"responseSlot": 14,
+				"tags": ["ui.response-slot=14"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/15",
+				"displayName": "Answer 15",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/15/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/15",
+				"responseSlot": 15,
+				"tags": ["ui.response-slot=15"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/16",
+				"displayName": "Answer 16",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/16/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/16",
+				"responseSlot": 16,
+				"tags": ["ui.response-slot=16"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/2",
+				"displayName": "Answer 2",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/2/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/2",
+				"responseSlot": 2,
+				"tags": ["ui.response-slot=2"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/3",
+				"displayName": "Answer 3",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/3/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/3",
+				"responseSlot": 3,
+				"tags": ["ui.response-slot=3"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/4",
+				"displayName": "Answer 4",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/4/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/4",
+				"responseSlot": 4,
+				"tags": ["ui.response-slot=4"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/5",
+				"displayName": "Answer 5",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/5/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/5",
+				"responseSlot": 5,
+				"tags": ["ui.response-slot=5"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/6",
+				"displayName": "Answer 6",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/6/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/6",
+				"responseSlot": 6,
+				"tags": ["ui.response-slot=6"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/7",
+				"displayName": "Answer 7",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/7/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/7",
+				"responseSlot": 7,
+				"tags": ["ui.response-slot=7"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/8",
+				"displayName": "Answer 8",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/8/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/8",
+				"responseSlot": 8,
+				"tags": ["ui.response-slot=8"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/9",
+				"displayName": "Answer 9",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/9/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/9",
+				"responseSlot": 9,
+				"tags": ["ui.response-slot=9"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "elven_mini/action/wake-at-inn",
+				"displayName": "Give up and wake at the inn",
+				"groups": [],
+				"templateIds": ["elven_mini/action/wake-at-inn/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/wake-at-inn",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "elven_mini/quest/accept-maelis-surrender",
+				"displayName": "Call on Sister Maelis to yield",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/accept-maelis-surrender/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/accept-maelis-surrender",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "elven_mini/quest/burn-the-camp",
+				"displayName": "Set the camp alight",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/burn-the-camp/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/burn-the-camp",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "elven_mini/quest/deliver-moonpetal",
+				"displayName": "Hand the moonpetal to Old Tamsin",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/deliver-moonpetal/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/tamsins-basket",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "elven_mini/quest/open-tomb",
+				"displayName": "Open the deep tomb with the Ironfold key",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/open-tomb/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/ironfold-seal",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "elven_mini/quest/relight-the-altar",
+				"displayName": "Relight the altar",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/relight-the-altar/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/relight-the-altar",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "elven_mini/quest/strike-truce-with-grubnash",
+				"displayName": "Strike a truce with Grubnash",
+				"groups": [],
+				"templateIds": ["elven_mini/quest/strike-truce-with-grubnash/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/strike-truce-with-grubnash",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "elven_mini/respawn/wake-at-inn",
+				"displayName": "Give up and wake at the inn",
+				"groups": [],
+				"templateIds": ["elven_mini/respawn/wake-at-inn/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/wake-at-inn",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "elven_mini/respawn/wake-at-inn-penniless",
+				"displayName": "Give up and wake at the inn (no coin)",
+				"groups": [],
+				"templateIds": ["elven_mini/respawn/wake-at-inn-penniless/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "elven_mini/niche/wake-at-inn",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/advancement/level-up",
+				"displayName": "Level Up",
+				"groups": [],
+				"templateIds": ["srd/advancement/level-up/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.advancement_trainer",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee",
+				"displayName": "Melee Attack",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee-graze",
+				"displayName": "Melee Attack (Graze)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee-graze/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/attack",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee-sap",
+				"displayName": "Melee Attack (Sap)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee-sap/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/attack",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee-slow",
+				"displayName": "Melee Attack (Slow)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee-slow/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/attack",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee-topple",
+				"displayName": "Melee Attack (Topple)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee-topple/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/attack",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee-vex",
+				"displayName": "Melee Attack (Vex)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee-vex/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/attack",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/melee/swing",
+				"displayName": "Swing (no target)",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/melee/swing/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/opportunity-attack",
+				"displayName": "Opportunity Attack",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/opportunity-attack/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/ranged",
+				"displayName": "Ranged Attack",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/ranged/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/sneak-attack",
+				"displayName": "Sneak Attack",
+				"groups": ["combat"],
+				"templateIds": [
+					"srd/attack/sneak-attack/affordance",
+					"srd/attack/sneak-attack/affordance-ranged"
+				],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/attack/unarmed-strike/damage",
+				"displayName": "Unarmed Strike: Damage",
+				"groups": ["combat"],
+				"templateIds": ["srd/attack/unarmed-strike/damage/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/acrobatics",
+				"displayName": "Check: Acrobatics",
+				"groups": [],
+				"templateIds": ["srd/check/acrobatics/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/animal-handling",
+				"displayName": "Check: Animal Handling",
+				"groups": [],
+				"templateIds": ["srd/check/animal-handling/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/arcana",
+				"displayName": "Check: Arcana",
+				"groups": [],
+				"templateIds": ["srd/check/arcana/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/athletics",
+				"displayName": "Check: Athletics",
+				"groups": [],
+				"templateIds": ["srd/check/athletics/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/cha",
+				"displayName": "Check: Charisma (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/cha/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/con",
+				"displayName": "Check: Constitution (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/con/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/deception",
+				"displayName": "Check: Deception",
+				"groups": [],
+				"templateIds": ["srd/check/deception/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/dex",
+				"displayName": "Check: Dexterity (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/dex/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/history",
+				"displayName": "Check: History",
+				"groups": [],
+				"templateIds": ["srd/check/history/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/insight",
+				"displayName": "Check: Insight",
+				"groups": [],
+				"templateIds": ["srd/check/insight/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/int",
+				"displayName": "Check: Intelligence (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/int/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/intimidation",
+				"displayName": "Check: Intimidation",
+				"groups": [],
+				"templateIds": ["srd/check/intimidation/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/investigation",
+				"displayName": "Check: Investigation",
+				"groups": [],
+				"templateIds": ["srd/check/investigation/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/medicine",
+				"displayName": "Check: Medicine",
+				"groups": [],
+				"templateIds": ["srd/check/medicine/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/nature",
+				"displayName": "Check: Nature",
+				"groups": [],
+				"templateIds": ["srd/check/nature/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/perception",
+				"displayName": "Check: Perception",
+				"groups": [],
+				"templateIds": ["srd/check/perception/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/performance",
+				"displayName": "Check: Performance",
+				"groups": [],
+				"templateIds": ["srd/check/performance/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/persuasion",
+				"displayName": "Check: Persuasion",
+				"groups": [],
+				"templateIds": ["srd/check/persuasion/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/religion",
+				"displayName": "Check: Religion",
+				"groups": [],
+				"templateIds": ["srd/check/religion/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/sleight-of-hand",
+				"displayName": "Check: Sleight Of Hand",
+				"groups": [],
+				"templateIds": ["srd/check/sleight-of-hand/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/stealth",
+				"displayName": "Check: Stealth",
+				"groups": [],
+				"templateIds": ["srd/check/stealth/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/str",
+				"displayName": "Check: Strength (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/str/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/survival",
+				"displayName": "Check: Survival",
+				"groups": [],
+				"templateIds": ["srd/check/survival/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/check/wis",
+				"displayName": "Check: Wisdom (raw ability)",
+				"groups": [],
+				"templateIds": ["srd/check/wis/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/claim-victory",
+				"displayName": "Claim Victory",
+				"groups": [],
+				"templateIds": ["srd/claim-victory/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/consume",
+				"displayName": "Use a Consumable",
+				"groups": [],
+				"templateIds": [
+					"srd/item/potion-of-giant-strength/consume/affordance",
+					"srd/item/potion-of-healing-greater/consume/affordance",
+					"srd/item/potion-of-healing-superior/consume/affordance",
+					"srd/item/potion-of-healing-supreme/consume/affordance",
+					"srd/item/potion-of-healing/consume/affordance",
+					"srd/magic_item/potion-of-climbing/consume/affordance",
+					"srd/magic_item/potion-of-heroism/consume/affordance",
+					"srd/magic_item/potion-of-resistance/consume/affordance",
+					"srd/magic_item/potion-of-speed/consume/affordance",
+					"srd/magic_item/potion-of-water-breathing/consume/affordance"
+				],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/consumable",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/dash",
+				"displayName": "Dash",
+				"groups": [],
+				"templateIds": ["srd/dash/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/dash",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/dodge",
+				"displayName": "Dodge",
+				"groups": [],
+				"templateIds": ["srd/dodge/affordance"],
+				"defaults": {
+					"target": {
+						"targetRef": "entity:168",
+						"kind": "actor"
+					},
+					"provenance": {
+						"namespace": "ui.affordance_defaults",
+						"templateId": "srd/dodge/affordance",
+						"attachmentId": "[\"affordance_template\",\"srd/dodge/affordance\",\"ui.affordance_defaults\",\"srd\"]",
+						"contentKey": "[\"affordance_template\",\"srd/dodge/affordance\",\"ui.affordance_defaults\",\"srd\"]:0:{\"version\":1,\"target\":{\"kind\":\"actor\"}}"
+					}
+				},
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/dodge",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/fighter/second-wind",
+				"displayName": "Use Second Wind",
+				"groups": [],
+				"templateIds": ["srd/fighter/second-wind/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/class-feature/fighter/second-wind",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/help",
+				"displayName": "Help",
+				"groups": [],
+				"templateIds": ["srd/help/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd.creature",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/heroic_inspiration/reroll",
+				"displayName": "Heroic Inspiration Reroll",
+				"groups": [],
+				"templateIds": ["srd/heroic_inspiration/reroll/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/heroic_inspiration/reroll",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/item/acid/throw",
+				"displayName": "Throw Acid",
+				"groups": ["combat"],
+				"templateIds": ["srd/item/acid/throw/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/item/alchemists-fire/throw",
+				"displayName": "Throw Alchemist's Fire",
+				"groups": ["combat"],
+				"templateIds": ["srd/item/alchemists-fire/throw/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/item/ball-bearings/spill",
+				"displayName": "Spill Ball Bearings",
+				"groups": [],
+				"templateIds": ["srd/item/ball-bearings/spill/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/utilize",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/item/caltrops/spread",
+				"displayName": "Spread Caltrops",
+				"groups": [],
+				"templateIds": ["srd/item/caltrops/spread/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/utilize",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/item/holy-water/throw",
+				"displayName": "Throw Holy Water",
+				"groups": ["combat"],
+				"templateIds": ["srd/item/holy-water/throw/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/attack-verb",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/movement/drop-prone",
+				"displayName": "Drop Prone",
+				"groups": [],
+				"templateIds": ["srd/movement/drop-prone/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/drop-prone",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/movement/stand-up",
+				"displayName": "Stand Up",
+				"groups": [],
+				"templateIds": ["srd/movement/stand-up/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/stand-up",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/pickup",
+				"displayName": "Pick Up",
+				"groups": [],
+				"templateIds": ["srd/pickup/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/item",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/rest/long/complete",
+				"displayName": "Complete a Long Rest",
+				"groups": [],
+				"templateIds": ["srd/rest/long/complete/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/long-rest",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/rest/short/complete",
+				"displayName": "Complete a Short Rest",
+				"groups": [],
+				"templateIds": ["srd/rest/short/complete/affordance"],
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/short-rest",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": true,
+				"selfEligible": true
+			},
+			{
+				"actionId": "srd/speak-aloud",
+				"displayName": "Speak Aloud",
+				"groups": [],
+				"templateIds": ["srd/speak-aloud/affordance"],
+				"communicationSpeechActId": "srd/speak-aloud",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "capability:srd/action/communicate/speak",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": true
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/speak-to",
+				"displayName": "Speak To",
+				"groups": [],
+				"templateIds": ["srd/speak-to/affordance"],
+				"cue": {
+					"rank": 4,
+					"hint": "Speak directly to a visible person."
+				},
+				"communicationSpeechActId": "srd/speak-to",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/communicable",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "srd/speak-to-room",
+				"displayName": "Speak Aloud to Room",
+				"groups": [],
+				"templateIds": ["srd/speak-to-room/affordance"],
+				"communicationSpeechActId": "srd/speak-to-room",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "srd/niche/communicable",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			}
+		],
+		"targets": [
+			{
+				"targetFactId": "target:168:entity:137",
+				"targetRef": "entity:137",
+				"targetName": "Someone here",
+				"nicheIds": [
+					"core/creature",
+					"core/grounded",
+					"core/social_communication",
+					"dm/niche/trainee-present",
+					"srd.cr.1-8",
+					"srd.creature",
+					"srd.creature_type.beast",
+					"srd.creature.role.skirmisher",
+					"srd.faction.monsters",
+					"srd.monster",
+					"srd.size.small",
+					"srd/creature/giant-rat",
+					"srd/niche/communicable"
+				],
+				"tags": [
+					"srd.cr.1-8",
+					"srd.creature",
+					"srd.creature_type.beast",
+					"srd.creature.role.skirmisher",
+					"srd.faction.monsters",
+					"srd.monster",
+					"srd.size.small"
+				]
+			},
+			{
+				"targetFactId": "target:168:entity:139",
+				"targetRef": "entity:139",
+				"targetName": "Someone here",
+				"nicheIds": [
+					"core/creature",
+					"core/grounded",
+					"core/social_communication",
+					"dm/niche/trainee-present",
+					"srd.cr.1-4",
+					"srd.creature",
+					"srd.creature_type.beast",
+					"srd.creature.role.skirmisher",
+					"srd.faction.monsters",
+					"srd.monster",
+					"srd.size.medium",
+					"srd/creature/swarm-of-rats",
+					"srd/niche/communicable"
+				],
+				"tags": [
+					"srd.cr.1-4",
+					"srd.creature",
+					"srd.creature_type.beast",
+					"srd.creature.role.skirmisher",
+					"srd.faction.monsters",
+					"srd.monster",
+					"srd.size.medium"
+				]
+			},
+			{
+				"targetFactId": "target:168:entity:168",
+				"targetRef": "entity:168",
+				"targetName": "You (Borin)",
+				"nicheIds": [
+					"core/creature",
+					"core/grounded",
+					"core/social_communication",
+					"dm/niche/trainee-present",
+					"elven_mini/adventure/candidate",
+					"srd.advancement.fighter.1",
+					"srd.background.soldier",
+					"srd.class.fighter",
+					"srd.communication.vocal",
+					"srd.creature",
+					"srd.faction.party",
+					"srd.feature.srd.skill.athletics",
+					"srd.feature.srd.skill.intimidation",
+					"srd.feature.srd.skill.perception",
+					"srd.party.heroes",
+					"srd.player_character",
+					"srd.species.dwarf",
+					"srd/niche/communicable"
+				],
+				"tags": [
+					"srd.advancement.fighter.1",
+					"srd.background.soldier",
+					"srd.class.fighter",
+					"srd.communication.vocal",
+					"srd.creature",
+					"srd.faction.party",
+					"srd.feature.srd.skill.athletics",
+					"srd.feature.srd.skill.intimidation",
+					"srd.feature.srd.skill.perception",
+					"srd.party.heroes",
+					"srd.player_character",
+					"srd.species.dwarf"
+				]
+			},
+			{
+				"targetFactId": "target:168:place_node:session_grid_3/c_0_0",
+				"targetRef": "place_node:session_grid_3/c_0_0",
+				"targetName": "Cell 0,0",
+				"nicheIds": [],
+				"tags": []
+			},
+			{
+				"targetFactId": "target:168:place_node:session_grid_3/c_1_0",
+				"targetRef": "place_node:session_grid_3/c_1_0",
+				"targetName": "Cell 1,0",
+				"nicheIds": [],
+				"tags": []
+			},
+			{
+				"targetFactId": "target:168:place_node:session_grid_3/c_1_1",
+				"targetRef": "place_node:session_grid_3/c_1_1",
+				"targetName": "Cell 1,1",
+				"nicheIds": [],
+				"tags": []
+			}
+		],
+		"participants": [
+			{
+				"contextId": "mpc:361",
+				"actionId": "srd/attack/melee",
+				"bindingCount": 1,
+				"bindings": [
+					{
+						"roleId": "srd/instrument",
+						"entityId": "170"
+					}
+				]
+			},
+			{
+				"contextId": "mpc:362",
+				"actionId": "srd/attack/melee/swing",
+				"bindingCount": 1,
+				"bindings": [
+					{
+						"roleId": "srd/instrument",
+						"entityId": "170"
+					}
+				]
+			},
+			{
+				"contextId": "mpc:363",
+				"actionId": "srd/attack/opportunity-attack",
+				"bindingCount": 1,
+				"bindings": [
+					{
+						"roleId": "srd/instrument",
+						"entityId": "170"
+					}
+				]
+			},
+			{
+				"contextId": "mpc:364",
+				"actionId": "srd/attack/ranged",
+				"bindingCount": 1,
+				"bindings": [
+					{
+						"roleId": "srd/instrument",
+						"entityId": "170"
+					}
+				]
+			}
+		],
+		"prompts": []
+	},
+	"senseContext": {
+		"status": "ready",
+		"queries": [
+			{
+				"queryKind": "look",
+				"visibility": "Local",
+				"displayName": "Look Around",
+				"outcomeTemplateId": "srd/sense/look/outcome"
+			}
+		]
+	},
+	"session": {
+		"inSession": true,
+		"id": "3",
+		"myTurn": true,
+		"lifecycle": "active",
+		"currentActor": "168",
+		"currentActorName": "Borin",
+		"roster": [
+			{
+				"actorId": "168",
+				"name": "Borin",
+				"ordinal": 0,
+				"isMe": true,
+				"isCurrent": true
+			},
+			{
+				"actorId": "137",
+				"name": "Cellar Rat 1",
+				"ordinal": 1,
+				"isMe": false,
+				"isCurrent": false
+			},
+			{
+				"actorId": "139",
+				"name": "Cellar Rat Swarm",
+				"ordinal": 2,
+				"isMe": false,
+				"isCurrent": false
+			}
+		]
+	},
+	"operations": {
+		"state": "ready",
+		"selected": {
+			"id": "2",
+			"label": "Activity",
+			"phase": "completed",
+			"description": null,
+			"terminal": true,
+			"worldTimed": true,
+			"turnRule": "Sequential",
+			"observedWorldTick": "313",
+			"progress": 100,
+			"fields": [
+				{
+					"label": "Phase",
+					"value": "completed"
+				},
+				{
+					"label": "Session",
+					"value": "2"
+				},
+				{
+					"label": "Definition",
+					"value": "srd/long_running_move"
+				},
+				{
+					"label": "Turn rule",
+					"value": "Sequential"
+				},
+				{
+					"label": "Round duration (milliseconds)",
+					"value": "6000"
+				},
+				{
+					"label": "Opened by",
+					"value": "Borin"
+				},
+				{
+					"label": "Current participant",
+					"value": "Borin"
+				},
+				{
+					"label": "Originating action",
+					"value": "Unknown"
+				},
+				{
+					"label": "Current participant is you",
+					"value": "Yes"
+				},
+				{
+					"label": "Originating target",
+					"value": "Unknown"
+				},
+				{
+					"label": "Observed world tick",
+					"value": "313"
+				},
+				{
+					"label": "Last world tick timestamp (Unix microseconds)",
+					"value": "1794770393824306"
+				},
+				{
+					"label": "Opened at world tick",
+					"value": "294"
+				},
+				{
+					"label": "Last advanced at world tick",
+					"value": "297"
+				},
+				{
+					"label": "Duration (world ticks)",
+					"value": "3"
+				},
+				{
+					"label": "Estimated completion world tick",
+					"value": "297"
+				},
+				{
+					"label": "Estimated remaining world ticks",
+					"value": "0"
+				},
+				{
+					"label": "Participant 1",
+					"value": "Borin"
+				}
+			]
+		},
+		"items": [
+			{
+				"id": "3",
+				"label": "Call initiative",
+				"phase": "active"
+			}
+		],
+		"total": 1,
+		"nextCursor": null
+	},
+	"turnSession": {
+		"id": "3",
+		"label": "Call initiative",
+		"phase": "active",
+		"description": null,
+		"terminal": false,
+		"worldTimed": false,
+		"turnRule": "Sequential",
+		"observedWorldTick": "313",
+		"progress": null,
+		"fields": [
+			{
+				"label": "Phase",
+				"value": "active"
+			},
+			{
+				"label": "Session",
+				"value": "3"
+			},
+			{
+				"label": "Definition",
+				"value": "elven_mini/adventure/session/crypt-fight"
+			},
+			{
+				"label": "Turn rule",
+				"value": "Sequential"
+			},
+			{
+				"label": "Round duration (milliseconds)",
+				"value": "6000"
+			},
+			{
+				"label": "Opened by",
+				"value": "Unknown"
+			},
+			{
+				"label": "Current participant",
+				"value": "Borin"
+			},
+			{
+				"label": "Originating action",
+				"value": "elven_mini/dm/call-initiative"
+			},
+			{
+				"label": "Current participant is you",
+				"value": "Yes"
+			},
+			{
+				"label": "Originating target",
+				"value": "place_node:elven_mini/inn/cellar"
+			},
+			{
+				"label": "Observed world tick",
+				"value": "313"
+			},
+			{
+				"label": "Last world tick timestamp (Unix microseconds)",
+				"value": "1794770393824306"
+			},
+			{
+				"label": "Opened at world tick",
+				"value": "297"
+			},
+			{
+				"label": "Last advanced at world tick",
+				"value": "297"
+			},
+			{
+				"label": "Duration (world ticks)",
+				"value": "Unknown"
+			},
+			{
+				"label": "Estimated completion world tick",
+				"value": "Unknown"
+			},
+			{
+				"label": "Estimated remaining world ticks",
+				"value": "Unknown"
+			},
+			{
+				"label": "Participant 1",
+				"value": "Borin"
+			},
+			{
+				"label": "Participant 2",
+				"value": "137"
+			},
+			{
+				"label": "Participant 3",
+				"value": "139"
+			}
+		]
+	},
+	"reaction": null,
+	"pack": [
+		{
+			"id": "i:169",
+			"name": "Chain Mail",
+			"detail": "",
+			"quantity": 1,
+			"equipped": "Chest",
+			"depth": 0,
+			"handle": "i:169",
+			"rev": "12jw2c1"
+		},
+		{
+			"id": "i:170",
+			"name": "Greatsword",
+			"detail": "",
+			"quantity": 1,
+			"equipped": "Main Hand",
+			"depth": 0,
+			"handle": "i:170",
+			"rev": "n2154z"
+		},
+		{
+			"id": "i:171",
+			"name": "Flail",
+			"detail": "",
+			"quantity": 1,
+			"equipped": null,
+			"depth": 0,
+			"handle": "i:171",
+			"rev": "40p87x"
+		},
+		{
+			"id": "i:172",
+			"name": "Javelin",
+			"detail": "",
+			"quantity": 1,
+			"equipped": null,
+			"depth": 0,
+			"handle": "i:172",
+			"rev": "t5loxl"
+		},
+		{
+			"id": "i:173",
+			"name": "Javelin",
+			"detail": "",
+			"quantity": 1,
+			"equipped": null,
+			"depth": 0,
+			"handle": "i:173",
+			"rev": "nhyw19"
+		},
+		{
+			"id": "i:174",
+			"name": "Javelin",
+			"detail": "",
+			"quantity": 1,
+			"equipped": null,
+			"depth": 0,
+			"handle": "i:174",
+			"rev": "1u4zsk9"
+		}
+	],
+	"itemDetail": null,
+	"occupantDetail": null,
+	"placeState": "ready",
+	"speech": [
+		{
+			"id": "speech:47",
+			"tick": 138,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Aldwin taps the ledger. The cellar is overrun with rats — a giant one, and a swarm in the casks. Clear them and the inn keeps a room for you. 1: The cellar is overrun — I'll clear it. 2: Not today.",
+			"mine": false,
+			"addressee": 168
+		},
+		{
+			"id": "speech:48",
+			"tick": 148,
+			"speakerId": "168",
+			"speaker": "Borin",
+			"text": "Not today.",
+			"mine": true,
+			"choiceSlot": 2,
+			"addressee": 6
+		},
+		{
+			"id": "speech:49",
+			"tick": 148,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Nothing to record yet, friend. Mira behind the bar will point you at the work.",
+			"mine": false,
+			"addressee": 168
+		},
+		{
+			"id": "speech:50",
+			"tick": 148,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "As you will. The barrels can wait a day — not two.",
+			"mine": false,
+			"addressee": 168
+		},
+		{
+			"id": "speech:51",
+			"tick": 154,
+			"speakerId": "168",
+			"speaker": "Borin",
+			"text": "Good morning. What is in the cellar?",
+			"mine": true,
+			"addressee": 6
+		}
+	],
+	"events": [
+		{
+			"id": "session_lifecycle:298:2",
+			"tick": 298,
+			"kind": "session_lifecycle",
+			"summary": "A session opens (3 participants).",
+			"fields": {
+				"sessionId": "3",
+				"phase": "opened",
+				"participants": ["168", "137", "139"],
+				"openedBy": "165"
+			}
+		},
+		{
+			"id": "turn_transition:298:3",
+			"tick": 298,
+			"kind": "turn_transition",
+			"summary": "The turn passes from you to you.",
+			"fields": {
+				"sessionId": "3",
+				"fromActor": {
+					"id": "168",
+					"self": true
+				},
+				"toActor": {
+					"id": "168",
+					"self": true
+				}
+			}
+		},
+		{
+			"id": "self_hit:298:4",
+			"tick": 298,
+			"kind": "self_hit",
+			"summary": "You take 7 damage from Cellar Rat 1 — 4 HP left.",
+			"fields": {
+				"resourceId": "srd/hp",
+				"amount": 7,
+				"newValue": 4,
+				"attackKind": "srd/attack/melee/success",
+				"attacker": {
+					"id": "137",
+					"name": "Cellar Rat 1"
+				}
+			}
+		},
+		{
+			"id": "trace_addressed:298:5",
+			"tick": 298,
+			"kind": "trace_addressed",
+			"summary": "Cellar Rat Swarm's Melee Attack misses you.",
+			"traceKind": "srd/attack-miss"
+		}
+	],
+	"mapSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"917\" height=\"760\" viewBox=\"0 0 917 760\" role=\"img\" aria-label=\"elven_mini/inn — elevation_band z=-3±0.5\">\n<style>\nsvg{font-family:Inter,system-ui,Arial,sans-serif}\n.h3-cell{fill:#c9d8cf;fill-opacity:.32;stroke:#536758;stroke-width:1.4;stroke-opacity:.9}\n.h3-cell--root{fill:#9bb8a8;fill-opacity:.45}\n.h3-cell--settlement{fill:#d4b896;fill-opacity:.5}\n.h3-cell--wilderness{fill:#b7c9b0;fill-opacity:.38}\n.h3-cell--default{fill:#c9d8cf;fill-opacity:.28}\n.place-portal{fill:#8b4513;stroke:#fff;stroke-width:2}\n.portal-tag{fill:#6b3a12;font-size:9px;font-weight:600;text-anchor:middle}\n.label-portal{font-weight:700}\n.route{stroke:#b97012;stroke-width:3;stroke-linecap:round;opacity:.9}\n.route-stairs{stroke:#6b4f9a;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:7 5;opacity:.95}\n.place{fill:#148284;stroke:#fff;stroke-width:2.2}\n.place-extent{fill:#148284;fill-opacity:.18;stroke:#0f5f61;stroke-width:1.5}\n.grid-cell{fill:#148284;fill-opacity:.06;stroke:#0f5f61;stroke-opacity:.55;stroke-width:1}\n.actor{fill:#245ebe;stroke:#fff;stroke-width:2}\n.label{fill:#1d2428;font-size:12px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}\n.actor-label{fill:#fff;font-size:9px;font-weight:800;text-anchor:middle}\n.chrome-label{fill:#3a454b;font-size:11px;font-weight:600;text-anchor:start}\n.scale-bar{stroke:#3a454b;stroke-width:2;stroke-linecap:square}\n.scale-bar-label{fill:#3a454b;font-size:11px;font-weight:700;text-anchor:middle}\n.floor-box{fill:#e7efed;stroke:#7a9690;stroke-width:1.5;opacity:.95}\n.floor-label{fill:#1d3a36;font-size:13px;font-weight:800;text-anchor:start}\n.stairs-label{fill:#6b4f9a;font-size:11px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:3px}\n.title-main{fill:#14201e;font-size:15px;font-weight:800;text-anchor:start}\n.title-sub{fill:#4a5a56;font-size:12px;font-weight:600;text-anchor:start}\n.title-rule{stroke:#c5d0cc;stroke-width:1}\n</style>\n<rect width=\"100%\" height=\"100%\" fill=\"#f4f7f6\" />\n<g class=\"title-bar\">\n<text class=\"title-main\" x=\"16\" y=\"22\">Inn</text>\n<text class=\"title-sub\" x=\"16\" y=\"38\">Floor slice z=-3 · indoor</text>\n<line class=\"title-rule\" x1=\"12\" y1=\"34\" x2=\"905\" y2=\"34\" />\n</g>\n\n\n\n\n<g data-node-id=\"elven_mini/inn/cellar\"><ellipse cx=\"458.50\" cy=\"378\" rx=\"400.40\" ry=\"286\" class=\"place-extent\" /><circle cx=\"458.50\" cy=\"378\" r=\"7\" class=\"place\" /><text x=\"458.50\" y=\"398\" class=\"label\">Cellar <tspan class=\"label-floor\">(z=-3)</tspan></text></g>\n<g data-node-id=\"session_grid_3/c_0_0\"><rect x=\"172.50\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /><circle cx=\"201.10\" cy=\"635.40\" r=\"9\" class=\"actor\" /><text x=\"201.10\" y=\"638.90\" class=\"actor-label\">1</text></g>\n<g data-node-id=\"session_grid_3/c_0_1\"><rect x=\"172.50\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_2\"><rect x=\"172.50\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_3\"><rect x=\"172.50\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_4\"><rect x=\"172.50\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_5\"><rect x=\"172.50\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_6\"><rect x=\"172.50\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_7\"><rect x=\"172.50\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_8\"><rect x=\"172.50\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_0_9\"><rect x=\"172.50\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_0\"><rect x=\"229.70\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /><circle cx=\"258.30\" cy=\"635.40\" r=\"9\" class=\"actor\" /><text x=\"258.30\" y=\"638.90\" class=\"actor-label\">1</text></g>\n<g data-node-id=\"session_grid_3/c_1_1\"><rect x=\"229.70\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /><circle cx=\"258.30\" cy=\"578.20\" r=\"9\" class=\"actor\" /><text x=\"258.30\" y=\"581.70\" class=\"actor-label\">1</text></g>\n<g data-node-id=\"session_grid_3/c_1_2\"><rect x=\"229.70\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_3\"><rect x=\"229.70\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_4\"><rect x=\"229.70\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_5\"><rect x=\"229.70\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_6\"><rect x=\"229.70\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_7\"><rect x=\"229.70\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_8\"><rect x=\"229.70\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_1_9\"><rect x=\"229.70\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_0\"><rect x=\"286.90\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_1\"><rect x=\"286.90\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_2\"><rect x=\"286.90\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_3\"><rect x=\"286.90\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_4\"><rect x=\"286.90\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_5\"><rect x=\"286.90\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_6\"><rect x=\"286.90\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_7\"><rect x=\"286.90\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_8\"><rect x=\"286.90\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_2_9\"><rect x=\"286.90\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_0\"><rect x=\"344.10\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_1\"><rect x=\"344.10\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_2\"><rect x=\"344.10\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_3\"><rect x=\"344.10\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_4\"><rect x=\"344.10\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_5\"><rect x=\"344.10\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_6\"><rect x=\"344.10\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_7\"><rect x=\"344.10\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_8\"><rect x=\"344.10\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_3_9\"><rect x=\"344.10\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_0\"><rect x=\"401.30\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_1\"><rect x=\"401.30\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_2\"><rect x=\"401.30\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_3\"><rect x=\"401.30\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_4\"><rect x=\"401.30\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_5\"><rect x=\"401.30\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_6\"><rect x=\"401.30\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_7\"><rect x=\"401.30\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_8\"><rect x=\"401.30\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_4_9\"><rect x=\"401.30\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_0\"><rect x=\"458.50\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_1\"><rect x=\"458.50\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_2\"><rect x=\"458.50\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_3\"><rect x=\"458.50\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_4\"><rect x=\"458.50\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_5\"><rect x=\"458.50\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_6\"><rect x=\"458.50\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_7\"><rect x=\"458.50\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_8\"><rect x=\"458.50\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_5_9\"><rect x=\"458.50\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_0\"><rect x=\"515.70\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_1\"><rect x=\"515.70\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_2\"><rect x=\"515.70\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_3\"><rect x=\"515.70\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_4\"><rect x=\"515.70\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_5\"><rect x=\"515.70\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_6\"><rect x=\"515.70\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_7\"><rect x=\"515.70\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_8\"><rect x=\"515.70\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_6_9\"><rect x=\"515.70\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_0\"><rect x=\"572.90\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_1\"><rect x=\"572.90\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_2\"><rect x=\"572.90\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_3\"><rect x=\"572.90\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_4\"><rect x=\"572.90\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_5\"><rect x=\"572.90\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_6\"><rect x=\"572.90\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_7\"><rect x=\"572.90\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_8\"><rect x=\"572.90\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_7_9\"><rect x=\"572.90\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_0\"><rect x=\"630.10\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_1\"><rect x=\"630.10\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_2\"><rect x=\"630.10\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_3\"><rect x=\"630.10\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_4\"><rect x=\"630.10\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_5\"><rect x=\"630.10\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_6\"><rect x=\"630.10\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_7\"><rect x=\"630.10\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_8\"><rect x=\"630.10\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_8_9\"><rect x=\"630.10\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_0\"><rect x=\"687.30\" y=\"606.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_1\"><rect x=\"687.30\" y=\"549.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_2\"><rect x=\"687.30\" y=\"492.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_3\"><rect x=\"687.30\" y=\"435.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_4\"><rect x=\"687.30\" y=\"378\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_5\"><rect x=\"687.30\" y=\"320.80\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_6\"><rect x=\"687.30\" y=\"263.60\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_7\"><rect x=\"687.30\" y=\"206.40\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_8\"><rect x=\"687.30\" y=\"149.20\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g data-node-id=\"session_grid_3/c_9_9\"><rect x=\"687.30\" y=\"92\" width=\"57.20\" height=\"57.20\" class=\"grid-cell\" /></g>\n<g class=\"map-chrome\" data-chrome=\"legend\" transform=\"translate(0 720)\">\n<line x1=\"12\" y1=\"0.5\" x2=\"905\" y2=\"0.5\" stroke=\"#c5d0cc\" stroke-width=\"1\" />\n<g class=\"symbol-legend\" transform=\"translate(12 0)\">\n<circle cx=\"6\" cy=\"14\" r=\"6\" class=\"place\" />\n<text class=\"chrome-label\" x=\"18\" y=\"18\">place</text>\n<line class=\"route\" x1=\"62\" y1=\"14\" x2=\"86\" y2=\"14\" />\n<text class=\"chrome-label\" x=\"92\" y=\"18\">route</text>\n<circle cx=\"148\" cy=\"14\" r=\"9\" class=\"actor\" />\n<text class=\"actor-label\" x=\"148\" y=\"17.5\">n</text>\n<text class=\"chrome-label\" x=\"164\" y=\"18\">occupants</text>\n</g></g>\n</svg>\n",
+	"mapState": "ready",
+	"economy": [],
+	"economyBudget": {
+		"channels": [
+			{
+				"channelId": "core/action_class/movement",
+				"label": "Move",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "core/action_class/primary",
+				"label": "Action",
+				"poolMs": 1000,
+				"remainingMs": 1000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/bonus",
+				"label": "Bonus",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/movement",
+				"label": "Move",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/object_interaction",
+				"label": "Object",
+				"poolMs": 500,
+				"remainingMs": 500,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/primary",
+				"label": "Action",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/reaction",
+				"label": "Reaction",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": true
+			}
+		],
+		"unavailable": false
+	},
+	"sessionTokens": [
+		{
+			"nodeId": "session_grid_3/c_0_0",
+			"actorId": "168",
+			"name": "Borin",
+			"isMe": true
+		},
+		{
+			"nodeId": "session_grid_3/c_1_0",
+			"actorId": "137",
+			"name": "Cellar Rat 1",
+			"isMe": false
+		},
+		{
+			"nodeId": "session_grid_3/c_1_1",
+			"actorId": "139",
+			"name": "Cellar Rat Swarm",
+			"isMe": false
+		}
+	]
+}

@@ -1,0 +1,1397 @@
+{
+	"kind": "spellkave.recording",
+	"version": 2,
+	"id": "playground_legacy_creation",
+	"surface": "spellkave.play",
+	"capturedAt": 1768000000000,
+	"provenance": {
+		"source": "legacy",
+		"title": "Former Playground creation example"
+	},
+	"frames": [
+		{
+			"id": "frame_tb9oirlsdw13",
+			"sequence": 1,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Creation Candidate",
+						"level": 1,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [],
+						"abilities": [],
+						"skills": [],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "",
+						"backstory": "",
+						"placeId": "inn/common_room",
+						"quest": []
+					},
+					"place": {
+						"id": "creation",
+						"name": "The Hearth Ledger",
+						"description": "Aldwin opens his ledger beside the fire. Your adventure begins with a name and a few choices.",
+						"exits": []
+					},
+					"occupants": [
+						{
+							"id": "4",
+							"handle": "preview:aldwin",
+							"rev": "preview",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Aldwin, keeper of the hearth-ledger",
+							"conditions": [],
+							"note": "Ready to help you begin"
+						}
+					],
+					"actions": [
+						{
+							"id": "preview:class:0",
+							"label": "Fighter",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 1
+						},
+						{
+							"id": "preview:class:1",
+							"label": "Wizard",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 2
+						},
+						{
+							"id": "preview:class:2",
+							"label": "Rogue",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 3
+						}
+					],
+					"actionCount": 3,
+					"session": {
+						"inSession": false,
+						"myTurn": false,
+						"lifecycle": null,
+						"currentActor": null,
+						"currentActorName": null,
+						"roster": []
+					},
+					"reaction": null,
+					"pack": [],
+					"itemDetail": null,
+					"speech": [
+						{
+							"id": "preview:101",
+							"tick": 101,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which class calls to you? 1 Fighter, 2 Wizard, 3 Rogue.",
+							"mine": false
+						}
+					],
+					"events": [],
+					"mapSvg": null,
+					"economy": null,
+					"occupantDetail": null,
+					"mapState": "empty"
+				},
+				"presentation": null
+			}
+		},
+		{
+			"id": "frame_tbj50owihjho",
+			"sequence": 2,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Creation Candidate",
+						"level": 1,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [],
+						"abilities": [],
+						"skills": [],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "",
+						"backstory": "",
+						"placeId": "inn/common_room",
+						"quest": []
+					},
+					"place": {
+						"id": "creation",
+						"name": "The Hearth Ledger",
+						"description": "Aldwin opens his ledger beside the fire. Your adventure begins with a name and a few choices.",
+						"exits": []
+					},
+					"occupants": [
+						{
+							"id": "4",
+							"handle": "preview:aldwin",
+							"rev": "preview",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Aldwin, keeper of the hearth-ledger",
+							"conditions": [],
+							"note": "Ready to help you begin"
+						}
+					],
+					"actions": [
+						{
+							"id": "preview:class:0",
+							"label": "Fighter",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 1
+						},
+						{
+							"id": "preview:class:1",
+							"label": "Wizard",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 2
+						},
+						{
+							"id": "preview:class:2",
+							"label": "Rogue",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 3
+						}
+					],
+					"actionCount": 3,
+					"session": {
+						"inSession": false,
+						"myTurn": false,
+						"lifecycle": null,
+						"currentActor": null,
+						"currentActorName": null,
+						"roster": []
+					},
+					"reaction": null,
+					"pack": [],
+					"itemDetail": null,
+					"speech": [
+						{
+							"id": "preview:101",
+							"tick": 101,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which class calls to you? 1 Fighter, 2 Wizard, 3 Rogue.",
+							"mine": false
+						}
+					],
+					"events": [],
+					"mapSvg": null,
+					"economy": null,
+					"occupantDetail": null,
+					"mapState": "empty"
+				},
+				"presentation": null
+			}
+		},
+		{
+			"id": "frame_1tnl3t6w9rhsy",
+			"sequence": 3,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Creation Candidate",
+						"className": "Fighter",
+						"level": 1,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [],
+						"abilities": [],
+						"skills": [],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "",
+						"backstory": "",
+						"placeId": "inn/common_room",
+						"quest": []
+					},
+					"place": {
+						"id": "creation",
+						"name": "The Hearth Ledger",
+						"description": "Aldwin opens his ledger beside the fire. Your adventure begins with a name and a few choices.",
+						"exits": []
+					},
+					"occupants": [
+						{
+							"id": "4",
+							"handle": "preview:aldwin",
+							"rev": "preview",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Aldwin, keeper of the hearth-ledger",
+							"conditions": [],
+							"note": "Ready to help you begin"
+						}
+					],
+					"actions": [
+						{
+							"id": "preview:species:0",
+							"label": "Human",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 1
+						},
+						{
+							"id": "preview:species:1",
+							"label": "Elf",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 2
+						},
+						{
+							"id": "preview:species:2",
+							"label": "Dwarf",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 3
+						}
+					],
+					"actionCount": 3,
+					"session": {
+						"inSession": false,
+						"myTurn": false,
+						"lifecycle": null,
+						"currentActor": null,
+						"currentActorName": null,
+						"roster": []
+					},
+					"reaction": null,
+					"pack": [],
+					"itemDetail": null,
+					"speech": [
+						{
+							"id": "preview:101",
+							"tick": 101,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which class calls to you? 1 Fighter, 2 Wizard, 3 Rogue.",
+							"mine": false
+						},
+						{
+							"id": "preview:102",
+							"tick": 102,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Fighter",
+							"mine": true
+						},
+						{
+							"id": "preview:103",
+							"tick": 103,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which species? 1 Human, 2 Elf, 3 Dwarf.",
+							"mine": false
+						}
+					],
+					"events": [],
+					"mapSvg": null,
+					"economy": null,
+					"occupantDetail": null,
+					"mapState": "empty"
+				},
+				"presentation": null
+			}
+		},
+		{
+			"id": "frame_o83dgr12h08dx",
+			"sequence": 4,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Creation Candidate",
+						"species": "Human",
+						"className": "Fighter",
+						"level": 1,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [],
+						"abilities": [],
+						"skills": [],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "",
+						"backstory": "",
+						"placeId": "inn/common_room",
+						"quest": []
+					},
+					"place": {
+						"id": "creation",
+						"name": "The Hearth Ledger",
+						"description": "Aldwin opens his ledger beside the fire. Your adventure begins with a name and a few choices.",
+						"exits": []
+					},
+					"occupants": [
+						{
+							"id": "4",
+							"handle": "preview:aldwin",
+							"rev": "preview",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Aldwin, keeper of the hearth-ledger",
+							"conditions": [],
+							"note": "Ready to help you begin"
+						}
+					],
+					"actions": [
+						{
+							"id": "preview:background:0",
+							"label": "Soldier",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 1
+						},
+						{
+							"id": "preview:background:1",
+							"label": "Sage",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 2
+						},
+						{
+							"id": "preview:background:2",
+							"label": "Criminal",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false,
+							"slot": 3
+						}
+					],
+					"actionCount": 3,
+					"session": {
+						"inSession": false,
+						"myTurn": false,
+						"lifecycle": null,
+						"currentActor": null,
+						"currentActorName": null,
+						"roster": []
+					},
+					"reaction": null,
+					"pack": [],
+					"itemDetail": null,
+					"speech": [
+						{
+							"id": "preview:101",
+							"tick": 101,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which class calls to you? 1 Fighter, 2 Wizard, 3 Rogue.",
+							"mine": false
+						},
+						{
+							"id": "preview:102",
+							"tick": 102,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Fighter",
+							"mine": true
+						},
+						{
+							"id": "preview:103",
+							"tick": 103,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which species? 1 Human, 2 Elf, 3 Dwarf.",
+							"mine": false
+						},
+						{
+							"id": "preview:104",
+							"tick": 104,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Human",
+							"mine": true
+						},
+						{
+							"id": "preview:105",
+							"tick": 105,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which background? 1 Soldier, 2 Sage, 3 Criminal.",
+							"mine": false
+						}
+					],
+					"events": [],
+					"mapSvg": null,
+					"economy": null,
+					"occupantDetail": null,
+					"mapState": "empty"
+				},
+				"presentation": null
+			}
+		},
+		{
+			"id": "frame_11fgqlhr4ti1",
+			"sequence": 5,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Creation Candidate",
+						"species": "Human",
+						"className": "Fighter",
+						"background": "Soldier",
+						"level": 1,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [],
+						"abilities": [],
+						"skills": [],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "",
+						"backstory": "",
+						"placeId": "inn/common_room",
+						"quest": []
+					},
+					"place": {
+						"id": "creation",
+						"name": "The Hearth Ledger",
+						"description": "Aldwin opens his ledger beside the fire. Your adventure begins with a name and a few choices.",
+						"exits": []
+					},
+					"occupants": [
+						{
+							"id": "4",
+							"handle": "preview:aldwin",
+							"rev": "preview",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Aldwin, keeper of the hearth-ledger",
+							"conditions": [],
+							"note": "Ready to help you begin"
+						}
+					],
+					"actions": [
+						{
+							"id": "preview:scores:0",
+							"label": "Adopt the recommended array",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false
+						}
+					],
+					"actionCount": 1,
+					"session": {
+						"inSession": false,
+						"myTurn": false,
+						"lifecycle": null,
+						"currentActor": null,
+						"currentActorName": null,
+						"roster": []
+					},
+					"reaction": null,
+					"pack": [],
+					"itemDetail": null,
+					"speech": [
+						{
+							"id": "preview:101",
+							"tick": 101,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which class calls to you? 1 Fighter, 2 Wizard, 3 Rogue.",
+							"mine": false
+						},
+						{
+							"id": "preview:102",
+							"tick": 102,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Fighter",
+							"mine": true
+						},
+						{
+							"id": "preview:103",
+							"tick": 103,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which species? 1 Human, 2 Elf, 3 Dwarf.",
+							"mine": false
+						},
+						{
+							"id": "preview:104",
+							"tick": 104,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Human",
+							"mine": true
+						},
+						{
+							"id": "preview:105",
+							"tick": 105,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which background? 1 Soldier, 2 Sage, 3 Criminal.",
+							"mine": false
+						},
+						{
+							"id": "preview:106",
+							"tick": 106,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Soldier",
+							"mine": true
+						},
+						{
+							"id": "preview:107",
+							"tick": 107,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Adopt the recommended array, then tell me your name.",
+							"mine": false
+						}
+					],
+					"events": [],
+					"mapSvg": null,
+					"economy": null,
+					"occupantDetail": null,
+					"mapState": "empty"
+				},
+				"presentation": null
+			}
+		},
+		{
+			"id": "frame_1ygupjvf1zvdh",
+			"sequence": 6,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Creation Candidate",
+						"species": "Human",
+						"className": "Fighter",
+						"background": "Soldier",
+						"level": 1,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 16,
+								"modifier": 3
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 12,
+								"modifier": 1
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 11,
+								"modifier": 0
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 9,
+								"modifier": -1
+							}
+						],
+						"skills": [],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "",
+						"backstory": "",
+						"placeId": "inn/common_room",
+						"quest": []
+					},
+					"place": {
+						"id": "creation",
+						"name": "The Hearth Ledger",
+						"description": "Aldwin opens his ledger beside the fire. Your adventure begins with a name and a few choices.",
+						"exits": []
+					},
+					"occupants": [
+						{
+							"id": "4",
+							"handle": "preview:aldwin",
+							"rev": "preview",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Aldwin, keeper of the hearth-ledger",
+							"conditions": [],
+							"note": "Ready to help you begin"
+						}
+					],
+					"actions": [
+						{
+							"id": "preview:name",
+							"label": "Speak To — Aldwin, keeper of the hearth-ledger",
+							"verb": "communicate",
+							"descriptor": "srd/speak-to",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": true
+						}
+					],
+					"actionCount": 1,
+					"session": {
+						"inSession": false,
+						"myTurn": false,
+						"lifecycle": null,
+						"currentActor": null,
+						"currentActorName": null,
+						"roster": []
+					},
+					"reaction": null,
+					"pack": [],
+					"itemDetail": null,
+					"speech": [
+						{
+							"id": "preview:101",
+							"tick": 101,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which class calls to you? 1 Fighter, 2 Wizard, 3 Rogue.",
+							"mine": false
+						},
+						{
+							"id": "preview:102",
+							"tick": 102,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Fighter",
+							"mine": true
+						},
+						{
+							"id": "preview:103",
+							"tick": 103,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which species? 1 Human, 2 Elf, 3 Dwarf.",
+							"mine": false
+						},
+						{
+							"id": "preview:104",
+							"tick": 104,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Human",
+							"mine": true
+						},
+						{
+							"id": "preview:105",
+							"tick": 105,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which background? 1 Soldier, 2 Sage, 3 Criminal.",
+							"mine": false
+						},
+						{
+							"id": "preview:106",
+							"tick": 106,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Soldier",
+							"mine": true
+						},
+						{
+							"id": "preview:107",
+							"tick": 107,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Adopt the recommended array, then tell me your name.",
+							"mine": false
+						},
+						{
+							"id": "preview:108",
+							"tick": 108,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Adopt the recommended array",
+							"mine": true
+						},
+						{
+							"id": "preview:109",
+							"tick": 109,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "What shall I call you? Say name=Your Name. This preview also accepts a plain name.",
+							"mine": false
+						}
+					],
+					"events": [],
+					"mapSvg": null,
+					"economy": null,
+					"occupantDetail": null,
+					"mapState": "empty"
+				},
+				"presentation": null
+			}
+		},
+		{
+			"id": "frame_fq2lej1muasxf",
+			"sequence": 7,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Mira",
+						"species": "Human",
+						"className": "Fighter",
+						"background": "Soldier",
+						"level": 1,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 16,
+								"modifier": 3
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 12,
+								"modifier": 1
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 11,
+								"modifier": 0
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 9,
+								"modifier": -1
+							}
+						],
+						"skills": [],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "",
+						"backstory": "",
+						"placeId": "inn/common_room",
+						"quest": []
+					},
+					"place": {
+						"id": "creation",
+						"name": "The Hearth Ledger",
+						"description": "Aldwin opens his ledger beside the fire. Your adventure begins with a name and a few choices.",
+						"exits": []
+					},
+					"occupants": [
+						{
+							"id": "4",
+							"handle": "preview:aldwin",
+							"rev": "preview",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Aldwin, keeper of the hearth-ledger",
+							"conditions": [],
+							"note": "Ready to help you begin"
+						}
+					],
+					"actions": [
+						{
+							"id": "preview:review:0",
+							"label": "Confirm character creation",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "preview:review:1",
+							"label": "Discard the drafted character",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/answer",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false
+						}
+					],
+					"actionCount": 2,
+					"session": {
+						"inSession": false,
+						"myTurn": false,
+						"lifecycle": null,
+						"currentActor": null,
+						"currentActorName": null,
+						"roster": []
+					},
+					"reaction": null,
+					"pack": [],
+					"itemDetail": null,
+					"speech": [
+						{
+							"id": "preview:101",
+							"tick": 101,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which class calls to you? 1 Fighter, 2 Wizard, 3 Rogue.",
+							"mine": false
+						},
+						{
+							"id": "preview:102",
+							"tick": 102,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Fighter",
+							"mine": true
+						},
+						{
+							"id": "preview:103",
+							"tick": 103,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which species? 1 Human, 2 Elf, 3 Dwarf.",
+							"mine": false
+						},
+						{
+							"id": "preview:104",
+							"tick": 104,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Human",
+							"mine": true
+						},
+						{
+							"id": "preview:105",
+							"tick": 105,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which background? 1 Soldier, 2 Sage, 3 Criminal.",
+							"mine": false
+						},
+						{
+							"id": "preview:106",
+							"tick": 106,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Soldier",
+							"mine": true
+						},
+						{
+							"id": "preview:107",
+							"tick": 107,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Adopt the recommended array, then tell me your name.",
+							"mine": false
+						},
+						{
+							"id": "preview:108",
+							"tick": 108,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Adopt the recommended array",
+							"mine": true
+						},
+						{
+							"id": "preview:109",
+							"tick": 109,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "What shall I call you? Say name=Your Name. This preview also accepts a plain name.",
+							"mine": false
+						},
+						{
+							"id": "preview:110",
+							"tick": 110,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Mira",
+							"mine": true
+						},
+						{
+							"id": "preview:111",
+							"tick": 111,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Your draft is ready. Confirm character creation to enter the inn, or discard to begin again.",
+							"mine": false
+						}
+					],
+					"events": [],
+					"mapSvg": null,
+					"economy": null,
+					"occupantDetail": null,
+					"mapState": "empty"
+				},
+				"presentation": null
+			}
+		},
+		{
+			"id": "frame_1fb95uo14yx7im",
+			"sequence": 8,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Mira",
+						"species": "Human",
+						"className": "Fighter",
+						"background": "Soldier",
+						"level": 1,
+						"hp": 11,
+						"ac": 16,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [
+							{
+								"id": "srd/hp",
+								"label": "Hit Points",
+								"value": "11"
+							},
+							{
+								"id": "srd/ac",
+								"label": "Armor Class",
+								"value": "16"
+							},
+							{
+								"id": "srd/level",
+								"label": "Character Level",
+								"value": "1"
+							}
+						],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 16,
+								"modifier": 3
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 12,
+								"modifier": 1
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 11,
+								"modifier": 0
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 9,
+								"modifier": -1
+							}
+						],
+						"skills": [
+							{
+								"id": "srd/skill/athletics",
+								"label": "Athletics"
+							},
+							{
+								"id": "srd/skill/perception",
+								"label": "Perception"
+							}
+						],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "Human fighter, a soldier's bearing",
+						"backstory": "A roadwarden out of the Ashwold garrison, six years on the King's highways.",
+						"placeId": "inn/common_room"
+					},
+					"place": {
+						"id": "inn/common_room",
+						"name": "Common Room",
+						"description": "Long trestle tables share the room with a low fire, the smell of woodsmoke and last night's stew going cold on the hearth.",
+						"exits": [
+							{
+								"handle": "s:exit:1",
+								"rev": "r1",
+								"label": "southeast",
+								"to": "inn/stairs",
+								"toName": "Stairs",
+								"gates": []
+							},
+							{
+								"handle": "s:exit:2",
+								"rev": "r2",
+								"label": "north",
+								"to": "inn/bar",
+								"toName": "Bar",
+								"gates": []
+							},
+							{
+								"handle": "s:exit:3",
+								"rev": "r3",
+								"label": "west",
+								"to": "inn/foyer",
+								"toName": "Foyer",
+								"gates": ["elven_mini/affordance/dm_threshold"]
+							}
+						]
+					},
+					"occupants": [
+						{
+							"id": "4",
+							"handle": "s:actor:4",
+							"rev": "a4",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Aldwin, keeper of the hearth-ledger",
+							"conditions": [],
+							"note": "Here with you"
+						},
+						{
+							"id": "9",
+							"handle": "s:actor:9",
+							"rev": "a9",
+							"kind": "person",
+							"sceneKind": "actor",
+							"name": "Brother Caddoc",
+							"conditions": [],
+							"note": "Here with you"
+						},
+						{
+							"id": "31",
+							"handle": "s:entity:31",
+							"rev": "e31",
+							"kind": "thing",
+							"sceneKind": "entity",
+							"name": "Hearth",
+							"conditions": [],
+							"note": "Something here"
+						}
+					],
+					"actions": [
+						{
+							"id": "h:talk",
+							"label": "Speak To — Aldwin, keeper of the hearth-ledger",
+							"verb": "communicate",
+							"descriptor": "srd/speak-to",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": true
+						},
+						{
+							"id": "h:ask",
+							"label": "Ask Aldwin About Advancement",
+							"verb": "communicate",
+							"descriptor": "dm/dialog/ask-advancement",
+							"targetName": "Aldwin, keeper of the hearth-ledger",
+							"targetRef": "entity:4",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:arcana",
+							"label": "Check: Arcana",
+							"verb": "manipulate",
+							"descriptor": "srd/check/arcana",
+							"targetName": "",
+							"targetRef": "entity:7",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:look",
+							"label": "Look around",
+							"verb": "sensing",
+							"descriptor": "srd/sense/look",
+							"targetName": "",
+							"targetRef": "entity:7",
+							"acceptsUtterance": false
+						}
+					],
+					"actionCount": 4,
+					"session": {
+						"inSession": false,
+						"myTurn": false,
+						"lifecycle": null,
+						"currentActor": null,
+						"currentActorName": null,
+						"roster": []
+					},
+					"reaction": null,
+					"pack": [
+						{
+							"id": "12",
+							"name": "Longsword",
+							"detail": "Weapon",
+							"quantity": 1,
+							"equipped": "main hand",
+							"handle": "i:12",
+							"rev": "p12"
+						},
+						{
+							"id": "13",
+							"name": "Rations",
+							"detail": "Provisions",
+							"quantity": 3,
+							"equipped": null,
+							"handle": "i:13",
+							"rev": "p13"
+						},
+						{
+							"id": "14",
+							"name": "Torch",
+							"detail": "Light",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:14",
+							"rev": "p14"
+						}
+					],
+					"itemDetail": {
+						"id": "12",
+						"kind": "Weapon",
+						"slot": "Main Hand",
+						"facts": [
+							{
+								"id": "srd/damage",
+								"label": "Damage",
+								"value": "1d8"
+							},
+							{
+								"id": "srd/weight_g",
+								"label": "Weight",
+								"value": "1,360 g"
+							}
+						],
+						"verbs": [
+							{
+								"id": "h:unequip-longsword",
+								"label": "Unequip",
+								"verb": "manipulate",
+								"descriptor": "srd/unequip",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							},
+							{
+								"id": "h:drop-longsword",
+								"label": "Drop",
+								"verb": "manipulate",
+								"descriptor": "srd/drop",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							}
+						]
+					},
+					"speech": [
+						{
+							"id": "preview:101",
+							"tick": 101,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which class calls to you? 1 Fighter, 2 Wizard, 3 Rogue.",
+							"mine": false
+						},
+						{
+							"id": "preview:102",
+							"tick": 102,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Fighter",
+							"mine": true
+						},
+						{
+							"id": "preview:103",
+							"tick": 103,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which species? 1 Human, 2 Elf, 3 Dwarf.",
+							"mine": false
+						},
+						{
+							"id": "preview:104",
+							"tick": 104,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Human",
+							"mine": true
+						},
+						{
+							"id": "preview:105",
+							"tick": 105,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Which background? 1 Soldier, 2 Sage, 3 Criminal.",
+							"mine": false
+						},
+						{
+							"id": "preview:106",
+							"tick": 106,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Soldier",
+							"mine": true
+						},
+						{
+							"id": "preview:107",
+							"tick": 107,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Adopt the recommended array, then tell me your name.",
+							"mine": false
+						},
+						{
+							"id": "preview:108",
+							"tick": 108,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Adopt the recommended array",
+							"mine": true
+						},
+						{
+							"id": "preview:109",
+							"tick": 109,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "What shall I call you? Say name=Your Name. This preview also accepts a plain name.",
+							"mine": false
+						},
+						{
+							"id": "preview:110",
+							"tick": 110,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Mira",
+							"mine": true
+						},
+						{
+							"id": "preview:111",
+							"tick": 111,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "Your draft is ready. Confirm character creation to enter the inn, or discard to begin again.",
+							"mine": false
+						},
+						{
+							"id": "preview:112",
+							"tick": 112,
+							"speakerId": "7",
+							"speaker": "You",
+							"text": "Confirm character creation",
+							"mine": true
+						},
+						{
+							"id": "preview:113",
+							"tick": 113,
+							"speakerId": "4",
+							"speaker": "Aldwin, keeper of the hearth-ledger",
+							"text": "It's done. Welcome to the world.",
+							"mine": false
+						}
+					],
+					"events": [
+						{
+							"id": "event-1",
+							"tick": 42,
+							"kind": "passage_opened",
+							"summary": "The eastern road opened."
+						},
+						{
+							"id": "event-2",
+							"tick": 39,
+							"kind": "promise_made",
+							"summary": "Mira promised to return before dusk."
+						}
+					],
+					"mapSvg": null,
+					"economy": null
+				},
+				"presentation": null
+			}
+		}
+	]
+}

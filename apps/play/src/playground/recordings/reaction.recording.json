@@ -1,0 +1,916 @@
+{
+	"kind": "spellkave.recording",
+	"version": 2,
+	"id": "playground_legacy_reaction",
+	"surface": "spellkave.play",
+	"capturedAt": 1768000000000,
+	"provenance": {
+		"source": "legacy",
+		"title": "Former Playground reaction example"
+	},
+	"frames": [
+		{
+			"id": "frame_y2qmx6x8l4im",
+			"sequence": 1,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Renn the Roadwarden",
+						"species": "Human",
+						"className": "Fighter",
+						"background": "Soldier",
+						"level": 1,
+						"hp": 11,
+						"ac": 16,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [
+							{
+								"id": "srd/hp",
+								"label": "Hit Points",
+								"value": "11"
+							},
+							{
+								"id": "srd/ac",
+								"label": "Armor Class",
+								"value": "16"
+							},
+							{
+								"id": "srd/level",
+								"label": "Character Level",
+								"value": "1"
+							}
+						],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 16,
+								"modifier": 3
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 12,
+								"modifier": 1
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 11,
+								"modifier": 0
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 9,
+								"modifier": -1
+							}
+						],
+						"skills": [
+							{
+								"id": "srd/skill/athletics",
+								"label": "Athletics"
+							},
+							{
+								"id": "srd/skill/perception",
+								"label": "Perception"
+							}
+						],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "Human fighter, a soldier's bearing",
+						"backstory": "A roadwarden out of the Ashwold garrison, six years on the King's highways.",
+						"placeId": "inn/common_room"
+					},
+					"place": {
+						"id": "session_grid_58/c_1_0",
+						"name": "Cellar",
+						"description": "Barrels, damp stone, and a scuffle of claws in the dark.",
+						"exits": [
+							{
+								"handle": "s:exit:9",
+								"rev": "r9",
+								"label": "northwest",
+								"to": "inn/stairs",
+								"toNodeId": "session_grid_58/c_0_0",
+								"toName": "Stairs",
+								"gates": []
+							}
+						]
+					},
+					"occupants": [
+						{
+							"id": "123",
+							"handle": "s:actor:123",
+							"rev": "c1",
+							"kind": "creature",
+							"sceneKind": "actor",
+							"name": "Cellar Rat 1",
+							"conditions": [],
+							"note": "Here with you"
+						},
+						{
+							"id": "125",
+							"handle": "s:actor:125",
+							"rev": "c2",
+							"kind": "creature",
+							"sceneKind": "actor",
+							"name": "Cellar Rat 2",
+							"conditions": ["srd/condition/dead"],
+							"note": "Dead"
+						}
+					],
+					"actions": [
+						{
+							"id": "h:melee",
+							"label": "Melee Attack — Cellar Rat 1",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee",
+							"targetName": "Cellar Rat 1",
+							"targetRef": "entity:123",
+							"acceptsUtterance": false,
+							"group": "combat"
+						},
+						{
+							"id": "h:dodge",
+							"label": "Dodge",
+							"verb": "manipulate",
+							"descriptor": "srd/action/dodge",
+							"targetName": "",
+							"targetRef": "entity:7",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:unarmed-strike",
+							"label": "Unarmed strike: damage — Cellar Rat 1",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/unarmed-strike/damage",
+							"targetName": "Cellar Rat 1",
+							"targetRef": "entity:123",
+							"acceptsUtterance": false
+						}
+					],
+					"actionCount": 3,
+					"session": {
+						"inSession": true,
+						"myTurn": false,
+						"lifecycle": "open",
+						"currentActor": "123",
+						"currentActorName": "Cellar Rat 1",
+						"roster": [
+							{
+								"actorId": "7",
+								"name": "Renn the Roadwarden",
+								"ordinal": 0,
+								"isMe": true,
+								"isCurrent": true
+							},
+							{
+								"actorId": "123",
+								"name": "Cellar Rat 1",
+								"ordinal": 1,
+								"isMe": false,
+								"isCurrent": false
+							}
+						]
+					},
+					"reaction": {
+						"windowKind": "reaction",
+						"handle": "s:reaction:1",
+						"rev": "r1",
+						"originatingActionId": "srd/attack/melee",
+						"originatingActor": "123",
+						"originatingActorName": "Cellar Rat 1",
+						"remainingMs": 6000,
+						"faces": []
+					},
+					"pack": [
+						{
+							"id": "12",
+							"name": "Longsword",
+							"detail": "Weapon",
+							"quantity": 1,
+							"equipped": "main hand",
+							"handle": "i:12",
+							"rev": "p12"
+						},
+						{
+							"id": "13",
+							"name": "Rations",
+							"detail": "Provisions",
+							"quantity": 3,
+							"equipped": null,
+							"handle": "i:13",
+							"rev": "p13"
+						},
+						{
+							"id": "14",
+							"name": "Torch",
+							"detail": "Light",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:14",
+							"rev": "p14"
+						}
+					],
+					"itemDetail": {
+						"id": "12",
+						"kind": "Weapon",
+						"slot": "Main Hand",
+						"facts": [
+							{
+								"id": "srd/damage",
+								"label": "Damage",
+								"value": "1d8"
+							},
+							{
+								"id": "srd/weight_g",
+								"label": "Weight",
+								"value": "1,360 g"
+							}
+						],
+						"verbs": [
+							{
+								"id": "h:unequip-longsword",
+								"label": "Unequip",
+								"verb": "manipulate",
+								"descriptor": "srd/unequip",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							},
+							{
+								"id": "h:drop-longsword",
+								"label": "Drop",
+								"verb": "manipulate",
+								"descriptor": "srd/drop",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							}
+						]
+					},
+					"speech": [],
+					"events": [
+						{
+							"id": "event-9",
+							"tick": 58,
+							"kind": "session_lifecycle",
+							"summary": "A session opens (2 participants)."
+						},
+						{
+							"id": "event-10",
+							"tick": 59,
+							"kind": "self_hit",
+							"summary": "You take 3 srd/hp damage (bite) — now at 8."
+						},
+						{
+							"id": "event-11",
+							"tick": 60,
+							"kind": "dealt_hit",
+							"summary": "You hit Cellar Rat 1 for 5 damage."
+						}
+					],
+					"mapSvg": "<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\"><g data-node-id=\"session_grid_58/c_1_0\"><rect x=\"0\" y=\"0\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_0_0\"><rect x=\"40\" y=\"0\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_0\"><rect x=\"80\" y=\"0\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_1\"><rect x=\"0\" y=\"40\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_2\"><rect x=\"40\" y=\"40\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_3\"><rect x=\"80\" y=\"40\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g></svg>",
+					"economy": [
+						{
+							"channelId": "srd/economy_channel/primary",
+							"spentMs": 1000,
+							"windowStartMs": 0
+						},
+						{
+							"channelId": "srd/economy_channel/bonus",
+							"spentMs": 0,
+							"windowStartMs": 0
+						},
+						{
+							"channelId": "srd/economy_channel/reaction",
+							"spentMs": 0,
+							"windowStartMs": 0
+						},
+						{
+							"channelId": "srd/economy_channel/object_interaction",
+							"spentMs": 0,
+							"windowStartMs": 0
+						}
+					]
+				},
+				"presentation": null
+			}
+		},
+		{
+			"id": "frame_y2w00x1nxw5p1",
+			"sequence": 2,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Renn the Roadwarden",
+						"species": "Human",
+						"className": "Fighter",
+						"background": "Soldier",
+						"level": 1,
+						"hp": 11,
+						"ac": 16,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [
+							{
+								"id": "srd/hp",
+								"label": "Hit Points",
+								"value": "11"
+							},
+							{
+								"id": "srd/ac",
+								"label": "Armor Class",
+								"value": "16"
+							},
+							{
+								"id": "srd/level",
+								"label": "Character Level",
+								"value": "1"
+							}
+						],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 16,
+								"modifier": 3
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 12,
+								"modifier": 1
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 11,
+								"modifier": 0
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 9,
+								"modifier": -1
+							}
+						],
+						"skills": [
+							{
+								"id": "srd/skill/athletics",
+								"label": "Athletics"
+							},
+							{
+								"id": "srd/skill/perception",
+								"label": "Perception"
+							}
+						],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "Human fighter, a soldier's bearing",
+						"backstory": "A roadwarden out of the Ashwold garrison, six years on the King's highways.",
+						"placeId": "inn/common_room"
+					},
+					"place": {
+						"id": "session_grid_58/c_1_0",
+						"name": "Cellar",
+						"description": "Barrels, damp stone, and a scuffle of claws in the dark.",
+						"exits": [
+							{
+								"handle": "s:exit:9",
+								"rev": "r9",
+								"label": "northwest",
+								"to": "inn/stairs",
+								"toNodeId": "session_grid_58/c_0_0",
+								"toName": "Stairs",
+								"gates": []
+							}
+						]
+					},
+					"occupants": [
+						{
+							"id": "123",
+							"handle": "s:actor:123",
+							"rev": "c1",
+							"kind": "creature",
+							"sceneKind": "actor",
+							"name": "Cellar Rat 1",
+							"conditions": [],
+							"note": "Here with you"
+						},
+						{
+							"id": "125",
+							"handle": "s:actor:125",
+							"rev": "c2",
+							"kind": "creature",
+							"sceneKind": "actor",
+							"name": "Cellar Rat 2",
+							"conditions": ["srd/condition/dead"],
+							"note": "Dead"
+						}
+					],
+					"actions": [
+						{
+							"id": "h:melee",
+							"label": "Melee Attack — Cellar Rat 1",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee",
+							"targetName": "Cellar Rat 1",
+							"targetRef": "entity:123",
+							"acceptsUtterance": false,
+							"group": "combat"
+						},
+						{
+							"id": "h:dodge",
+							"label": "Dodge",
+							"verb": "manipulate",
+							"descriptor": "srd/action/dodge",
+							"targetName": "",
+							"targetRef": "entity:7",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:unarmed-strike",
+							"label": "Unarmed strike: damage — Cellar Rat 1",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/unarmed-strike/damage",
+							"targetName": "Cellar Rat 1",
+							"targetRef": "entity:123",
+							"acceptsUtterance": false
+						}
+					],
+					"actionCount": 3,
+					"session": {
+						"inSession": true,
+						"myTurn": false,
+						"lifecycle": "open",
+						"currentActor": "123",
+						"currentActorName": "Cellar Rat 1",
+						"roster": [
+							{
+								"actorId": "7",
+								"name": "Renn the Roadwarden",
+								"ordinal": 0,
+								"isMe": true,
+								"isCurrent": true
+							},
+							{
+								"actorId": "123",
+								"name": "Cellar Rat 1",
+								"ordinal": 1,
+								"isMe": false,
+								"isCurrent": false
+							}
+						]
+					},
+					"reaction": {
+						"windowKind": "reaction",
+						"handle": "s:reaction:1",
+						"rev": "r1",
+						"originatingActionId": "srd/attack/melee",
+						"originatingActor": "123",
+						"originatingActorName": "Cellar Rat 1",
+						"remainingMs": 6000,
+						"faces": []
+					},
+					"pack": [
+						{
+							"id": "12",
+							"name": "Longsword",
+							"detail": "Weapon",
+							"quantity": 1,
+							"equipped": "main hand",
+							"handle": "i:12",
+							"rev": "p12"
+						},
+						{
+							"id": "13",
+							"name": "Rations",
+							"detail": "Provisions",
+							"quantity": 3,
+							"equipped": null,
+							"handle": "i:13",
+							"rev": "p13"
+						},
+						{
+							"id": "14",
+							"name": "Torch",
+							"detail": "Light",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:14",
+							"rev": "p14"
+						}
+					],
+					"itemDetail": {
+						"id": "12",
+						"kind": "Weapon",
+						"slot": "Main Hand",
+						"facts": [
+							{
+								"id": "srd/damage",
+								"label": "Damage",
+								"value": "1d8"
+							},
+							{
+								"id": "srd/weight_g",
+								"label": "Weight",
+								"value": "1,360 g"
+							}
+						],
+						"verbs": [
+							{
+								"id": "h:unequip-longsword",
+								"label": "Unequip",
+								"verb": "manipulate",
+								"descriptor": "srd/unequip",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							},
+							{
+								"id": "h:drop-longsword",
+								"label": "Drop",
+								"verb": "manipulate",
+								"descriptor": "srd/drop",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							}
+						]
+					},
+					"speech": [],
+					"events": [
+						{
+							"id": "event-9",
+							"tick": 58,
+							"kind": "session_lifecycle",
+							"summary": "A session opens (2 participants)."
+						},
+						{
+							"id": "event-10",
+							"tick": 59,
+							"kind": "self_hit",
+							"summary": "You take 3 srd/hp damage (bite) — now at 8."
+						},
+						{
+							"id": "event-11",
+							"tick": 60,
+							"kind": "dealt_hit",
+							"summary": "You hit Cellar Rat 1 for 5 damage."
+						}
+					],
+					"mapSvg": "<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\"><g data-node-id=\"session_grid_58/c_1_0\"><rect x=\"0\" y=\"0\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_0_0\"><rect x=\"40\" y=\"0\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_0\"><rect x=\"80\" y=\"0\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_1\"><rect x=\"0\" y=\"40\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_2\"><rect x=\"40\" y=\"40\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_3\"><rect x=\"80\" y=\"40\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g></svg>",
+					"economy": [
+						{
+							"channelId": "srd/economy_channel/primary",
+							"spentMs": 1000,
+							"windowStartMs": 0
+						},
+						{
+							"channelId": "srd/economy_channel/bonus",
+							"spentMs": 0,
+							"windowStartMs": 0
+						},
+						{
+							"channelId": "srd/economy_channel/reaction",
+							"spentMs": 0,
+							"windowStartMs": 0
+						},
+						{
+							"channelId": "srd/economy_channel/object_interaction",
+							"spentMs": 0,
+							"windowStartMs": 0
+						}
+					]
+				},
+				"presentation": null
+			}
+		},
+		{
+			"id": "frame_vct6k41f2eknu",
+			"sequence": 3,
+			"capturedAt": 1768000000000,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "7",
+						"name": "Renn the Roadwarden",
+						"species": "Human",
+						"className": "Fighter",
+						"background": "Soldier",
+						"level": 1,
+						"hp": 11,
+						"ac": 16,
+						"xp": 0,
+						"proficiency": 2,
+						"vitals": [
+							{
+								"id": "srd/hp",
+								"label": "Hit Points",
+								"value": "11"
+							},
+							{
+								"id": "srd/ac",
+								"label": "Armor Class",
+								"value": "16"
+							},
+							{
+								"id": "srd/level",
+								"label": "Character Level",
+								"value": "1"
+							}
+						],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 16,
+								"modifier": 3
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 12,
+								"modifier": 1
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 11,
+								"modifier": 0
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 9,
+								"modifier": -1
+							}
+						],
+						"skills": [
+							{
+								"id": "srd/skill/athletics",
+								"label": "Athletics"
+							},
+							{
+								"id": "srd/skill/perception",
+								"label": "Perception"
+							}
+						],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "Human fighter, a soldier's bearing",
+						"backstory": "A roadwarden out of the Ashwold garrison, six years on the King's highways.",
+						"placeId": "inn/common_room"
+					},
+					"place": {
+						"id": "session_grid_58/c_1_0",
+						"name": "Cellar",
+						"description": "Barrels, damp stone, and a scuffle of claws in the dark.",
+						"exits": [
+							{
+								"handle": "s:exit:9",
+								"rev": "r9",
+								"label": "northwest",
+								"to": "inn/stairs",
+								"toNodeId": "session_grid_58/c_0_0",
+								"toName": "Stairs",
+								"gates": []
+							}
+						]
+					},
+					"occupants": [
+						{
+							"id": "123",
+							"handle": "s:actor:123",
+							"rev": "c1",
+							"kind": "creature",
+							"sceneKind": "actor",
+							"name": "Cellar Rat 1",
+							"conditions": [],
+							"note": "Here with you"
+						},
+						{
+							"id": "125",
+							"handle": "s:actor:125",
+							"rev": "c2",
+							"kind": "creature",
+							"sceneKind": "actor",
+							"name": "Cellar Rat 2",
+							"conditions": ["srd/condition/dead"],
+							"note": "Dead"
+						}
+					],
+					"actions": [
+						{
+							"id": "h:melee",
+							"label": "Melee Attack — Cellar Rat 1",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee",
+							"targetName": "Cellar Rat 1",
+							"targetRef": "entity:123",
+							"acceptsUtterance": false,
+							"group": "combat"
+						},
+						{
+							"id": "h:dodge",
+							"label": "Dodge",
+							"verb": "manipulate",
+							"descriptor": "srd/action/dodge",
+							"targetName": "",
+							"targetRef": "entity:7",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:unarmed-strike",
+							"label": "Unarmed strike: damage — Cellar Rat 1",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/unarmed-strike/damage",
+							"targetName": "Cellar Rat 1",
+							"targetRef": "entity:123",
+							"acceptsUtterance": false
+						}
+					],
+					"actionCount": 3,
+					"session": {
+						"inSession": true,
+						"myTurn": true,
+						"lifecycle": "open",
+						"currentActor": "7",
+						"currentActorName": "Renn the Roadwarden",
+						"roster": [
+							{
+								"actorId": "7",
+								"name": "Renn the Roadwarden",
+								"ordinal": 0,
+								"isMe": true,
+								"isCurrent": true
+							},
+							{
+								"actorId": "123",
+								"name": "Cellar Rat 1",
+								"ordinal": 1,
+								"isMe": false,
+								"isCurrent": false
+							}
+						]
+					},
+					"reaction": null,
+					"pack": [
+						{
+							"id": "12",
+							"name": "Longsword",
+							"detail": "Weapon",
+							"quantity": 1,
+							"equipped": "main hand",
+							"handle": "i:12",
+							"rev": "p12"
+						},
+						{
+							"id": "13",
+							"name": "Rations",
+							"detail": "Provisions",
+							"quantity": 3,
+							"equipped": null,
+							"handle": "i:13",
+							"rev": "p13"
+						},
+						{
+							"id": "14",
+							"name": "Torch",
+							"detail": "Light",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:14",
+							"rev": "p14"
+						}
+					],
+					"itemDetail": {
+						"id": "12",
+						"kind": "Weapon",
+						"slot": "Main Hand",
+						"facts": [
+							{
+								"id": "srd/damage",
+								"label": "Damage",
+								"value": "1d8"
+							},
+							{
+								"id": "srd/weight_g",
+								"label": "Weight",
+								"value": "1,360 g"
+							}
+						],
+						"verbs": [
+							{
+								"id": "h:unequip-longsword",
+								"label": "Unequip",
+								"verb": "manipulate",
+								"descriptor": "srd/unequip",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							},
+							{
+								"id": "h:drop-longsword",
+								"label": "Drop",
+								"verb": "manipulate",
+								"descriptor": "srd/drop",
+								"targetName": "Longsword",
+								"targetRef": "item:12",
+								"acceptsUtterance": false
+							}
+						]
+					},
+					"speech": [],
+					"events": [
+						{
+							"id": "event-9",
+							"tick": 58,
+							"kind": "session_lifecycle",
+							"summary": "A session opens (2 participants)."
+						},
+						{
+							"id": "event-10",
+							"tick": 59,
+							"kind": "self_hit",
+							"summary": "You take 3 srd/hp damage (bite) — now at 8."
+						},
+						{
+							"id": "event-11",
+							"tick": 60,
+							"kind": "dealt_hit",
+							"summary": "You hit Cellar Rat 1 for 5 damage."
+						}
+					],
+					"mapSvg": "<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\"><g data-node-id=\"session_grid_58/c_1_0\"><rect x=\"0\" y=\"0\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_0_0\"><rect x=\"40\" y=\"0\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_0\"><rect x=\"80\" y=\"0\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_1\"><rect x=\"0\" y=\"40\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_2\"><rect x=\"40\" y=\"40\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g><g data-node-id=\"session_grid_58/c_filler_3\"><rect x=\"80\" y=\"40\" width=\"40\" height=\"40\" class=\"grid-cell\" /></g></svg>",
+					"economy": [
+						{
+							"channelId": "srd/economy_channel/primary",
+							"spentMs": 1000,
+							"windowStartMs": 0
+						},
+						{
+							"channelId": "srd/economy_channel/bonus",
+							"spentMs": 0,
+							"windowStartMs": 0
+						},
+						{
+							"channelId": "srd/economy_channel/reaction",
+							"spentMs": 0,
+							"windowStartMs": 0
+						},
+						{
+							"channelId": "srd/economy_channel/object_interaction",
+							"spentMs": 0,
+							"windowStartMs": 0
+						}
+					]
+				},
+				"presentation": null
+			}
+		}
+	]
+}

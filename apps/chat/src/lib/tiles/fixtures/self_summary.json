@@ -1,0 +1,24 @@
+{
+	"self": {
+		"actor_id": "hero-1",
+		"entity_name": "Regdar",
+		"current_node_id": "elven-mini/inn/loft",
+		"state_count": 2,
+		"appearance": "",
+		"backstory": "",
+		"conditions": {
+			"count": 1,
+			"listing": "complete",
+			"items": [{ "condition_definition_id": "srd/poisoned", "stack_count": 1 }]
+		},
+		"vitals": {
+			"count": 2,
+			"listing": "complete",
+			"items": [
+				{ "state_id": "srd/hp", "display_name": "Hit Points", "value": "12" },
+				{ "state_id": "srd/ac", "display_name": "Armor Class", "value": "16" }
+			]
+		},
+		"quest": { "count": 0, "listing": "complete", "items": [] }
+	}
+}

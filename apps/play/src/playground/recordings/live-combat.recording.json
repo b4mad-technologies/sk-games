@@ -1,0 +1,2834 @@
+{
+	"kind": "spellkave.recording",
+	"version": 2,
+	"id": "legacy_jnhf656mrl7n",
+	"surface": "spellkave.play",
+	"capturedAt": 1789557246523,
+	"provenance": {
+		"source": "live",
+		"build": "5903fd9cf",
+		"title": "Recorded combat browser export (representative frames)"
+	},
+	"frames": [
+		{
+			"id": "legacy_frame_11yvqy15g22a7",
+			"sequence": 44,
+			"capturedAt": 1789557198672,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "1",
+						"name": "Rurik",
+						"vitals": [
+							{
+								"id": "srd/hp",
+								"label": "Hit Points",
+								"value": "14",
+								"description": "Hit Points represent durability and the will to live. Your Hit Point maximum is the number you have when uninjured; current Hit Points can be any number from that maximum down to 0."
+							},
+							{
+								"id": "srd/ac",
+								"label": "Armor Class",
+								"value": "11",
+								"description": "Armor Class is the target fact read by attacks through `target.effective('srd/ac')`. Its unarmored value is computed at generation time per entity as 10 + Dexterity modifier; every legal attack target must carry an explicit seed because unseeded fact reads fail closed."
+							},
+							{
+								"id": "srd/level",
+								"label": "Character Level",
+								"value": "1",
+								"description": "Your character's level, from 1 to 20. Gaining a level increases your capabilities."
+							}
+						],
+						"quest": [],
+						"conditionDetails": [],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 15,
+								"modifier": 2,
+								"description": "Physical might"
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 13,
+								"modifier": 1,
+								"description": "Agility, reflexes, and balance"
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2,
+								"description": "Health and stamina"
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0,
+								"description": "Reasoning and memory"
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 12,
+								"modifier": 1,
+								"description": "Perceptiveness and mental fortitude"
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 8,
+								"modifier": -1,
+								"description": "Confidence, poise, and charm"
+							}
+						],
+						"skills": [
+							{
+								"id": "srd/skill/athletics",
+								"label": "Athletics"
+							},
+							{
+								"id": "srd/skill/intimidation",
+								"label": "Intimidation"
+							},
+							{
+								"id": "srd/skill/perception",
+								"label": "Perception"
+							}
+						],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "",
+						"backstory": "",
+						"placeId": "session_grid_3/c_0_0",
+						"descriptionReads": {
+							"values": "ready",
+							"identity": "ready",
+							"conditions": "ready"
+						},
+						"suppliedFields": {
+							"vitals": 6,
+							"quest": 0,
+							"conditions": 0
+						},
+						"species": "Human",
+						"className": "Barbarian",
+						"background": "Soldier",
+						"identityDetails": [
+							{
+								"id": "srd.background.soldier",
+								"label": "Soldier",
+								"description": "Soldier background. Skill proficiencies: Athletics and Intimidation. Origin feat: Savage Attacker."
+							},
+							{
+								"id": "srd.class.barbarian",
+								"label": "Barbarian",
+								"description": "Barbarian class. Primary ability: Strength. Hit Point Die: d12."
+							},
+							{
+								"id": "srd.species.human",
+								"label": "Human",
+								"description": "Human species. Size: Medium or Small. Speed: 30 feet."
+							}
+						],
+						"hp": 14,
+						"ac": 11,
+						"level": 1,
+						"proficiency": 2,
+						"proficiencyDescription": "Your Proficiency Bonus reflects your training. It applies to D20 Tests when you have proficiency in the skill, saving throw, or item used, and to spell attacks and spell save DCs."
+					},
+					"place": {
+						"id": "session_grid_3/c_0_0",
+						"name": "Cell 0,0",
+						"description": "",
+						"exits": [
+							{
+								"handle": "s:exit:4097",
+								"rev": "8icvn9",
+								"label": "east",
+								"to": "c_1_0",
+								"toNodeId": "session_grid_3/c_1_0",
+								"toName": "Cell 1,0",
+								"gates": ["srd/affordance/grid-step"]
+							},
+							{
+								"handle": "s:exit:4098",
+								"rev": "1m7n6kp",
+								"label": "north",
+								"to": "c_0_1",
+								"toNodeId": "session_grid_3/c_0_1",
+								"toName": "Cell 0,1",
+								"gates": ["srd/affordance/grid-step"]
+							},
+							{
+								"handle": "s:exit:4099",
+								"rev": "snokuz",
+								"label": "northeast",
+								"to": "c_1_1",
+								"toNodeId": "session_grid_3/c_1_1",
+								"toName": "Cell 1,1",
+								"gates": ["srd/affordance/grid-step"]
+							}
+						]
+					},
+					"occupants": [],
+					"actions": [
+						{
+							"id": "h:0r6n5",
+							"label": "Melee Attack — Cellar Rat 2",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee",
+							"targetName": "Cellar Rat 2",
+							"targetRef": "entity:143",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:17fk9",
+							"label": "Melee Attack — Cellar Rat Swarm",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee",
+							"targetName": "Cellar Rat Swarm",
+							"targetRef": "entity:147",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:0g3wq",
+							"label": "Opportunity Attack — Cellar Rat 2",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/opportunity-attack",
+							"targetName": "Cellar Rat 2",
+							"targetRef": "entity:143",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:1hgl5",
+							"label": "Opportunity Attack — Cellar Rat Swarm",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/opportunity-attack",
+							"targetName": "Cellar Rat Swarm",
+							"targetRef": "entity:147",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:14uty",
+							"label": "Unarmed Strike: Damage — Cellar Rat 2",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/unarmed-strike/damage",
+							"targetName": "Cellar Rat 2",
+							"targetRef": "entity:143",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:0mq6s",
+							"label": "Unarmed Strike: Damage — Cellar Rat Swarm",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/unarmed-strike/damage",
+							"targetName": "Cellar Rat Swarm",
+							"targetRef": "entity:147",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:1118t",
+							"label": "Enter Rage — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/barbarian/rage",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0ujt0",
+							"label": "Dodge — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/dodge",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1i34e",
+							"label": "Drink Potion of Giant Strength — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-giant-strength/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:083p7",
+							"label": "Drink Potion of Healing (greater) — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing-greater/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:09g0w",
+							"label": "Drink Potion of Healing (superior) — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing-superior/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0g0kc",
+							"label": "Drink Potion of Healing (supreme) — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing-supreme/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0t9ep",
+							"label": "Drink Potion of Healing — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1gecu",
+							"label": "Drop Prone — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/movement/drop-prone",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0h1pw",
+							"label": "Complete a Long Rest — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/rest/long/complete",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1s0qe",
+							"label": "Complete a Short Rest — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/rest/short/complete",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1sf4l",
+							"label": "Speak Aloud — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/speak-aloud",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0idjn",
+							"label": "Swing (no target) — Cell 0,0",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee/swing",
+							"targetName": "Cell 0,0",
+							"targetRef": "place_node:session_grid_3/c_0_0",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:06zwe",
+							"label": "Heroic Inspiration Reroll — Cell 0,0",
+							"verb": "manipulate",
+							"descriptor": "srd/heroic_inspiration/reroll",
+							"targetName": "Cell 0,0",
+							"targetRef": "place_node:session_grid_3/c_0_0",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:06d83",
+							"label": "Look around — world",
+							"verb": "sensing",
+							"descriptor": "look",
+							"targetName": "world",
+							"targetRef": "world",
+							"acceptsUtterance": false
+						}
+					],
+					"actionCount": 20,
+					"session": {
+						"inSession": true,
+						"id": "3",
+						"myTurn": true,
+						"lifecycle": "active",
+						"currentActor": "1",
+						"currentActorName": "Rurik",
+						"roster": [
+							{
+								"actorId": "1",
+								"name": "Rurik",
+								"ordinal": 0,
+								"isMe": true,
+								"isCurrent": true
+							},
+							{
+								"actorId": "147",
+								"name": "147",
+								"ordinal": 1,
+								"isMe": false,
+								"isCurrent": false
+							},
+							{
+								"actorId": "143",
+								"name": "143",
+								"ordinal": 2,
+								"isMe": false,
+								"isCurrent": false
+							},
+							{
+								"actorId": "145",
+								"name": "145",
+								"ordinal": 3,
+								"isMe": false,
+								"isCurrent": false
+							}
+						]
+					},
+					"operations": {
+						"state": "ready",
+						"selected": {
+							"id": "3",
+							"label": "Activity",
+							"phase": "active",
+							"description": null,
+							"terminal": false,
+							"worldTimed": false,
+							"turnRule": "Sequential",
+							"observedWorldTick": "26037",
+							"progress": null,
+							"fields": [
+								{
+									"label": "Phase",
+									"value": "active"
+								},
+								{
+									"label": "Session",
+									"value": "3"
+								},
+								{
+									"label": "Definition",
+									"value": "elven_mini/adventure/session/crypt-fight"
+								},
+								{
+									"label": "Turn rule",
+									"value": "Sequential"
+								},
+								{
+									"label": "Round duration (milliseconds)",
+									"value": "6000"
+								},
+								{
+									"label": "Opened by",
+									"value": "Rurik"
+								},
+								{
+									"label": "Current participant",
+									"value": "Rurik"
+								},
+								{
+									"label": "Originating action",
+									"value": "Unknown"
+								},
+								{
+									"label": "Current participant is you",
+									"value": "Yes"
+								},
+								{
+									"label": "Originating target",
+									"value": "Unknown"
+								},
+								{
+									"label": "Observed world tick",
+									"value": "26037"
+								},
+								{
+									"label": "Last world tick timestamp (Unix microseconds)",
+									"value": "1789557198014217"
+								},
+								{
+									"label": "Opened at world tick",
+									"value": "16291"
+								},
+								{
+									"label": "Last advanced at world tick",
+									"value": "16293"
+								},
+								{
+									"label": "Duration (world ticks)",
+									"value": "Unknown"
+								},
+								{
+									"label": "Estimated completion world tick",
+									"value": "Unknown"
+								},
+								{
+									"label": "Estimated remaining world ticks",
+									"value": "Unknown"
+								},
+								{
+									"label": "Participant 1",
+									"value": "Rurik"
+								},
+								{
+									"label": "Participant 2",
+									"value": "147"
+								},
+								{
+									"label": "Participant 3",
+									"value": "143"
+								},
+								{
+									"label": "Participant 4",
+									"value": "145"
+								}
+							]
+						},
+						"items": [
+							{
+								"id": "3",
+								"label": "Activity",
+								"phase": "active"
+							}
+						],
+						"total": 1,
+						"nextCursor": null
+					},
+					"turnSession": {
+						"id": "3",
+						"label": "Activity",
+						"phase": "active",
+						"description": null,
+						"terminal": false,
+						"worldTimed": false,
+						"turnRule": "Sequential",
+						"observedWorldTick": "26037",
+						"progress": null,
+						"fields": [
+							{
+								"label": "Phase",
+								"value": "active"
+							},
+							{
+								"label": "Session",
+								"value": "3"
+							},
+							{
+								"label": "Definition",
+								"value": "elven_mini/adventure/session/crypt-fight"
+							},
+							{
+								"label": "Turn rule",
+								"value": "Sequential"
+							},
+							{
+								"label": "Round duration (milliseconds)",
+								"value": "6000"
+							},
+							{
+								"label": "Opened by",
+								"value": "Rurik"
+							},
+							{
+								"label": "Current participant",
+								"value": "Rurik"
+							},
+							{
+								"label": "Originating action",
+								"value": "Unknown"
+							},
+							{
+								"label": "Current participant is you",
+								"value": "Yes"
+							},
+							{
+								"label": "Originating target",
+								"value": "Unknown"
+							},
+							{
+								"label": "Observed world tick",
+								"value": "26037"
+							},
+							{
+								"label": "Last world tick timestamp (Unix microseconds)",
+								"value": "1789557198014217"
+							},
+							{
+								"label": "Opened at world tick",
+								"value": "16291"
+							},
+							{
+								"label": "Last advanced at world tick",
+								"value": "16293"
+							},
+							{
+								"label": "Duration (world ticks)",
+								"value": "Unknown"
+							},
+							{
+								"label": "Estimated completion world tick",
+								"value": "Unknown"
+							},
+							{
+								"label": "Estimated remaining world ticks",
+								"value": "Unknown"
+							},
+							{
+								"label": "Participant 1",
+								"value": "Rurik"
+							},
+							{
+								"label": "Participant 2",
+								"value": "147"
+							},
+							{
+								"label": "Participant 3",
+								"value": "143"
+							},
+							{
+								"label": "Participant 4",
+								"value": "145"
+							}
+						]
+					},
+					"reaction": null,
+					"pack": [
+						{
+							"id": "i:4097",
+							"name": "Greataxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": "Main Hand",
+							"handle": "i:4097",
+							"rev": "1x9riku"
+						},
+						{
+							"id": "i:4098",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4098",
+							"rev": "4fsv5g"
+						},
+						{
+							"id": "i:4099",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4099",
+							"rev": "1j5rza0"
+						},
+						{
+							"id": "i:4100",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4100",
+							"rev": "1jl5iy8"
+						},
+						{
+							"id": "i:4101",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4101",
+							"rev": "1ynrj8w"
+						},
+						{
+							"id": "i:4102",
+							"name": "Explorer's Pack",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4102",
+							"rev": "wcduxl"
+						},
+						{
+							"id": "i:4104",
+							"name": "Backpack",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4104",
+							"rev": "swnz7f"
+						},
+						{
+							"id": "i:4105",
+							"name": "Bedroll",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4105",
+							"rev": "4h4lk9"
+						},
+						{
+							"id": "i:4106",
+							"name": "Oil",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4106",
+							"rev": "1pnnehx"
+						},
+						{
+							"id": "i:4107",
+							"name": "Oil",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4107",
+							"rev": "1cn5inh"
+						},
+						{
+							"id": "i:4108",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4108",
+							"rev": "c94ggx"
+						},
+						{
+							"id": "i:4109",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4109",
+							"rev": "chbm1x"
+						},
+						{
+							"id": "i:4110",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4110",
+							"rev": "6wp0vd"
+						},
+						{
+							"id": "i:4111",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4111",
+							"rev": "gf6g41"
+						},
+						{
+							"id": "i:4112",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4112",
+							"rev": "ebx4hx"
+						},
+						{
+							"id": "i:4113",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4113",
+							"rev": "onat3p"
+						},
+						{
+							"id": "i:4114",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4114",
+							"rev": "5nk5up"
+						},
+						{
+							"id": "i:4115",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4115",
+							"rev": "17eezt"
+						},
+						{
+							"id": "i:4116",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4116",
+							"rev": "dv6i45"
+						},
+						{
+							"id": "i:4117",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4117",
+							"rev": "c7vzid"
+						},
+						{
+							"id": "i:4118",
+							"name": "Rope",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4118",
+							"rev": "1t4hzix"
+						},
+						{
+							"id": "i:4119",
+							"name": "Tinderbox",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4119",
+							"rev": "1ksmfgf"
+						},
+						{
+							"id": "i:4120",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4120",
+							"rev": "f2y54d"
+						},
+						{
+							"id": "i:4121",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4121",
+							"rev": "uparr1"
+						},
+						{
+							"id": "i:4122",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4122",
+							"rev": "16aa24d"
+						},
+						{
+							"id": "i:4123",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4123",
+							"rev": "1i50htx"
+						},
+						{
+							"id": "i:4124",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4124",
+							"rev": "10afsnp"
+						},
+						{
+							"id": "i:4125",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4125",
+							"rev": "13ihbud"
+						},
+						{
+							"id": "i:4126",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4126",
+							"rev": "ft6hdx"
+						},
+						{
+							"id": "i:4127",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4127",
+							"rev": "1qhysi5"
+						},
+						{
+							"id": "i:4128",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4128",
+							"rev": "1dawhhp"
+						},
+						{
+							"id": "i:4129",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4129",
+							"rev": "1no078d"
+						},
+						{
+							"id": "i:4130",
+							"name": "Waterskin",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4130",
+							"rev": "1jbrcvl"
+						},
+						{
+							"id": "i:4103",
+							"name": "Gold Piece",
+							"detail": "Item",
+							"quantity": 15,
+							"equipped": null,
+							"handle": "i:4103",
+							"rev": "wifdi7"
+						}
+					],
+					"itemDetail": null,
+					"occupantDetail": null,
+					"placeState": "ready",
+					"speech": [],
+					"events": [],
+					"mapSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"754\" height=\"760\" viewBox=\"0 0 754 760\" role=\"img\" aria-label=\"elven_mini/inn — elevation_band z=0±0.5\">\n<style>\nsvg{font-family:Inter,system-ui,Arial,sans-serif}\n.h3-cell{fill:#c9d8cf;fill-opacity:.32;stroke:#536758;stroke-width:1.4;stroke-opacity:.9}\n.h3-cell--root{fill:#9bb8a8;fill-opacity:.45}\n.h3-cell--settlement{fill:#d4b896;fill-opacity:.5}\n.h3-cell--wilderness{fill:#b7c9b0;fill-opacity:.38}\n.h3-cell--default{fill:#c9d8cf;fill-opacity:.28}\n.place-portal{fill:#8b4513;stroke:#fff;stroke-width:2}\n.portal-tag{fill:#6b3a12;font-size:9px;font-weight:600;text-anchor:middle}\n.label-portal{font-weight:700}\n.route{stroke:#b97012;stroke-width:3;stroke-linecap:round;opacity:.9}\n.route-stairs{stroke:#6b4f9a;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:7 5;opacity:.95}\n.place{fill:#148284;stroke:#fff;stroke-width:2.2}\n.place-extent{fill:#148284;fill-opacity:.18;stroke:#0f5f61;stroke-width:1.5}\n.grid-cell{fill:#148284;fill-opacity:.06;stroke:#0f5f61;stroke-opacity:.55;stroke-width:1}\n.actor{fill:#245ebe;stroke:#fff;stroke-width:2}\n.label{fill:#1d2428;font-size:12px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}\n.actor-label{fill:#fff;font-size:9px;font-weight:800;text-anchor:middle}\n.chrome-label{fill:#3a454b;font-size:11px;font-weight:600;text-anchor:start}\n.scale-bar{stroke:#3a454b;stroke-width:2;stroke-linecap:square}\n.scale-bar-label{fill:#3a454b;font-size:11px;font-weight:700;text-anchor:middle}\n.floor-box{fill:#e7efed;stroke:#7a9690;stroke-width:1.5;opacity:.95}\n.floor-label{fill:#1d3a36;font-size:13px;font-weight:800;text-anchor:start}\n.stairs-label{fill:#6b4f9a;font-size:11px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:3px}\n.title-main{fill:#14201e;font-size:15px;font-weight:800;text-anchor:start}\n.title-sub{fill:#4a5a56;font-size:12px;font-weight:600;text-anchor:start}\n.title-rule{stroke:#c5d0cc;stroke-width:1}\n</style>\n<rect width=\"100%\" height=\"100%\" fill=\"#f4f7f6\" />\n<g class=\"title-bar\">\n<text class=\"title-main\" x=\"16\" y=\"22\">Inn</text>\n<text class=\"title-sub\" x=\"16\" y=\"38\">Ground floor only · indoor</text>\n<line class=\"title-rule\" x1=\"12\" y1=\"34\" x2=\"742\" y2=\"34\" />\n</g>\n\n\n\n<line data-from=\"elven_mini/inn/bar\" data-to=\"elven_mini/inn/common_room\" x1=\"543.84\" y1=\"203.24\" x2=\"305.51\" y2=\"282.68\" class=\"route\" />\n<line data-from=\"elven_mini/inn/common_room\" data-to=\"elven_mini/inn/stairs\" x1=\"305.51\" y1=\"282.68\" x2=\"464.39\" y2=\"521.01\" class=\"route\" />\n<g data-node-id=\"elven_mini/inn/bar\"><ellipse cx=\"543.84\" cy=\"203.24\" rx=\"158.89\" ry=\"111.24\" class=\"place-extent\" /><circle cx=\"543.84\" cy=\"203.24\" r=\"7\" class=\"place\" /><text x=\"543.84\" y=\"223.24\" class=\"label\">Bar</text></g>\n<g data-node-id=\"elven_mini/inn/stairs\"><ellipse cx=\"464.39\" cy=\"521.01\" rx=\"119.16\" ry=\"142.99\" class=\"place-extent\" /><circle cx=\"464.39\" cy=\"521.01\" r=\"7\" class=\"place\" /><text x=\"464.39\" y=\"541.01\" class=\"label\">Stairs</text></g>\n<g data-node-id=\"elven_mini/inn/common_room\"><ellipse cx=\"305.51\" cy=\"282.68\" rx=\"254.23\" ry=\"190.68\" class=\"place-extent\" /><circle cx=\"305.51\" cy=\"282.68\" r=\"7\" class=\"place\" /><text x=\"305.51\" y=\"302.68\" class=\"label\">Common Room</text></g>\n<g class=\"map-chrome\" data-chrome=\"legend\" transform=\"translate(0 720)\">\n<line x1=\"12\" y1=\"0.5\" x2=\"742\" y2=\"0.5\" stroke=\"#c5d0cc\" stroke-width=\"1\" />\n<g class=\"symbol-legend\" transform=\"translate(12 0)\">\n<circle cx=\"6\" cy=\"14\" r=\"6\" class=\"place\" />\n<text class=\"chrome-label\" x=\"18\" y=\"18\">place</text>\n<line class=\"route\" x1=\"62\" y1=\"14\" x2=\"86\" y2=\"14\" />\n<text class=\"chrome-label\" x=\"92\" y=\"18\">route</text>\n<circle cx=\"148\" cy=\"14\" r=\"9\" class=\"actor\" />\n<text class=\"actor-label\" x=\"148\" y=\"17.5\">n</text>\n<text class=\"chrome-label\" x=\"164\" y=\"18\">occupants</text>\n</g></g>\n</svg>\n",
+					"mapState": "ready",
+					"economy": []
+				},
+				"presentation": {
+					"layout": {
+						"colShare": [0.7, 0.5, 0],
+						"rowShare": {
+							"table": 0.5,
+							"map": 0.7,
+							"place": 0,
+							"hero": 0,
+							"pack": 0,
+							"chronicle": 0
+						}
+					},
+					"mobile": false
+				}
+			}
+		},
+		{
+			"id": "legacy_frame_1xau590y698zi",
+			"sequence": 56,
+			"capturedAt": 1789557222672,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "1",
+						"name": "Rurik",
+						"vitals": [
+							{
+								"id": "srd/hp",
+								"label": "Hit Points",
+								"value": "14",
+								"description": "Hit Points represent durability and the will to live. Your Hit Point maximum is the number you have when uninjured; current Hit Points can be any number from that maximum down to 0."
+							},
+							{
+								"id": "srd/ac",
+								"label": "Armor Class",
+								"value": "11",
+								"description": "Armor Class is the target fact read by attacks through `target.effective('srd/ac')`. Its unarmored value is computed at generation time per entity as 10 + Dexterity modifier; every legal attack target must carry an explicit seed because unseeded fact reads fail closed."
+							},
+							{
+								"id": "srd/level",
+								"label": "Character Level",
+								"value": "1",
+								"description": "Your character's level, from 1 to 20. Gaining a level increases your capabilities."
+							}
+						],
+						"quest": [],
+						"conditionDetails": [],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 15,
+								"modifier": 2,
+								"description": "Physical might"
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 13,
+								"modifier": 1,
+								"description": "Agility, reflexes, and balance"
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2,
+								"description": "Health and stamina"
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0,
+								"description": "Reasoning and memory"
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 12,
+								"modifier": 1,
+								"description": "Perceptiveness and mental fortitude"
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 8,
+								"modifier": -1,
+								"description": "Confidence, poise, and charm"
+							}
+						],
+						"skills": [
+							{
+								"id": "srd/skill/athletics",
+								"label": "Athletics"
+							},
+							{
+								"id": "srd/skill/intimidation",
+								"label": "Intimidation"
+							},
+							{
+								"id": "srd/skill/perception",
+								"label": "Perception"
+							}
+						],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "",
+						"backstory": "",
+						"placeId": "session_grid_3/c_0_0",
+						"descriptionReads": {
+							"values": "ready",
+							"identity": "ready",
+							"conditions": "ready"
+						},
+						"suppliedFields": {
+							"vitals": 6,
+							"quest": 0,
+							"conditions": 0
+						},
+						"species": "Human",
+						"className": "Barbarian",
+						"background": "Soldier",
+						"identityDetails": [
+							{
+								"id": "srd.background.soldier",
+								"label": "Soldier",
+								"description": "Soldier background. Skill proficiencies: Athletics and Intimidation. Origin feat: Savage Attacker."
+							},
+							{
+								"id": "srd.class.barbarian",
+								"label": "Barbarian",
+								"description": "Barbarian class. Primary ability: Strength. Hit Point Die: d12."
+							},
+							{
+								"id": "srd.species.human",
+								"label": "Human",
+								"description": "Human species. Size: Medium or Small. Speed: 30 feet."
+							}
+						],
+						"hp": 14,
+						"ac": 11,
+						"level": 1,
+						"proficiency": 2,
+						"proficiencyDescription": "Your Proficiency Bonus reflects your training. It applies to D20 Tests when you have proficiency in the skill, saving throw, or item used, and to spell attacks and spell save DCs."
+					},
+					"place": {
+						"id": "session_grid_3/c_0_0",
+						"name": "Cell 0,0",
+						"description": "",
+						"exits": [
+							{
+								"handle": "s:exit:4097",
+								"rev": "8icvn9",
+								"label": "east",
+								"to": "c_1_0",
+								"toNodeId": "session_grid_3/c_1_0",
+								"toName": "Cell 1,0",
+								"gates": ["srd/affordance/grid-step"]
+							},
+							{
+								"handle": "s:exit:4098",
+								"rev": "1m7n6kp",
+								"label": "north",
+								"to": "c_0_1",
+								"toNodeId": "session_grid_3/c_0_1",
+								"toName": "Cell 0,1",
+								"gates": ["srd/affordance/grid-step"]
+							},
+							{
+								"handle": "s:exit:4099",
+								"rev": "snokuz",
+								"label": "northeast",
+								"to": "c_1_1",
+								"toNodeId": "session_grid_3/c_1_1",
+								"toName": "Cell 1,1",
+								"gates": ["srd/affordance/grid-step"]
+							}
+						]
+					},
+					"occupants": [],
+					"actions": [
+						{
+							"id": "h:0r6n5",
+							"label": "Melee Attack — Cellar Rat 2",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee",
+							"targetName": "Cellar Rat 2",
+							"targetRef": "entity:143",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:17fk9",
+							"label": "Melee Attack — Cellar Rat Swarm",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee",
+							"targetName": "Cellar Rat Swarm",
+							"targetRef": "entity:147",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:0g3wq",
+							"label": "Opportunity Attack — Cellar Rat 2",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/opportunity-attack",
+							"targetName": "Cellar Rat 2",
+							"targetRef": "entity:143",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:1hgl5",
+							"label": "Opportunity Attack — Cellar Rat Swarm",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/opportunity-attack",
+							"targetName": "Cellar Rat Swarm",
+							"targetRef": "entity:147",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:14uty",
+							"label": "Unarmed Strike: Damage — Cellar Rat 2",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/unarmed-strike/damage",
+							"targetName": "Cellar Rat 2",
+							"targetRef": "entity:143",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:0mq6s",
+							"label": "Unarmed Strike: Damage — Cellar Rat Swarm",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/unarmed-strike/damage",
+							"targetName": "Cellar Rat Swarm",
+							"targetRef": "entity:147",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:1118t",
+							"label": "Enter Rage — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/barbarian/rage",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0ujt0",
+							"label": "Dodge — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/dodge",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1i34e",
+							"label": "Drink Potion of Giant Strength — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-giant-strength/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:083p7",
+							"label": "Drink Potion of Healing (greater) — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing-greater/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:09g0w",
+							"label": "Drink Potion of Healing (superior) — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing-superior/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0g0kc",
+							"label": "Drink Potion of Healing (supreme) — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing-supreme/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0t9ep",
+							"label": "Drink Potion of Healing — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1gecu",
+							"label": "Drop Prone — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/movement/drop-prone",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0h1pw",
+							"label": "Complete a Long Rest — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/rest/long/complete",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1s0qe",
+							"label": "Complete a Short Rest — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/rest/short/complete",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1sf4l",
+							"label": "Speak Aloud — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/speak-aloud",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0idjn",
+							"label": "Swing (no target) — Cell 0,0",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee/swing",
+							"targetName": "Cell 0,0",
+							"targetRef": "place_node:session_grid_3/c_0_0",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:06zwe",
+							"label": "Heroic Inspiration Reroll — Cell 0,0",
+							"verb": "manipulate",
+							"descriptor": "srd/heroic_inspiration/reroll",
+							"targetName": "Cell 0,0",
+							"targetRef": "place_node:session_grid_3/c_0_0",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:06d83",
+							"label": "Look around — world",
+							"verb": "sensing",
+							"descriptor": "look",
+							"targetName": "world",
+							"targetRef": "world",
+							"acceptsUtterance": false
+						}
+					],
+					"actionCount": 20,
+					"session": {
+						"inSession": true,
+						"id": "3",
+						"myTurn": true,
+						"lifecycle": "active",
+						"currentActor": "1",
+						"currentActorName": "Rurik",
+						"roster": [
+							{
+								"actorId": "1",
+								"name": "Rurik",
+								"ordinal": 0,
+								"isMe": true,
+								"isCurrent": true
+							},
+							{
+								"actorId": "147",
+								"name": "147",
+								"ordinal": 1,
+								"isMe": false,
+								"isCurrent": false
+							},
+							{
+								"actorId": "143",
+								"name": "143",
+								"ordinal": 2,
+								"isMe": false,
+								"isCurrent": false
+							},
+							{
+								"actorId": "145",
+								"name": "145",
+								"ordinal": 3,
+								"isMe": false,
+								"isCurrent": false
+							}
+						]
+					},
+					"operations": {
+						"state": "ready",
+						"selected": {
+							"id": "3",
+							"label": "Activity",
+							"phase": "active",
+							"description": null,
+							"terminal": false,
+							"worldTimed": false,
+							"turnRule": "Sequential",
+							"observedWorldTick": "26049",
+							"progress": null,
+							"fields": [
+								{
+									"label": "Phase",
+									"value": "active"
+								},
+								{
+									"label": "Session",
+									"value": "3"
+								},
+								{
+									"label": "Definition",
+									"value": "elven_mini/adventure/session/crypt-fight"
+								},
+								{
+									"label": "Turn rule",
+									"value": "Sequential"
+								},
+								{
+									"label": "Round duration (milliseconds)",
+									"value": "6000"
+								},
+								{
+									"label": "Opened by",
+									"value": "Rurik"
+								},
+								{
+									"label": "Current participant",
+									"value": "Rurik"
+								},
+								{
+									"label": "Originating action",
+									"value": "Unknown"
+								},
+								{
+									"label": "Current participant is you",
+									"value": "Yes"
+								},
+								{
+									"label": "Originating target",
+									"value": "Unknown"
+								},
+								{
+									"label": "Observed world tick",
+									"value": "26049"
+								},
+								{
+									"label": "Last world tick timestamp (Unix microseconds)",
+									"value": "1789557222013016"
+								},
+								{
+									"label": "Opened at world tick",
+									"value": "16291"
+								},
+								{
+									"label": "Last advanced at world tick",
+									"value": "16293"
+								},
+								{
+									"label": "Duration (world ticks)",
+									"value": "Unknown"
+								},
+								{
+									"label": "Estimated completion world tick",
+									"value": "Unknown"
+								},
+								{
+									"label": "Estimated remaining world ticks",
+									"value": "Unknown"
+								},
+								{
+									"label": "Participant 1",
+									"value": "Rurik"
+								},
+								{
+									"label": "Participant 2",
+									"value": "147"
+								},
+								{
+									"label": "Participant 3",
+									"value": "143"
+								},
+								{
+									"label": "Participant 4",
+									"value": "145"
+								}
+							]
+						},
+						"items": [
+							{
+								"id": "3",
+								"label": "Activity",
+								"phase": "active"
+							}
+						],
+						"total": 1,
+						"nextCursor": null
+					},
+					"turnSession": {
+						"id": "3",
+						"label": "Activity",
+						"phase": "active",
+						"description": null,
+						"terminal": false,
+						"worldTimed": false,
+						"turnRule": "Sequential",
+						"observedWorldTick": "26049",
+						"progress": null,
+						"fields": [
+							{
+								"label": "Phase",
+								"value": "active"
+							},
+							{
+								"label": "Session",
+								"value": "3"
+							},
+							{
+								"label": "Definition",
+								"value": "elven_mini/adventure/session/crypt-fight"
+							},
+							{
+								"label": "Turn rule",
+								"value": "Sequential"
+							},
+							{
+								"label": "Round duration (milliseconds)",
+								"value": "6000"
+							},
+							{
+								"label": "Opened by",
+								"value": "Rurik"
+							},
+							{
+								"label": "Current participant",
+								"value": "Rurik"
+							},
+							{
+								"label": "Originating action",
+								"value": "Unknown"
+							},
+							{
+								"label": "Current participant is you",
+								"value": "Yes"
+							},
+							{
+								"label": "Originating target",
+								"value": "Unknown"
+							},
+							{
+								"label": "Observed world tick",
+								"value": "26049"
+							},
+							{
+								"label": "Last world tick timestamp (Unix microseconds)",
+								"value": "1789557222013016"
+							},
+							{
+								"label": "Opened at world tick",
+								"value": "16291"
+							},
+							{
+								"label": "Last advanced at world tick",
+								"value": "16293"
+							},
+							{
+								"label": "Duration (world ticks)",
+								"value": "Unknown"
+							},
+							{
+								"label": "Estimated completion world tick",
+								"value": "Unknown"
+							},
+							{
+								"label": "Estimated remaining world ticks",
+								"value": "Unknown"
+							},
+							{
+								"label": "Participant 1",
+								"value": "Rurik"
+							},
+							{
+								"label": "Participant 2",
+								"value": "147"
+							},
+							{
+								"label": "Participant 3",
+								"value": "143"
+							},
+							{
+								"label": "Participant 4",
+								"value": "145"
+							}
+						]
+					},
+					"reaction": null,
+					"pack": [
+						{
+							"id": "i:4097",
+							"name": "Greataxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": "Main Hand",
+							"handle": "i:4097",
+							"rev": "1x9riku"
+						},
+						{
+							"id": "i:4098",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4098",
+							"rev": "4fsv5g"
+						},
+						{
+							"id": "i:4099",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4099",
+							"rev": "1j5rza0"
+						},
+						{
+							"id": "i:4100",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4100",
+							"rev": "1jl5iy8"
+						},
+						{
+							"id": "i:4101",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4101",
+							"rev": "1ynrj8w"
+						},
+						{
+							"id": "i:4102",
+							"name": "Explorer's Pack",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4102",
+							"rev": "wcduxl"
+						},
+						{
+							"id": "i:4104",
+							"name": "Backpack",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4104",
+							"rev": "swnz7f"
+						},
+						{
+							"id": "i:4105",
+							"name": "Bedroll",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4105",
+							"rev": "4h4lk9"
+						},
+						{
+							"id": "i:4106",
+							"name": "Oil",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4106",
+							"rev": "1pnnehx"
+						},
+						{
+							"id": "i:4107",
+							"name": "Oil",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4107",
+							"rev": "1cn5inh"
+						},
+						{
+							"id": "i:4108",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4108",
+							"rev": "c94ggx"
+						},
+						{
+							"id": "i:4109",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4109",
+							"rev": "chbm1x"
+						},
+						{
+							"id": "i:4110",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4110",
+							"rev": "6wp0vd"
+						},
+						{
+							"id": "i:4111",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4111",
+							"rev": "gf6g41"
+						},
+						{
+							"id": "i:4112",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4112",
+							"rev": "ebx4hx"
+						},
+						{
+							"id": "i:4113",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4113",
+							"rev": "onat3p"
+						},
+						{
+							"id": "i:4114",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4114",
+							"rev": "5nk5up"
+						},
+						{
+							"id": "i:4115",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4115",
+							"rev": "17eezt"
+						},
+						{
+							"id": "i:4116",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4116",
+							"rev": "dv6i45"
+						},
+						{
+							"id": "i:4117",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4117",
+							"rev": "c7vzid"
+						},
+						{
+							"id": "i:4118",
+							"name": "Rope",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4118",
+							"rev": "1t4hzix"
+						},
+						{
+							"id": "i:4119",
+							"name": "Tinderbox",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4119",
+							"rev": "1ksmfgf"
+						},
+						{
+							"id": "i:4120",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4120",
+							"rev": "f2y54d"
+						},
+						{
+							"id": "i:4121",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4121",
+							"rev": "uparr1"
+						},
+						{
+							"id": "i:4122",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4122",
+							"rev": "16aa24d"
+						},
+						{
+							"id": "i:4123",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4123",
+							"rev": "1i50htx"
+						},
+						{
+							"id": "i:4124",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4124",
+							"rev": "10afsnp"
+						},
+						{
+							"id": "i:4125",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4125",
+							"rev": "13ihbud"
+						},
+						{
+							"id": "i:4126",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4126",
+							"rev": "ft6hdx"
+						},
+						{
+							"id": "i:4127",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4127",
+							"rev": "1qhysi5"
+						},
+						{
+							"id": "i:4128",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4128",
+							"rev": "1dawhhp"
+						},
+						{
+							"id": "i:4129",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4129",
+							"rev": "1no078d"
+						},
+						{
+							"id": "i:4130",
+							"name": "Waterskin",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4130",
+							"rev": "1jbrcvl"
+						},
+						{
+							"id": "i:4103",
+							"name": "Gold Piece",
+							"detail": "Item",
+							"quantity": 15,
+							"equipped": null,
+							"handle": "i:4103",
+							"rev": "wifdi7"
+						}
+					],
+					"itemDetail": null,
+					"occupantDetail": null,
+					"placeState": "ready",
+					"speech": [],
+					"events": [],
+					"mapSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"754\" height=\"760\" viewBox=\"0 0 754 760\" role=\"img\" aria-label=\"elven_mini/inn — elevation_band z=0±0.5\">\n<style>\nsvg{font-family:Inter,system-ui,Arial,sans-serif}\n.h3-cell{fill:#c9d8cf;fill-opacity:.32;stroke:#536758;stroke-width:1.4;stroke-opacity:.9}\n.h3-cell--root{fill:#9bb8a8;fill-opacity:.45}\n.h3-cell--settlement{fill:#d4b896;fill-opacity:.5}\n.h3-cell--wilderness{fill:#b7c9b0;fill-opacity:.38}\n.h3-cell--default{fill:#c9d8cf;fill-opacity:.28}\n.place-portal{fill:#8b4513;stroke:#fff;stroke-width:2}\n.portal-tag{fill:#6b3a12;font-size:9px;font-weight:600;text-anchor:middle}\n.label-portal{font-weight:700}\n.route{stroke:#b97012;stroke-width:3;stroke-linecap:round;opacity:.9}\n.route-stairs{stroke:#6b4f9a;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:7 5;opacity:.95}\n.place{fill:#148284;stroke:#fff;stroke-width:2.2}\n.place-extent{fill:#148284;fill-opacity:.18;stroke:#0f5f61;stroke-width:1.5}\n.grid-cell{fill:#148284;fill-opacity:.06;stroke:#0f5f61;stroke-opacity:.55;stroke-width:1}\n.actor{fill:#245ebe;stroke:#fff;stroke-width:2}\n.label{fill:#1d2428;font-size:12px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}\n.actor-label{fill:#fff;font-size:9px;font-weight:800;text-anchor:middle}\n.chrome-label{fill:#3a454b;font-size:11px;font-weight:600;text-anchor:start}\n.scale-bar{stroke:#3a454b;stroke-width:2;stroke-linecap:square}\n.scale-bar-label{fill:#3a454b;font-size:11px;font-weight:700;text-anchor:middle}\n.floor-box{fill:#e7efed;stroke:#7a9690;stroke-width:1.5;opacity:.95}\n.floor-label{fill:#1d3a36;font-size:13px;font-weight:800;text-anchor:start}\n.stairs-label{fill:#6b4f9a;font-size:11px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:3px}\n.title-main{fill:#14201e;font-size:15px;font-weight:800;text-anchor:start}\n.title-sub{fill:#4a5a56;font-size:12px;font-weight:600;text-anchor:start}\n.title-rule{stroke:#c5d0cc;stroke-width:1}\n</style>\n<rect width=\"100%\" height=\"100%\" fill=\"#f4f7f6\" />\n<g class=\"title-bar\">\n<text class=\"title-main\" x=\"16\" y=\"22\">Inn</text>\n<text class=\"title-sub\" x=\"16\" y=\"38\">Ground floor only · indoor</text>\n<line class=\"title-rule\" x1=\"12\" y1=\"34\" x2=\"742\" y2=\"34\" />\n</g>\n\n\n\n<line data-from=\"elven_mini/inn/bar\" data-to=\"elven_mini/inn/common_room\" x1=\"543.84\" y1=\"203.24\" x2=\"305.51\" y2=\"282.68\" class=\"route\" />\n<line data-from=\"elven_mini/inn/common_room\" data-to=\"elven_mini/inn/stairs\" x1=\"305.51\" y1=\"282.68\" x2=\"464.39\" y2=\"521.01\" class=\"route\" />\n<g data-node-id=\"elven_mini/inn/bar\"><ellipse cx=\"543.84\" cy=\"203.24\" rx=\"158.89\" ry=\"111.24\" class=\"place-extent\" /><circle cx=\"543.84\" cy=\"203.24\" r=\"7\" class=\"place\" /><text x=\"543.84\" y=\"223.24\" class=\"label\">Bar</text></g>\n<g data-node-id=\"elven_mini/inn/stairs\"><ellipse cx=\"464.39\" cy=\"521.01\" rx=\"119.16\" ry=\"142.99\" class=\"place-extent\" /><circle cx=\"464.39\" cy=\"521.01\" r=\"7\" class=\"place\" /><text x=\"464.39\" y=\"541.01\" class=\"label\">Stairs</text></g>\n<g data-node-id=\"elven_mini/inn/common_room\"><ellipse cx=\"305.51\" cy=\"282.68\" rx=\"254.23\" ry=\"190.68\" class=\"place-extent\" /><circle cx=\"305.51\" cy=\"282.68\" r=\"7\" class=\"place\" /><text x=\"305.51\" y=\"302.68\" class=\"label\">Common Room</text></g>\n<g class=\"map-chrome\" data-chrome=\"legend\" transform=\"translate(0 720)\">\n<line x1=\"12\" y1=\"0.5\" x2=\"742\" y2=\"0.5\" stroke=\"#c5d0cc\" stroke-width=\"1\" />\n<g class=\"symbol-legend\" transform=\"translate(12 0)\">\n<circle cx=\"6\" cy=\"14\" r=\"6\" class=\"place\" />\n<text class=\"chrome-label\" x=\"18\" y=\"18\">place</text>\n<line class=\"route\" x1=\"62\" y1=\"14\" x2=\"86\" y2=\"14\" />\n<text class=\"chrome-label\" x=\"92\" y=\"18\">route</text>\n<circle cx=\"148\" cy=\"14\" r=\"9\" class=\"actor\" />\n<text class=\"actor-label\" x=\"148\" y=\"17.5\">n</text>\n<text class=\"chrome-label\" x=\"164\" y=\"18\">occupants</text>\n</g></g>\n</svg>\n",
+					"mapState": "ready",
+					"economy": []
+				},
+				"presentation": {
+					"layout": {
+						"colShare": [0.7, 0.5, 0],
+						"rowShare": {
+							"table": 0.5,
+							"map": 0.7,
+							"place": 0,
+							"hero": 0,
+							"pack": 0,
+							"chronicle": 0
+						}
+					},
+					"mobile": false
+				}
+			}
+		},
+		{
+			"id": "legacy_frame_ga427d1h5gc2t",
+			"sequence": 67,
+			"capturedAt": 1789557244710,
+			"payload": {
+				"view": {
+					"hero": {
+						"actorId": "1",
+						"name": "Rurik",
+						"vitals": [
+							{
+								"id": "srd/hp",
+								"label": "Hit Points",
+								"value": "14",
+								"description": "Hit Points represent durability and the will to live. Your Hit Point maximum is the number you have when uninjured; current Hit Points can be any number from that maximum down to 0."
+							},
+							{
+								"id": "srd/ac",
+								"label": "Armor Class",
+								"value": "11",
+								"description": "Armor Class is the target fact read by attacks through `target.effective('srd/ac')`. Its unarmored value is computed at generation time per entity as 10 + Dexterity modifier; every legal attack target must carry an explicit seed because unseeded fact reads fail closed."
+							},
+							{
+								"id": "srd/level",
+								"label": "Character Level",
+								"value": "1",
+								"description": "Your character's level, from 1 to 20. Gaining a level increases your capabilities."
+							}
+						],
+						"quest": [],
+						"conditionDetails": [],
+						"abilities": [
+							{
+								"id": "srd/str",
+								"label": "STR",
+								"score": 15,
+								"modifier": 2,
+								"description": "Physical might"
+							},
+							{
+								"id": "srd/dex",
+								"label": "DEX",
+								"score": 13,
+								"modifier": 1,
+								"description": "Agility, reflexes, and balance"
+							},
+							{
+								"id": "srd/con",
+								"label": "CON",
+								"score": 14,
+								"modifier": 2,
+								"description": "Health and stamina"
+							},
+							{
+								"id": "srd/int",
+								"label": "INT",
+								"score": 10,
+								"modifier": 0,
+								"description": "Reasoning and memory"
+							},
+							{
+								"id": "srd/wis",
+								"label": "WIS",
+								"score": 12,
+								"modifier": 1,
+								"description": "Perceptiveness and mental fortitude"
+							},
+							{
+								"id": "srd/cha",
+								"label": "CHA",
+								"score": 8,
+								"modifier": -1,
+								"description": "Confidence, poise, and charm"
+							}
+						],
+						"skills": [
+							{
+								"id": "srd/skill/athletics",
+								"label": "Athletics"
+							},
+							{
+								"id": "srd/skill/intimidation",
+								"label": "Intimidation"
+							},
+							{
+								"id": "srd/skill/perception",
+								"label": "Perception"
+							}
+						],
+						"masteries": [],
+						"conditions": [],
+						"appearance": "",
+						"backstory": "",
+						"placeId": "session_grid_3/c_0_0",
+						"descriptionReads": {
+							"values": "ready",
+							"identity": "ready",
+							"conditions": "ready"
+						},
+						"suppliedFields": {
+							"vitals": 6,
+							"quest": 0,
+							"conditions": 0
+						},
+						"species": "Human",
+						"className": "Barbarian",
+						"background": "Soldier",
+						"identityDetails": [
+							{
+								"id": "srd.background.soldier",
+								"label": "Soldier",
+								"description": "Soldier background. Skill proficiencies: Athletics and Intimidation. Origin feat: Savage Attacker."
+							},
+							{
+								"id": "srd.class.barbarian",
+								"label": "Barbarian",
+								"description": "Barbarian class. Primary ability: Strength. Hit Point Die: d12."
+							},
+							{
+								"id": "srd.species.human",
+								"label": "Human",
+								"description": "Human species. Size: Medium or Small. Speed: 30 feet."
+							}
+						],
+						"hp": 14,
+						"ac": 11,
+						"level": 1,
+						"proficiency": 2,
+						"proficiencyDescription": "Your Proficiency Bonus reflects your training. It applies to D20 Tests when you have proficiency in the skill, saving throw, or item used, and to spell attacks and spell save DCs."
+					},
+					"place": {
+						"id": "session_grid_3/c_0_0",
+						"name": "Cell 0,0",
+						"description": "",
+						"exits": [
+							{
+								"handle": "s:exit:4097",
+								"rev": "8icvn9",
+								"label": "east",
+								"to": "c_1_0",
+								"toNodeId": "session_grid_3/c_1_0",
+								"toName": "Cell 1,0",
+								"gates": ["srd/affordance/grid-step"]
+							},
+							{
+								"handle": "s:exit:4098",
+								"rev": "1m7n6kp",
+								"label": "north",
+								"to": "c_0_1",
+								"toNodeId": "session_grid_3/c_0_1",
+								"toName": "Cell 0,1",
+								"gates": ["srd/affordance/grid-step"]
+							},
+							{
+								"handle": "s:exit:4099",
+								"rev": "snokuz",
+								"label": "northeast",
+								"to": "c_1_1",
+								"toNodeId": "session_grid_3/c_1_1",
+								"toName": "Cell 1,1",
+								"gates": ["srd/affordance/grid-step"]
+							}
+						]
+					},
+					"occupants": [],
+					"actions": [
+						{
+							"id": "h:0r6n5",
+							"label": "Melee Attack — Cellar Rat 2",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee",
+							"targetName": "Cellar Rat 2",
+							"targetRef": "entity:143",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:17fk9",
+							"label": "Melee Attack — Cellar Rat Swarm",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee",
+							"targetName": "Cellar Rat Swarm",
+							"targetRef": "entity:147",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:0g3wq",
+							"label": "Opportunity Attack — Cellar Rat 2",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/opportunity-attack",
+							"targetName": "Cellar Rat 2",
+							"targetRef": "entity:143",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:1hgl5",
+							"label": "Opportunity Attack — Cellar Rat Swarm",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/opportunity-attack",
+							"targetName": "Cellar Rat Swarm",
+							"targetRef": "entity:147",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:14uty",
+							"label": "Unarmed Strike: Damage — Cellar Rat 2",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/unarmed-strike/damage",
+							"targetName": "Cellar Rat 2",
+							"targetRef": "entity:143",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:0mq6s",
+							"label": "Unarmed Strike: Damage — Cellar Rat Swarm",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/unarmed-strike/damage",
+							"targetName": "Cellar Rat Swarm",
+							"targetRef": "entity:147",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:1118t",
+							"label": "Enter Rage — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/barbarian/rage",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0ujt0",
+							"label": "Dodge — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/dodge",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1i34e",
+							"label": "Drink Potion of Giant Strength — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-giant-strength/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:083p7",
+							"label": "Drink Potion of Healing (greater) — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing-greater/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:09g0w",
+							"label": "Drink Potion of Healing (superior) — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing-superior/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0g0kc",
+							"label": "Drink Potion of Healing (supreme) — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing-supreme/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0t9ep",
+							"label": "Drink Potion of Healing — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/item/potion-of-healing/consume",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1gecu",
+							"label": "Drop Prone — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/movement/drop-prone",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0h1pw",
+							"label": "Complete a Long Rest — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/rest/long/complete",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1s0qe",
+							"label": "Complete a Short Rest — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/rest/short/complete",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:1sf4l",
+							"label": "Speak Aloud — Rurik",
+							"verb": "manipulate",
+							"descriptor": "srd/speak-aloud",
+							"targetName": "Rurik",
+							"targetRef": "entity:1",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:0idjn",
+							"label": "Swing (no target) — Cell 0,0",
+							"verb": "manipulate",
+							"descriptor": "srd/attack/melee/swing",
+							"targetName": "Cell 0,0",
+							"targetRef": "place_node:session_grid_3/c_0_0",
+							"acceptsUtterance": false,
+							"group": "combat",
+							"groups": ["combat"]
+						},
+						{
+							"id": "h:06zwe",
+							"label": "Heroic Inspiration Reroll — Cell 0,0",
+							"verb": "manipulate",
+							"descriptor": "srd/heroic_inspiration/reroll",
+							"targetName": "Cell 0,0",
+							"targetRef": "place_node:session_grid_3/c_0_0",
+							"acceptsUtterance": false
+						},
+						{
+							"id": "h:06d83",
+							"label": "Look around — world",
+							"verb": "sensing",
+							"descriptor": "look",
+							"targetName": "world",
+							"targetRef": "world",
+							"acceptsUtterance": false
+						}
+					],
+					"actionCount": 20,
+					"session": {
+						"inSession": true,
+						"id": "3",
+						"myTurn": true,
+						"lifecycle": "active",
+						"currentActor": "1",
+						"currentActorName": "Rurik",
+						"roster": [
+							{
+								"actorId": "1",
+								"name": "Rurik",
+								"ordinal": 0,
+								"isMe": true,
+								"isCurrent": true
+							},
+							{
+								"actorId": "147",
+								"name": "147",
+								"ordinal": 1,
+								"isMe": false,
+								"isCurrent": false
+							},
+							{
+								"actorId": "143",
+								"name": "143",
+								"ordinal": 2,
+								"isMe": false,
+								"isCurrent": false
+							},
+							{
+								"actorId": "145",
+								"name": "145",
+								"ordinal": 3,
+								"isMe": false,
+								"isCurrent": false
+							}
+						]
+					},
+					"operations": {
+						"state": "ready",
+						"selected": {
+							"id": "3",
+							"label": "Activity",
+							"phase": "active",
+							"description": null,
+							"terminal": false,
+							"worldTimed": false,
+							"turnRule": "Sequential",
+							"observedWorldTick": "26060",
+							"progress": null,
+							"fields": [
+								{
+									"label": "Phase",
+									"value": "active"
+								},
+								{
+									"label": "Session",
+									"value": "3"
+								},
+								{
+									"label": "Definition",
+									"value": "elven_mini/adventure/session/crypt-fight"
+								},
+								{
+									"label": "Turn rule",
+									"value": "Sequential"
+								},
+								{
+									"label": "Round duration (milliseconds)",
+									"value": "6000"
+								},
+								{
+									"label": "Opened by",
+									"value": "Rurik"
+								},
+								{
+									"label": "Current participant",
+									"value": "Rurik"
+								},
+								{
+									"label": "Originating action",
+									"value": "Unknown"
+								},
+								{
+									"label": "Current participant is you",
+									"value": "Yes"
+								},
+								{
+									"label": "Originating target",
+									"value": "Unknown"
+								},
+								{
+									"label": "Observed world tick",
+									"value": "26060"
+								},
+								{
+									"label": "Last world tick timestamp (Unix microseconds)",
+									"value": "1789557244013173"
+								},
+								{
+									"label": "Opened at world tick",
+									"value": "16291"
+								},
+								{
+									"label": "Last advanced at world tick",
+									"value": "16293"
+								},
+								{
+									"label": "Duration (world ticks)",
+									"value": "Unknown"
+								},
+								{
+									"label": "Estimated completion world tick",
+									"value": "Unknown"
+								},
+								{
+									"label": "Estimated remaining world ticks",
+									"value": "Unknown"
+								},
+								{
+									"label": "Participant 1",
+									"value": "Rurik"
+								},
+								{
+									"label": "Participant 2",
+									"value": "147"
+								},
+								{
+									"label": "Participant 3",
+									"value": "143"
+								},
+								{
+									"label": "Participant 4",
+									"value": "145"
+								}
+							]
+						},
+						"items": [
+							{
+								"id": "3",
+								"label": "Activity",
+								"phase": "active"
+							}
+						],
+						"total": 1,
+						"nextCursor": null
+					},
+					"turnSession": {
+						"id": "3",
+						"label": "Activity",
+						"phase": "active",
+						"description": null,
+						"terminal": false,
+						"worldTimed": false,
+						"turnRule": "Sequential",
+						"observedWorldTick": "26060",
+						"progress": null,
+						"fields": [
+							{
+								"label": "Phase",
+								"value": "active"
+							},
+							{
+								"label": "Session",
+								"value": "3"
+							},
+							{
+								"label": "Definition",
+								"value": "elven_mini/adventure/session/crypt-fight"
+							},
+							{
+								"label": "Turn rule",
+								"value": "Sequential"
+							},
+							{
+								"label": "Round duration (milliseconds)",
+								"value": "6000"
+							},
+							{
+								"label": "Opened by",
+								"value": "Rurik"
+							},
+							{
+								"label": "Current participant",
+								"value": "Rurik"
+							},
+							{
+								"label": "Originating action",
+								"value": "Unknown"
+							},
+							{
+								"label": "Current participant is you",
+								"value": "Yes"
+							},
+							{
+								"label": "Originating target",
+								"value": "Unknown"
+							},
+							{
+								"label": "Observed world tick",
+								"value": "26060"
+							},
+							{
+								"label": "Last world tick timestamp (Unix microseconds)",
+								"value": "1789557244013173"
+							},
+							{
+								"label": "Opened at world tick",
+								"value": "16291"
+							},
+							{
+								"label": "Last advanced at world tick",
+								"value": "16293"
+							},
+							{
+								"label": "Duration (world ticks)",
+								"value": "Unknown"
+							},
+							{
+								"label": "Estimated completion world tick",
+								"value": "Unknown"
+							},
+							{
+								"label": "Estimated remaining world ticks",
+								"value": "Unknown"
+							},
+							{
+								"label": "Participant 1",
+								"value": "Rurik"
+							},
+							{
+								"label": "Participant 2",
+								"value": "147"
+							},
+							{
+								"label": "Participant 3",
+								"value": "143"
+							},
+							{
+								"label": "Participant 4",
+								"value": "145"
+							}
+						]
+					},
+					"reaction": null,
+					"pack": [
+						{
+							"id": "i:4097",
+							"name": "Greataxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": "Main Hand",
+							"handle": "i:4097",
+							"rev": "1x9riku"
+						},
+						{
+							"id": "i:4098",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4098",
+							"rev": "4fsv5g"
+						},
+						{
+							"id": "i:4099",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4099",
+							"rev": "1j5rza0"
+						},
+						{
+							"id": "i:4100",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4100",
+							"rev": "1jl5iy8"
+						},
+						{
+							"id": "i:4101",
+							"name": "Handaxe",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4101",
+							"rev": "1ynrj8w"
+						},
+						{
+							"id": "i:4102",
+							"name": "Explorer's Pack",
+							"detail": "Item",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4102",
+							"rev": "wcduxl"
+						},
+						{
+							"id": "i:4104",
+							"name": "Backpack",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4104",
+							"rev": "swnz7f"
+						},
+						{
+							"id": "i:4105",
+							"name": "Bedroll",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4105",
+							"rev": "4h4lk9"
+						},
+						{
+							"id": "i:4106",
+							"name": "Oil",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4106",
+							"rev": "1pnnehx"
+						},
+						{
+							"id": "i:4107",
+							"name": "Oil",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4107",
+							"rev": "1cn5inh"
+						},
+						{
+							"id": "i:4108",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4108",
+							"rev": "c94ggx"
+						},
+						{
+							"id": "i:4109",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4109",
+							"rev": "chbm1x"
+						},
+						{
+							"id": "i:4110",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4110",
+							"rev": "6wp0vd"
+						},
+						{
+							"id": "i:4111",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4111",
+							"rev": "gf6g41"
+						},
+						{
+							"id": "i:4112",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4112",
+							"rev": "ebx4hx"
+						},
+						{
+							"id": "i:4113",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4113",
+							"rev": "onat3p"
+						},
+						{
+							"id": "i:4114",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4114",
+							"rev": "5nk5up"
+						},
+						{
+							"id": "i:4115",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4115",
+							"rev": "17eezt"
+						},
+						{
+							"id": "i:4116",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4116",
+							"rev": "dv6i45"
+						},
+						{
+							"id": "i:4117",
+							"name": "Rations",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4117",
+							"rev": "c7vzid"
+						},
+						{
+							"id": "i:4118",
+							"name": "Rope",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4118",
+							"rev": "1t4hzix"
+						},
+						{
+							"id": "i:4119",
+							"name": "Tinderbox",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4119",
+							"rev": "1ksmfgf"
+						},
+						{
+							"id": "i:4120",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4120",
+							"rev": "f2y54d"
+						},
+						{
+							"id": "i:4121",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4121",
+							"rev": "uparr1"
+						},
+						{
+							"id": "i:4122",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4122",
+							"rev": "16aa24d"
+						},
+						{
+							"id": "i:4123",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4123",
+							"rev": "1i50htx"
+						},
+						{
+							"id": "i:4124",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4124",
+							"rev": "10afsnp"
+						},
+						{
+							"id": "i:4125",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4125",
+							"rev": "13ihbud"
+						},
+						{
+							"id": "i:4126",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4126",
+							"rev": "ft6hdx"
+						},
+						{
+							"id": "i:4127",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4127",
+							"rev": "1qhysi5"
+						},
+						{
+							"id": "i:4128",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4128",
+							"rev": "1dawhhp"
+						},
+						{
+							"id": "i:4129",
+							"name": "Torch",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4129",
+							"rev": "1no078d"
+						},
+						{
+							"id": "i:4130",
+							"name": "Waterskin",
+							"detail": "Item · carried inside",
+							"quantity": 1,
+							"equipped": null,
+							"handle": "i:4130",
+							"rev": "1jbrcvl"
+						},
+						{
+							"id": "i:4103",
+							"name": "Gold Piece",
+							"detail": "Item",
+							"quantity": 15,
+							"equipped": null,
+							"handle": "i:4103",
+							"rev": "wifdi7"
+						}
+					],
+					"itemDetail": null,
+					"occupantDetail": null,
+					"placeState": "ready",
+					"speech": [],
+					"events": [],
+					"mapSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"754\" height=\"760\" viewBox=\"0 0 754 760\" role=\"img\" aria-label=\"elven_mini/inn — elevation_band z=0±0.5\">\n<style>\nsvg{font-family:Inter,system-ui,Arial,sans-serif}\n.h3-cell{fill:#c9d8cf;fill-opacity:.32;stroke:#536758;stroke-width:1.4;stroke-opacity:.9}\n.h3-cell--root{fill:#9bb8a8;fill-opacity:.45}\n.h3-cell--settlement{fill:#d4b896;fill-opacity:.5}\n.h3-cell--wilderness{fill:#b7c9b0;fill-opacity:.38}\n.h3-cell--default{fill:#c9d8cf;fill-opacity:.28}\n.place-portal{fill:#8b4513;stroke:#fff;stroke-width:2}\n.portal-tag{fill:#6b3a12;font-size:9px;font-weight:600;text-anchor:middle}\n.label-portal{font-weight:700}\n.route{stroke:#b97012;stroke-width:3;stroke-linecap:round;opacity:.9}\n.route-stairs{stroke:#6b4f9a;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:7 5;opacity:.95}\n.place{fill:#148284;stroke:#fff;stroke-width:2.2}\n.place-extent{fill:#148284;fill-opacity:.18;stroke:#0f5f61;stroke-width:1.5}\n.grid-cell{fill:#148284;fill-opacity:.06;stroke:#0f5f61;stroke-opacity:.55;stroke-width:1}\n.actor{fill:#245ebe;stroke:#fff;stroke-width:2}\n.label{fill:#1d2428;font-size:12px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}\n.actor-label{fill:#fff;font-size:9px;font-weight:800;text-anchor:middle}\n.chrome-label{fill:#3a454b;font-size:11px;font-weight:600;text-anchor:start}\n.scale-bar{stroke:#3a454b;stroke-width:2;stroke-linecap:square}\n.scale-bar-label{fill:#3a454b;font-size:11px;font-weight:700;text-anchor:middle}\n.floor-box{fill:#e7efed;stroke:#7a9690;stroke-width:1.5;opacity:.95}\n.floor-label{fill:#1d3a36;font-size:13px;font-weight:800;text-anchor:start}\n.stairs-label{fill:#6b4f9a;font-size:11px;font-weight:700;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:3px}\n.title-main{fill:#14201e;font-size:15px;font-weight:800;text-anchor:start}\n.title-sub{fill:#4a5a56;font-size:12px;font-weight:600;text-anchor:start}\n.title-rule{stroke:#c5d0cc;stroke-width:1}\n</style>\n<rect width=\"100%\" height=\"100%\" fill=\"#f4f7f6\" />\n<g class=\"title-bar\">\n<text class=\"title-main\" x=\"16\" y=\"22\">Inn</text>\n<text class=\"title-sub\" x=\"16\" y=\"38\">Ground floor only · indoor</text>\n<line class=\"title-rule\" x1=\"12\" y1=\"34\" x2=\"742\" y2=\"34\" />\n</g>\n\n\n\n<line data-from=\"elven_mini/inn/bar\" data-to=\"elven_mini/inn/common_room\" x1=\"543.84\" y1=\"203.24\" x2=\"305.51\" y2=\"282.68\" class=\"route\" />\n<line data-from=\"elven_mini/inn/common_room\" data-to=\"elven_mini/inn/stairs\" x1=\"305.51\" y1=\"282.68\" x2=\"464.39\" y2=\"521.01\" class=\"route\" />\n<g data-node-id=\"elven_mini/inn/bar\"><ellipse cx=\"543.84\" cy=\"203.24\" rx=\"158.89\" ry=\"111.24\" class=\"place-extent\" /><circle cx=\"543.84\" cy=\"203.24\" r=\"7\" class=\"place\" /><text x=\"543.84\" y=\"223.24\" class=\"label\">Bar</text></g>\n<g data-node-id=\"elven_mini/inn/stairs\"><ellipse cx=\"464.39\" cy=\"521.01\" rx=\"119.16\" ry=\"142.99\" class=\"place-extent\" /><circle cx=\"464.39\" cy=\"521.01\" r=\"7\" class=\"place\" /><text x=\"464.39\" y=\"541.01\" class=\"label\">Stairs</text></g>\n<g data-node-id=\"elven_mini/inn/common_room\"><ellipse cx=\"305.51\" cy=\"282.68\" rx=\"254.23\" ry=\"190.68\" class=\"place-extent\" /><circle cx=\"305.51\" cy=\"282.68\" r=\"7\" class=\"place\" /><text x=\"305.51\" y=\"302.68\" class=\"label\">Common Room</text></g>\n<g class=\"map-chrome\" data-chrome=\"legend\" transform=\"translate(0 720)\">\n<line x1=\"12\" y1=\"0.5\" x2=\"742\" y2=\"0.5\" stroke=\"#c5d0cc\" stroke-width=\"1\" />\n<g class=\"symbol-legend\" transform=\"translate(12 0)\">\n<circle cx=\"6\" cy=\"14\" r=\"6\" class=\"place\" />\n<text class=\"chrome-label\" x=\"18\" y=\"18\">place</text>\n<line class=\"route\" x1=\"62\" y1=\"14\" x2=\"86\" y2=\"14\" />\n<text class=\"chrome-label\" x=\"92\" y=\"18\">route</text>\n<circle cx=\"148\" cy=\"14\" r=\"9\" class=\"actor\" />\n<text class=\"actor-label\" x=\"148\" y=\"17.5\">n</text>\n<text class=\"chrome-label\" x=\"164\" y=\"18\">occupants</text>\n</g></g>\n</svg>\n",
+					"mapState": "ready",
+					"economy": []
+				},
+				"presentation": {
+					"layout": {
+						"colShare": [0.7, 0.5, 0],
+						"rowShare": {
+							"table": 0.5,
+							"map": 0.7,
+							"place": 0,
+							"hero": 0,
+							"pack": 0,
+							"chronicle": 0
+						}
+					},
+					"mobile": false
+				}
+			}
+		}
+	]
+}

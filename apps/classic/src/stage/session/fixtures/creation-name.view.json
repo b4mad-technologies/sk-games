@@ -1,0 +1,2833 @@
+{
+	"hero": {
+		"actorId": "168",
+		"name": "Creation Candidate",
+		"vitals": [
+			{
+				"id": "srd/level",
+				"label": "Character Level",
+				"value": "1"
+			}
+		],
+		"quest": [],
+		"conditionDetails": [],
+		"abilities": [
+			{
+				"id": "srd/str",
+				"label": "STR",
+				"score": 0,
+				"modifier": -5,
+				"description": "Measures your physical power for lifting, pushing, carrying, and forcing movement. You use it for attacks and tasks that rely on raw muscle."
+			},
+			{
+				"id": "srd/dex",
+				"label": "DEX",
+				"score": 0,
+				"modifier": -5,
+				"description": "Measures your agility, reflexes, and balance. You use it for quick movement, precise actions, and avoiding danger."
+			},
+			{
+				"id": "srd/con",
+				"label": "CON",
+				"score": 0,
+				"modifier": -5,
+				"description": "Measures your health and stamina. It helps determine your durability and how well you resist effects that strain your body."
+			},
+			{
+				"id": "srd/int",
+				"label": "INT",
+				"score": 0,
+				"modifier": -5,
+				"description": "Measures your reasoning, memory, and ability to understand complex information. You use it when recalling knowledge, investigating clues, or casting certain spells."
+			},
+			{
+				"id": "srd/wis",
+				"label": "WIS",
+				"score": 0,
+				"modifier": -5,
+				"description": "Your measure of awareness, intuition, and mental resilience. You use it to notice threats, read situations, and resist effects that challenge your mind."
+			},
+			{
+				"id": "srd/cha",
+				"label": "CHA",
+				"score": 0,
+				"modifier": -5,
+				"description": "Measures your force of personality, confidence, and charm. You use it when your presence, influence, or performance matters."
+			}
+		],
+		"skills": [],
+		"masteries": [],
+		"conditions": [],
+		"appearance": "",
+		"backstory": "",
+		"placeId": "elven_mini/creation_limbo/station",
+		"descriptionReads": {
+			"values": "ready",
+			"identity": "ready",
+			"conditions": "ready"
+		},
+		"suppliedFields": {
+			"vitals": 6,
+			"quest": 0,
+			"conditions": 3
+		},
+		"identityDetails": [],
+		"level": 1,
+		"drafting": true,
+		"proficiency": 2,
+		"proficiencyDescription": "A bonus from your total character level. You add it to checks, attacks, saves, and other rolls when you are proficient."
+	},
+	"place": {
+		"id": "elven_mini/creation_limbo/station",
+		"name": "Creation Limbo",
+		"description": "Aldwin waits with you as you choose your identity. When you are ready, the inn lies to the northeast.",
+		"exits": [
+			{
+				"handle": "s:exit:276",
+				"rev": "5i21lg",
+				"label": "northeast",
+				"to": "inn/common_room",
+				"toNodeId": "elven_mini/inn/common_room",
+				"toName": "Common Room",
+				"gates": ["elven_mini/affordance/dm_threshold"]
+			}
+		],
+		"elevation": 0
+	},
+	"occupants": [
+		{
+			"id": "20",
+			"handle": "s:actor:20",
+			"rev": "w3atqd",
+			"kind": "person",
+			"sceneKind": "actor",
+			"name": "World Operator",
+			"conditions": [],
+			"note": "Here with you",
+			"defId": "elven_mini/adventure/operator"
+		},
+		{
+			"art": {
+				"path": "elven-mini-art/characters/aldwin-ledger-keeper.webp",
+				"hash": "831f8c3fe93598d926b8e39ff91dd63119d624b9d2869dfe927cf7428400e0d8",
+				"license": "LicenseRef-Spellkave-Proprietary"
+			},
+			"id": "6",
+			"handle": "s:actor:6",
+			"rev": "xf4cbr",
+			"kind": "person",
+			"sceneKind": "actor",
+			"name": "Aldwin, keeper of the hearth-ledger",
+			"conditions": [],
+			"note": "Here with you",
+			"defId": "srd/creature/commoner"
+		}
+	],
+	"actions": [
+		{
+			"actionId": "dm/ask-about-advancement",
+			"id": "factored:dm/ask-about-advancement:target:168:entity:6",
+			"label": "Ask Aldwin About Advancement — Aldwin, keeper of the hearth-ledger",
+			"name": "Ask Aldwin About Advancement",
+			"verb": "communicate",
+			"descriptor": "dm/ask-about-advancement",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/back",
+			"id": "factored:dm/creation/back:target:168:entity:168",
+			"label": "Go back one question — You (Creation Candidate)",
+			"name": "Go back one question",
+			"verb": "communicate",
+			"descriptor": "dm/creation/back",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/back",
+			"id": "factored:dm/creation/back:target:168:entity:20",
+			"label": "Go back one question — World Operator",
+			"name": "Go back one question",
+			"verb": "communicate",
+			"descriptor": "dm/creation/back",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/back",
+			"id": "factored:dm/creation/back:target:168:entity:6",
+			"label": "Go back one question — Aldwin, keeper of the hearth-ledger",
+			"name": "Go back one question",
+			"verb": "communicate",
+			"descriptor": "dm/creation/back",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/back",
+			"id": "factored:dm/creation/back:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Go back one question — Creation Limbo",
+			"name": "Go back one question",
+			"verb": "communicate",
+			"descriptor": "dm/creation/back",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "place"
+		},
+		{
+			"actionId": "dm/creation/discard",
+			"id": "factored:dm/creation/discard:target:168:entity:168",
+			"label": "Discard the drafted character — You (Creation Candidate)",
+			"name": "Discard the drafted character",
+			"verb": "communicate",
+			"descriptor": "dm/creation/discard",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/discard",
+			"id": "factored:dm/creation/discard:target:168:entity:20",
+			"label": "Discard the drafted character — World Operator",
+			"name": "Discard the drafted character",
+			"verb": "communicate",
+			"descriptor": "dm/creation/discard",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/discard",
+			"id": "factored:dm/creation/discard:target:168:entity:6",
+			"label": "Discard the drafted character — Aldwin, keeper of the hearth-ledger",
+			"name": "Discard the drafted character",
+			"verb": "communicate",
+			"descriptor": "dm/creation/discard",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/discard",
+			"id": "factored:dm/creation/discard:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Discard the drafted character — Creation Limbo",
+			"name": "Discard the drafted character",
+			"verb": "communicate",
+			"descriptor": "dm/creation/discard",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "place"
+		},
+		{
+			"actionId": "dm/creation/forward",
+			"id": "factored:dm/creation/forward:target:168:entity:168",
+			"label": "Go forward one question — You (Creation Candidate)",
+			"name": "Go forward one question",
+			"verb": "communicate",
+			"descriptor": "dm/creation/forward",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/forward",
+			"id": "factored:dm/creation/forward:target:168:entity:20",
+			"label": "Go forward one question — World Operator",
+			"name": "Go forward one question",
+			"verb": "communicate",
+			"descriptor": "dm/creation/forward",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/forward",
+			"id": "factored:dm/creation/forward:target:168:entity:6",
+			"label": "Go forward one question — Aldwin, keeper of the hearth-ledger",
+			"name": "Go forward one question",
+			"verb": "communicate",
+			"descriptor": "dm/creation/forward",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/forward",
+			"id": "factored:dm/creation/forward:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Go forward one question — Creation Limbo",
+			"name": "Go forward one question",
+			"verb": "communicate",
+			"descriptor": "dm/creation/forward",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": []
+			},
+			"provider": "place"
+		},
+		{
+			"actionId": "dm/creation/input/ability-scores",
+			"id": "factored:dm/creation/input/ability-scores:target:168:entity:168",
+			"label": "Set ability scores — You (Creation Candidate)",
+			"name": "Set ability scores",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/ability-scores",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "str",
+						"label": "Strength",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "dex",
+						"label": "Dexterity",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "con",
+						"label": "Constitution",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "int",
+						"label": "Intelligence",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "wis",
+						"label": "Wisdom",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "cha",
+						"label": "Charisma",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose ability scores"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/ability-scores",
+			"id": "factored:dm/creation/input/ability-scores:target:168:entity:20",
+			"label": "Set ability scores — World Operator",
+			"name": "Set ability scores",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/ability-scores",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "str",
+						"label": "Strength",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "dex",
+						"label": "Dexterity",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "con",
+						"label": "Constitution",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "int",
+						"label": "Intelligence",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "wis",
+						"label": "Wisdom",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "cha",
+						"label": "Charisma",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose ability scores"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/ability-scores",
+			"id": "factored:dm/creation/input/ability-scores:target:168:entity:6",
+			"label": "Set ability scores — Aldwin, keeper of the hearth-ledger",
+			"name": "Set ability scores",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/ability-scores",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "str",
+						"label": "Strength",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "dex",
+						"label": "Dexterity",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "con",
+						"label": "Constitution",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "int",
+						"label": "Intelligence",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "wis",
+						"label": "Wisdom",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "cha",
+						"label": "Charisma",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose ability scores"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/ability-scores",
+			"id": "factored:dm/creation/input/ability-scores:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Set ability scores — Creation Limbo",
+			"name": "Set ability scores",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/ability-scores",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "str",
+						"label": "Strength",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "dex",
+						"label": "Dexterity",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "con",
+						"label": "Constitution",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "int",
+						"label": "Intelligence",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "wis",
+						"label": "Wisdom",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					},
+					{
+						"name": "cha",
+						"label": "Charisma",
+						"control": "number",
+						"min": 8,
+						"max": 15,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose ability scores"
+			},
+			"provider": "place"
+		},
+		{
+			"actionId": "dm/creation/input/appearance",
+			"id": "factored:dm/creation/input/appearance:target:168:entity:168",
+			"label": "Describe appearance — You (Creation Candidate)",
+			"name": "Describe appearance",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/appearance",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "appearance",
+						"label": "Appearance",
+						"control": "textarea",
+						"placeholder": "What can others see?",
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose appearance"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/appearance",
+			"id": "factored:dm/creation/input/appearance:target:168:entity:20",
+			"label": "Describe appearance — World Operator",
+			"name": "Describe appearance",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/appearance",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "appearance",
+						"label": "Appearance",
+						"control": "textarea",
+						"placeholder": "What can others see?",
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose appearance"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/appearance",
+			"id": "factored:dm/creation/input/appearance:target:168:entity:6",
+			"label": "Describe appearance — Aldwin, keeper of the hearth-ledger",
+			"name": "Describe appearance",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/appearance",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "appearance",
+						"label": "Appearance",
+						"control": "textarea",
+						"placeholder": "What can others see?",
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose appearance"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/appearance",
+			"id": "factored:dm/creation/input/appearance:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Describe appearance — Creation Limbo",
+			"name": "Describe appearance",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/appearance",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "appearance",
+						"label": "Appearance",
+						"control": "textarea",
+						"placeholder": "What can others see?",
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose appearance"
+			},
+			"provider": "place"
+		},
+		{
+			"actionId": "dm/creation/input/backstory",
+			"id": "factored:dm/creation/input/backstory:target:168:entity:168",
+			"label": "Describe backstory — You (Creation Candidate)",
+			"name": "Describe backstory",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/backstory",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "backstory",
+						"label": "Backstory",
+						"control": "textarea",
+						"placeholder": "What does the guide know?",
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose backstory"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/backstory",
+			"id": "factored:dm/creation/input/backstory:target:168:entity:20",
+			"label": "Describe backstory — World Operator",
+			"name": "Describe backstory",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/backstory",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "backstory",
+						"label": "Backstory",
+						"control": "textarea",
+						"placeholder": "What does the guide know?",
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose backstory"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/backstory",
+			"id": "factored:dm/creation/input/backstory:target:168:entity:6",
+			"label": "Describe backstory — Aldwin, keeper of the hearth-ledger",
+			"name": "Describe backstory",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/backstory",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "backstory",
+						"label": "Backstory",
+						"control": "textarea",
+						"placeholder": "What does the guide know?",
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose backstory"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/backstory",
+			"id": "factored:dm/creation/input/backstory:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Describe backstory — Creation Limbo",
+			"name": "Describe backstory",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/backstory",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "backstory",
+						"label": "Backstory",
+						"control": "textarea",
+						"placeholder": "What does the guide know?",
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose backstory"
+			},
+			"provider": "place"
+		},
+		{
+			"actionId": "dm/creation/input/name",
+			"id": "factored:dm/creation/input/name:target:168:entity:168",
+			"label": "Name your character — You (Creation Candidate)",
+			"name": "Name your character",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/name",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "name",
+						"label": "Name",
+						"control": "text",
+						"placeholder": "Your character's name",
+						"required": true,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose name"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/name",
+			"id": "factored:dm/creation/input/name:target:168:entity:20",
+			"label": "Name your character — World Operator",
+			"name": "Name your character",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/name",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "name",
+						"label": "Name",
+						"control": "text",
+						"placeholder": "Your character's name",
+						"required": true,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose name"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/name",
+			"id": "factored:dm/creation/input/name:target:168:entity:6",
+			"label": "Name your character — Aldwin, keeper of the hearth-ledger",
+			"name": "Name your character",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/name",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "name",
+						"label": "Name",
+						"control": "text",
+						"placeholder": "Your character's name",
+						"required": true,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose name"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/creation/input/name",
+			"id": "factored:dm/creation/input/name:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Name your character — Creation Limbo",
+			"name": "Name your character",
+			"verb": "communicate",
+			"descriptor": "dm/creation/input/name",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "name",
+						"label": "Name",
+						"control": "text",
+						"placeholder": "Your character's name",
+						"required": true,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Propose name"
+			},
+			"provider": "place"
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:entity:168",
+			"label": "Answer 1 — You (Creation Candidate)",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:entity:20",
+			"label": "Answer 1 — World Operator",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:entity:6",
+			"label": "Answer 1 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/1",
+			"id": "factored:dm/dialog/choice/1:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 1 — Creation Limbo",
+			"name": "Answer 1",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/1",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=1",
+			"groups": ["ui.response-slot=1"],
+			"slot": 1
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:entity:168",
+			"label": "Answer 10 — You (Creation Candidate)",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:entity:20",
+			"label": "Answer 10 — World Operator",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:entity:6",
+			"label": "Answer 10 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/10",
+			"id": "factored:dm/dialog/choice/10:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 10 — Creation Limbo",
+			"name": "Answer 10",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/10",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=10",
+			"groups": ["ui.response-slot=10"],
+			"slot": 10
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:entity:168",
+			"label": "Answer 11 — You (Creation Candidate)",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:entity:20",
+			"label": "Answer 11 — World Operator",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:entity:6",
+			"label": "Answer 11 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/11",
+			"id": "factored:dm/dialog/choice/11:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 11 — Creation Limbo",
+			"name": "Answer 11",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/11",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=11",
+			"groups": ["ui.response-slot=11"],
+			"slot": 11
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:entity:168",
+			"label": "Answer 12 — You (Creation Candidate)",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:entity:20",
+			"label": "Answer 12 — World Operator",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:entity:6",
+			"label": "Answer 12 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/12",
+			"id": "factored:dm/dialog/choice/12:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 12 — Creation Limbo",
+			"name": "Answer 12",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/12",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=12",
+			"groups": ["ui.response-slot=12"],
+			"slot": 12
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:entity:168",
+			"label": "Answer 13 — You (Creation Candidate)",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:entity:20",
+			"label": "Answer 13 — World Operator",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:entity:6",
+			"label": "Answer 13 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/13",
+			"id": "factored:dm/dialog/choice/13:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 13 — Creation Limbo",
+			"name": "Answer 13",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/13",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=13",
+			"groups": ["ui.response-slot=13"],
+			"slot": 13
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:entity:168",
+			"label": "Answer 14 — You (Creation Candidate)",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:entity:20",
+			"label": "Answer 14 — World Operator",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:entity:6",
+			"label": "Answer 14 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/14",
+			"id": "factored:dm/dialog/choice/14:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 14 — Creation Limbo",
+			"name": "Answer 14",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/14",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=14",
+			"groups": ["ui.response-slot=14"],
+			"slot": 14
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:entity:168",
+			"label": "Answer 15 — You (Creation Candidate)",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:entity:20",
+			"label": "Answer 15 — World Operator",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:entity:6",
+			"label": "Answer 15 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/15",
+			"id": "factored:dm/dialog/choice/15:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 15 — Creation Limbo",
+			"name": "Answer 15",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/15",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=15",
+			"groups": ["ui.response-slot=15"],
+			"slot": 15
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:entity:168",
+			"label": "Answer 16 — You (Creation Candidate)",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:entity:20",
+			"label": "Answer 16 — World Operator",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:entity:6",
+			"label": "Answer 16 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/16",
+			"id": "factored:dm/dialog/choice/16:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 16 — Creation Limbo",
+			"name": "Answer 16",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/16",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=16",
+			"groups": ["ui.response-slot=16"],
+			"slot": 16
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:entity:168",
+			"label": "Answer 2 — You (Creation Candidate)",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:entity:20",
+			"label": "Answer 2 — World Operator",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:entity:6",
+			"label": "Answer 2 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/2",
+			"id": "factored:dm/dialog/choice/2:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 2 — Creation Limbo",
+			"name": "Answer 2",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/2",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=2",
+			"groups": ["ui.response-slot=2"],
+			"slot": 2
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:entity:168",
+			"label": "Answer 3 — You (Creation Candidate)",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:entity:20",
+			"label": "Answer 3 — World Operator",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:entity:6",
+			"label": "Answer 3 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/3",
+			"id": "factored:dm/dialog/choice/3:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 3 — Creation Limbo",
+			"name": "Answer 3",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/3",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=3",
+			"groups": ["ui.response-slot=3"],
+			"slot": 3
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:entity:168",
+			"label": "Answer 4 — You (Creation Candidate)",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:entity:20",
+			"label": "Answer 4 — World Operator",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:entity:6",
+			"label": "Answer 4 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/4",
+			"id": "factored:dm/dialog/choice/4:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 4 — Creation Limbo",
+			"name": "Answer 4",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/4",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=4",
+			"groups": ["ui.response-slot=4"],
+			"slot": 4
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:entity:168",
+			"label": "Answer 5 — You (Creation Candidate)",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:entity:20",
+			"label": "Answer 5 — World Operator",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:entity:6",
+			"label": "Answer 5 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/5",
+			"id": "factored:dm/dialog/choice/5:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 5 — Creation Limbo",
+			"name": "Answer 5",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/5",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=5",
+			"groups": ["ui.response-slot=5"],
+			"slot": 5
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:entity:168",
+			"label": "Answer 6 — You (Creation Candidate)",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:entity:20",
+			"label": "Answer 6 — World Operator",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:entity:6",
+			"label": "Answer 6 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/6",
+			"id": "factored:dm/dialog/choice/6:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 6 — Creation Limbo",
+			"name": "Answer 6",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/6",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=6",
+			"groups": ["ui.response-slot=6"],
+			"slot": 6
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:entity:168",
+			"label": "Answer 7 — You (Creation Candidate)",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:entity:20",
+			"label": "Answer 7 — World Operator",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:entity:6",
+			"label": "Answer 7 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/7",
+			"id": "factored:dm/dialog/choice/7:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 7 — Creation Limbo",
+			"name": "Answer 7",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/7",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=7",
+			"groups": ["ui.response-slot=7"],
+			"slot": 7
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:entity:168",
+			"label": "Answer 8 — You (Creation Candidate)",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:entity:20",
+			"label": "Answer 8 — World Operator",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:entity:6",
+			"label": "Answer 8 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/8",
+			"id": "factored:dm/dialog/choice/8:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 8 — Creation Limbo",
+			"name": "Answer 8",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/8",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=8",
+			"groups": ["ui.response-slot=8"],
+			"slot": 8
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:entity:168",
+			"label": "Answer 9 — You (Creation Candidate)",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:entity:20",
+			"label": "Answer 9 — World Operator",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:entity:6",
+			"label": "Answer 9 — Aldwin, keeper of the hearth-ledger",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"provider": "entity",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/choice/9",
+			"id": "factored:dm/dialog/choice/9:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Answer 9 — Creation Limbo",
+			"name": "Answer 9",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/choice/9",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"provider": "place",
+			"group": "ui.response-slot=9",
+			"groups": ["ui.response-slot=9"],
+			"slot": 9
+		},
+		{
+			"actionId": "dm/dialog/say",
+			"id": "factored:dm/dialog/say:target:168:entity:168",
+			"label": "Say — You (Creation Candidate)",
+			"name": "Say",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/say",
+			"targetName": "You (Creation Candidate)",
+			"targetRef": "entity:168",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "text",
+						"label": "Say",
+						"control": "text",
+						"placeholder": "Say something to the guide",
+						"required": true,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Send"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/dialog/say",
+			"id": "factored:dm/dialog/say:target:168:entity:20",
+			"label": "Say — World Operator",
+			"name": "Say",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/say",
+			"targetName": "World Operator",
+			"targetRef": "entity:20",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "text",
+						"label": "Say",
+						"control": "text",
+						"placeholder": "Say something to the guide",
+						"required": true,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Send"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/dialog/say",
+			"id": "factored:dm/dialog/say:target:168:entity:6",
+			"label": "Say — Aldwin, keeper of the hearth-ledger",
+			"name": "Say",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/say",
+			"targetName": "Aldwin, keeper of the hearth-ledger",
+			"targetRef": "entity:6",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "text",
+						"label": "Say",
+						"control": "text",
+						"placeholder": "Say something to the guide",
+						"required": true,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Send"
+			},
+			"provider": "entity"
+		},
+		{
+			"actionId": "dm/dialog/say",
+			"id": "factored:dm/dialog/say:target:168:place_node:elven_mini/creation_limbo/station",
+			"label": "Say — Creation Limbo",
+			"name": "Say",
+			"verb": "communicate",
+			"descriptor": "dm/dialog/say",
+			"targetName": "Creation Limbo",
+			"targetRef": "place_node:elven_mini/creation_limbo/station",
+			"acceptsUtterance": false,
+			"input": {
+				"fields": [
+					{
+						"name": "text",
+						"label": "Say",
+						"control": "text",
+						"placeholder": "Say something to the guide",
+						"required": true,
+						"channel": "utterance"
+					}
+				],
+				"submitLabel": "Send"
+			},
+			"provider": "place"
+		}
+	],
+	"actionCount": 167,
+	"manipulationContext": {
+		"status": "ready",
+		"schemaVersion": 1,
+		"revision": 38,
+		"actions": [
+			{
+				"actionId": "dm/ask-about-advancement",
+				"displayName": "Ask Aldwin About Advancement",
+				"groups": [],
+				"templateIds": ["dm/ask-about-advancement/affordance"],
+				"communicationSpeechActId": "dm/ask-about-advancement",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/aldwin",
+						"requires_spatial_attachment": true,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/creation/back",
+				"displayName": "Go back one question",
+				"groups": [],
+				"templateIds": ["dm/creation/back/affordance"],
+				"input": {
+					"fields": []
+				},
+				"communicationSpeechActId": "dm/creation/back",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/creation-station",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/creation/discard",
+				"displayName": "Discard the drafted character",
+				"groups": [],
+				"templateIds": ["dm/creation/discard/affordance"],
+				"input": {
+					"fields": []
+				},
+				"communicationSpeechActId": "dm/creation/discard",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/creation-station",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/creation/forward",
+				"displayName": "Go forward one question",
+				"groups": [],
+				"templateIds": ["dm/creation/forward/affordance"],
+				"input": {
+					"fields": []
+				},
+				"communicationSpeechActId": "dm/creation/forward",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/creation-station",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/creation/input/ability-scores",
+				"displayName": "Set ability scores",
+				"groups": [],
+				"templateIds": ["dm/creation/input/ability-scores/affordance"],
+				"input": {
+					"fields": [
+						{
+							"name": "str",
+							"label": "Strength",
+							"control": "number",
+							"min": 8,
+							"max": 15,
+							"channel": "utterance"
+						},
+						{
+							"name": "dex",
+							"label": "Dexterity",
+							"control": "number",
+							"min": 8,
+							"max": 15,
+							"channel": "utterance"
+						},
+						{
+							"name": "con",
+							"label": "Constitution",
+							"control": "number",
+							"min": 8,
+							"max": 15,
+							"channel": "utterance"
+						},
+						{
+							"name": "int",
+							"label": "Intelligence",
+							"control": "number",
+							"min": 8,
+							"max": 15,
+							"channel": "utterance"
+						},
+						{
+							"name": "wis",
+							"label": "Wisdom",
+							"control": "number",
+							"min": 8,
+							"max": 15,
+							"channel": "utterance"
+						},
+						{
+							"name": "cha",
+							"label": "Charisma",
+							"control": "number",
+							"min": 8,
+							"max": 15,
+							"channel": "utterance"
+						}
+					],
+					"submitLabel": "Propose ability scores"
+				},
+				"communicationSpeechActId": "dm/creation/input/ability-scores",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/creation-station",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/creation/input/appearance",
+				"displayName": "Describe appearance",
+				"groups": [],
+				"templateIds": ["dm/creation/input/appearance/affordance"],
+				"input": {
+					"fields": [
+						{
+							"name": "appearance",
+							"label": "Appearance",
+							"control": "textarea",
+							"placeholder": "What can others see?",
+							"channel": "utterance"
+						}
+					],
+					"submitLabel": "Propose appearance"
+				},
+				"communicationSpeechActId": "dm/creation/input/appearance",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/creation-station",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/creation/input/backstory",
+				"displayName": "Describe backstory",
+				"groups": [],
+				"templateIds": ["dm/creation/input/backstory/affordance"],
+				"input": {
+					"fields": [
+						{
+							"name": "backstory",
+							"label": "Backstory",
+							"control": "textarea",
+							"placeholder": "What does the guide know?",
+							"channel": "utterance"
+						}
+					],
+					"submitLabel": "Propose backstory"
+				},
+				"communicationSpeechActId": "dm/creation/input/backstory",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/creation-station",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/creation/input/name",
+				"displayName": "Name your character",
+				"groups": [],
+				"templateIds": ["dm/creation/input/name/affordance"],
+				"input": {
+					"fields": [
+						{
+							"name": "name",
+							"label": "Name",
+							"control": "text",
+							"placeholder": "Your character's name",
+							"required": true,
+							"channel": "utterance"
+						}
+					],
+					"submitLabel": "Propose name"
+				},
+				"communicationSpeechActId": "dm/creation/input/name",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/creation-station",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/1",
+				"displayName": "Answer 1",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/1/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/1",
+				"responseSlot": 1,
+				"tags": ["ui.response-slot=1"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/10",
+				"displayName": "Answer 10",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/10/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/10",
+				"responseSlot": 10,
+				"tags": ["ui.response-slot=10"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/11",
+				"displayName": "Answer 11",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/11/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/11",
+				"responseSlot": 11,
+				"tags": ["ui.response-slot=11"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/12",
+				"displayName": "Answer 12",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/12/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/12",
+				"responseSlot": 12,
+				"tags": ["ui.response-slot=12"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/13",
+				"displayName": "Answer 13",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/13/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/13",
+				"responseSlot": 13,
+				"tags": ["ui.response-slot=13"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/14",
+				"displayName": "Answer 14",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/14/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/14",
+				"responseSlot": 14,
+				"tags": ["ui.response-slot=14"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/15",
+				"displayName": "Answer 15",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/15/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/15",
+				"responseSlot": 15,
+				"tags": ["ui.response-slot=15"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/16",
+				"displayName": "Answer 16",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/16/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/16",
+				"responseSlot": 16,
+				"tags": ["ui.response-slot=16"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/2",
+				"displayName": "Answer 2",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/2/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/2",
+				"responseSlot": 2,
+				"tags": ["ui.response-slot=2"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/3",
+				"displayName": "Answer 3",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/3/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/3",
+				"responseSlot": 3,
+				"tags": ["ui.response-slot=3"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/4",
+				"displayName": "Answer 4",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/4/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/4",
+				"responseSlot": 4,
+				"tags": ["ui.response-slot=4"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/5",
+				"displayName": "Answer 5",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/5/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/5",
+				"responseSlot": 5,
+				"tags": ["ui.response-slot=5"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/6",
+				"displayName": "Answer 6",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/6/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/6",
+				"responseSlot": 6,
+				"tags": ["ui.response-slot=6"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/7",
+				"displayName": "Answer 7",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/7/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/7",
+				"responseSlot": 7,
+				"tags": ["ui.response-slot=7"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/8",
+				"displayName": "Answer 8",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/8/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/8",
+				"responseSlot": 8,
+				"tags": ["ui.response-slot=8"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/choice/9",
+				"displayName": "Answer 9",
+				"groups": [],
+				"templateIds": ["dm/dialog/choice/9/affordance"],
+				"communicationSpeechActId": "dm/dialog/choice/9",
+				"responseSlot": 9,
+				"tags": ["ui.response-slot=9"],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/dialog",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			},
+			{
+				"actionId": "dm/dialog/say",
+				"displayName": "Say",
+				"groups": [],
+				"templateIds": ["dm/dialog/say/affordance"],
+				"input": {
+					"fields": [
+						{
+							"name": "text",
+							"label": "Say",
+							"control": "text",
+							"placeholder": "Say something to the guide",
+							"required": true,
+							"channel": "utterance"
+						}
+					],
+					"submitLabel": "Send"
+				},
+				"communicationSpeechActId": "dm/dialog/say",
+				"tags": [],
+				"nicheRequirements": [
+					{
+						"niche_id": "dm/niche/creation-station",
+						"requires_spatial_attachment": false,
+						"admits_targets_without_membership": false
+					}
+				],
+				"selfOnly": false,
+				"selfEligible": false
+			}
+		],
+		"targets": [
+			{
+				"targetFactId": "target:168:entity:168",
+				"targetRef": "entity:168",
+				"targetName": "You (Creation Candidate)",
+				"nicheIds": [
+					"core/creature",
+					"core/grounded",
+					"core/social_communication",
+					"dm/niche/trainee-present",
+					"elven_mini/adventure/candidate",
+					"srd.communication.vocal",
+					"srd.creature",
+					"srd.faction.party",
+					"srd.party.heroes",
+					"srd.player_character",
+					"srd/niche/communicable"
+				],
+				"tags": [
+					"srd.communication.vocal",
+					"srd.creature",
+					"srd.faction.party",
+					"srd.party.heroes",
+					"srd.player_character"
+				]
+			},
+			{
+				"targetFactId": "target:168:entity:20",
+				"targetRef": "entity:20",
+				"targetName": "World Operator",
+				"nicheIds": [
+					"core/grounded",
+					"core/social_communication",
+					"elven_mini/adventure/operator",
+					"spellkave.seat.operator"
+				],
+				"tags": ["spellkave.seat.operator"]
+			},
+			{
+				"targetFactId": "target:168:entity:6",
+				"targetRef": "entity:6",
+				"targetName": "Aldwin, keeper of the hearth-ledger",
+				"nicheIds": [
+					"core/creature",
+					"core/grounded",
+					"core/social_communication",
+					"dm/niche/aldwin",
+					"dm/niche/creation-station",
+					"dm/niche/dialog",
+					"dm/niche/trainee-present",
+					"srd.advancement_trainer",
+					"srd.alignment.neutral",
+					"srd.communication.vocal",
+					"srd.cr.0",
+					"srd.creature",
+					"srd.creature_type.humanoid",
+					"srd.creature.role.skirmisher",
+					"srd.dm_npc.aldwin",
+					"srd.dm_npc.creation",
+					"srd.dm_npc.talker",
+					"srd.language.common",
+					"srd.monster",
+					"srd.size.small",
+					"srd/creature/commoner",
+					"srd/niche/communicable"
+				],
+				"tags": [
+					"srd.advancement_trainer",
+					"srd.alignment.neutral",
+					"srd.communication.vocal",
+					"srd.cr.0",
+					"srd.creature",
+					"srd.creature_type.humanoid",
+					"srd.creature.role.skirmisher",
+					"srd.dm_npc.aldwin",
+					"srd.dm_npc.creation",
+					"srd.dm_npc.talker",
+					"srd.language.common",
+					"srd.monster",
+					"srd.size.small"
+				]
+			},
+			{
+				"targetFactId": "target:168:place_node:elven_mini/creation_limbo/station",
+				"targetRef": "place_node:elven_mini/creation_limbo/station",
+				"targetName": "Creation Limbo",
+				"nicheIds": [],
+				"tags": []
+			}
+		],
+		"participants": [],
+		"prompts": []
+	},
+	"senseContext": {
+		"status": "ready",
+		"queries": [
+			{
+				"queryKind": "look",
+				"visibility": "Local",
+				"displayName": "Look Around",
+				"outcomeTemplateId": "srd/sense/look/outcome"
+			}
+		]
+	},
+	"session": {
+		"inSession": false,
+		"myTurn": false,
+		"lifecycle": null,
+		"currentActor": null,
+		"currentActorName": null,
+		"roster": []
+	},
+	"operations": {
+		"state": "ready",
+		"selected": null,
+		"items": [],
+		"total": 0,
+		"nextCursor": null
+	},
+	"turnSession": null,
+	"reaction": null,
+	"pack": [],
+	"itemDetail": null,
+	"occupantDetail": null,
+	"placeState": "ready",
+	"speech": [
+		{
+			"id": "speech:20",
+			"tick": 55,
+			"speakerId": "168",
+			"speaker": "Creation Candidate",
+			"text": "Defense",
+			"mine": true,
+			"choiceSlot": 2,
+			"addressee": 6
+		},
+		{
+			"id": "speech:21",
+			"tick": 56,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Which weapon mastery (3 more)? 1 Battleaxe, 2 Blowgun, 3 Club, 4 Dagger, 5 Dart, 6 Flail, 7 Glaive, 8 Greataxe, 9 Greatclub, 10 Greatsword, 11 Halberd, 12 Hand Crossbow, 13 Handaxe, 14 Heavy Crossbow, 15 Javelin, 16 Lance. (3 picks remaining.)",
+			"mine": false,
+			"addressee": 168
+		},
+		{
+			"id": "speech:22",
+			"tick": 63,
+			"speakerId": "168",
+			"speaker": "Creation Candidate",
+			"text": "Greatsword",
+			"mine": true,
+			"choiceSlot": 10,
+			"addressee": 6
+		},
+		{
+			"id": "speech:23",
+			"tick": 63,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Which weapon mastery (2 more)? 1 Battleaxe, 2 Blowgun, 3 Club, 4 Dagger, 5 Dart, 6 Flail, 7 Glaive, 8 Greataxe, 9 Greatclub, 10 Halberd, 11 Hand Crossbow, 12 Handaxe, 13 Heavy Crossbow, 14 Javelin, 15 Lance, 16 Light Crossbow. (2 picks remaining.)",
+			"mine": false,
+			"addressee": 168
+		},
+		{
+			"id": "speech:24",
+			"tick": 72,
+			"speakerId": "168",
+			"speaker": "Creation Candidate",
+			"text": "Battleaxe",
+			"mine": true,
+			"choiceSlot": 1,
+			"addressee": 6
+		},
+		{
+			"id": "speech:25",
+			"tick": 72,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Which weapon mastery? 1 Blowgun, 2 Club, 3 Dagger, 4 Dart, 5 Flail, 6 Glaive, 7 Greataxe, 8 Greatclub, 9 Halberd, 10 Hand Crossbow, 11 Handaxe, 12 Heavy Crossbow, 13 Javelin, 14 Lance, 15 Light Crossbow, 16 Light Hammer. (1 pick remaining.)",
+			"mine": false,
+			"addressee": 168
+		},
+		{
+			"id": "speech:26",
+			"tick": 77,
+			"speakerId": "168",
+			"speaker": "Creation Candidate",
+			"text": "Javelin",
+			"mine": true,
+			"choiceSlot": 13,
+			"addressee": 6
+		},
+		{
+			"id": "speech:27",
+			"tick": 77,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Which starting kit? 1 A: Chain Mail, Greatsword, Flail, 8 Javelins, Dungeoneer's Pack, and 4 GP, 2 B: Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Dungeoneer's Pack, and 11 GP, 3 C: 155 GP.",
+			"mine": false,
+			"addressee": 168
+		},
+		{
+			"id": "speech:29",
+			"tick": 83,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Which fighting style? 1 Archery, 2 Defense, 3 Great Weapon Fighting, 4 Two Weapon Fighting.",
+			"mine": false,
+			"addressee": 168
+		},
+		{
+			"id": "speech:31",
+			"tick": 87,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Which starting kit? 1 A: Chain Mail, Greatsword, Flail, 8 Javelins, Dungeoneer's Pack, and 4 GP, 2 B: Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Dungeoneer's Pack, and 11 GP, 3 C: 155 GP.",
+			"mine": false,
+			"addressee": 168
+		},
+		{
+			"id": "speech:32",
+			"tick": 94,
+			"speakerId": "168",
+			"speaker": "Creation Candidate",
+			"text": "A: Chain Mail, Greatsword, Flail, 8 Javelins, Dungeoneer's Pack, and 4 GP",
+			"mine": true,
+			"choiceSlot": 1,
+			"addressee": 6
+		},
+		{
+			"id": "speech:33",
+			"tick": 95,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Which ability scores? 1 Adopt the recommended array.",
+			"mine": false,
+			"addressee": 168
+		},
+		{
+			"id": "speech:34",
+			"tick": 95,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Your class choices are set. What shall I call you? Choose Name your character and enter it. I'll read it back; choose Adopt that name. Then Confirm will open so you can finish and enter the adventure.",
+			"mine": false,
+			"addressee": 168
+		},
+		{
+			"id": "speech:35",
+			"tick": 96,
+			"speakerId": "168",
+			"speaker": "Creation Candidate",
+			"text": "Adopt the recommended array",
+			"mine": true,
+			"choiceSlot": 1,
+			"addressee": 6
+		},
+		{
+			"id": "speech:36",
+			"tick": 96,
+			"speakerId": "6",
+			"speaker": "Aldwin, keeper of the hearth-ledger",
+			"text": "Adopted: STR 15, DEX 14, CON 13, INT 8, WIS 10, CHA 12. Confirm opens after class menus (skills, choices, kit), name, species, and background are all drafted — or keep adjusting.",
+			"mine": false,
+			"addressee": 168
+		}
+	],
+	"events": [],
+	"mapSvg": null,
+	"mapState": "ready",
+	"economy": [],
+	"economyBudget": {
+		"channels": [
+			{
+				"channelId": "core/action_class/movement",
+				"label": "Move",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "core/action_class/primary",
+				"label": "Action",
+				"poolMs": 1000,
+				"remainingMs": 1000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/bonus",
+				"label": "Bonus",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/movement",
+				"label": "Move",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/object_interaction",
+				"label": "Object",
+				"poolMs": 500,
+				"remainingMs": 500,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/primary",
+				"label": "Action",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": false
+			},
+			{
+				"channelId": "srd/economy_channel/reaction",
+				"label": "Reaction",
+				"poolMs": 6000,
+				"remainingMs": 6000,
+				"spentMs": 0,
+				"status": "ok",
+				"offTurnEligible": true
+			}
+		],
+		"unavailable": false
+	},
+	"sessionTokens": []
+}
