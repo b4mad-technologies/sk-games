@@ -20,6 +20,10 @@ pnpm typecheck && pnpm test && pnpm build
 
 Node and pnpm versions are pinned in `package.json`.
 
+The `wrangler.jsonc` files carry no Cloudflare account. A deploy
+(`pnpm --filter <app> run deploy`) reads the account from the
+`CLOUDFLARE_ACCOUNT_ID` environment variable, or from the Wrangler login.
+
 ## Licence
 
 Code: [PolyForm Shield 1.0.0](LICENSE). Art: see [ART.md](ART.md).
