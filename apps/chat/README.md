@@ -50,10 +50,10 @@ proxy in production Worker builds.
    `http://127.0.0.1:5184` Vite page may call an `http://` gateway.
 2. The gateway allowlist is **hostnames**, via
    `SPELLKAVE_MCP_ALLOWED_ORIGIN_HOSTNAMES`. `localhost` is always present;
-   `chat.spellkave.com` is added on the phobos stack. Do not put
+   `chat.spellkave.com` is added on the deployment stack. Do not put
    `localhost:5173` in that env — colons are invalid. Vite in this package
    listens on **5184**.
-3. Reconcile the deployed gateway after changing the phobos allowlist;
+3. Reconcile the deployed gateway after changing the deployed allowlist;
    env is not live until the stack is applied.
 
 Planned remaining beads: live tool transcript (sk-jay0.1.2.5), read-only

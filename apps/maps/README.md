@@ -1,7 +1,7 @@
 # `@spellkave/maps` — maps.spellkave.com
 
 Thin MapLibre GL client for the Spellkave gateway OSM / MVT surface
-([ADR-0123](../../specifications/adr/0123-osm-projection-of-the-place-graph.md)).
+(ADR-0123, OSM projection of the place graph; private monorepo).
 Replaces the retired `@spellkave/map-view` SVG widget and the website
 `MapPanel` / `AdminMapPanel`.
 
@@ -39,7 +39,7 @@ Observer internals stay grant-gated.
 ## Local run (against local gateway + node)
 
 Start order, Tailscale bind, token restart, and BindingDrift traps:
-[sk-playtest `maps-local`](../../.agents/skills/sk-playtest/workflows/maps-local.md).
+the sk-playtest `maps-local` workflow (private monorepo).
 Do not point Vite at `https://mcp.spellkave.com` while Play URL is the worktree node.
 
 DEV token path is **dead in production builds** (`vite` `mode === "production"`
@@ -71,13 +71,13 @@ pnpm --filter @spellkave/maps run deploy
 
 The `spellkave-maps` Worker and its assets are deployed by Wrangler. The
 `maps.spellkave.com` custom-domain binding is owned by
-[`infra/cloudflare/worker.ts`](../../infra/cloudflare/worker.ts) in the
+`infra/cloudflare/worker.ts` (private monorepo) in the
 `spellkave-cloudflare` Pulumi stack. Do **not** put `routes` or `custom_domain`
 in this `wrangler.jsonc`; that would create a second writer for the binding.
 
 CI uses the shared `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository
 secrets. The credential contract and rotation procedure live in
-[`infra/cloudflare/README.md`](../../infra/cloudflare/README.md#deployment-credential).
+`infra/cloudflare/README.md` (private monorepo).
 
 ## Tests / gates
 

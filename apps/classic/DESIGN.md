@@ -12,7 +12,7 @@ the app (`.19.5`).
 The classic app does **not** build its interface from `@spellkave/ui`
 primitives, `@spellkave/ui-widgets` or Play's components, and does not take
 its colours and type from the `@spellkave/ui` tokens. It has its own design
-layer, `src/stage/stage.css`. This overrides the root [`DESIGN.md`](../../DESIGN.md)
+layer, `src/stage/stage.css`. This overrides the sk-sites [`DESIGN.md`](https://github.com/b4mad-technologies/sk-sites/blob/main/DESIGN.md)
 for `apps/classic/src/stage/**` only. The stack stays Svelte 5, bits-ui
 (unstyled behaviour: popover, dialog) and Vite. Reason: built from the shared
 parts the app read as a second Play; a point-and-click client needs a look

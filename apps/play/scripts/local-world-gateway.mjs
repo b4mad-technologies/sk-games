@@ -77,7 +77,7 @@ function localOrigin(origin) {
 		const url = new URL(origin);
 		if (url.protocol !== "http:" && url.protocol !== "https:") return false;
 		if (["127.0.0.1", "localhost", "[::1]"].includes(url.hostname)) return true;
-		// Tailscale CGNAT + MagicDNS so a laptop can open Maps on ganymede.
+		// Tailscale CGNAT + MagicDNS so a laptop can open Maps on the test host.
 		if (url.hostname.startsWith("100.")) return true;
 		if (url.hostname.endsWith(".ts.net")) return true;
 		return false;

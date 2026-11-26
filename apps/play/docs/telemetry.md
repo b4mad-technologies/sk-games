@@ -38,8 +38,8 @@ every string field — belt-and-suspenders on top of `play-trail.ts`'s own
 `redactTrailText`), and reuses only `toOtlpPayload` (the resource/scope
 wrapper, which never touches event data) so the exported `service.name`
 matches every other producer. Local recipe + a copy-paste `sko11y` query:
-[`../../docs/development.md`](../../../docs/development.md#local-play-run-events-browser-producer).
-Schema card: [`../../.agents/skills/sk-o11y/references/querying.md`](../../../.agents/skills/sk-o11y/references/querying.md#plays-own-local-co-play-rows-driver--play-web-sk-jay0639).
+`docs/development.md` (private monorepo).
+Schema card: `.agents/skills/sk-o11y/references/querying.md` (private monorepo).
 
 ## Hosted browser RUM (`_rumdata`)
 
@@ -61,7 +61,7 @@ Every finalized Trail entry becomes one custom RUM action, and every
 `play-observation.ts` UI milestone becomes another — mechanics (the single
 `emit()` call site, what fields it adds, the closed-scalar allowlist, and the
 same-PR checklist for adding a new phase/state) are in
-[`../../../.agents/skills/sk-o11y/references/instrument-play-rum.md`](../../../.agents/skills/sk-o11y/references/instrument-play-rum.md);
+`.agents/skills/sk-o11y/references/instrument-play-rum.md` (private monorepo);
 this section covers only what is Play-UI-specific. `App.svelte` records intent
 before dispatch and feedback presence after Svelte's `tick()`; `play-session.ts`
 records tool results before awaiting the view refresh. Interaction numbers
@@ -121,7 +121,7 @@ builder's (hit, spend, xp and condition events oldest first, a session close
 last, owner decision 2026-11-12); Play does not re-sort it, and a spend
 whose `source_entity_ref` names another entity is no longer delivered (a
 radius-applied change carries the hero's own id as source and stays, see
-[`unified-world-event-stream.md`](../../../ledger/designs/unified-world-event-stream.md)).
+`ledger/designs/unified-world-event-stream.md`, private monorepo).
 `exploreStreamFromView`'s own `"event"` entries reuse the Chronicle's own
 classification (`chronicleFactsFromEvents`, play-chronicle.ts) for a chip and
 an importance flag — one table, never a second copy of it. The line itself
@@ -173,11 +173,11 @@ replay, profiling, automatic click/resource capture and SDK error rows are
 off. Input privacy remains `mask-user-input`, URLs lose their query/fragment,
 and the SDK session exists only in memory.
 
-The public-token and edge decision is binding in [`../../SECURITY.md`](../../../SECURITY.md#public-play-rum-decision-sk-jay0640):
+The public-token and edge decision is binding in the private monorepo's `SECURITY.md`:
 `/rum/*` is the only anonymous telemetry path, restricted to the hosted Play
 Origin and a per-IP Cloudflare rate limit before OpenObserve validates the RUM
 token. Do not substitute an OTLP/Access/service credential. Query card:
-[`../../.agents/skills/sk-o11y/references/querying.md`](../../../.agents/skills/sk-o11y/references/querying.md#hosted-play-rum-custom-actions-sk-jay0640).
+`.agents/skills/sk-o11y/references/querying.md` (private monorepo).
 
 ### Connect lifecycle (`play_connection`, sk-jay0.6.38.25, hardened by the #3477 and #3482 RUM-lane reviews)
 
@@ -193,9 +193,9 @@ between "transport connected" and "world data visible" that #3487 found.
 full contract — the terminal list, `stop()`/`abandon()`, and the two remaining
 documented gaps (a superseded attempt, and a tab/browser close mid-attempt) —
 is
-[`../../.agents/skills/sk-o11y/references/instrument-play-rum.md`](../../../.agents/skills/sk-o11y/references/instrument-play-rum.md#connection-lifecycle-contract).
+`.agents/skills/sk-o11y/references/instrument-play-rum.md` (private monorepo).
 Milestone sequences and `bin/sko11y` query recipes:
-[`../../.agents/skills/sk-o11y/workflows/hosted-play-rum.md`](../../../.agents/skills/sk-o11y/workflows/hosted-play-rum.md#connect-lifecycle-play_connection-sk-jay063825).
+`.agents/skills/sk-o11y/workflows/hosted-play-rum.md` (private monorepo).
 
 `connected` is driven by `@spellkave/session`'s `openSession` `onPhase` hook
 (`packages/spellkave-session/src/session.ts`), not by the first rendered

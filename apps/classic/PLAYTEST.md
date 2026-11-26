@@ -86,8 +86,8 @@ Then open <http://127.0.0.1:5320/>.
 Both runs drove the app in a browser by clicks, on a fresh `just play-host`
 world each. The wizard driver's step log was incomplete in both runs (the
 automation ran its script twice), so the wizard steps are confirmed by the
-finished hero, not by a per-step record. Screenshots:
-`~/vega-briefs/classic-playtest-2026-11-14/` on ganymede.
+finished hero, not by a per-step record. Screenshots are kept on the test
+host.
 
 | | Run 1 | Run 2 |
 |---|---|---|
@@ -132,8 +132,7 @@ fights and found:
 
 A fourth browser run on a fresh world on a second stack (Greta Flintlock,
 Dragonborn Fighter, Acolyte, kit A, HP 11) checked the new sheet, the area
-map and the fight steps. Screenshots:
-`~/vega-briefs/classic-playtest-2026-11-14/wave2/` on ganymede.
+map and the fight steps. Screenshots are kept on the test host.
 
 - **New:** item pictures and item actions on the sheet. The Greatsword
   showed its sprite; "Use a Consumable" on it answered "That cannot be done
@@ -296,7 +295,7 @@ agent pushed to the back takes no clicks and hangs a screenshot.
 Played by an agent on `stage.html`, on fresh local worlds (`just play-host`),
 with real input through agent-browser (Chrome for Testing, 1440 x 900). Bead
 `sk-jay0.1.76.19.7`. The two classes the night run left out: a fighter and a
-wizard. Screenshots: `~/spellkave-evidence/classic-polish-2/` on proteus.
+wizard. Screenshots are kept on the test host.
 
 ### Hero 3: Thrain, dwarf fighter (level 2 reached, and on to 700 experience)
 
@@ -369,8 +368,7 @@ Hands on hero 4 did not (`sk-jay0.1.76.19.15`).
 
 Played by an agent on `stage.html`, on fresh local worlds (`just play-host`),
 with real input through agent-browser (Chrome for Testing, 1440 x 900). Bead
-`sk-jay0.1.76.19.7`. Screenshots: `~/spellkave-evidence/classic-polish-3/` on
-proteus.
+`sk-jay0.1.76.19.7`. Screenshots are kept on the test host.
 
 **The content offers four classes** (Fighter, Rogue, Cleric, Wizard); a
 ranger, a bard, a warlock or a paladin cannot be made. This round varies
@@ -460,8 +458,8 @@ the spell memory to start over.
 
 Played by an agent on `stage.html`, on a fresh local world (`just play-host`),
 with real input through agent-browser (Chrome for Testing, 1440 x 900, a
-persistent `--profile`). Bead `sk-jay0.1.76.19.7`. Screenshots:
-`~/spellkave-evidence/classic-polish-4/` on proteus (300 to 398).
+persistent `--profile`). Bead `sk-jay0.1.76.19.7`. Screenshots (300 to 398)
+are kept on the test host.
 
 The round had four questions: what round 3 left rough, why level-1 heroes
 keep dying (does the client hide options?), the whole quest chain, and map

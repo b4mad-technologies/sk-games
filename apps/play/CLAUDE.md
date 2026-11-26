@@ -6,7 +6,7 @@ world reads and actions go through the PLAYER tools, never generated bindings,
 hand-written subscription SQL, or raw table reads.
 
 **Before any interaction or layout work, read
-[`ledger/designs/play-interaction-axioms.md`](../../ledger/designs/play-interaction-axioms.md).**
+`ledger/designs/play-interaction-axioms.md` (private monorepo).**
 Its eight axioms are binding: maps and names select, a way-out click fills the
 composer, the dock acts, the stream
 tells, info cards explain; the app never changes the layout on its own; digits
@@ -310,7 +310,7 @@ to reach for `snapshotDb`.
   `.github/workflows/play.yml`'s hosted Build step sets it from the repo
   variable `SPELLKAVE_GATEWAY_URL`, defaulting to `https://mcp.spellkave.com`
   (sk-jay0.7.45; same pattern `maps.yml` already used) — the gateway's
-  `allowedOriginHostnames` (`infra/phobos-player-mcp/workloads.ts`) already
+  `allowedOriginHostnames` (the gateway's deployment configuration, private) already
   lists `play.spellkave.com`, so no infra change was needed to accept it.
 
 ## On-demand references

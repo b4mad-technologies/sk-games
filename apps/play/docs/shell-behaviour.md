@@ -129,7 +129,7 @@ every id in `fields.conditionIds`. The stream's event order inside one drain is 
 builder's and Play does not re-sort it: hit, spend, xp and condition events
 come oldest first by event id, and a session's close line comes last (owner
 decision 2026-11-12, recorded in
-[`unified-world-event-stream.md`](../../../ledger/designs/unified-world-event-stream.md)).
+`ledger/designs/unified-world-event-stream.md`, private monorepo).
 A spend whose source names another entity is not delivered at all, so it has no line (a radius-applied
 change carries the hero's own id as its source and keeps its line). Going down reads as one plain sentence instead of the
 list (owner decision 2026-11-12, sk-jay0.1.8.102): an applied group whose ids

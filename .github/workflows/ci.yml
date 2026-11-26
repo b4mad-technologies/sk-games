@@ -30,6 +30,8 @@ jobs:
         with:
           node-version-file: .node-version
           package-manager-cache: false
+      - name: Check relative links
+        run: node scripts/check-links.mjs
       - name: Install pnpm
         run: |
           npm install --global pnpm@11.13.1

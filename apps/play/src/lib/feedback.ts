@@ -8,7 +8,7 @@
  * Transport precedent: `apps/chat/src/lib/mcp/client.ts` already connects a
  * browser to this exact gateway with `@modelcontextprotocol/sdk`'s `Client` +
  * `StreamableHTTPClientTransport`
- * (infra/phobos-player-mcp/workloads.ts:47 — play.spellkave.com is already on
+ * (the gateway's deployment configuration — play.spellkave.com is already on
  * the gateway's CORS allowlist, alongside the comment "chat.spellkave.com
  * talks to POST /mcp from the browser"). This module mirrors that pairing for
  * one stateless call instead of a persistent tool-listing session.
