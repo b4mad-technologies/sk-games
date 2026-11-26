@@ -21,14 +21,14 @@ const worldOf = (worldStatus: string, worldPaused = false): AccountGetResponse =
 	capabilities: [],
 	worlds: [
 		{
-			slug: "elven-mini-4",
-			display_name: "Elven Mini 4",
+			slug: "kavemouth-4",
+			display_name: "Kavemouth 4",
 			role: "member",
 			capabilities: ["world.join", "world.play"],
 		},
 	],
 	seat: {
-		slug: "elven-mini-4",
+		slug: "kavemouth-4",
 		actor_id: "9",
 		role: "primary",
 		world_status: worldStatus,
@@ -62,7 +62,7 @@ describe("a seat in a world that is not running yet", () => {
 		render(App, {
 			accountLoader,
 			catalogLoader: vi.fn(async () => [
-				{ slug: "elven-mini-4", name: "Elven Mini 4", db: "spellkave-elven-mini-4" },
+				{ slug: "kavemouth-4", name: "Kavemouth 4", db: "spellkave-kavemouth-4" },
 			]),
 			worldOpener,
 			worldStartingRetryMs: 5,
@@ -84,7 +84,7 @@ describe("a seat in a world that is not running yet", () => {
 		render(App, {
 			accountLoader: vi.fn(async () => worldOf("scheduling")),
 			catalogLoader: vi.fn(async () => [
-				{ slug: "elven-mini-4", name: "Elven Mini 4", db: "spellkave-elven-mini-4" },
+				{ slug: "kavemouth-4", name: "Kavemouth 4", db: "spellkave-kavemouth-4" },
 			]),
 			worldOpener,
 			// Real timer, kept tiny so the test does not wait on production backoff.
@@ -109,7 +109,7 @@ describe("a seat in a world that is not running yet", () => {
 		render(App, {
 			accountLoader,
 			catalogLoader: vi.fn(async () => [
-				{ slug: "elven-mini-4", name: "Elven Mini 4", db: "spellkave-elven-mini-4" },
+				{ slug: "kavemouth-4", name: "Kavemouth 4", db: "spellkave-kavemouth-4" },
 			]),
 			worldOpener,
 			worldStartingRetryMs: 5,
@@ -139,7 +139,7 @@ describe("a seat in a world that is not running yet", () => {
 		render(App, {
 			accountLoader,
 			catalogLoader: vi.fn(async () => [
-				{ slug: "elven-mini-4", name: "Elven Mini 4", db: "spellkave-elven-mini-4" },
+				{ slug: "kavemouth-4", name: "Kavemouth 4", db: "spellkave-kavemouth-4" },
 			]),
 			worldOpener,
 			worldStartingRetryMs: 5,
@@ -168,7 +168,7 @@ describe("a seat in a world that is not running yet", () => {
 		const { unmount } = render(App, {
 			accountLoader,
 			catalogLoader: vi.fn(async () => [
-				{ slug: "elven-mini-4", name: "Elven Mini 4", db: "spellkave-elven-mini-4" },
+				{ slug: "kavemouth-4", name: "Kavemouth 4", db: "spellkave-kavemouth-4" },
 			]),
 			worldOpener,
 			worldStartingRetryMs: 5,

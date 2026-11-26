@@ -574,7 +574,7 @@
 	</header>
 
 	{#if !config}
-		<p class="empty">No staged world. Run <code>just play-stage elven-mini</code> at the repo root, then restart <code>dev.sh</code>.</p>
+		<p class="empty">No staged world. Run <code>just play-stage kavemouth</code> at the repo root, then restart <code>dev.sh</code>.</p>
 	{:else if !view}
 		<p class="empty">{status}</p>
 	{:else if view.hero.drafting}

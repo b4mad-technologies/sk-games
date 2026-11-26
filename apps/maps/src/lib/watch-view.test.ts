@@ -14,7 +14,7 @@ const renn: WatchActor = {
 	entityId: "10",
 	actorId: "1",
 	name: "Renn",
-	placeNodeId: "elven_mini/inn/loft",
+	placeNodeId: "kavemouth/inn/loft",
 	faction: "heroes",
 	description: "A candidate in the loft.",
 	conditions: [{ id: "srd/poisoned", stack_count: 1 }],
@@ -43,8 +43,8 @@ describe("watch-view", () => {
 			states: [
 				{ state_id: "srd/hp", display_name: "srd/hp", value: "12" },
 				{
-					state_id: "elven_mini/quest/Q1/accepted",
-					display_name: "elven_mini/quest/Q1/accepted",
+					state_id: "kavemouth/quest/Q1/accepted",
+					display_name: "kavemouth/quest/Q1/accepted",
 					value: "0",
 				},
 				{ state_id: "dm/dialog/open", display_name: "dm/dialog/open", value: "0" },
@@ -64,7 +64,7 @@ describe("watch-view", () => {
 				{
 					entityId: "155",
 					name: "Longsword (+1)",
-					placeNodeId: "elven_mini/mill/altar",
+					placeNodeId: "kavemouth/mill/altar",
 					holderEntityId: "41",
 					holderName: "Sister Maelis",
 					slotId: "",
@@ -76,7 +76,7 @@ describe("watch-view", () => {
 				{
 					entityId: "152",
 					name: "Moonpetal",
-					placeNodeId: "elven_mini/hamlet/crypt_path",
+					placeNodeId: "kavemouth/hamlet/crypt_path",
 					holderEntityId: null,
 					holderName: null,
 					slotId: "",
@@ -89,7 +89,7 @@ describe("watch-view", () => {
 		).toEqual([
 			{
 				entityId: "152",
-				placeNodeId: "elven_mini/hamlet/crypt_path",
+				placeNodeId: "kavemouth/hamlet/crypt_path",
 				name: "Moonpetal",
 			},
 		]);
@@ -98,13 +98,13 @@ describe("watch-view", () => {
 
 describe("offMapNotice", () => {
 	it("returns no notice for a drawable node", () => {
-		expect(offMapNotice("elven_mini/inn/bar", new Set(["elven_mini/inn/bar"]))).toBeNull();
+		expect(offMapNotice("kavemouth/inn/bar", new Set(["kavemouth/inn/bar"]))).toBeNull();
 	});
 
 	it("notices an undrawn graph node with its humanized name", () => {
 		const notice = offMapNotice(
-			"elven_mini/creation_limbo/station",
-			new Set(["elven_mini/inn/bar"]),
+			"kavemouth/creation_limbo/station",
+			new Set(["kavemouth/inn/bar"]),
 		);
 		expect(notice).toContain("Creation limbo · Station");
 		expect(notice).toContain("not drawn on this map");
@@ -116,7 +116,7 @@ describe("offMapNotice", () => {
 });
 
 describe("carriedFromWatch", () => {
-	const href = (id: string): string => `/w/elven-mini/thing/${id}`;
+	const href = (id: string): string => `/w/kavemouth/thing/${id}`;
 	const item = (over: Partial<WatchItem> & { entityId: string; name: string }): WatchItem => ({
 		placeNodeId: "inn/loft",
 		holderEntityId: "1",
@@ -155,7 +155,7 @@ describe("carriedFromWatch", () => {
 			href,
 		);
 		const javelin = rows.find((row) => row.name === "Javelin");
-		expect(javelin).toMatchObject({ id: "24", quantity: 3, href: "/w/elven-mini/thing/24" });
+		expect(javelin).toMatchObject({ id: "24", quantity: 3, href: "/w/kavemouth/thing/24" });
 		expect(rows.find((row) => row.name === "Lantern")).toBeUndefined();
 		expect(rows.find((row) => row.name === "Moonpetal")).toBeUndefined();
 	});

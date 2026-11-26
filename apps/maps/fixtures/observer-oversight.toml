@@ -1,8 +1,8 @@
 #:schema https://spellkave.dev/schema/world-manifest-1.0.0.json
 schema_version = "1.0.0"
 
-# Observer overlay for maps.spellkave.com. Apply AFTER `just play-stage elven-mini`
-# so `elven_mini/region` already exists. Bind `$sender` to the maps login token
+# Observer overlay for maps.spellkave.com. Apply AFTER `just play-stage kavemouth`
+# so `kavemouth/region` already exists. Bind `$sender` to the maps login token
 # that should get god-view (see-as + internal elevation). A player token without
 # this bind keeps seats-only overlay off.
 
@@ -12,8 +12,8 @@ author = "spellkave-maps"
 bundle_id = "maps_watch"
 default_extent_params_json = ""
 default_extent_shape_id = ""
-depends_on = ["core", "elven_mini"]
-description = "Maps observer see-as over the elven-mini region graph."
+depends_on = ["core", "kavemouth"]
+description = "Maps observer see-as over the kavemouth region graph."
 display_name = "Maps Watch"
 tag_prefixes = []
 version = "1.0.0"
@@ -23,7 +23,7 @@ actor_kind = "entity"
 bundle_id = "maps_watch"
 capability_id = "maps_watch/oversee"
 default_visibility = "public"
-description = "Sees Hidden and Internal rows of every body inside elven_mini/region."
+description = "Sees Hidden and Internal rows of every body inside kavemouth/region."
 display_name = "Region oversight"
 
 [[entities]]
@@ -33,7 +33,7 @@ entity_key = "maps_watch/observer"
 kind = "player"
 name = "Maps Observer"
 owned_by_entity_key = ""
-place_node_id = "elven_mini/region/crossroads"
+place_node_id = "kavemouth/region/waymeet"
 quantity = 1
 
 [[actors]]
@@ -50,7 +50,7 @@ role = "primary"
 [[actor_spatial_locations]]
 bundle_id = "maps_watch"
 entity_key = "maps_watch/observer"
-place_node_id = "elven_mini/region/crossroads"
+place_node_id = "kavemouth/region/waymeet"
 selection_path = "manifest:maps_watch/observer"
 
 [[actor_capabilities]]
@@ -59,6 +59,6 @@ bundle_id = "maps_watch"
 capability_id = "maps_watch/oversee"
 elevation_class = "internal"
 extent_kind_ref = "place_graph"
-extent_ref = "elven_mini/region"
+extent_ref = "kavemouth/region"
 source = "maps_watch"
 source_args_hash = ""

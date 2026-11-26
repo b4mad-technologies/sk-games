@@ -21,7 +21,7 @@ describe("seat vocabulary", () => {
 	});
 
 	it("normalizes a numeric actor_id, which the live API returns as a string", () => {
-		// Measured 2026-08-26: GET /v1/worlds/elven-mini-3/seats returns
+		// Measured 2026-08-26: GET /v1/worlds/kavemouth-3/seats returns
 		// {"actor_id":"1", ...}. The type allows a number, so normalize either way
 		// rather than letting a === comparison against a string silently fail.
 		const [seat] = playSeatsFromBoard([{ actor_id: 1, name: "Creation Candidate" }]);

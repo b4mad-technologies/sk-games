@@ -37,7 +37,7 @@ describe("projectPlayEventData", () => {
 	it("keeps only the allowlisted scalar fields", () => {
 		expect(
 			projectPlayEventData({
-				world_slug: "elven-mini-local-x",
+				world_slug: "kavemouth-local-x",
 				tool_name: "spellkave_manipulate",
 				duration_ms: 42,
 				is_error: false,
@@ -48,7 +48,7 @@ describe("projectPlayEventData", () => {
 				unknown_field: 123,
 			}),
 		).toEqual({
-			world_slug: "elven-mini-local-x",
+			world_slug: "kavemouth-local-x",
 			tool_name: "spellkave_manipulate",
 			duration_ms: 42,
 			is_error: false,
@@ -68,7 +68,7 @@ describe("projectPlayEventData", () => {
 		// A branch-derived slug routinely crosses the 32-char opaque-token
 		// threshold (this exact value is 36 chars) and is never player/session
 		// input — the join key itself must survive, not become "[redacted]".
-		const slug = "elven-mini-local-feat-play-telemetry";
+		const slug = "kavemouth-local-feat-play-telemetry";
 		expect(projectPlayEventData({ world_slug: slug })).toEqual({ world_slug: slug });
 	});
 
@@ -81,10 +81,10 @@ describe("projectPlayEventData", () => {
 
 describe("mapTrailEntryToEmit", () => {
 	it("maps an act entry to tool_call with tool_name/duration/outcome/action_id/target_ref", () => {
-		const mapped = mapTrailEntryToEmit(ACT_ENTRY, "elven-mini-local-x");
+		const mapped = mapTrailEntryToEmit(ACT_ENTRY, "kavemouth-local-x");
 		expect(mapped.type).toBe("tool_call");
 		expect(mapped.data).toMatchObject({
-			world_slug: "elven-mini-local-x",
+			world_slug: "kavemouth-local-x",
 			tool_name: "spellkave_manipulate",
 			duration_ms: 120,
 			outcome: "happened",
@@ -107,11 +107,11 @@ describe("mapTrailEntryToEmit", () => {
 				tool: "spellkave_move",
 				message: "The world refused: some detail that must never leave the client.",
 			},
-			"elven-mini-local-x",
+			"kavemouth-local-x",
 		);
 		expect(mapped.type).toBe("tool_call");
 		expect(mapped.data).toMatchObject({
-			world_slug: "elven-mini-local-x",
+			world_slug: "kavemouth-local-x",
 			tool_name: "spellkave_move",
 			is_error: true,
 		});
@@ -127,10 +127,10 @@ describe("mapTrailEntryToEmit", () => {
 			tool: "spellkave_scene",
 			counts: { npcs: 2 },
 		};
-		const mapped = mapTrailEntryToEmit(readEntry, "elven-mini-local-x");
+		const mapped = mapTrailEntryToEmit(readEntry, "kavemouth-local-x");
 		expect(mapped.type).toBe("play_client_event");
 		expect(mapped.data).toMatchObject({
-			world_slug: "elven-mini-local-x",
+			world_slug: "kavemouth-local-x",
 			tool_name: "spellkave_scene",
 			client_kind: "read",
 		});
@@ -150,10 +150,10 @@ describe("mapTrailEntryToEmit", () => {
 			level: "stage",
 			trigger: "tap",
 		};
-		const mapped = mapTrailEntryToEmit(layoutEntry, "elven-mini-local-x");
+		const mapped = mapTrailEntryToEmit(layoutEntry, "kavemouth-local-x");
 		expect(mapped.type).toBe("play_client_event");
 		expect(mapped.data).toMatchObject({
-			world_slug: "elven-mini-local-x",
+			world_slug: "kavemouth-local-x",
 			client_kind: "layout",
 			tile: "table",
 			level: "stage",
@@ -175,13 +175,13 @@ describe("toPlayLogRecord", () => {
 			seed: "",
 			ts: "2026-01-01T00:00:00.000Z",
 			type: "tool_call",
-			data: { world_slug: "elven-mini-local-x", tool_name: "spellkave_manipulate" },
+			data: { world_slug: "kavemouth-local-x", tool_name: "spellkave_manipulate" },
 		});
 		const attributes = readAttributes(record);
 		expect(attributes.event_type).toEqual({ stringValue: "tool_call" });
 		expect(attributes.driver).toEqual({ stringValue: "play-web" });
 		expect(attributes.role).toEqual({ stringValue: "PLAYER" });
-		expect(attributes["spellkave.world_slug"]).toEqual({ stringValue: "elven-mini-local-x" });
+		expect(attributes["spellkave.world_slug"]).toEqual({ stringValue: "kavemouth-local-x" });
 		expect(attributes["spellkave.tool_name"]).toEqual({
 			stringValue: "spellkave_manipulate",
 		});
@@ -205,7 +205,7 @@ describe("createPlayTelemetryProducer — enabled", () => {
 	it("posts a queued act entry to the endpoint as an OTLP logs payload on flush", async () => {
 		const fetchFn = vi.fn().mockResolvedValue({ ok: true, status: 200, statusText: "OK" });
 		const producer = createPlayTelemetryProducer(
-			{ enabled: true, worldSlug: "elven-mini-local-x" },
+			{ enabled: true, worldSlug: "kavemouth-local-x" },
 			{
 				fetchFn,
 				windowRef: fakeWindow,
@@ -234,7 +234,7 @@ describe("createPlayTelemetryProducer — enabled", () => {
 		expect(attributes["spellkave.tool_name"]).toEqual({
 			stringValue: "spellkave_manipulate",
 		});
-		expect(attributes["spellkave.world_slug"]).toEqual({ stringValue: "elven-mini-local-x" });
+		expect(attributes["spellkave.world_slug"]).toEqual({ stringValue: "kavemouth-local-x" });
 		expect(attributes["spellkave.outcome"]).toEqual({ stringValue: "happened" });
 	});
 

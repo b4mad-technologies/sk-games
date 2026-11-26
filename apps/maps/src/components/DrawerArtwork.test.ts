@@ -9,9 +9,9 @@ vi.mock("@spellkave/map-canvas/world-assets", async (importOriginal) => {
 });
 
 const props = {
-	art: { path: "elven-mini-art/aldwin.webp", hash: "a".repeat(64), license: "CC0-1.0" },
+	art: { path: "kavemouth-art/aldwin.webp", hash: "a".repeat(64), license: "CC0-1.0" },
 	gatewayOrigin: "https://gateway.example",
-	slug: "elven-mini",
+	slug: "kavemouth",
 	token: "maps-token",
 	label: "Aldwin",
 };

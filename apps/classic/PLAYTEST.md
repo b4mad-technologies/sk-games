@@ -1,6 +1,6 @@
 # Playing the classic app locally
 
-How to start the classic app against the Elven Mini adventure on your own
+How to start the classic app against the Kavemouth adventure on your own
 machine, what a first session looks like, and what the playtests of
 2026-11-14 found. Epic `sk-jay0.1.76`.
 
@@ -10,7 +10,7 @@ All commands run at the repository root.
 
 ```bash
 sk config set --project dev.backend local    # once per worktree: use a local node
-just play-host                               # node + Elven Mini + Rust NPC host + a blank hero
+just play-host                               # node + Kavemouth + Rust NPC host + a blank hero
 cd apps/classic && node_modules/.bin/vite --host 0.0.0.0 --port 5320 --strictPort
 ```
 
@@ -20,7 +20,7 @@ Then open <http://127.0.0.1:5320/>.
   minutes. Use it for a new hero. `just play-host status` shows the running
   host; `just play-host start` restarts the host on the world as it is.
 - There is no sign-in. The app plays the hero that `just play-host` staged
-  (`.local/profiles/elven-mini-candidate.toml`). After every `just play-host`,
+  (`.local/profiles/kavemouth-candidate.toml`). After every `just play-host`,
   save `apps/classic/vite.config.ts` once (or restart the dev server) so the
   app picks up the new hero.
 - The first connection can take more than ten seconds.
@@ -28,8 +28,8 @@ Then open <http://127.0.0.1:5320/>.
   through a local gateway. Without it the app shows SRD sprites and glyphs.
 
   ```bash
-  just world-assets-link elven-mini
-  just play-gateway-local elven-mini "$PWD/.local/world-assets"   # prints its origin
+  just world-assets-link kavemouth
+  just play-gateway-local kavemouth "$PWD/.local/world-assets"   # prints its origin
   cd apps/classic && VITE_SPELLKAVE_GATEWAY_URL=<that origin> node_modules/.bin/vite --host 0.0.0.0 --port 5320 --strictPort
   ```
 - The dev server must outlive the terminal that started it. Start it detached
@@ -37,7 +37,7 @@ Then open <http://127.0.0.1:5320/>.
   agent session that owned it.
 - A second world for destructive tests: run `just play-host` in a second
   worktree, then start another dev server here with
-  `SPELLKAVE_URL=<that node's url> SPELLKAVE_DEV_PROFILE=<that worktree>/.local/profiles/elven-mini-candidate.toml`
+  `SPELLKAVE_URL=<that node's url> SPELLKAVE_DEV_PROFILE=<that worktree>/.local/profiles/kavemouth-candidate.toml`
   on another port. Both servers show the same source.
 
 ## A first session
@@ -209,8 +209,8 @@ hero from creation to the first level-up. Bead `sk-jay0.1.76.19.7`. Desktop
 only: the owner took the phone layout out of scope the same day.
 
 **The first level-up asks for 300 experience**, not 75. The two cellar rats
-give 75 by themselves; the quest pays 100 more. The way to level 2 in Elven
-Mini is quest 1 (rats, 175) and quest 2 (escort Jory past a wolf, 300), then
+give 75 by themselves; the quest pays 100 more. The way to level 2 in Kavemouth
+ is quest 1 (rats, 175) and quest 2 (escort Jory past a wolf, 300), then
 "Level Up" on the ledger keeper.
 
 ### Hero 1: Maren, human cleric (level 2 reached)
@@ -375,7 +375,7 @@ proteus.
 **The content offers four classes** (Fighter, Rogue, Cleric, Wizard); a
 ranger, a bard, a warlock or a paladin cannot be made. This round varies
 species, background and build instead, and looks at what the rounds before
-left out: the pack, rests, quests beyond the second. **Elven Mini has no
+left out: the pack, rests, quests beyond the second. **Kavemouth has no
 shop**, and a player has no action to equip, unequip or drop
 (`sk-jay0.1.76.19.17`); there was nothing to buy and nothing to change.
 
@@ -403,7 +403,7 @@ the gate.
 | "Claim Victory" and "Help" led the tags of every innkeeper. | **Fixed.** Outside a fight they fold away with the attacks. |
 | The top line cut a place's description; at the hamlet gate it cut the watch board that names the open troubles. | **Fixed.** Pointing at the description or a click shows it whole. |
 | A walk over six places read "On the way to Hamlet Gate… 75%", then 0%, then 50%. | **Fixed.** "On the way to Hamlet Gate: 5 places to go, now to Crossroads…" |
-| A walk broke with "actor '168' did not reach 'elven_mini/inn/foyer' within 11800ms" on the foot line, a moment after the arrival. | **Fixed.** A walk the move tool stopped watching is no refusal; the stage waits for the arrival as before. |
+| A walk broke with "actor '168' did not reach 'kavemouth/inn/foyer' within 11800ms" on the foot line, a moment after the arrival. | **Fixed.** A walk the move tool stopped watching is no refusal; the stage waits for the arrival as before. |
 | "That did not work." and "The outcome could not be confirmed." stood alone in the story. | **Fixed.** A bare answer names what was tried: "Complete a Short Rest: The outcome could not be confirmed." |
 | The keeper, calling from the inn, spoke as "6". | **Fixed.** The stage keeps the names of everybody the hero has stood beside; an unknown voice is "Someone". |
 | The recap of a fight was cut on the foot line (left open by round 2). | **Fixed.** A long sentence takes two lines. |
@@ -494,7 +494,7 @@ to four cultists at 750, woke at the inn, back by one click on the map over
 17 places. Sister Maelis cannot be ended (see below). The forest shrine: the
 specter and three shadows, the altar relit, Brother Caddoc's quest paid at
 once and he joined (1500). Level 3 by the plain "Level Up": 23 hit points.
-The hobgoblin camp set alight from the cookfire (1750).
+The war camp set alight from the cookfire (1750).
 
 | Stumble | Outcome |
 |---|---|
@@ -523,7 +523,7 @@ The hobgoblin camp set alight from the cookfire (1750).
 One click on the map walked 17 places across five areas (loft to the cult
 tunnels) and 12 places back from the shrine; a leg between two places takes
 a few seconds now. Ten sheets after this run (Inn, Hamlet, Region, River
-Crossing, Tomb, Deep Tomb, Mill, Shrine, Forest Lodge, Creation Limbo), in
+Crossing, Tomb, Deep Tomb, Mill, Shrine, Hesper's Lodge, Creation Limbo), in
 the order of the alphabet after the hero's own. Nothing broke. Rough edges
 left: a door tag can lie under a neighbour place's name, and the sheet
 "Creation Limbo" stays for a finished hero (`sk-jay0.1.76.19.10`).
@@ -711,8 +711,8 @@ tab and built what came up. Epic `sk-jay0.1.76`.
   rooms back is not on it. The old shell remembers such places for the
   browser tab and lists them; after closing the tab the list starts empty.
   The stage shell keeps an atlas of everything seen (night run above).
-- **No picture of the place.** The stage is still a plain surface: Elven
-  Mini authors no place picture. The app draws one as the stage backdrop as
+- **No picture of the place.** The stage is still a plain surface: Kavemouth
+   authors no place picture. The app draws one as the stage backdrop as
   soon as the world sends it (`sk-jay0.1.76.14.1`).
 - **A gate has no sentence.** The world sends a gate's id; the app shows its
   last part ("dm threshold").

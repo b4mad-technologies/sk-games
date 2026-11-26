@@ -100,7 +100,7 @@ export const sampleView: PlayView = {
 				label: "west",
 				to: "inn/foyer",
 				toName: "Foyer",
-				gates: ["elven_mini/affordance/dm_threshold"],
+				gates: ["kavemouth/affordance/dm_threshold"],
 			},
 		],
 	},

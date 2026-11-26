@@ -48,12 +48,12 @@ describe("seat board view", () => {
 
 describe("projectPlayErrors", () => {
 	const status = new Map([
-		["elven-mini-1", "Schema fetch failed: 404"],
+		["kavemouth-1", "Schema fetch failed: 404"],
 		["srd-cc", "Please log in again."],
 	]);
 
 	it("shows only the selected world's error in the section", () => {
-		expect(projectPlayErrors(status, "elven-mini-1")).toEqual({
+		expect(projectPlayErrors(status, "kavemouth-1")).toEqual({
 			selected: "Schema fetch failed: 404",
 			othersCount: 1,
 			othersTitle: "srd-cc: Please log in again.",
@@ -64,12 +64,12 @@ describe("projectPlayErrors", () => {
 		const note = projectPlayErrors(status, "phandelver");
 		expect(note.selected).toBeNull();
 		expect(note.othersCount).toBe(2);
-		expect(note.othersTitle).toContain("elven-mini-1: Schema fetch failed: 404");
+		expect(note.othersTitle).toContain("kavemouth-1: Schema fetch failed: 404");
 		expect(note.othersTitle).toContain("srd-cc: Please log in again.");
 	});
 
 	it("is empty when no world has an error", () => {
-		expect(projectPlayErrors(new Map(), "elven-mini-1")).toEqual({
+		expect(projectPlayErrors(new Map(), "kavemouth-1")).toEqual({
 			selected: null,
 			othersCount: 0,
 			othersTitle: "",

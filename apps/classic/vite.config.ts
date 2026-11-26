@@ -31,7 +31,7 @@ function constantModule(id: string, value: unknown): Plugin {
  */
 function readStagedProfile(mode: string): Record<string, string> | null {
 	if (mode === "production") return null;
-	const adventure = process.env.SPELLKAVE_DEV_SLUG?.trim() || "elven-mini";
+	const adventure = process.env.SPELLKAVE_DEV_SLUG?.trim() || "kavemouth";
 	const path =
 		process.env.SPELLKAVE_DEV_PROFILE?.trim() ||
 		resolve(repoRoot, `.local/profiles/${adventure}-candidate.toml`);

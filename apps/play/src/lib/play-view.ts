@@ -1191,7 +1191,7 @@ export function sceneFromPayload(
  * still render as `person` in live play (sk-jay0.1.7 item 2, tool-contract
  * gap: `spellkave_scene` needs a creature/species cue on actor items, e.g.
  * the server-side niche tag `srd.creature` — `CREATURE_NICHE_TAG`,
- * `packages/spellkave-adventure-elven-mini/author/hero.ts`).
+ * `packages/spellkave-adventure-kavemouth/author/hero.ts`).
  *
  * Read the cue defensively anyway, mirroring `spellkave_self_summary`'s own
  * identity-tag vocabulary (`self.identity` carries `srd.creature` for a

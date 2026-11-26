@@ -511,8 +511,8 @@ describe("a foe outside a fight", () => {
 });
 
 describe("the adventure's own deeds", () => {
-	const deed = action("elven_mini/quest/relight-the-altar", { name: "Relight the altar" });
-	const other = action("elven_mini/quest/burn-the-camp", { name: "Set the camp alight" });
+	const deed = action("kavemouth/quest/relight-the-altar", { name: "Relight the altar" });
+	const other = action("kavemouth/quest/burn-the-camp", { name: "Set the camp alight" });
 	const check = action("srd/pickup", { name: "Pick Up" });
 	const fits = (entry: PlayAction) =>
 		entry === check || entry === deed || entry === other ? false : undefined;

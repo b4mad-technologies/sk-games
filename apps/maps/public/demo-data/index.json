@@ -8,12 +8,12 @@
 	},
 	"worlds": [
 		{
-			"slug": "elven-mini",
-			"name": "Elven mini",
-			"adventure": "elven-mini",
-			"db": "spellkave-elven-mini",
+			"slug": "kavemouth",
+			"name": "Kavemouth",
+			"adventure": "kavemouth",
+			"db": "spellkave-kavemouth",
 			"position": 1,
-			"transcript_url": "worlds/elven-mini/agent-run-events.jsonl",
+			"transcript_url": "worlds/kavemouth/agent-run-events.jsonl",
 			"transcript_lines": 0,
 			"transcript_updated_at": null
 		}

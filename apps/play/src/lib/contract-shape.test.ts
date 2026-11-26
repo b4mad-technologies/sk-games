@@ -10,7 +10,7 @@ describe("createShapeDiagnosticSink", () => {
 		sink({
 			kind: "contract_shape_mismatch",
 			shape_mode: "warn",
-			shape_database: "elven-mini-1",
+			shape_database: "kavemouth-1",
 			shape_item: "table actor",
 			shape_detail: "column 2 changed: name: String -> name: U32",
 			client_epoch: 1,
@@ -20,7 +20,7 @@ describe("createShapeDiagnosticSink", () => {
 		expect(rum.contractShapeMismatch).toHaveBeenCalledWith({
 			shape_item: "table actor",
 			shape_detail: "column 2 changed: name: String -> name: U32",
-			shape_database: "elven-mini-1",
+			shape_database: "kavemouth-1",
 			client_epoch: 1,
 		});
 	});
